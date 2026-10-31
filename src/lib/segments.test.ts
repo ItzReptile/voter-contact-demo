@@ -49,7 +49,7 @@ describe("parseSegmentParams", () => {
   it("rejects an unknown party as a problem with the filters as a whole", () => {
     const result = parseSegmentParams(new URLSearchParams("party=XYZ"));
 
-    expect(result).toMatchObject({ ok: false, errors: { other: expect.any(String) } });
+    expect(result).toEqual({ ok: false, errors: { other: "Party must be one of DEM, REP, NPA, OTH." } });
   });
 });
 

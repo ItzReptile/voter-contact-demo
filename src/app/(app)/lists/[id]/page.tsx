@@ -14,7 +14,12 @@ import { describeSegment } from "@/lib/segments";
 import { listVolunteers } from "@/lib/volunteers";
 import { AssignForm } from "../assign-form";
 
-export const metadata: Metadata = { title: "List" };
+// The tab names the list. The page waits on connection() inside <Suspense>, which lets this
+// metadata read the database.
+export async function generateMetadata({ params }: PageProps<"/lists/[id]">): Promise<Metadata> {
+  const list = await getListSummary(Number((await params).id) || 0);
+  return { title: list?.name ?? "List" };
+}
 
 export default function ListPage(props: PageProps<"/lists/[id]">) {
   return (

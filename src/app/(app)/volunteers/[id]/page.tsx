@@ -11,7 +11,12 @@ import { formatNumber, formatPercent, rate } from "@/lib/format";
 import { getListsForVolunteer, type ListSummary } from "@/lib/lists";
 import { getVolunteer } from "@/lib/volunteers";
 
-export const metadata: Metadata = { title: "My lists" };
+// The tab names the volunteer. The page waits on connection() inside <Suspense>, which lets this
+// metadata read the database.
+export async function generateMetadata({ params }: PageProps<"/volunteers/[id]">): Promise<Metadata> {
+  const volunteer = await getVolunteer(Number((await params).id) || 0);
+  return { title: volunteer ? `${volunteer.name}'s lists` : "Lists" };
+}
 
 // What a volunteer would see after signing in: their lists, how far along each is,
 // and one button to pick up where they left off.

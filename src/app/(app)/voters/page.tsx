@@ -226,7 +226,7 @@ function SortHeader({
       <Link
         href={voterFiltersHref(filters, { sort, dir: nextDir })}
         scroll={false}
-        className={`group -mx-1 inline-flex items-center gap-1 rounded-sm px-1 transition-colors duration-150 ease-out hover:text-ink ${
+        className={`group -mx-1 inline-flex min-h-6 items-center gap-1 rounded-sm px-1 transition-colors duration-150 ease-out hover:text-ink ${
           active ? "text-indigo-deep" : ""
         }`}
       >

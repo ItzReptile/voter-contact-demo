@@ -23,12 +23,13 @@ const swapped = (min: number | undefined, max: number | undefined) =>
 export const segmentSchema = z
   .object({
     precincts: z.array(z.string().min(1)).default([]),
-    parties: z.array(z.enum(PARTIES)).default([]),
+    // A hand edited URL can say anything; say what is allowed instead of zod's default message.
+    parties: z.array(z.enum(PARTIES, { error: `Party must be one of ${PARTIES.join(", ")}.` })).default([]),
     minAge: optionalInt(18, 120),
     maxAge: optionalInt(18, 120),
     minScore: optionalInt(0, 100),
     maxScore: optionalInt(0, 100),
-    contact: z.enum(CONTACT_FILTERS).default("any"),
+    contact: z.enum(CONTACT_FILTERS, { error: "Pick a contact history from the list." }).default("any"),
   })
   .superRefine((s, ctx) => {
     const age = swapped(s.minAge, s.maxAge);

@@ -63,7 +63,7 @@ async function VolunteerTable() {
           {volunteers.map((volunteer) => (
             <tr key={volunteer.id}>
               <td className="sm:min-w-48">
-                <Link href={`/volunteers/${volunteer.id}`} className="body-4 break-words text-ink underline decoration-line underline-offset-4 transition-colors duration-150 ease-out hover:text-indigo hover:decoration-indigo">
+                <Link href={`/volunteers/${volunteer.id}`} className="inline-block py-0.5 body-4 break-words text-ink underline decoration-line underline-offset-4 transition-colors duration-150 ease-out hover:text-indigo hover:decoration-indigo">
                   {volunteer.name}
                 </Link>
                 <Work volunteer={volunteer} most={most} />
