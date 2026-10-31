@@ -8,7 +8,7 @@ import { bigButtonClass, linkClass } from "@/components/ui";
 
 // The intro page, printed like a door hanger: two spot inks on card stock. One audience
 // (people who build or run voter contact tools), one action: open the demo.
-// Indigo is the product and its actions; orange only appears where a door got an outcome.
+// The indigo ink is the product and its actions; orange only appears where a door got an outcome.
 // Motion is two moments: the hanger swings once on load, the tagline inks in on scroll.
 // No testimonials or invented stats; every fact here is true of the demo itself.
 
