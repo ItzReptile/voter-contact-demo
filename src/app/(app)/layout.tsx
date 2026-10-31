@@ -1,18 +1,23 @@
+import Link from "next/link";
 import { Suspense } from "react";
 import { AppNavigation, NavLinks } from "@/components/nav-links";
 
-// The app: a sidebar (or a top bar on phones) and the page on a white inset panel.
+// The app: a header on the card stock, then the page.
 export default function AppLayout({ children }: LayoutProps<"/">) {
   return (
-    <div className="min-h-screen lg:flex">
+    <div className="min-h-screen">
       <Suspense fallback={<AppNavigation pathname={null} />}>
         <NavLinks />
       </Suspense>
-      <main id="main" className="min-w-0 flex-1 lg:py-2 lg:pr-2">
-        <div className="min-h-screen bg-surface lg:min-h-[calc(100vh-16px)] lg:rounded-2xl lg:border lg:border-line">
-          <div className="mx-auto max-w-6xl px-4 py-8 sm:px-8 lg:py-12">{children}</div>
-        </div>
+      <main id="main" tabIndex={-1} className="mx-auto max-w-6xl px-4 pt-6 pb-16 outline-none sm:px-6 sm:pt-10">
+        {children}
       </main>
+      <footer id="footer" className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 pb-8 caption-2 text-muted sm:px-6">
+        <span>Every voter here is generated. The data resets every night.</span>
+        <Link href="/" className="inline-flex min-h-6 items-center transition-colors duration-150 ease-out hover:text-ink">
+          About this demo
+        </Link>
+      </footer>
     </div>
   );
 }

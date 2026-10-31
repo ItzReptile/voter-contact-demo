@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { TableSkeleton } from "@/components/skeletons";
 import { EmptyState, Num, PageHeader, Table } from "@/components/ui";
 import { formatNumber, formatPercent, rate } from "@/lib/format";
-import { listVolunteers } from "@/lib/volunteers";
+import { listVolunteers, type VolunteerRow } from "@/lib/volunteers";
 import { AddVolunteerForm } from "./add-volunteer-form";
 
 export const metadata: Metadata = { title: "Volunteers" };
@@ -16,9 +16,9 @@ export default function VolunteersPage() {
     <>
       <PageHeader
         title="Volunteers"
-        description="Attempts are credited to whoever a list is assigned to when the contact is logged. Open a volunteer to see their lists."
+        description="Each attempt counts for whoever holds the list when it is logged. Open a volunteer to see their lists."
       />
-      <div className="mb-6 rounded-xl border border-line bg-subtle p-4">
+      <div className="mb-8">
         <AddVolunteerForm />
       </div>
       <Suspense fallback={<TableSkeleton rows={5} label="Loading volunteers" />}>
@@ -40,41 +40,70 @@ async function VolunteerTable() {
     );
   }
 
+  const most = Math.max(...volunteers.map((volunteer) => volunteer.attempts), 1);
+
   return (
-    <div className="overflow-hidden rounded-xl border border-line">
+    <section aria-label="Roster" className="min-w-0 rounded-2xl border border-line bg-paper">
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 px-4 pt-4 pb-2 caption-2 text-ink-2" aria-hidden>
+        <Key className="bg-orange" label="Conversations" />
+        <Key className="bg-indigo" label="Other attempts" />
+      </div>
       <Table label="Volunteers">
         <thead>
           <tr>
-            <th>Name</th>
-            <th className="text-right">Lists</th>
+            <th>Volunteer</th>
+            {/* On a phone the bar under each name shows the conversations; these two columns return at sm. */}
+            <th className="hidden text-right sm:table-cell">Lists</th>
             <th className="text-right">Attempts</th>
-            <th className="text-right">Conversations</th>
+            <th className="hidden text-right sm:table-cell">Conversations</th>
             <th className="text-right">Contact rate</th>
           </tr>
         </thead>
         <tbody>
           {volunteers.map((volunteer) => (
             <tr key={volunteer.id}>
-              <td className="whitespace-nowrap">
-                <Link href={`/volunteers/${volunteer.id}`} className="flex items-center gap-3 body-5 hover:underline">
-                  <span aria-hidden className="flex size-8 items-center justify-center rounded-full bg-accent-tint caption-3 text-accent-ink">
-                    {volunteer.name
-                      .split(" ")
-                      .map((part) => part[0])
-                      .slice(0, 2)
-                      .join("")}
-                  </span>
+              <td className="sm:min-w-48">
+                <Link href={`/volunteers/${volunteer.id}`} className="body-4 break-words text-ink underline decoration-line underline-offset-4 transition-colors duration-150 ease-out hover:text-indigo hover:decoration-indigo">
                   {volunteer.name}
                 </Link>
+                <Work volunteer={volunteer} most={most} />
               </td>
-              <Num>{formatNumber(volunteer.lists)}</Num>
+              <Num className="hidden sm:table-cell">{formatNumber(volunteer.lists)}</Num>
               <Num>{formatNumber(volunteer.attempts)}</Num>
-              <Num>{formatNumber(volunteer.conversations)}</Num>
-              <Num>{formatPercent(rate(volunteer.conversations, volunteer.attempts))}</Num>
+              <Num className="hidden sm:table-cell">{formatNumber(volunteer.conversations)}</Num>
+              <Num className="body-4">{formatPercent(rate(volunteer.conversations, volunteer.attempts))}</Num>
             </tr>
           ))}
         </tbody>
       </Table>
+    </section>
+  );
+}
+
+/**
+ * Everyone's attempts on one scale, printed in the two inks: orange for the attempts that
+ * became a conversation, indigo for the rest. The numbers beside it say the same thing.
+ */
+function Work({ volunteer, most }: { volunteer: VolunteerRow; most: number }) {
+  const other = volunteer.attempts - volunteer.conversations;
+  if (volunteer.attempts === 0) {
+    return <p className="mt-1 caption-5 text-muted">No attempts yet</p>;
+  }
+  return (
+    <div aria-hidden className="mt-2 w-full max-w-48">
+      <div className="flex h-2 gap-0.5 overflow-hidden rounded-sm" style={{ width: `${(volunteer.attempts / most) * 100}%` }}>
+        {volunteer.conversations > 0 && <span className="bg-orange" style={{ flexGrow: volunteer.conversations, flexBasis: 0 }} />}
+        {other > 0 && <span className="bg-indigo" style={{ flexGrow: other, flexBasis: 0 }} />}
+      </div>
     </div>
+  );
+}
+
+function Key({ className, label }: { className: string; label: string }) {
+  return (
+    <span className="flex items-center gap-2">
+      <span className={`size-3 rounded-sm ${className}`} />
+      {label}
+    </span>
   );
 }

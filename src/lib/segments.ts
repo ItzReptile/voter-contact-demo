@@ -11,8 +11,14 @@ import {
 // Form fields and URL params arrive as strings; a blank one means "no filter".
 const blankToUndefined = (value: unknown) => (value === "" || value === null ? undefined : value);
 
-const optionalInt = (min: number, max: number) =>
-  z.preprocess(blankToUndefined, z.coerce.number().int().min(min).max(max).optional());
+const optionalInt = (min: number, max: number) => {
+  const message = `Use a whole number from ${min} to ${max}.`;
+  return z.preprocess(blankToUndefined, z.coerce.number(message).int(message).min(min, message).max(max, message).optional());
+};
+
+// A range the wrong way round names both numbers and the fix. The path files it under that range.
+const swapped = (min: number | undefined, max: number | undefined) =>
+  min !== undefined && max !== undefined && min > max ? `Minimum ${min} is above maximum ${max}. Swap them.` : null;
 
 export const segmentSchema = z
   .object({
@@ -24,14 +30,24 @@ export const segmentSchema = z
     maxScore: optionalInt(0, 100),
     contact: z.enum(CONTACT_FILTERS).default("any"),
   })
-  .refine((s) => s.minAge === undefined || s.maxAge === undefined || s.minAge <= s.maxAge, {
-    message: "Minimum age is above maximum age",
-  })
-  .refine((s) => s.minScore === undefined || s.maxScore === undefined || s.minScore <= s.maxScore, {
-    message: "Minimum score is above maximum score",
+  .superRefine((s, ctx) => {
+    const age = swapped(s.minAge, s.maxAge);
+    if (age) ctx.addIssue({ code: "custom", path: ["minAge"], message: age });
+    const score = swapped(s.minScore, s.maxScore);
+    if (score) ctx.addIssue({ code: "custom", path: ["minScore"], message: score });
   });
 
 export type Segment = z.infer<typeof segmentSchema>;
+
+/** What is wrong with a segment, keyed by where the builder shows it: under a range's inputs, or for the filters as a whole. */
+export type SegmentErrors = { age?: string; score?: string; other?: string };
+
+const RANGE_OF: Partial<Record<PropertyKey, "age" | "score">> = {
+  minAge: "age",
+  maxAge: "age",
+  minScore: "score",
+  maxScore: "score",
+};
 
 export const listKindSchema = z.enum(LIST_KINDS);
 
@@ -49,7 +65,7 @@ export function toSearchParams(record: Record<string, string | string[] | undefi
 /** Reads a segment from URL search params or form data (precinct and party can repeat). */
 export function parseSegmentParams(
   params: URLSearchParams,
-): { ok: true; segment: Segment } | { ok: false; error: string } {
+): { ok: true; segment: Segment } | { ok: false; errors: SegmentErrors } {
   const result = segmentSchema.safeParse({
     precincts: params.getAll("precinct"),
     parties: params.getAll("party"),
@@ -60,7 +76,10 @@ export function parseSegmentParams(
     contact: params.get("contact") || undefined,
   });
   if (!result.success) {
-    return { ok: false, error: result.error.issues.map((issue) => issue.message).join("; ") };
+    const errors: SegmentErrors = {};
+    // The first problem in each place is enough to act on; fixing it shows the next.
+    for (const issue of result.error.issues) errors[RANGE_OF[issue.path[0]] ?? "other"] ??= issue.message;
+    return { ok: false, errors };
   }
   return { ok: true, segment: result.data };
 }
@@ -110,19 +129,24 @@ function range(label: string, min: number | undefined, max: number | undefined):
   return null;
 }
 
-/** A short human description, e.g. "P-03 · score 40 to 60 · not yet reached". No hyphens in UI copy. */
+/** "P-03, P-04 and P-05" */
+function joinWords(items: string[]): string {
+  return items.length <= 1 ? items.join("") : `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
+}
+
+/** A plain sentence fragment, e.g. "P-03 and P-04, score 40 to 60, not yet reached". No hyphens in UI copy. */
 export function describeSegment(segment: Segment): string {
   const parts = [
-    segment.precincts.length > 0 ? segment.precincts.join(", ") : "All precincts",
-    segment.parties.length > 0 ? segment.parties.map((party) => PARTY_LABELS[party]).join("/") : null,
+    segment.precincts.length > 0 ? joinWords(segment.precincts) : "All precincts",
+    segment.parties.length > 0 ? joinWords(segment.parties.map((party) => PARTY_LABELS[party])) : null,
     range("age", segment.minAge, segment.maxAge),
     range("score", segment.minScore, segment.maxScore),
     segment.contact === "any" ? null : CONTACT_FILTER_LABELS[segment.contact].toLowerCase(),
   ];
-  return parts.filter((part) => part !== null).join(" · ");
+  return parts.filter((part) => part !== null).join(", ");
 }
 
 /** Default name offered when creating a list. */
 export function suggestListName(segment: Segment, kind: ListKind): string {
-  return `${kind === "door" ? "Doors" : "Calls"} · ${describeSegment(segment)}`;
+  return `${kind === "door" ? "Doors" : "Calls"}: ${describeSegment(segment)}`;
 }

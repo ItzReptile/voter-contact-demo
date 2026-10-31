@@ -29,14 +29,27 @@ describe("parseSegmentParams", () => {
     });
   });
 
-  it("rejects a minimum above the maximum", () => {
+  it("rejects a minimum above the maximum, under that range, with the fix", () => {
     const result = parseSegmentParams(new URLSearchParams("minScore=80&maxScore=20"));
 
-    expect(result).toEqual({ ok: false, error: "Minimum score is above maximum score" });
+    expect(result).toEqual({ ok: false, errors: { score: "Minimum 80 is above maximum 20. Swap them." } });
   });
 
-  it("rejects an unknown party", () => {
-    expect(parseSegmentParams(new URLSearchParams("party=XYZ")).ok).toBe(false);
+  it("puts a number outside the bounds under its range", () => {
+    expect(parseSegmentParams(new URLSearchParams("minAge=10"))).toEqual({
+      ok: false,
+      errors: { age: "Use a whole number from 18 to 120." },
+    });
+    expect(parseSegmentParams(new URLSearchParams("maxScore=40.5"))).toEqual({
+      ok: false,
+      errors: { score: "Use a whole number from 0 to 100." },
+    });
+  });
+
+  it("rejects an unknown party as a problem with the filters as a whole", () => {
+    const result = parseSegmentParams(new URLSearchParams("party=XYZ"));
+
+    expect(result).toMatchObject({ ok: false, errors: { other: expect.any(String) } });
   });
 });
 
@@ -105,9 +118,9 @@ describe("describeSegment and suggestListName", () => {
       contact: "not_reached",
     };
 
-    expect(describeSegment(segment)).toBe("P-03, P-04 · Democratic · age 65+ · score 40 to 60 · not yet reached");
+    expect(describeSegment(segment)).toBe("P-03 and P-04, Democratic, age 65+, score 40 to 60, not yet reached");
     expect(suggestListName(segment, "phone")).toBe(
-      "Calls · P-03, P-04 · Democratic · age 65+ · score 40 to 60 · not yet reached",
+      "Calls: P-03 and P-04, Democratic, age 65+, score 40 to 60, not yet reached",
     );
   });
 });

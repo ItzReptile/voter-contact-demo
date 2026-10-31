@@ -98,7 +98,7 @@ test("the voter table searches, filters and sorts", async ({ page }) => {
 
 test("the intro page leads into the demo", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("Cut turf, log every door");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Knock every door");
 
   await page.getByRole("link", { name: "Open the demo" }).first().click();
 
@@ -116,9 +116,16 @@ test("on a phone, the menu opens full height and nothing scrolls sideways", asyn
 
   await page.goto("/dashboard");
   await page.getByRole("button", { name: "Open menu" }).click();
+  const menu = page.locator("#mobile-menu").filter({ visible: true });
+  expect((await menu.boundingBox())?.height, "the menu covers the whole screen").toBe(844);
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("button", { name: "Open menu" })).toBeFocused();
+
+  await page.getByRole("button", { name: "Open menu" }).click();
   await page.getByRole("navigation", { name: "Mobile" }).getByRole("link", { name: "Lists", exact: true }).click();
 
-  await expect(page.getByRole("heading", { name: "Lists", exact: true })).toBeVisible();
+  // Level 1: the dashboard has its own "Lists" section heading, hidden once the new page is in.
+  await expect(page.getByRole("heading", { level: 1, name: "Lists", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "Open menu" })).toBeVisible();
 });
 
@@ -128,6 +135,35 @@ test("the list builder explains a bad range instead of guessing", async ({ page 
   await page.getByLabel("Maximum support score").fill("20");
 
   // Next adds its own empty role="alert" (the route announcer), so match on the text.
-  await expect(page.getByRole("alert").filter({ hasText: "Minimum score is above maximum score" })).toBeVisible();
+  await expect(page.getByRole("alert").filter({ hasText: "Minimum 80 is above maximum 20. Swap them." })).toBeVisible();
+  await expect(page.getByLabel("Minimum support score")).toHaveAttribute("aria-invalid", "true");
+  await expect(page.getByLabel("Maximum support score")).toHaveAccessibleDescription("Minimum 80 is above maximum 20. Swap them.");
   await expect(page.getByRole("button", { name: "Create list" })).toHaveCount(0);
+});
+
+test("on a phone, the support buttons fit on screen and Undo takes back a mis-tap", async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto("/lists");
+  await page.getByRole("link", { name: "P-07 persuadables" }).click();
+  await page.getByRole("link", { name: "Open canvass view" }).click();
+
+  // Every conversation ends on a support ID, so the row is on screen without scrolling.
+  await expect(page.getByRole("group", { name: "Their support" })).toBeInViewport({ ratio: 1 });
+
+  const current = page.getByRole("form", { name: /^Log contact with / });
+  const voter = (await current.getByRole("heading", { level: 2 }).textContent()) ?? "";
+  const card = page.getByRole("form", { name: `Log contact with ${voter}` });
+  const progress = page.getByText(/^\d+ of \d+ attempted$/);
+  const attempted = await progress.textContent();
+
+  // A mis-tap moves on to the next voter. Undo brings this one back as the current card.
+  await card.getByRole("button", { name: "Not home" }).click();
+  await expect(page.getByRole("status")).toHaveText(`Saved for ${voter}: Not home.`);
+  await expect(card).toHaveCount(0);
+
+  await page.getByRole("button", { name: "Undo" }).click();
+  await expect(page.getByRole("status")).toHaveText(`Undone. ${voter} is back on the list.`);
+  await expect(card).toBeVisible();
+  await expect(progress).toHaveText(attempted ?? "");
+  await expect(page.getByRole("button", { name: "Undo" })).toHaveCount(0);
 });

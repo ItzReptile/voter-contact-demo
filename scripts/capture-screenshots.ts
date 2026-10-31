@@ -24,7 +24,7 @@ async function capture(options: { path: string; url: string; width: number; heig
 }
 
 await capture({ path: "public/screenshots/dashboard.png", url: "/dashboard", width: 1440, height: 900, scale: 2, waitFor: "table[aria-label='By precinct']" });
-// The intro hero, after the turf card has finished playing.
-await capture({ path: "public/og.png", url: "/", width: 1200, height: 630, scale: 1, waitFor: "h1", settle: 4500 });
+// The intro hero, after the door hanger has stopped swinging (200ms delay + 1600ms swing).
+await capture({ path: "public/og.png", url: "/", width: 1200, height: 630, scale: 1, waitFor: "h1", settle: 2000 });
 
 await browser.close();

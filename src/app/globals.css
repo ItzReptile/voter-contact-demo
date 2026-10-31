@@ -1,96 +1,101 @@
 @import "tailwindcss";
 
-/* Design rules: .claude/skills/landing-page-design (Part B).
-   One typeface (Geist), named text styles, flat backgrounds, one motion curve.
-   Light theme. Palette: a muted indigo accent with teal, plum and orange for status
-   and chart series, on neutral grays. Tints carry status; text on tints uses the
-   darker "-ink" step so it stays above 4.5:1. */
+/* "Door hanger": printed in two spot inks, indigo and orange, on bright card stock.
+   Archivo is the one family: condensed and heavy for display and numbers, normal width
+   for reading. Color means ink: indigo for the product and its actions, orange for the
+   outcome that matters (a conversation, a supporter). Mechanics (spacing scale, named
+   text styles, states, motion curve) follow .claude/skills/landing-page-design. */
 
 :root {
   color-scheme: light;
 
-  /* Surfaces */
-  --page: #f1f1f1;
-  --surface: #ffffff;
-  --subtle: #f7f7f7;
-  --hover: #f1f1f1;
-  --line: #dddddd;
-  --line-soft: #ebebeb;
+  /* Card stock and paper */
+  --stock: #f7f8fc;
+  --paper: #ffffff;
+  --soft: #e3e6f1;
+  --line: #d6dae8;
+  --line-soft: #e9ebf3;
 
-  /* Text */
-  --ink: #111111;
-  --ink-2: #3a3a3a;
-  --muted: #636363;
-  --faint: #8b8b8b;
-  --disabled: #bfbfbf;
+  /* Ink */
+  --ink: #23263a;
+  --ink-2: #4a4e66;
+  --muted: #6b6f86;
+  --faint: #a3a7bd;
 
-  /* Accent */
-  --accent: #5d69a1;
-  --accent-hover: #4e5a90;
-  --accent-tint: #eef0f6;
-  --accent-ink: #4a5585;
+  /* Spot ink 1: indigo */
+  --indigo: #5d69a1;
+  --indigo-hover: #4e5a90;
+  --indigo-deep: #3f4a80;
 
-  /* Status and chart series */
-  --teal: #089488;
-  --teal-tint: #e3f3f1;
-  --teal-ink: #05665e;
-  --plum: #994a75;
-  --plum-tint: #f6ebf1;
-  --plum-ink: #7a3a5d;
+  /* Spot ink 2: orange. Text on an orange fill is --ink (6.7:1). */
   --orange: #f8922f;
-  --orange-tint: #fef1e4;
-  --orange-ink: #9a5410;
+  --orange-tint: #feefdf;
+  --orange-ink: #8a4a0b;
+
   --danger: #b42318;
   --danger-tint: #fdecea;
 
-  /* Support IDs: indigo (support) to gray (undecided) to plum (oppose). */
-  --support-1: #5d69a1;
-  --support-2: #a3aacd;
-  --support-3: #bfbfbf;
-  --support-4: #cc9fb8;
-  --support-5: #994a75;
+  /* Support IDs, two inks: orange for support, indigo for oppose. */
+  --support-1: #f8922f;
+  --support-2: #fbc48f;
+  --support-3: #e3e6f1;
+  --support-4: #a3aacd;
+  --support-5: #5d69a1;
+
+  /* Legacy names kept so every screen compiles while it is restyled. */
+  --page: var(--stock);
+  --surface: var(--paper);
+  --subtle: var(--stock);
+  --hover: var(--soft);
+  --accent: var(--indigo);
+  --accent-hover: var(--indigo-hover);
+  --accent-tint: var(--soft);
+  --accent-ink: var(--indigo-deep);
 }
 
 @theme inline {
-  --color-page: var(--page);
-  --color-surface: var(--surface);
-  --color-subtle: var(--subtle);
-  --color-hover: var(--hover);
+  --color-stock: var(--stock);
+  --color-paper: var(--paper);
+  --color-soft: var(--soft);
   --color-line: var(--line);
   --color-line-soft: var(--line-soft);
   --color-ink: var(--ink);
   --color-ink-2: var(--ink-2);
   --color-muted: var(--muted);
   --color-faint: var(--faint);
-  --color-disabled: var(--disabled);
-  --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
-  --color-accent-tint: var(--accent-tint);
-  --color-accent-ink: var(--accent-ink);
-  --color-teal: var(--teal);
-  --color-teal-tint: var(--teal-tint);
-  --color-teal-ink: var(--teal-ink);
-  --color-plum: var(--plum);
-  --color-plum-tint: var(--plum-tint);
-  --color-plum-ink: var(--plum-ink);
+  --color-indigo: var(--indigo);
+  --color-indigo-hover: var(--indigo-hover);
+  --color-indigo-deep: var(--indigo-deep);
   --color-orange: var(--orange);
   --color-orange-tint: var(--orange-tint);
   --color-orange-ink: var(--orange-ink);
   --color-danger: var(--danger);
   --color-danger-tint: var(--danger-tint);
-  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  /* Legacy aliases */
+  --color-page: var(--stock);
+  --color-surface: var(--paper);
+  --color-subtle: var(--stock);
+  --color-hover: var(--soft);
+  --color-accent: var(--indigo);
+  --color-accent-hover: var(--indigo-hover);
+  --color-accent-tint: var(--soft);
+  --color-accent-ink: var(--indigo-deep);
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
 }
 
 @theme {
-  /* The one motion curve: weighted, decelerating into place. */
+  /* One motion curve: weighted, decelerating into place. Short UI motion uses ease-out. */
   --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Tailwind's ease-out class uses this too, so every button and link moves on the same curve. */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --default-transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-  --default-transition-duration: 300ms;
+  --default-transition-duration: 200ms;
 
-  --animate-skeleton: skeleton 1.4s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
-  --animate-menu-in: menu-in 500ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  --animate-rise: rise 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  --animate-stamp: stamp 500ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  /* A loop breathes evenly; a strong ease-out would snap and stall at each end. */
+  --animate-skeleton: skeleton 1.4s ease-in-out infinite alternate;
+  --animate-menu-in: menu-in 200ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in: fade-in 150ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-swing: swing 1600ms cubic-bezier(0.22, 1, 0.36, 1) 200ms both;
 
   @keyframes skeleton {
     from {
@@ -100,54 +105,59 @@
       opacity: 0.45;
     }
   }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
   @keyframes menu-in {
     from {
       opacity: 0;
-      transform: translateY(24px);
+      transform: translateY(8px);
     }
     to {
       opacity: 1;
       transform: none;
     }
   }
-  /* Hero entrance: rise and unblur. */
-  @keyframes rise {
-    from {
-      opacity: 0;
-      transform: translateY(24px);
-      filter: blur(8px);
-    }
-    to {
-      opacity: 1;
-      transform: none;
-      filter: none;
-    }
-  }
-  /* An outcome landing on a door in the intro animation. */
-  @keyframes stamp {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: none;
-    }
+  /* A door hanger settling on its knob: hangs from the hole, swings, comes to rest. */
+  @keyframes swing {
+    0% { transform: rotate(0); }
+    18% { transform: rotate(4deg); }
+    42% { transform: rotate(-2.5deg); }
+    64% { transform: rotate(1.2deg); }
+    82% { transform: rotate(-0.4deg); }
+    100% { transform: rotate(0); }
   }
 }
 
-/* Named text styles. Every piece of text uses one of these, never a loose size and weight. */
-@utility heading-1 { @apply text-6xl font-semibold tracking-tighter; }
-@utility heading-2 { @apply text-5xl font-semibold tracking-tighter; }
-@utility heading-3 { @apply text-4xl font-semibold tracking-tight; }
-@utility heading-4 { @apply text-3xl font-semibold tracking-tight; }
-@utility heading-5 { @apply text-2xl font-semibold tracking-tight; }
-@utility heading-6 { @apply text-xl font-semibold tracking-tight; }
-@utility title-1 { @apply text-xl font-medium; }
-@utility title-2 { @apply text-lg font-medium; }
-@utility title-3 { @apply text-base font-medium; }
-@utility title-4 { @apply text-sm font-medium; }
-@utility title-5 { @apply text-xs font-medium; }
+/* Condensed display width, the door hanger's voice. */
+@utility condensed {
+  font-stretch: 72%;
+}
+
+/* Big printed numbers: condensed, heavy, digits line up. */
+@utility figure {
+  font-stretch: 72%;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+/* Named text styles. Every piece of text uses one of these, never a loose size and weight.
+   Headings are condensed; titles, body and captions are normal width. */
+@utility heading-1 { @apply text-6xl font-extrabold tracking-tight; font-stretch: 72%; }
+@utility heading-2 { @apply text-5xl font-extrabold tracking-tight; font-stretch: 72%; }
+@utility heading-3 { @apply text-4xl font-extrabold tracking-tight; font-stretch: 72%; }
+@utility heading-4 { @apply text-3xl font-extrabold tracking-tight; font-stretch: 72%; }
+@utility heading-5 { @apply text-2xl font-bold tracking-tight; font-stretch: 72%; }
+@utility heading-6 { @apply text-xl font-bold tracking-tight; font-stretch: 72%; }
+@utility title-1 { @apply text-xl font-semibold; }
+@utility title-2 { @apply text-lg font-semibold; }
+@utility title-3 { @apply text-base font-semibold; }
+@utility title-4 { @apply text-sm font-semibold; }
+@utility title-5 { @apply text-xs font-semibold; }
 @utility body-1 { @apply text-base font-semibold; }
 @utility body-2 { @apply text-base font-medium; }
 @utility body-3 { @apply text-base font-normal; }
@@ -164,18 +174,10 @@
 @utility caption-4 { @apply text-xs font-medium; }
 @utility caption-5 { @apply text-xs font-normal; }
 
-/* Hero headings only: the one place a gradient is allowed, and only on text. */
-@utility hero-gradient {
-  background-image: linear-gradient(to right, #000000, #666666);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 @layer base {
   html,
   body {
-    background: var(--page);
+    background: var(--stock);
     color: var(--ink);
   }
 
@@ -188,17 +190,16 @@
   }
 
   ::selection {
-    background: var(--accent-tint);
+    background: var(--orange-tint);
   }
 
   :focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--indigo);
     outline-offset: 2px;
   }
 }
 
-/* Reduced motion: no looping or entrance animation. Components put movement
-   (scale, translate) behind motion-safe: so only plain opacity changes remain. */
+/* Reduced motion: no swing, no looping, no slide. Components keep movement behind motion-safe:. */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation: none !important;

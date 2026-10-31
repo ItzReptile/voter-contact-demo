@@ -6,12 +6,13 @@ import { Suspense } from "react";
 import { TableSkeleton } from "@/components/skeletons";
 import { buttonClass, EmptyState, Num, PageHeader, secondaryButtonClass, Table, Tag } from "@/components/ui";
 import { PendingRegion, UrlFilters } from "@/components/url-filters";
+import { PARTY_LABELS } from "@/lib/constants";
 import { OUTCOME_TONES, SHORT_OUTCOME_LABELS } from "@/lib/display";
 import { formatDateTime, formatNumber, formatPhone } from "@/lib/format";
 import { toSearchParams } from "@/lib/segments";
 import { parseVoterFilters, voterFiltersHref, type VoterFilters, type VoterSort } from "@/lib/voter-filters";
-import { listPrecincts, searchVoters } from "@/lib/voters";
-import { VoterToolbar } from "./voter-toolbar";
+import { countVoters, listPrecincts, searchVoters } from "@/lib/voters";
+import { PageSizeSelect, ShowAllVotersButton, VoterSearch, VoterToolbar } from "./voter-toolbar";
 
 export const metadata: Metadata = { title: "Voters" };
 
@@ -20,7 +21,6 @@ export default function VotersPage({ searchParams }: PageProps<"/voters">) {
     <>
       <PageHeader
         title="Voters"
-        description="Everyone in the voter file. Search, filter and sort; click a column to sort by it."
         actions={
           <>
             <a href="/sample-voters.csv" download className={secondaryButtonClass}>
@@ -34,21 +34,43 @@ export default function VotersPage({ searchParams }: PageProps<"/voters">) {
           </>
         }
       />
-      <Suspense fallback={<TableSkeleton rows={10} label="Loading voters" />}>
+      <Suspense fallback={<VotersSkeleton />}>
         <VoterTable searchParams={searchParams} />
       </Suspense>
     </>
   );
 }
 
+/** Shaped like the page: the count, the search bar, then the table. */
+function VotersSkeleton() {
+  return (
+    <div className="flex flex-col gap-8">
+      <div aria-hidden className="h-15 w-72 max-w-full animate-skeleton rounded-md bg-soft" />
+      <div className="flex flex-col gap-4">
+        <div aria-hidden className="flex flex-wrap gap-2">
+          <div className="h-9 min-w-0 flex-1 basis-64 animate-skeleton rounded-md bg-soft" />
+          <div className="h-9 w-36 animate-skeleton rounded-md bg-soft" />
+          <div className="h-9 w-32 animate-skeleton rounded-md bg-soft" />
+        </div>
+        <TableSkeleton rows={10} label="Loading voters" />
+      </div>
+    </div>
+  );
+}
+
 async function VoterTable({ searchParams }: Pick<PageProps<"/voters">, "searchParams">) {
   await connection();
   const filters = parseVoterFilters(toSearchParams(await searchParams));
-  const [precincts, { total, rows }] = await Promise.all([listPrecincts(), searchVoters(filters)]);
+  const filtered = Boolean(filters.q || filters.precinct || filters.party);
+  const [precincts, { total, rows }, inFile] = await Promise.all([listPrecincts(), searchVoters(filters), filtered ? countVoters() : null]);
 
   if (precincts.length === 0) {
     return (
-      <EmptyState icon={<AddressBook size={24} aria-hidden />} title="No voters yet" action={{ href: "/voters/import", label: "Import a voter file" }}>
+      <EmptyState
+        icon={<AddressBook size={24} aria-hidden />}
+        title="No voters yet"
+        action={{ href: "/voters/import", label: "Import a voter file" }}
+      >
         Upload a CSV of voters. The sample file has 2,400 generated voters and three bad rows that show how errors are reported.
       </EmptyState>
     );
@@ -60,88 +82,122 @@ async function VoterTable({ searchParams }: Pick<PageProps<"/voters">, "searchPa
 
   return (
     <UrlFilters>
-      {/* flex, not grid: a grid track would grow to the table's full width and scroll the page. */}
-      <div className="flex min-w-0 flex-col gap-4">
-        <VoterToolbar filters={filters} precincts={precincts} />
-        <PendingRegion>
-          <div className="overflow-hidden rounded-xl border border-line">
-            <Table label="Voters">
-              <thead>
-                <tr>
-                  <SortHeader filters={filters} sort="name" label="Voter" />
-                  <th>Address</th>
-                  <SortHeader filters={filters} sort="precinct" label="Precinct" />
-                  <SortHeader filters={filters} sort="age" label="Age" align="right" />
-                  <SortHeader filters={filters} sort="party" label="Party" />
-                  <th>Phone</th>
-                  <SortHeader filters={filters} sort="score" label="Support score" align="right" />
-                  <th>Last contact</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((voter) => (
-                  <tr key={voter.id}>
-                    <td className="whitespace-nowrap">
-                      <span className="block body-5">
-                        {voter.first_name} {voter.last_name}
-                      </span>
-                      <span className="caption-5 text-muted">{voter.voter_file_id}</span>
-                    </td>
-                    <td className="whitespace-nowrap">{voter.address}</td>
-                    <td>{voter.precinct}</td>
-                    <Num>{voter.age}</Num>
-                    <td>
-                      <Tag dot={false}>{voter.party}</Tag>
-                    </td>
-                    <td className="whitespace-nowrap tabular-nums text-ink-2">{formatPhone(voter.phone)}</td>
-                    <td>
-                      <div className="flex items-center justify-end gap-2">
-                        <span className="h-1.5 w-12 overflow-hidden rounded-full bg-hover" aria-hidden>
-                          <span className="block h-full rounded-full bg-accent" style={{ width: `${voter.support_score}%` }} />
-                        </span>
-                        <span className="w-8 text-right tabular-nums">{voter.support_score}</span>
-                      </div>
-                    </td>
-                    <td className="whitespace-nowrap">
-                      {voter.last_outcome ? (
-                        <span className="flex items-center gap-2">
-                          <Tag tone={OUTCOME_TONES[voter.last_outcome]}>{SHORT_OUTCOME_LABELS[voter.last_outcome]}</Tag>
-                          {voter.last_contact_at && <span className="caption-5 text-muted">{formatDateTime(voter.last_contact_at)}</span>}
-                        </span>
-                      ) : (
-                        <span className="caption-2 text-faint">Not contacted</span>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-                {rows.length === 0 && (
-                  <tr>
-                    <td colSpan={8} className="py-12 text-center text-muted">
-                      No voters match. Try a shorter search or clear the filters.
-                    </td>
-                  </tr>
-                )}
-              </tbody>
-            </Table>
+      <VoterSearch filters={filters}>
+        {/* flex, not grid: a grid track would grow to the table's full width and scroll the page. */}
+        <div className="flex min-w-0 flex-col gap-8">
+          {/* The one big number on the page: how many voters this view covers. */}
+          <PendingRegion>
+            <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="figure text-5xl text-indigo sm:text-6xl">{formatNumber(total)}</span>
+              <span className="body-3 text-ink-2">
+                {inFile === null
+                  ? total === 1
+                    ? "voter in the file"
+                    : "voters in the file"
+                  : `of ${formatNumber(inFile)} voters ${total === 1 ? "matches" : "match"}`}
+              </span>
+            </p>
+          </PendingRegion>
+
+          <div className="flex min-w-0 flex-col gap-4">
+            <VoterToolbar precincts={precincts} />
+            <PendingRegion>
+              <div className="overflow-hidden rounded-2xl border border-line bg-paper">
+                <Table label="Voters">
+                  <thead className="border-b-2 border-ink">
+                    <tr>
+                      <SortHeader filters={filters} sort="name" label="Voter" sticky />
+                      <th>Address</th>
+                      <SortHeader filters={filters} sort="precinct" label="Precinct" />
+                      <SortHeader filters={filters} sort="age" label="Age" align="right" />
+                      <SortHeader filters={filters} sort="party" label="Party" />
+                      <th>Phone</th>
+                      <SortHeader filters={filters} sort="score" label="Support score" align="right" />
+                      <th>Last contact</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {rows.map((voter) => (
+                      <tr key={voter.id}>
+                        {/* The name stays in view while a phone scrolls the table sideways. */}
+                        <td className="sticky left-0 z-10 bg-paper transition-colors duration-150 ease-out max-md:border-r [tr:hover>&]:bg-stock">
+                          <span className="flex flex-wrap items-baseline gap-x-2">
+                            <span className="body-4 whitespace-nowrap text-ink">
+                              {voter.first_name} {voter.last_name}
+                            </span>
+                            <span className="caption-5 text-muted tabular-nums">{voter.voter_file_id}</span>
+                          </span>
+                        </td>
+                        {/* Addresses and precinct names have no length limit, so they wrap instead of widening the table. */}
+                        <td className="min-w-48 text-ink-2">{voter.address}</td>
+                        <td className="min-w-24">{voter.precinct}</td>
+                        <Num>{voter.age}</Num>
+                        <td className="text-ink-2">
+                          <span title={PARTY_LABELS[voter.party]}>{voter.party}</span>
+                        </td>
+                        <td className="whitespace-nowrap tabular-nums text-ink-2">
+                          {voter.phone ? formatPhone(voter.phone) : <span className="caption-2 text-muted">No phone</span>}
+                        </td>
+                        <td>
+                          <span className="flex items-center justify-end gap-2">
+                            {/* A printed bar: indigo ink on the pale track, square ends. */}
+                            <span aria-hidden className="h-1.5 w-12 bg-soft">
+                              <span className="block h-full bg-indigo" style={{ width: `${voter.support_score}%` }} />
+                            </span>
+                            <span className="w-8 text-right tabular-nums">{voter.support_score}</span>
+                          </span>
+                        </td>
+                        <td className="whitespace-nowrap">
+                          {voter.last_outcome ? (
+                            <span className="flex items-center gap-2">
+                              <Tag tone={OUTCOME_TONES[voter.last_outcome]}>{SHORT_OUTCOME_LABELS[voter.last_outcome]}</Tag>
+                              {voter.last_contact_at && (
+                                <span className="caption-5 text-muted tabular-nums">{formatDateTime(voter.last_contact_at)}</span>
+                              )}
+                            </span>
+                          ) : (
+                            <span className="caption-2 text-muted">Not contacted</span>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                    {rows.length === 0 && (
+                      <tr>
+                        <td colSpan={8} className="py-12">
+                          <div className="max-w-xs">
+                            <p className="title-3">No voters match</p>
+                            <p className="mt-1 body-6 text-ink-2">
+                              Try a shorter search, or <ShowAllVotersButton />.
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    )}
+                  </tbody>
+                </Table>
+              </div>
+            </PendingRegion>
+
+            <nav aria-label="Pages" className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+              <p className="caption-2 text-muted tabular-nums">
+                {total === 0 ? "No rows to show" : `Rows ${formatNumber(first)} to ${formatNumber(last)} of ${formatNumber(total)}`}
+              </p>
+              <div className="flex flex-wrap items-center gap-2">
+                <PageSizeSelect />
+                <PageLink filters={filters} page={filters.page - 1} disabled={filters.page <= 1}>
+                  Previous
+                </PageLink>
+                <span className="caption-2 whitespace-nowrap text-muted tabular-nums">
+                  Page {formatNumber(filters.page)} of {formatNumber(lastPage)}
+                </span>
+                <PageLink filters={filters} page={filters.page + 1} disabled={filters.page >= lastPage}>
+                  Next
+                </PageLink>
+              </div>
+            </nav>
           </div>
-        </PendingRegion>
-        <nav aria-label="Pages" className="flex flex-wrap items-center justify-between gap-4">
-          <p className="caption-2 text-muted">
-            {total === 0 ? "No results" : `Showing ${formatNumber(first)} to ${formatNumber(last)} of ${formatNumber(total)}`}
-          </p>
-          <div className="flex items-center gap-2">
-            <PageLink filters={filters} page={filters.page - 1} disabled={filters.page <= 1}>
-              Previous
-            </PageLink>
-            <span className="caption-2 text-muted tabular-nums">
-              Page {filters.page} of {lastPage}
-            </span>
-            <PageLink filters={filters} page={filters.page + 1} disabled={filters.page >= lastPage}>
-              Next
-            </PageLink>
-          </div>
-        </nav>
-      </div>
+        </div>
+      </VoterSearch>
     </UrlFilters>
   );
 }
@@ -151,43 +207,45 @@ function SortHeader({
   sort,
   label,
   align = "left",
+  sticky = false,
 }: {
   filters: VoterFilters;
   sort: VoterSort;
   label: string;
   align?: "left" | "right";
+  sticky?: boolean;
 }) {
   const active = filters.sort === sort;
   const nextDir = active && filters.dir === "asc" ? "desc" : "asc";
   const Icon = !active ? CaretUpDown : filters.dir === "asc" ? CaretUp : CaretDown;
   return (
-    <th aria-sort={active ? (filters.dir === "asc" ? "ascending" : "descending") : "none"} className={align === "right" ? "text-right" : ""}>
+    <th
+      aria-sort={active ? (filters.dir === "asc" ? "ascending" : "descending") : "none"}
+      className={`${align === "right" ? "text-right" : ""} ${sticky ? "sticky left-0 z-10 bg-paper max-md:border-r max-md:border-line-soft" : ""}`}
+    >
       <Link
         href={voterFiltersHref(filters, { sort, dir: nextDir })}
         scroll={false}
-        className={`inline-flex items-center gap-1 rounded transition hover:text-ink ${active ? "text-ink" : ""}`}
+        className={`group -mx-1 inline-flex items-center gap-1 rounded-sm px-1 transition-colors duration-150 ease-out hover:text-ink ${
+          active ? "text-indigo-deep" : ""
+        }`}
       >
         {label}
-        <Icon size={12} aria-hidden />
+        <Icon
+          size={12}
+          weight={active ? "bold" : "regular"}
+          aria-hidden
+          className={active ? "text-indigo" : "text-faint transition-colors duration-150 ease-out group-hover:text-muted"}
+        />
       </Link>
     </th>
   );
 }
 
-function PageLink({
-  filters,
-  page,
-  disabled,
-  children,
-}: {
-  filters: VoterFilters;
-  page: number;
-  disabled: boolean;
-  children: string;
-}) {
+function PageLink({ filters, page, disabled, children }: { filters: VoterFilters; page: number; disabled: boolean; children: string }) {
   if (disabled) {
     return (
-      <span aria-disabled className={`${secondaryButtonClass} cursor-not-allowed opacity-50`}>
+      <span aria-disabled className={`${secondaryButtonClass} pointer-events-none opacity-40`}>
         {children}
       </span>
     );

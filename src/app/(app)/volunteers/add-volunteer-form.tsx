@@ -11,13 +11,13 @@ export function AddVolunteerForm() {
   });
 
   return (
-    <form action={formAction} className="grid gap-3">
+    <form action={formAction} className="grid max-w-xl gap-3">
       <div className="flex flex-wrap items-end gap-3">
-        <label className="flex min-w-0 flex-1 basis-64 flex-col gap-2 sm:max-w-sm">
+        <label className="flex min-w-0 flex-1 basis-64 flex-col gap-2">
           <span className="title-4">Name</span>
-          <input name="name" required maxLength={80} autoComplete="off" placeholder="Full name" className={inputClass} />
+          <input name="name" required maxLength={80} autoComplete="off" placeholder="Full name" className={`${inputClass} min-h-11`} />
         </label>
-        <button type="submit" disabled={pending} className={buttonClass}>
+        <button type="submit" disabled={pending} className={`${buttonClass} min-h-11`}>
           <UserPlus size={16} aria-hidden />
           Add volunteer
         </button>

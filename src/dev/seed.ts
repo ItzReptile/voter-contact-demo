@@ -24,12 +24,12 @@ type ListPlan = {
 };
 
 const LISTS: ListPlan[] = [
-  { name: "P-03 doors · persuadables", kind: "door", segment: { precincts: ["P-03"], minScore: 35, maxScore: 65 }, volunteer: 0, worked: 0.85, startedDaysAgo: 13 },
-  { name: "P-07 doors · persuadables", kind: "door", segment: { precincts: ["P-07"], minScore: 35, maxScore: 65 }, volunteer: 1, worked: 0.5, startedDaysAgo: 8 },
-  { name: "P-01 doors · likely supporters", kind: "door", segment: { precincts: ["P-01"], minScore: 60 }, volunteer: 3, worked: 0.7, startedDaysAgo: 6 },
-  { name: "GOTV calls · supporters 65+", kind: "phone", segment: { minAge: 65, minScore: 75 }, volunteer: 2, worked: 0.6, startedDaysAgo: 11 },
-  { name: "Calls · undecided under 35", kind: "phone", segment: { maxAge: 34, minScore: 40, maxScore: 60 }, volunteer: 4, worked: 0.4, startedDaysAgo: 4 },
-  { name: "P-11 doors · young supporters", kind: "door", segment: { precincts: ["P-11"], maxAge: 34, minScore: 70 }, volunteer: null, worked: 0, startedDaysAgo: 0 },
+  { name: "P-03 persuadables", kind: "door", segment: { precincts: ["P-03"], minScore: 35, maxScore: 65 }, volunteer: 0, worked: 0.85, startedDaysAgo: 13 },
+  { name: "P-07 persuadables", kind: "door", segment: { precincts: ["P-07"], minScore: 35, maxScore: 65 }, volunteer: 1, worked: 0.5, startedDaysAgo: 8 },
+  { name: "P-01 likely supporters", kind: "door", segment: { precincts: ["P-01"], minScore: 60 }, volunteer: 3, worked: 0.7, startedDaysAgo: 6 },
+  { name: "GOTV calls to supporters 65+", kind: "phone", segment: { minAge: 65, minScore: 75 }, volunteer: 2, worked: 0.6, startedDaysAgo: 11 },
+  { name: "Calls to undecided voters under 35", kind: "phone", segment: { maxAge: 34, minScore: 40, maxScore: 60 }, volunteer: 4, worked: 0.4, startedDaysAgo: 4 },
+  { name: "P-11 young supporters", kind: "door", segment: { precincts: ["P-11"], maxAge: 34, minScore: 70 }, volunteer: null, worked: 0, startedDaysAgo: 0 },
 ];
 
 const DAY_MS = 24 * 60 * 60 * 1000;

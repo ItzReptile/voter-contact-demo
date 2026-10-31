@@ -1,11 +1,10 @@
-/** The Doorstep mark: a door on a rounded square. */
+/** The Doorstep mark: a tiny door hanger, two inks and a knob hole. */
 export function LogoMark({ className = "size-7" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 32" aria-hidden className={className}>
-      <rect width="32" height="32" rx="8" fill="#5D69A1" />
-      <path d="M11 25V9.5A2.5 2.5 0 0 1 13.5 7h5A2.5 2.5 0 0 1 21 9.5V25" stroke="#fff" strokeWidth="2" fill="none" />
-      <path d="M8 25h16" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
-      <circle cx="18" cy="16.5" r="1.4" fill="#fff" />
+    <svg viewBox="0 0 24 32" aria-hidden className={className}>
+      <rect x="0" y="0" width="24" height="32" rx="6" fill="#5D69A1" />
+      <circle cx="12" cy="7" r="3.5" fill="#F7F8FC" />
+      <rect x="0" y="21" width="24" height="4" fill="#F8922F" />
     </svg>
   );
 }
@@ -13,8 +12,8 @@ export function LogoMark({ className = "size-7" }: { className?: string }) {
 export function Logo() {
   return (
     <span className="flex items-center gap-2">
-      <LogoMark />
-      <span className="title-3 tracking-tight">Doorstep</span>
+      <LogoMark className="h-7 w-5" />
+      <span className="heading-6">Doorstep</span>
     </span>
   );
 }
