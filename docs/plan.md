@@ -88,12 +88,27 @@ The segment builder is a plain GET form: the filters live in the URL, the server
 
 | Route | What it does |
 |---|---|
-| `/` | Dashboard: totals, outcomes, by precinct, by list |
+| `/` | Intro page: what the demo is, one action ("Open the demo"). Static, no database. |
+| `/dashboard` | Totals, outcomes, support IDs, by precinct, by list |
 | `/voters` | Upload a CSV, see the import report, browse voters |
 | `/lists` | All lists with progress; assign a volunteer |
 | `/lists/new` | Segment builder with live count and preview |
 | `/lists/[id]` | Work a list: voters in order, latest outcome, log a contact |
-| `/volunteers` | Add volunteers, see what each one is assigned |
+| `/volunteers`, `/volunteers/[id]` | Add volunteers; what each one is assigned |
+| `/privacy` | What the demo stores (only generated data, plus whatever visitors type until the nightly reset) |
+| `/api/reset-demo` | Nightly reset for the hosted demo, called by Vercel Cron with `CRON_SECRET` |
+
+## Design system
+
+All UI follows `.claude/skills/landing-page-design`: one typeface (Geist), named text styles defined once in `globals.css`, a fixed spacing scale, flat backgrounds (dark mode uses only the six colors the skill lists), Phosphor icons, one motion curve, skeleton loaders shaped like each page, composed empty states, inline errors, no hyphens in UI copy. Chart colors are separate tokens: a colorblind-checked categorical order for outcomes and a blue/red diverging scale with a gray midpoint for support IDs.
+
+The intro page follows Part A of the skill with Layout A (classic hero plus sections), because the product is understandable from a dashboard screenshot. Sections: hero with one primary action, problem to solution, four benefits, the tagline reveal, how it works in three steps, "under the hood" (verifiable facts about the code instead of testimonials, which a demo doesn't have), FAQ, final call to action. Every claim on it is true of the demo; nothing about users or results is invented.
+
+## Hosting
+
+Vercel for the app and a Neon Postgres database through the Vercel Marketplace. The connection string lives only in Vercel env vars (and a gitignored `.env.production.local` when seeding from a laptop). The build needs no database.
+
+Because the hosted demo has no sign in, anyone can change its data. A Vercel Cron job calls `/api/reset-demo` every night at 08:00 UTC; it reloads the generated data through the same `seedDemoData()` the local seed uses. The route refuses any request without `CRON_SECRET`. `npm run seed` refuses a database that isn't on localhost unless given `--yes`.
 
 ## Next.js 16 notes
 
