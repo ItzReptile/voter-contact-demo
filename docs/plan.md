@@ -89,18 +89,24 @@ The segment builder is a plain GET form: the filters live in the URL, the server
 | Route | What it does |
 |---|---|
 | `/` | Intro page: what the demo is, one action ("Open the demo"). Static, no database. |
-| `/dashboard` | Totals, outcomes, support IDs, by precinct, by list |
-| `/voters` | Upload a CSV, see the import report, browse voters |
+| `/dashboard` | KPIs with sparklines, attempts per day by outcome, support IDs, contact rate by precinct, list progress |
+| `/voters` | The voter table: search, precinct and party filters, sortable columns, pagination, latest outcome |
+| `/voters/import` | Upload a CSV, see the import report |
 | `/lists` | All lists with progress; assign a volunteer |
-| `/lists/new` | Segment builder with live count and preview |
-| `/lists/[id]` | Work a list: voters in order, latest outcome, log a contact |
-| `/volunteers`, `/volunteers/[id]` | Add volunteers; what each one is assigned |
+| `/lists/new` | List builder: filters on the left, live count, preview and "Create list" on the right |
+| `/lists/[id]` | The organizer view: stats, volunteer, voters in order with their latest outcome |
+| `/lists/[id]/canvass` | The volunteer view: one voter at a time, one tap per outcome, skip, progress |
+| `/volunteers`, `/volunteers/[id]` | Add volunteers; each volunteer's "my lists" with a button to continue canvassing |
 | `/privacy` | What the demo stores (only generated data, plus whatever visitors type until the nightly reset) |
 | `/api/reset-demo` | Nightly reset for the hosted demo, called by Vercel Cron with `CRON_SECRET` |
 
 ## Design system
 
-All UI follows `.claude/skills/landing-page-design`: one typeface (Geist), named text styles defined once in `globals.css`, a fixed spacing scale, flat backgrounds (dark mode uses only the six colors the skill lists), Phosphor icons, one motion curve, skeleton loaders shaped like each page, composed empty states, inline errors, no hyphens in UI copy. Chart colors are separate tokens: a colorblind-checked categorical order for outcomes and a blue/red diverging scale with a gray midpoint for support IDs.
+All UI follows `.claude/skills/landing-page-design`: one typeface (Geist), named text styles defined once in `globals.css`, a fixed spacing scale, flat backgrounds, Phosphor icons, one motion curve, skeleton loaders shaped like each page, composed empty states, inline errors, no hyphens in UI copy.
+
+The product is called Doorstep. It uses a light theme: neutral grays (#111111 text to #F1F1F1 page), a muted indigo accent (#5D69A1, 5.2:1 on white), and teal, orange and plum for outcomes and chart series. Those three passed a colorblind separation check as a set; orange is under 3:1 on white, so every chart labels its values and status text sits on a tint in a darker step. Support IDs use an indigo to gray to plum diverging scale.
+
+The app is a sidebar shell (a top bar with a full height menu on phones) around a white inset panel. Filters on the voter table and the list builder update the URL inside a React transition, so the server renders new results while the old ones stay on screen, dimmed.
 
 The intro page follows Part A of the skill with Layout A (classic hero plus sections), because the product is understandable from a dashboard screenshot. Sections: hero with one primary action, problem to solution, four benefits, the tagline reveal, how it works in three steps, "under the hood" (verifiable facts about the code instead of testimonials, which a demo doesn't have), FAQ, final call to action. Every claim on it is true of the demo; nothing about users or results is invented.
 

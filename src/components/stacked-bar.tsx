@@ -13,7 +13,7 @@ export function StackedBar({ label, segments }: { label: string; segments: BarSe
   return (
     <figure>
       {total === 0 ? (
-        <div className="h-3 rounded-full bg-raised" aria-hidden />
+        <div className="h-3 rounded-full bg-hover" aria-hidden />
       ) : (
         <div className="flex h-3 gap-0.5 overflow-hidden rounded-full" aria-hidden>
           {segments
@@ -22,6 +22,7 @@ export function StackedBar({ label, segments }: { label: string; segments: BarSe
               <div
                 key={segment.key}
                 title={`${segment.label}: ${formatNumber(segment.value)} (${formatPercent(rate(segment.value, total))})`}
+                className="transition-opacity duration-300 hover:opacity-80"
                 style={{ flexGrow: segment.value, flexBasis: 0, background: segment.color }}
               />
             ))}
@@ -32,12 +33,12 @@ export function StackedBar({ label, segments }: { label: string; segments: BarSe
         <tbody>
           {segments.map((segment) => (
             <tr key={segment.key}>
-              <td className="py-0.5">
-                <span className="mr-2 inline-block size-3 rounded-sm align-middle" style={{ background: segment.color }} />
+              <td className="py-1 text-muted">
+                <span className="mr-2 inline-block size-2 rounded-sm align-middle" style={{ background: segment.color }} />
                 {segment.label}
               </td>
-              <td className="py-0.5 text-right tabular-nums">{formatNumber(segment.value)}</td>
-              <td className="w-16 py-0.5 text-right tabular-nums text-ink-2">{formatPercent(rate(segment.value, total))}</td>
+              <td className="py-1 text-right tabular-nums">{formatNumber(segment.value)}</td>
+              <td className="w-12 py-1 text-right tabular-nums text-muted">{formatPercent(rate(segment.value, total))}</td>
             </tr>
           ))}
         </tbody>

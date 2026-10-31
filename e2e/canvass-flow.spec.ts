@@ -4,9 +4,9 @@ import { expect, test } from "@playwright/test";
 // Locators use roles and labels: Next keeps recently visited pages in the DOM (hidden),
 // and getByRole/getByLabel skip hidden elements.
 
-test("import a file, cut a turf, assign it, log contacts, see them on the dashboard", async ({ page }) => {
+test("import a file, cut a turf, assign it, canvass it, see it on the dashboard", async ({ page }) => {
   // Import 5 voters in a new precinct; one is 17 and gets rejected.
-  await page.goto("/voters");
+  await page.goto("/voters/import");
   await page.getByLabel("Voter file (CSV)").setInputFiles(path.join(import.meta.dirname, "fixtures", "new-precinct.csv"));
   await page.getByRole("button", { name: "Import" }).click();
   const report = page.getByRole("status");
@@ -19,59 +19,81 @@ test("import a file, cut a turf, assign it, log contacts, see them on the dashbo
   await page.getByRole("button", { name: "Add volunteer" }).click();
   await expect(page.getByRole("link", { name: "Robin Test" })).toBeVisible();
 
-  // Segment: door knocking in P-99.
+  // Build a segment: the count updates as soon as the precinct is checked.
   await page.goto("/lists/new");
   await page.getByRole("checkbox", { name: "P-99" }).check();
-  await page.getByRole("button", { name: "Preview" }).click();
-  await expect(page.getByRole("heading", { name: "4 voters match" })).toBeVisible();
-  await expect(page.getByRole("button", { name: "Create list" })).toBeEnabled();
+  const matches = page.getByRole("region", { name: "Matching voters" });
+  await expect(matches).toContainText("4 voters match");
   await page.getByLabel("List name").fill("E2E turf");
   await page.getByRole("button", { name: "Create list" }).click();
 
   // The turf is in walk order: Aspen Ct first, then Birch St by house number.
   await expect(page.getByRole("heading", { name: "E2E turf" })).toBeVisible();
-  const voters = page.getByRole("list", { name: "Voters on this list" }).getByRole("listitem");
-  await expect(voters).toHaveCount(4);
-  await expect(voters.nth(0)).toContainText("Cara Nguyen");
-  await expect(voters.nth(1)).toContainText("Ben Okafor");
-  await expect(voters.nth(2)).toContainText("Dev Patel");
-  await expect(voters.nth(3)).toContainText("Ana Lopez");
+  const rows = page.getByRole("table", { name: "Voters on this list" }).getByRole("row");
+  await expect(rows).toHaveCount(5);
+  await expect(rows.nth(1)).toContainText("Cara Nguyen");
+  await expect(rows.nth(2)).toContainText("Ben Okafor");
+  await expect(rows.nth(3)).toContainText("Dev Patel");
+  await expect(rows.nth(4)).toContainText("Ana Lopez");
 
-  // Contacts can't be logged until the list has a volunteer.
-  const cara = page.getByRole("form", { name: "Log contact with Cara Nguyen" });
-  await expect(cara.getByRole("button", { name: "Save" })).toBeDisabled();
+  // The canvass view needs a volunteer.
+  await expect(page.getByRole("link", { name: "Open canvass view" })).toHaveCount(0);
   await page.getByLabel("Volunteer for E2E turf").selectOption({ label: "Robin Test" });
   await page.getByRole("button", { name: "Assign" }).click();
   await expect(page.getByLabel("Volunteer for E2E turf")).toHaveValue(/\d+/);
-  await expect(cara.getByRole("button", { name: "Save" })).toBeEnabled();
+  await page.getByRole("link", { name: "Open canvass view" }).click();
 
-  // A conversation with a support ID and a note.
-  await cara.getByLabel("Outcome").selectOption("reached");
-  await cara.getByLabel("Support").selectOption("1");
-  await cara.getByLabel("Notes").fill("Wants a yard sign");
-  await cara.getByRole("button", { name: "Save" }).click();
-  await expect(voters.nth(0)).toContainText("Reached · 1 Strong support · 1 attempt");
-  await expect(voters.nth(0)).toContainText("Wants a yard sign");
-  await expect(cara.getByLabel("Outcome")).toHaveValue("");
+  // One voter at a time, one tap each.
+  const card = page.getByRole("form", { name: "Log contact with Cara Nguyen" });
+  await expect(card).toContainText("Door 1 of 4");
+  await card.getByLabel(/Notes/).fill("Wants a yard sign");
+  await card.getByRole("button", { name: "Reached, 1 Strong support" }).click();
+  await expect(page.getByRole("status")).toHaveText("Saved for Cara Nguyen: Reached, strong support.");
 
-  // A not-home: no support ID allowed.
   const ben = page.getByRole("form", { name: "Log contact with Ben Okafor" });
-  await ben.getByLabel("Outcome").selectOption("not_home");
-  await expect(ben.getByLabel("Support")).toBeDisabled();
-  await ben.getByRole("button", { name: "Save" }).click();
-  await expect(voters.nth(1)).toContainText("Not home / no answer");
+  await expect(ben.getByLabel(/Notes/)).toHaveValue("");
+  await ben.getByRole("button", { name: "Not home" }).click();
+  await expect(page.getByRole("form", { name: "Log contact with Dev Patel" })).toBeVisible();
+  await expect(page.getByText("2 of 4 attempted")).toBeVisible();
 
-  // "Not yet reached" hides Cara but keeps Ben for another knock.
-  await page.getByRole("link", { name: "Not yet reached" }).click();
-  await expect(voters).toHaveCount(3);
-  await expect(voters.nth(0)).toContainText("Ben Okafor");
+  // Skipping moves on without logging anything.
+  await page.getByRole("link", { name: "Skip for now" }).click();
+  await expect(page.getByRole("form", { name: "Log contact with Ana Lopez" })).toBeVisible();
+
+  // The list shows both outcomes.
+  await page.goto(page.url().replace(/\/canvass.*$/, ""));
+  await expect(rows.nth(1)).toContainText("Reached");
+  await expect(rows.nth(1)).toContainText("1 · Strong support");
+  await expect(rows.nth(1)).toContainText("Note: Wants a yard sign");
+  await expect(rows.nth(2)).toContainText("Not home");
 
   // The dashboard counts both attempts.
   await page.getByRole("link", { name: "Dashboard" }).click();
-  const precinct = page.getByRole("table", { name: "By precinct" }).getByRole("row").filter({ hasText: "P-99" });
+  const precinct = page.getByRole("table", { name: "By precinct", exact: true }).getByRole("row").filter({ hasText: "P-99" });
   await expect(precinct.getByRole("cell")).toHaveText(["P-99", "4", "50%", "2", "1", "50%", "1"]);
-  const list = page.getByRole("table", { name: "By list" }).getByRole("row").filter({ hasText: "E2E turf" });
-  await expect(list.getByRole("cell")).toHaveText(["E2E turf", "Door knocking", "Robin Test", "2 / 4", "2", "1", "50%"]);
+  const list = page.getByRole("table", { name: "By list", exact: true }).getByRole("row").filter({ hasText: "E2E turf" });
+  await expect(list.getByRole("cell").nth(1)).toHaveText("2 / 4");
+  await expect(list.getByRole("cell").nth(2)).toHaveText("50%");
+});
+
+test("the voter table searches, filters and sorts", async ({ page }) => {
+  await page.goto("/voters");
+  const table = page.getByRole("table", { name: "Voters", exact: true });
+  await expect(table.getByRole("row")).toHaveCount(26);
+
+  await page.getByRole("searchbox", { name: "Search voters" }).fill("RV000001");
+  await expect(table.getByRole("row")).toHaveCount(2);
+  await expect(page).toHaveURL(/q=RV000001/);
+
+  await page.getByRole("button", { name: "Clear" }).click();
+  await page.getByLabel("Precinct").selectOption("P-03");
+  await expect(page).toHaveURL(/precinct=P-03/);
+
+  await table.getByRole("link", { name: "Age" }).click();
+  await expect(page).toHaveURL(/sort=age&dir=asc/);
+  await expect(table.getByRole("columnheader", { name: "Age" })).toHaveAttribute("aria-sort", "ascending");
+  const ages = await table.getByRole("row").locator("td:nth-child(4)").allTextContents();
+  expect(ages.map(Number)).toEqual([...ages.map(Number)].sort((a, b) => a - b));
 });
 
 test("the intro page leads into the demo", async ({ page }) => {
@@ -86,22 +108,24 @@ test("the intro page leads into the demo", async ({ page }) => {
 
 test("on a phone, the menu opens full height and nothing scrolls sideways", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/dashboard");
-  await expect(page.getByRole("table", { name: "By precinct" })).toBeVisible();
-  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+  for (const url of ["/", "/dashboard", "/voters", "/lists/new"]) {
+    await page.goto(url);
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth), url).toBeLessThanOrEqual(390);
+  }
 
+  await page.goto("/dashboard");
   await page.getByRole("button", { name: "Open menu" }).click();
-  await page.getByRole("link", { name: "Lists", exact: true }).click();
+  await page.getByRole("navigation", { name: "Mobile" }).getByRole("link", { name: "Lists", exact: true }).click();
 
   await expect(page.getByRole("heading", { name: "Lists", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "Open menu" })).toBeVisible();
 });
 
-test("the segment builder explains a bad range instead of guessing", async ({ page }) => {
+test("the list builder explains a bad range instead of guessing", async ({ page }) => {
   await page.goto("/lists/new");
   await page.getByLabel("Minimum support score").fill("80");
   await page.getByLabel("Maximum support score").fill("20");
-  await page.getByRole("button", { name: "Preview" }).click();
 
   // Next adds its own empty role="alert" (the route announcer), so match on the text.
   await expect(page.getByRole("alert").filter({ hasText: "Minimum score is above maximum score" })).toBeVisible();

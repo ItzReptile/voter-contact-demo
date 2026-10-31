@@ -2,7 +2,7 @@
 import type { ReactNode } from "react";
 
 function Bone({ className }: { className: string }) {
-  return <div className={`animate-skeleton rounded-lg bg-raised ${className}`} />;
+  return <div className={`animate-skeleton rounded-md bg-hover ${className}`} />;
 }
 
 function Loading({ label, children }: { label: string; children: ReactNode }) {
@@ -14,15 +14,22 @@ function Loading({ label, children }: { label: string; children: ReactNode }) {
   );
 }
 
-function CardBones({ rows }: { rows: number }) {
+function TableBones({ rows }: { rows: number }) {
   return (
-    <div className="rounded-2xl border border-line bg-surface p-4 sm:p-6">
-      <Bone className="mb-6 h-6 w-40" />
-      <div className="grid gap-4">
-        {Array.from({ length: rows }, (_, i) => (
-          <Bone key={i} className="h-4 w-full" />
+    <div className="overflow-hidden rounded-xl border border-line">
+      <div className="flex gap-6 bg-subtle px-4 py-3">
+        {["w-24", "w-32", "w-16", "w-20"].map((width) => (
+          <Bone key={width} className={`h-3 ${width}`} />
         ))}
       </div>
+      {Array.from({ length: rows }, (_, i) => (
+        <div key={i} className="flex items-center gap-6 border-t border-line-soft px-4 py-4">
+          <Bone className="h-4 w-40" />
+          <Bone className="h-4 w-48" />
+          <Bone className="h-4 w-12" />
+          <Bone className="ml-auto h-4 w-16" />
+        </div>
+      ))}
     </div>
   );
 }
@@ -30,27 +37,53 @@ function CardBones({ rows }: { rows: number }) {
 export function TableSkeleton({ rows = 8, label = "Loading" }: { rows?: number; label?: string }) {
   return (
     <Loading label={label}>
-      <CardBones rows={rows} />
+      <TableBones rows={rows} />
     </Loading>
+  );
+}
+
+function CardBones({ className = "h-64" }: { className?: string }) {
+  return (
+    <div className="rounded-xl border border-line p-6">
+      <Bone className="mb-6 h-4 w-40" />
+      <Bone className={`w-full ${className}`} />
+    </div>
   );
 }
 
 export function DashboardSkeleton() {
   return (
     <Loading label="Loading the dashboard">
-      <div className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-        {Array.from({ length: 5 }, (_, i) => (
-          <div key={i} className="rounded-2xl border border-line bg-surface p-4">
-            <Bone className="mb-4 h-4 w-24" />
-            <Bone className="h-8 w-16" />
+      <div className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {Array.from({ length: 4 }, (_, i) => (
+          <div key={i} className="rounded-xl border border-line p-6">
+            <Bone className="mb-4 h-3 w-24" />
+            <Bone className="mb-4 h-8 w-20" />
+            <Bone className="h-8 w-full" />
           </div>
         ))}
       </div>
-      <div className="mb-6 grid gap-4 md:grid-cols-2">
-        <CardBones rows={3} />
-        <CardBones rows={5} />
+      <div className="mb-6 grid gap-4 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <CardBones className="h-64" />
+        </div>
+        <CardBones className="h-64" />
       </div>
-      <CardBones rows={8} />
+      <TableBones rows={5} />
+    </Loading>
+  );
+}
+
+export function BuilderSkeleton() {
+  return (
+    <Loading label="Loading the list builder">
+      <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
+        <CardBones className="h-96" />
+        <div className="grid gap-6">
+          <CardBones className="h-24" />
+          <TableBones rows={6} />
+        </div>
+      </div>
     </Loading>
   );
 }
@@ -58,19 +91,41 @@ export function DashboardSkeleton() {
 export function ListDetailSkeleton() {
   return (
     <Loading label="Loading the list">
-      <Bone className="mb-2 h-9 w-72 max-w-full" />
-      <Bone className="mb-8 h-4 w-96 max-w-full" />
-      <div className="mb-6 grid gap-4 md:grid-cols-[2fr_1fr]">
-        <CardBones rows={1} />
-        <CardBones rows={1} />
-      </div>
-      <div className="grid gap-2">
-        {Array.from({ length: 5 }, (_, i) => (
-          <div key={i} className="rounded-2xl border border-line bg-surface p-4">
-            <Bone className="mb-4 h-5 w-64 max-w-full" />
-            <Bone className="h-9 w-full" />
+      <Bone className="mb-2 h-3 w-24" />
+      <Bone className="mb-8 h-8 w-80 max-w-full" />
+      <div className="mb-6 grid gap-4 sm:grid-cols-4">
+        {Array.from({ length: 4 }, (_, i) => (
+          <div key={i} className="rounded-xl border border-line p-4">
+            <Bone className="mb-3 h-3 w-16" />
+            <Bone className="h-6 w-12" />
           </div>
         ))}
+      </div>
+      <TableBones rows={6} />
+    </Loading>
+  );
+}
+
+export function CanvassSkeleton() {
+  return (
+    <Loading label="Loading the next voter">
+      <div className="mx-auto max-w-xl">
+        <Bone className="mb-4 h-3 w-32" />
+        <Bone className="mb-8 h-2 w-full" />
+        <div className="rounded-2xl border border-line p-6">
+          <Bone className="mb-3 h-3 w-24" />
+          <Bone className="mb-2 h-7 w-56" />
+          <Bone className="mb-8 h-5 w-40" />
+          <div className="grid grid-cols-5 gap-2">
+            {Array.from({ length: 5 }, (_, i) => (
+              <Bone key={i} className="h-16" />
+            ))}
+          </div>
+          <div className="mt-2 grid grid-cols-2 gap-2">
+            <Bone className="h-12" />
+            <Bone className="h-12" />
+          </div>
+        </div>
       </div>
     </Loading>
   );

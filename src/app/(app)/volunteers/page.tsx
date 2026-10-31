@@ -4,7 +4,7 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { TableSkeleton } from "@/components/skeletons";
-import { Card, EmptyState, linkClass, Num, PageHeader, Table } from "@/components/ui";
+import { EmptyState, Num, PageHeader, Table } from "@/components/ui";
 import { formatNumber, formatPercent, rate } from "@/lib/format";
 import { listVolunteers } from "@/lib/volunteers";
 import { AddVolunteerForm } from "./add-volunteer-form";
@@ -16,11 +16,11 @@ export default function VolunteersPage() {
     <>
       <PageHeader
         title="Volunteers"
-        description="Attempts are credited to whoever a list is assigned to when the contact is logged."
+        description="Attempts are credited to whoever a list is assigned to when the contact is logged. Open a volunteer to see their lists."
       />
-      <Card title="Add a volunteer" className="mb-6">
+      <div className="mb-6 rounded-xl border border-line bg-subtle p-4">
         <AddVolunteerForm />
-      </Card>
+      </div>
       <Suspense fallback={<TableSkeleton rows={5} label="Loading volunteers" />}>
         <VolunteerTable />
       </Suspense>
@@ -41,7 +41,7 @@ async function VolunteerTable() {
   }
 
   return (
-    <Card>
+    <div className="overflow-hidden rounded-xl border border-line">
       <Table label="Volunteers">
         <thead>
           <tr>
@@ -56,7 +56,14 @@ async function VolunteerTable() {
           {volunteers.map((volunteer) => (
             <tr key={volunteer.id}>
               <td className="whitespace-nowrap">
-                <Link href={`/volunteers/${volunteer.id}`} className={linkClass}>
+                <Link href={`/volunteers/${volunteer.id}`} className="flex items-center gap-3 body-5 hover:underline">
+                  <span aria-hidden className="flex size-8 items-center justify-center rounded-full bg-accent-tint caption-3 text-accent-ink">
+                    {volunteer.name
+                      .split(" ")
+                      .map((part) => part[0])
+                      .slice(0, 2)
+                      .join("")}
+                  </span>
                   {volunteer.name}
                 </Link>
               </td>
@@ -68,6 +75,6 @@ async function VolunteerTable() {
           ))}
         </tbody>
       </Table>
-    </Card>
+    </div>
   );
 }

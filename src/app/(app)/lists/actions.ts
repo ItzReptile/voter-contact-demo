@@ -3,7 +3,8 @@
 import { refresh } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
-import { contactSchema, logContact } from "@/lib/contacts";
+import { OUTCOME_LABELS, SUPPORT_LABELS } from "@/lib/constants";
+import { contactSchema, logContact, parseCanvassChoice } from "@/lib/contacts";
 import { UserError } from "@/lib/db";
 import { assignList, createList } from "@/lib/lists";
 import { listKindSchema, segmentSchema } from "@/lib/segments";
@@ -59,25 +60,34 @@ export async function assignListAction(formData: FormData): Promise<void> {
   refresh();
 }
 
-export type ContactFormState = { status: "idle" | "saved" | "error"; message?: string; savedCount: number };
+export type CanvassState =
+  | { status: "idle" }
+  | { status: "saved"; message: string }
+  | { status: "error"; message: string };
 
-export async function logContactAction(previous: ContactFormState, formData: FormData): Promise<ContactFormState> {
+/** One tap in the canvass view: the clicked button's "choice" says the outcome and support ID. */
+export async function logCanvassAction(_previous: CanvassState, formData: FormData): Promise<CanvassState> {
+  const choice = parseCanvassChoice(formData.get("choice"));
+  if (!choice) return { status: "error", message: "Pick an outcome for this voter." };
+
   const parsed = contactSchema.safeParse({
     listId: formData.get("listId"),
     voterId: formData.get("voterId"),
-    outcome: formData.get("outcome"),
-    support: formData.get("support"),
+    outcome: choice.outcome,
+    support: choice.support,
     notes: formData.get("notes"),
   });
-  if (!parsed.success) return { ...previous, status: "error", message: parsed.error.issues[0].message };
+  if (!parsed.success) return { status: "error", message: parsed.error.issues[0].message };
 
   try {
     await logContact(parsed.data);
   } catch (error) {
-    if (error instanceof UserError) return { ...previous, status: "error", message: error.message };
+    if (error instanceof UserError) return { status: "error", message: error.message };
     throw error;
   }
 
   refresh();
-  return { status: "saved", savedCount: previous.savedCount + 1 };
+  const who = String(formData.get("voterName") ?? "the voter");
+  const what = choice.support ? `${OUTCOME_LABELS.reached}, ${SUPPORT_LABELS[choice.support].toLowerCase()}` : OUTCOME_LABELS[choice.outcome];
+  return { status: "saved", message: `Saved for ${who}: ${what}.` };
 }
