@@ -7,7 +7,7 @@ import { useFormStatus } from "react-dom";
 import { ghostButtonClass, Hanger, InlineError, inputClass, Tag } from "@/components/ui";
 import { PARTY_LABELS, SUPPORT_LABELS, SUPPORT_LEVELS, type ListKind, type Party } from "@/lib/constants";
 import { formatNumber, formatPhone } from "@/lib/format";
-import { logCanvassAction, undoCanvassAction, type CanvassState } from "../../actions";
+import { logCanvassAction, undoCanvassAction, type CanvassState } from "./actions";
 
 type Voter = {
   id: number;
@@ -104,18 +104,8 @@ export function CanvassCard({ listId, kind, size, voter }: { listId: number; kin
             ) : null}
           </p>
           {state.status === "saved" && (
-            <form action={formAction} className="flex shrink-0">
-              <input type="hidden" name="contactId" value={state.contactId} />
-              <input type="hidden" name="voterName" value={state.voterName} />
-              {/* 44px to tap, 20px in the layout, so the slot keeps its height. */}
-              <button
-                type="submit"
-                disabled={pending}
-                className={`-my-3 -mr-2 inline-flex min-h-11 items-center rounded-md px-2 button-sm text-indigo underline decoration-indigo/30 underline-offset-4 hover:decoration-indigo ${press}`}
-              >
-                Undo
-              </button>
-            </form>
+            // key: each save gets its own Undo, with its own clock.
+            <UndoForm key={state.contactId} action={formAction} contactId={state.contactId} voterName={state.voterName} pending={pending} />
           )}
         </div>
         {state.status === "error" && <InlineError>{state.message}</InlineError>}
@@ -235,6 +225,44 @@ function NotesField() {
         className={`${inputClass} h-auto w-full py-2 max-sm:h-auto`}
       />
     </label>
+  );
+}
+
+// The server takes an undo for 2 minutes after a tap (undoContact). The button goes a little
+// earlier, so a tap on it never arrives too late.
+const UNDO_SECONDS = 110;
+
+function UndoForm({
+  action,
+  contactId,
+  voterName,
+  pending,
+}: {
+  action: (formData: FormData) => void;
+  contactId: number;
+  voterName: string;
+  pending: boolean;
+}) {
+  const [open, setOpen] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setOpen(false), UNDO_SECONDS * 1000);
+    return () => clearTimeout(timer);
+  }, []);
+  if (!open) return null;
+
+  return (
+    <form action={action} className="flex shrink-0">
+      <input type="hidden" name="contactId" value={contactId} />
+      <input type="hidden" name="voterName" value={voterName} />
+      {/* 44px to tap, 20px in the layout, so the slot keeps its height. */}
+      <button
+        type="submit"
+        disabled={pending}
+        className={`-my-3 -mr-2 inline-flex min-h-11 items-center rounded-md px-2 button-sm text-indigo underline decoration-indigo/30 underline-offset-4 hover:decoration-indigo ${press}`}
+      >
+        Undo
+      </button>
+    </form>
   );
 }
 

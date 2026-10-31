@@ -41,8 +41,10 @@ src/lib/              all domain logic and data access, one file per area
   chart.ts display.ts axis scaling and sparklines; tag tones and chart colors per outcome (pure)
 src/app/              routes; each route's Server Actions live in its actions.ts
   (site)/             intro page and privacy: plain header, footer (static, no database)
-  (app)/              the product: sidebar shell (layout.tsx), dashboard, voters (+ import),
-                      lists (+ new, [id], [id]/canvass), volunteers (+ [id] "my lists")
+  (app)/              the organizer app: header shell (layout.tsx), dashboard, voters (+ import),
+                      lists (+ new, [id]), volunteers (+ [id] "my lists")
+  (volunteer)/        volunteer mode: lists/[id]/canvass, phone first, its own slim bar instead
+                      of the organizer header (same URL; a route group only changes the layout)
   api/reset-demo/     nightly reset, called by Vercel Cron (vercel.json)
   globals.css         design tokens and the named text styles
 src/components/       ui.tsx (buttons, cards, tables, tags, empty and error states), skeletons,

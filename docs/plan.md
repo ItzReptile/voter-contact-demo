@@ -95,7 +95,7 @@ The segment builder is a plain GET form: the filters live in the URL, the server
 | `/lists` | All lists with progress; assign a volunteer |
 | `/lists/new` | List builder: filters on the left, live count, preview and "Create list" on the right |
 | `/lists/[id]` | The organizer view: stats, volunteer, voters in order with their latest outcome |
-| `/lists/[id]/canvass` | The volunteer view: one voter at a time, one tap per outcome, skip, progress |
+| `/lists/[id]/canvass` | Volunteer mode (its own layout, no organizer header): one voter at a time, one tap per outcome, undo, skip, progress |
 | `/volunteers`, `/volunteers/[id]` | Add volunteers; each volunteer's "my lists" with a button to continue canvassing |
 | `/privacy` | What the demo stores (only generated data, plus whatever visitors type until the nightly reset) |
 | `/api/reset-demo` | Nightly reset for the hosted demo, called by Vercel Cron with `CRON_SECRET` |

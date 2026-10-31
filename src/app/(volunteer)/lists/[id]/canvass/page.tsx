@@ -4,12 +4,17 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense, type ReactNode } from "react";
 import { CanvassSkeleton } from "@/components/skeletons";
-import { BackLink, buttonClass, Hanger, Meter } from "@/components/ui";
+import { buttonClass, Hanger, Meter } from "@/components/ui";
 import { formatNumber } from "@/lib/format";
 import { getCanvassState, getListSummary } from "@/lib/lists";
 import { CanvassCard } from "./canvass-card";
 
-export const metadata: Metadata = { title: "Canvass" };
+// The tab says which list, so a volunteer with two open can tell them apart. The page itself
+// waits on connection() inside <Suspense>, which lets this metadata read the database.
+export async function generateMetadata({ params }: PageProps<"/lists/[id]/canvass">): Promise<Metadata> {
+  const list = await getListSummary(Number((await params).id) || 0);
+  return { title: list ? `Canvass: ${list.name}` : "Canvass" };
+}
 
 // The volunteer view: one voter at a time, in walk or call order, logged with one tap.
 export default function CanvassPage(props: PageProps<"/lists/[id]/canvass">) {
@@ -33,14 +38,13 @@ async function Canvass({ params, searchParams }: PageProps<"/lists/[id]/canvass"
   const door = list.kind === "door";
 
   return (
-    <div className="mx-auto max-w-md">
-      {/* Kept short: on a phone the hanger's support buttons should fit without scrolling. */}
-      <div className="flex flex-wrap items-center justify-between gap-x-4">
-        <div className="min-w-0 flex-1 basis-32">
-          <BackLink href={`/lists/${list.id}`} title={list.name}>
-            {list.name}
-          </BackLink>
-        </div>
+    <div>
+      {/* Kept short: on a phone the hanger's support buttons should fit without scrolling.
+          The way back to the organizer app is in the volunteer mode bar above. */}
+      <div className="flex min-h-8 flex-wrap items-center justify-between gap-x-4">
+        <p title={list.name} className="min-w-0 flex-1 basis-32 truncate caption-1 text-muted">
+          {list.name}
+        </p>
         <p className="caption-2 whitespace-nowrap text-muted tabular-nums">
           <span className="heading-6 text-ink">{formatNumber(attempted)}</span> of {formatNumber(list.size)} attempted
         </p>

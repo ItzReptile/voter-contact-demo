@@ -15,7 +15,7 @@ One loop of a field program:
 3. **Build a segment** (`/lists/new`). Filter by precinct, party, age range, support score range, and contact history (never attempted / not yet reached). The match count and a preview update as you change filters.
 4. **Cut a list.** A list is a snapshot of who matched, numbered in **walk order** for doors (precinct, street, house number) or alphabetically for calls. Phone lists leave out voters with no number.
 5. **Assign it to a volunteer** (`/lists`, or on the list). Contacts can't be logged on an unassigned list, so every attempt is credited to someone.
-6. **Canvass** (`/lists/[id]/canvass`, or from a volunteer's "my lists" page). One voter at a time in list order: one tap logs a conversation with a 1 to 5 support ID (1 = strong support), not home, or moved/wrong number, with an optional note, and moves to the next door. Every attempt is kept, so a not-home can be knocked again.
+6. **Canvass** (`/lists/[id]/canvass`, or from a volunteer's "my lists" page). Volunteer mode: a phone first page without the organizer's header, with one way back. One voter at a time in list order: one tap logs a conversation with a 1 to 5 support ID (1 = strong support), not home, or moved/wrong number, with an optional note, and moves to the next door. A mis-tap can be undone for 2 minutes. Every attempt is kept, so a not-home can be knocked again.
 7. **Report** (`/dashboard`). Contact rate (conversations ÷ attempts), attempts per day by outcome, support IDs, contact rate by precinct, and progress by list.
 
 The home page (`/`) explains the demo and links into it.

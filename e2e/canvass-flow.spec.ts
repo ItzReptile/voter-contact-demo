@@ -60,8 +60,9 @@ test("import a file, cut a turf, assign it, canvass it, see it on the dashboard"
   await page.getByRole("link", { name: "Skip for now" }).click();
   await expect(page.getByRole("form", { name: "Log contact with Ana Lopez" })).toBeVisible();
 
-  // The list shows both outcomes.
-  await page.goto(page.url().replace(/\/canvass.*$/, ""));
+  // Volunteer mode has no organizer header; one link leads back to the list, which shows both outcomes.
+  await expect(page.getByRole("navigation", { name: "Main" })).toHaveCount(0);
+  await page.getByRole("link", { name: "Organizer view" }).click();
   await expect(rows.nth(1)).toContainText("Reached");
   await expect(rows.nth(1)).toContainText("1 · Strong support");
   await expect(rows.nth(1)).toContainText("Note: Wants a yard sign");
