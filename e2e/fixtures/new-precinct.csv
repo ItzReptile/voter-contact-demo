@@ -1,0 +1,6 @@
+voter_id,first_name,last_name,address,city,zip,precinct,age,party,phone,support_score
+E2E-1,Ana,Lopez,22 Birch St,Riverbend,48990,P-99,34,DEM,(555) 300-0001,72
+E2E-2,Ben,Okafor,10 Birch St,Riverbend,48990,P-99,51,NPA,,48
+E2E-3,Cara,Nguyen,5 Aspen Ct,Riverbend,48990,P-99,67,DEM,555-300-0003,88
+E2E-4,Dev,Patel,14 Birch St,Riverbend,48990,P-99,29,REP,5553000004,22
+E2E-5,Eli,Brooks,7 Aspen Ct,Riverbend,48990,P-99,17,DEM,,90
