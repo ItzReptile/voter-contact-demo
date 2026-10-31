@@ -53,16 +53,18 @@ export function TableSkeleton({ rows = 8, label = "Loading" }: { rows?: number; 
 }
 
 
-// Matches the dashboard: the hanger beside the daily chart, support and lists, then precinct tags.
+// Matches the dashboard: the conversations hanger beside the daily chart, support and lists, then precinct tags.
 export function DashboardSkeleton() {
   return (
     <Loading label="Loading the dashboard">
       <div className="mb-12 grid grid-cols-[minmax(0,1fr)] gap-12 md:grid-cols-[18rem_minmax(0,1fr)] lg:grid-cols-[22rem_minmax(0,1fr)]">
-        <div className="relative h-[29rem] rounded-3xl border border-line bg-paper">
-          <span className="absolute top-4 left-1/2 size-8 -translate-x-1/2 rounded-full border border-line bg-stock" />
-          <div className="px-6 pt-20">
-            <Bone className="mb-4 h-24 w-40" />
+        <div className="relative h-[29rem] overflow-hidden rounded-3xl border border-line bg-paper pt-16">
+          <HangerTop />
+          <div className="h-48 bg-orange" />
+          <div className="grid gap-2 px-6 pt-6">
+            <Bone className="h-9 w-40" />
             <Bone className="h-4 w-48" />
+            <Bone className="mt-3 h-4 w-44" />
           </div>
         </div>
         <div>
@@ -179,7 +181,7 @@ export function CanvassSkeleton() {
   return (
     <Loading label="Loading the next voter">
       <div className="mx-auto max-w-md">
-        <div className="flex h-11 items-center justify-between gap-4">
+        <div className="flex h-8 items-center justify-between gap-4">
           <Bone className="h-4 w-32" />
           <Bone className="h-5 w-28" />
         </div>

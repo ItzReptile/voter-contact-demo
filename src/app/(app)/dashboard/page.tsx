@@ -66,7 +66,7 @@ async function Dashboard() {
   return (
     <div className="flex min-w-0 flex-col gap-12 lg:gap-16">
       <div className="grid grid-cols-[minmax(0,1fr)] gap-12 md:grid-cols-[18rem_minmax(0,1fr)] lg:grid-cols-[22rem_minmax(0,1fr)]">
-        <ContactRate totals={totals} />
+        <Conversations totals={totals} />
 
         <section aria-labelledby="dashboard-attempts" className="flex min-w-0 flex-col justify-between gap-8">
           <div className="flex flex-wrap items-start justify-between gap-x-8 gap-y-4">
@@ -223,10 +223,14 @@ async function Dashboard() {
  * The one loud thing: the contact rate printed on a door hanger, in indigo, with the
  * conversations on an orange band underneath, the way the real hanger prints its message.
  */
-function ContactRate({ totals }: { totals: Totals }) {
+/**
+ * The hanger at the top of the dashboard: conversations first, because that is the number a
+ * field organizer reports, printed on orange, the conversation ink. The contact rate supports it.
+ */
+function Conversations({ totals }: { totals: Totals }) {
   return (
-    <section aria-label="Contact rate" className="min-w-0">
-      <Hanger className="@container flex h-full flex-col pb-6">
+    <section aria-label="Conversations" className="min-w-0">
+      <Hanger className="@container flex h-full flex-col overflow-hidden pb-6">
         {totals.attempts === 0 ? (
           <div className="px-6">
             <h2 className="heading-4">No attempts yet</h2>
@@ -239,19 +243,18 @@ function ContactRate({ totals }: { totals: Totals }) {
           </div>
         ) : (
           <>
-            <p className="px-6">
-              {/* 128px once the hanger is wide enough for "100%", 96px on narrow hangers. */}
-              <span className="block figure text-8xl text-indigo @[21rem]:text-9xl">
-                {formatPercent(rate(totals.conversations, totals.attempts))}
-              </span>
-              <span className="mt-3 block title-2">
-                of {plural(totals.attempts, "knock or call", "knocks and calls")} became a conversation.
-              </span>
+            <p className="bg-orange px-6 pt-5 pb-6 text-ink">
+              {/* 128px once the hanger is wide enough for four digits, 96px on narrow hangers. */}
+              <span className="block figure text-8xl @[21rem]:text-9xl">{formatNumber(totals.conversations)}</span>
+              <span className="mt-2 block title-2">{totals.conversations === 1 ? "conversation" : "conversations"}</span>
             </p>
-            <p className="mt-6 bg-orange px-6 py-3 title-3 text-ink">
-              <span className="block">{plural(totals.conversations, "conversation", "conversations")}</span>
-              <span className="block">{plural(totals.supporters, "supporter", "supporters")} identified</span>
-            </p>
+            <div className="mt-6 grid gap-1 px-6">
+              <p className="title-2">
+                <span className="figure text-4xl text-indigo">{formatPercent(rate(totals.conversations, totals.attempts))}</span> contact rate
+              </p>
+              <p className="body-6 text-ink-2">from {plural(totals.attempts, "knock or call", "knocks and calls")}</p>
+              <p className="mt-3 body-4">{plural(totals.supporters, "supporter", "supporters")} identified</p>
+            </div>
           </>
         )}
         <p className="mt-auto px-6 pt-6 caption-2 text-muted">
