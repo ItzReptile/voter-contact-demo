@@ -36,7 +36,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 
 // Doors: most people aren't home. Phones: more wrong numbers.
 const OUTCOME_ODDS: Record<ListKind, [Outcome, number][]> = {
-  door: [["reached", 0.32], ["not_home", 0.62], ["wrong_number", 0.06]],
+  door: [["reached", 0.32], ["not_home", 0.62], ["moved", 0.06]],
   phone: [["reached", 0.22], ["not_home", 0.58], ["wrong_number", 0.2]],
 };
 
@@ -112,8 +112,8 @@ export async function seedDemoData(log: (message: string) => void = console.log)
             notes:
               reached && faker.datatype.boolean({ probability: 0.25 })
                 ? faker.helpers.arrayElement(CONVERSATION_NOTES)
-                : outcome === "wrong_number" && plan.kind === "door"
-                  ? "Moved; new residents"
+                : outcome === "moved"
+                  ? "New residents"
                   : undefined,
           },
           { at },

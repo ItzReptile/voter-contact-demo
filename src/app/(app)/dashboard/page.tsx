@@ -15,7 +15,7 @@ import { getListSummaries } from "@/lib/lists";
 
 export const metadata: Metadata = { title: "Dashboard" };
 
-const OUTCOME_SERIES: Series<Outcome>[] = (["reached", "not_home", "wrong_number"] as const).map((key) => ({
+const OUTCOME_SERIES: Series<Outcome>[] = (["reached", "not_home", "moved", "wrong_number"] as const).map((key) => ({
   key,
   label: SHORT_OUTCOME_LABELS[key],
   color: OUTCOME_COLORS[key],
@@ -57,10 +57,11 @@ async function Dashboard() {
     );
   }
 
-  const attemptsPerDay = days.map((day) => day.reached + day.not_home + day.wrong_number);
+  const attemptsPerDay = days.map((day) => day.reached + day.not_home + day.moved + day.wrong_number);
   const outcomeTotals = {
     reached: days.reduce((sum, day) => sum + day.reached, 0),
     not_home: days.reduce((sum, day) => sum + day.not_home, 0),
+    moved: days.reduce((sum, day) => sum + day.moved, 0),
     wrong_number: days.reduce((sum, day) => sum + day.wrong_number, 0),
   };
   const ids = SUPPORT_LEVELS.reduce((sum, level) => sum + supports[level], 0);

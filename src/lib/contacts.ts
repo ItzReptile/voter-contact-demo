@@ -22,11 +22,11 @@ export type ContactInput = z.infer<typeof contactSchema>;
 /**
  * The canvass view logs a contact with one tap. Each button sends a choice:
  * "reached:1" to "reached:5" (a conversation with a support ID), "reached" (no ID),
- * "not_home" or "wrong_number". Returns null for anything else.
+ * "not_home", "moved" or "wrong_number". Returns null for anything else.
  */
 export function parseCanvassChoice(choice: unknown): { outcome: (typeof OUTCOMES)[number]; support?: number } | null {
   if (typeof choice !== "string") return null;
-  const match = choice.match(/^(reached|not_home|wrong_number)(?::([1-5]))?$/);
+  const match = choice.match(/^(reached|not_home|moved|wrong_number)(?::([1-5]))?$/);
   if (!match) return null;
   const [, outcome, support] = match;
   if (support && outcome !== "reached") return null;

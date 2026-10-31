@@ -34,7 +34,7 @@ export async function getOutcomeCounts(): Promise<Record<Outcome, number>> {
   const rows = await query<{ outcome: Outcome; count: number }>(
     "select outcome, count(*)::int as count from contacts group by outcome",
   );
-  const counts: Record<Outcome, number> = { reached: 0, not_home: 0, wrong_number: 0 };
+  const counts: Record<Outcome, number> = { reached: 0, not_home: 0, moved: 0, wrong_number: 0 };
   for (const row of rows) counts[row.outcome] = row.count;
   return counts;
 }
@@ -57,7 +57,7 @@ export async function getPrecinctStats(): Promise<PrecinctStats[]> {
 /** The campaign's local time zone: "a day" on the dashboard is a day here. */
 export const CAMPAIGN_TIME_ZONE = "America/Detroit";
 
-export type DayCounts = { day: string; reached: number; not_home: number; wrong_number: number };
+export type DayCounts = { day: string } & Record<Outcome, number>;
 
 /** Attempts per day by outcome for the last `days` days, including days with none. */
 export async function getAttemptsByDay(days = 14): Promise<DayCounts[]> {
@@ -72,6 +72,7 @@ export async function getAttemptsByDay(days = 14): Promise<DayCounts[]> {
      select to_char(d.day, 'YYYY-MM-DD') as day,
             (count(c.id) filter (where c.outcome = 'reached'))::int as reached,
             (count(c.id) filter (where c.outcome = 'not_home'))::int as not_home,
+            (count(c.id) filter (where c.outcome = 'moved'))::int as moved,
             (count(c.id) filter (where c.outcome = 'wrong_number'))::int as wrong_number
      from days d
      left join contacts c on (c.created_at at time zone $2)::date = d.day

@@ -7,6 +7,7 @@ describe("parseCanvassChoice", () => {
     ["reached:5", { outcome: "reached", support: 5 }],
     ["reached", { outcome: "reached" }],
     ["not_home", { outcome: "not_home" }],
+    ["moved", { outcome: "moved" }],
     ["wrong_number", { outcome: "wrong_number" }],
   ])("reads %s", (choice, expected) => {
     expect(parseCanvassChoice(choice)).toEqual(expected);

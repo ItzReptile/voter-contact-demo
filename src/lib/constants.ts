@@ -32,12 +32,14 @@ export const LIST_KIND_LABELS: Record<ListKind, string> = {
   phone: "Phone calls",
 };
 
-export const OUTCOMES = ["reached", "not_home", "wrong_number"] as const;
+// "moved" is for doors (the voter no longer lives there), "wrong_number" for calls.
+export const OUTCOMES = ["reached", "not_home", "moved", "wrong_number"] as const;
 export type Outcome = (typeof OUTCOMES)[number];
 export const OUTCOME_LABELS: Record<Outcome, string> = {
   reached: "Reached",
-  not_home: "Not home / no answer",
-  wrong_number: "Wrong number / moved",
+  not_home: "Not home",
+  moved: "Moved",
+  wrong_number: "Wrong number",
 };
 
 // The 1-5 support ID recorded in a conversation. 1 is best for our side.

@@ -54,7 +54,7 @@ create table contacts (
   list_id      integer not null,
   voter_id     integer not null,
   volunteer_id integer references volunteers (id) on delete set null,
-  outcome      text not null check (outcome in ('reached', 'not_home', 'wrong_number')),
+  outcome      text not null check (outcome in ('reached', 'not_home', 'moved', 'wrong_number')),
   -- 1 = strong support ... 5 = strong oppose. Only recorded in a conversation.
   support      integer check (support between 1 and 5),
   notes        text,

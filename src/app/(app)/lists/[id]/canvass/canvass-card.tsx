@@ -100,7 +100,7 @@ export function CanvassCard({ listId, kind, size, voter }: { listId: number; kin
             <button type="submit" name="choice" value="not_home" className={`min-h-12 rounded-xl border border-orange/40 bg-orange-tint px-2 py-2 button-sm text-orange-ink hover:border-orange ${tap}`}>
               {kind === "door" ? "Not home" : "No answer"}
             </button>
-            <button type="submit" name="choice" value="wrong_number" className={`inline-flex min-h-12 items-center justify-center gap-1 rounded-xl border border-line bg-surface px-2 py-2 button-sm hover:bg-hover ${tap}`}>
+            <button type="submit" name="choice" value={kind === "door" ? "moved" : "wrong_number"} className={`inline-flex min-h-12 items-center justify-center gap-1 rounded-xl border border-line bg-surface px-2 py-2 button-sm hover:bg-hover ${tap}`}>
               {kind === "phone" && <PhoneSlash size={16} aria-hidden />}
               {kind === "door" ? "Moved" : "Wrong number"}
             </button>

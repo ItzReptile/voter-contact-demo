@@ -185,7 +185,7 @@ describe("dashboard", () => {
       conversations: 1,
       supporters: 1,
     });
-    expect(await getOutcomeCounts()).toEqual({ reached: 1, not_home: 1, wrong_number: 1 });
+    expect(await getOutcomeCounts()).toEqual({ reached: 1, not_home: 1, moved: 0, wrong_number: 1 });
     expect(await getPrecinctStats()).toEqual([
       { precinct: "P-01", voters: 2, voters_attempted: 2, attempts: 3, conversations: 1, supporters: 1 },
       { precinct: "P-02", voters: 1, voters_attempted: 0, attempts: 0, conversations: 0, supporters: 0 },
