@@ -2,9 +2,9 @@ import { DatabaseError } from "pg";
 import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import { freshTestDatabase, makeVoter } from "@/dev/fixtures";
 import { logContact } from "./contacts";
-import { getOutcomeCounts, getPrecinctStats, getTotals } from "./dashboard";
+import { getAttemptsByDay, getOutcomeCounts, getPrecinctStats, getTotals } from "./dashboard";
 import { closePool, query, UserError } from "./db";
-import { assignList, createList, getListSummary, getListVoters, previewSegment } from "./lists";
+import { assignList, createList, getCanvassState, getListSummary, getListVoters, previewSegment } from "./lists";
 import { segmentSchema } from "./segments";
 import { addVolunteer } from "./volunteers";
 import { importVoters } from "./voters";
@@ -124,6 +124,20 @@ describe("logging contacts", () => {
     expect(credited).toEqual([{ volunteer_id: volunteer }]);
   });
 
+  it("gives the canvass view the next voter not yet attempted, and supports skipping", async () => {
+    await assignList(listId, await addVolunteer("Robin"));
+    const [a, b] = [await voterId("A"), await voterId("B")];
+
+    expect(await getCanvassState(listId)).toMatchObject({ next: { id: a, position: 1 }, remaining: 2 });
+    expect(await getCanvassState(listId, 1)).toMatchObject({ next: { id: b, position: 2 }, remaining: 2 });
+
+    await logContact({ listId, voterId: a, outcome: "not_home" });
+    expect(await getCanvassState(listId)).toMatchObject({ next: { id: b }, remaining: 1 });
+
+    await logContact({ listId, voterId: b, outcome: "reached", support: 3 });
+    expect(await getCanvassState(listId)).toEqual({ next: null, remaining: 0 });
+  });
+
   it("hides reached voters when asked for remaining only", async () => {
     await assignList(listId, await addVolunteer("Robin"));
     await logContact({ listId, voterId: await voterId("A"), outcome: "reached" });
@@ -183,5 +197,23 @@ describe("dashboard", () => {
       conversations: 1,
       volunteer_name: "Robin",
     });
+  });
+
+  it("counts attempts per day, with empty days included", async () => {
+    await importVoters([makeVoter({ voterFileId: "A" })]);
+    const listId = await createList({ name: "All", kind: "door", segment: everyone });
+    await assignList(listId, await addVolunteer("Robin"));
+    const a = await voterId("A");
+    const daysAgo = (n: number) => new Date(Date.now() - n * 24 * 60 * 60 * 1000);
+    await logContact({ listId, voterId: a, outcome: "not_home" }, { at: daysAgo(2) });
+    await logContact({ listId, voterId: a, outcome: "not_home" }, { at: daysAgo(2) });
+    await logContact({ listId, voterId: a, outcome: "reached" });
+
+    const days = await getAttemptsByDay(7);
+
+    expect(days).toHaveLength(7);
+    expect(days[4]).toMatchObject({ reached: 0, not_home: 2, wrong_number: 0 });
+    expect(days[6]).toMatchObject({ reached: 1, not_home: 0, wrong_number: 0 });
+    expect(days.slice(0, 4).every((day) => day.reached + day.not_home + day.wrong_number === 0)).toBe(true);
   });
 });

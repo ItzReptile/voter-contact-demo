@@ -123,6 +123,35 @@ export async function getListVoters(listId: number, options: { remainingOnly?: b
   );
 }
 
+export type CanvassVoter = VoterRow & { position: number };
+
+/**
+ * The volunteer view works one voter at a time: the next voter in list order, after
+ * `afterPosition` (for skipping), who has no attempt on this list yet.
+ */
+export async function getCanvassState(
+  listId: number,
+  afterPosition = 0,
+): Promise<{ next: CanvassVoter | null; remaining: number }> {
+  const notAttempted =
+    "not exists (select 1 from contacts c where c.list_id = lv.list_id and c.voter_id = lv.voter_id)";
+  const [next, counts] = await Promise.all([
+    query<CanvassVoter>(
+      `select ${VOTER_COLUMNS}, lv.position
+       from list_voters lv join voters v on v.id = lv.voter_id
+       where lv.list_id = $1 and lv.position > $2 and ${notAttempted}
+       order by lv.position
+       limit 1`,
+      [listId, afterPosition],
+    ),
+    query<{ remaining: number }>(
+      `select count(*)::int as remaining from list_voters lv where lv.list_id = $1 and ${notAttempted}`,
+      [listId],
+    ),
+  ]);
+  return { next: next[0] ?? null, remaining: counts[0].remaining };
+}
+
 export async function assignList(listId: number, volunteerId: number | null): Promise<void> {
   const rows = await query<{ id: number }>("update lists set volunteer_id = $2 where id = $1 returning id", [
     listId,

@@ -1,6 +1,7 @@
-import type { Party } from "./constants";
+import type { Outcome, Party } from "./constants";
 import type { VoterInput } from "./csv";
 import { query, withTransaction } from "./db";
+import { buildVoterWhere, voterOrderBy, type VoterFilters } from "./voter-filters";
 
 // Row types mirror the table columns (snake_case). Function inputs are camelCase.
 export type VoterRow = {
@@ -79,11 +80,30 @@ export async function countVoters(): Promise<number> {
   return rows[0].count;
 }
 
-export async function listVoters(limit: number, offset: number): Promise<VoterRow[]> {
-  return query<VoterRow>(
-    `select ${VOTER_COLUMNS} from voters v order by v.last_name, v.first_name, v.id limit $1 offset $2`,
-    [limit, offset],
-  );
+export type VoterTableRow = VoterRow & { last_outcome: Outcome | null; last_contact_at: Date | null };
+
+/** One page of the voter table, with each voter's latest attempt on any list, plus the filtered total. */
+export async function searchVoters(filters: VoterFilters): Promise<{ total: number; rows: VoterTableRow[] }> {
+  const { where, params } = buildVoterWhere(filters);
+  const n = params.length;
+  const [countRows, rows] = await Promise.all([
+    query<{ count: number }>(`select count(*)::int as count from voters v where ${where}`, params),
+    query<VoterTableRow>(
+      `select ${VOTER_COLUMNS}, last.outcome as last_outcome, last.created_at as last_contact_at
+       from voters v
+       left join lateral (
+         select c.outcome, c.created_at from contacts c
+         where c.voter_id = v.id
+         order by c.created_at desc, c.id desc
+         limit 1
+       ) last on true
+       where ${where}
+       order by ${voterOrderBy(filters)}
+       limit $${n + 1} offset $${n + 2}`,
+      [...params, filters.pageSize, (filters.page - 1) * filters.pageSize],
+    ),
+  ]);
+  return { total: countRows[0].count, rows };
 }
 
 export async function listPrecincts(): Promise<string[]> {

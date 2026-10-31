@@ -54,6 +54,33 @@ export async function getPrecinctStats(): Promise<PrecinctStats[]> {
   );
 }
 
+/** The campaign's local time zone: "a day" on the dashboard is a day here. */
+export const CAMPAIGN_TIME_ZONE = "America/Detroit";
+
+export type DayCounts = { day: string; reached: number; not_home: number; wrong_number: number };
+
+/** Attempts per day by outcome for the last `days` days, including days with none. */
+export async function getAttemptsByDay(days = 14): Promise<DayCounts[]> {
+  return query<DayCounts>(
+    `with days as (
+       select generate_series(
+         (now() at time zone $2)::date - ($1::int - 1),
+         (now() at time zone $2)::date,
+         interval '1 day'
+       )::date as day
+     )
+     select to_char(d.day, 'YYYY-MM-DD') as day,
+            (count(c.id) filter (where c.outcome = 'reached'))::int as reached,
+            (count(c.id) filter (where c.outcome = 'not_home'))::int as not_home,
+            (count(c.id) filter (where c.outcome = 'wrong_number'))::int as wrong_number
+     from days d
+     left join contacts c on (c.created_at at time zone $2)::date = d.day
+     group by d.day
+     order by d.day`,
+    [days, CAMPAIGN_TIME_ZONE],
+  );
+}
+
 /** Support IDs recorded in conversations, 1-5. */
 export async function getSupportCounts(): Promise<Record<number, number>> {
   const rows = await query<{ support: number; count: number }>(

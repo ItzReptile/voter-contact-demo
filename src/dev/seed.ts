@@ -19,16 +19,20 @@ type ListPlan = {
   volunteer: number | null;
   // Share of the list (from the top, in walk/call order) that has been worked.
   worked: number;
+  // How many days ago work on this list started; attempts spread from then to today.
+  startedDaysAgo: number;
 };
 
 const LISTS: ListPlan[] = [
-  { name: "P-03 doors · persuadables", kind: "door", segment: { precincts: ["P-03"], minScore: 35, maxScore: 65 }, volunteer: 0, worked: 0.85 },
-  { name: "P-07 doors · persuadables", kind: "door", segment: { precincts: ["P-07"], minScore: 35, maxScore: 65 }, volunteer: 1, worked: 0.5 },
-  { name: "P-01 doors · likely supporters", kind: "door", segment: { precincts: ["P-01"], minScore: 60 }, volunteer: 3, worked: 0.7 },
-  { name: "GOTV calls · supporters 65+", kind: "phone", segment: { minAge: 65, minScore: 75 }, volunteer: 2, worked: 0.6 },
-  { name: "Calls · undecided under 35", kind: "phone", segment: { maxAge: 34, minScore: 40, maxScore: 60 }, volunteer: 4, worked: 0.4 },
-  { name: "P-11 doors · young supporters", kind: "door", segment: { precincts: ["P-11"], maxAge: 34, minScore: 70 }, volunteer: null, worked: 0 },
+  { name: "P-03 doors · persuadables", kind: "door", segment: { precincts: ["P-03"], minScore: 35, maxScore: 65 }, volunteer: 0, worked: 0.85, startedDaysAgo: 13 },
+  { name: "P-07 doors · persuadables", kind: "door", segment: { precincts: ["P-07"], minScore: 35, maxScore: 65 }, volunteer: 1, worked: 0.5, startedDaysAgo: 8 },
+  { name: "P-01 doors · likely supporters", kind: "door", segment: { precincts: ["P-01"], minScore: 60 }, volunteer: 3, worked: 0.7, startedDaysAgo: 6 },
+  { name: "GOTV calls · supporters 65+", kind: "phone", segment: { minAge: 65, minScore: 75 }, volunteer: 2, worked: 0.6, startedDaysAgo: 11 },
+  { name: "Calls · undecided under 35", kind: "phone", segment: { maxAge: 34, minScore: 40, maxScore: 60 }, volunteer: 4, worked: 0.4, startedDaysAgo: 4 },
+  { name: "P-11 doors · young supporters", kind: "door", segment: { precincts: ["P-11"], maxAge: 34, minScore: 70 }, volunteer: null, worked: 0, startedDaysAgo: 0 },
 ];
+
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 // Doors: most people aren't home. Phones: more wrong numbers.
 const OUTCOME_ODDS: Record<ListKind, [Outcome, number][]> = {
@@ -88,26 +92,35 @@ export async function seedDemoData(log: (message: string) => void = console.log)
     await assignList(listId, volunteerIds[plan.volunteer]);
 
     const onList = await getListVoters(listId);
-    for (const voter of onList.slice(0, Math.round(onList.length * plan.worked))) {
-      // A not-home sometimes gets a second knock or call.
+    const worked = onList.slice(0, Math.round(onList.length * plan.worked));
+    const now = Date.now();
+    for (const [index, voter] of worked.entries()) {
+      // Worked in list order, spread evenly from the start day to today, during the afternoon.
+      let daysAgo = plan.startedDaysAgo - Math.floor((index * (plan.startedDaysAgo + 1)) / worked.length);
+      // A not-home sometimes gets a second knock or call, a day or two later.
       const tries = faker.datatype.boolean({ probability: 0.35 }) ? 2 : 1;
       for (let t = 0; t < tries; t++) {
         const outcome = pickOutcome(plan.kind);
         const reached = outcome === "reached";
-        await logContact({
-          listId,
-          voterId: voter.id,
-          outcome,
-          support: reached ? supportFromScore(voter.support_score) : undefined,
-          notes:
-            reached && faker.datatype.boolean({ probability: 0.25 })
-              ? faker.helpers.arrayElement(CONVERSATION_NOTES)
-              : outcome === "wrong_number" && plan.kind === "door"
-                ? "Moved; new residents"
-                : undefined,
-        });
+        const at = new Date(now - daysAgo * DAY_MS - faker.number.int({ min: 0, max: 6 * 60 }) * 60_000);
+        await logContact(
+          {
+            listId,
+            voterId: voter.id,
+            outcome,
+            support: reached ? supportFromScore(voter.support_score) : undefined,
+            notes:
+              reached && faker.datatype.boolean({ probability: 0.25 })
+                ? faker.helpers.arrayElement(CONVERSATION_NOTES)
+                : outcome === "wrong_number" && plan.kind === "door"
+                  ? "Moved; new residents"
+                  : undefined,
+          },
+          { at },
+        );
         attempts++;
         if (outcome !== "not_home") break;
+        daysAgo = Math.max(0, daysAgo - faker.number.int({ min: 1, max: 2 }));
       }
     }
   }
