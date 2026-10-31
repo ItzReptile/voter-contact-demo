@@ -24,6 +24,7 @@ test("import a file, cut a turf, assign it, log contacts, see them on the dashbo
   await page.getByRole("checkbox", { name: "P-99" }).check();
   await page.getByRole("button", { name: "Preview" }).click();
   await expect(page.getByRole("heading", { name: "4 voters match" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Create list" })).toBeEnabled();
   await page.getByLabel("List name").fill("E2E turf");
   await page.getByRole("button", { name: "Create list" }).click();
 
@@ -71,6 +72,29 @@ test("import a file, cut a turf, assign it, log contacts, see them on the dashbo
   await expect(precinct.getByRole("cell")).toHaveText(["P-99", "4", "50%", "2", "1", "50%", "1"]);
   const list = page.getByRole("table", { name: "By list" }).getByRole("row").filter({ hasText: "E2E turf" });
   await expect(list.getByRole("cell")).toHaveText(["E2E turf", "Door knocking", "Robin Test", "2 / 4", "2", "1", "50%"]);
+});
+
+test("the intro page leads into the demo", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Cut turf, log every door");
+
+  await page.getByRole("link", { name: "Open the demo" }).first().click();
+
+  await expect(page).toHaveURL(/\/dashboard$/);
+  await expect(page.getByRole("heading", { name: "Dashboard", exact: true })).toBeVisible();
+});
+
+test("on a phone, the menu opens full height and nothing scrolls sideways", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/dashboard");
+  await expect(page.getByRole("table", { name: "By precinct" })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+
+  await page.getByRole("button", { name: "Open menu" }).click();
+  await page.getByRole("link", { name: "Lists", exact: true }).click();
+
+  await expect(page.getByRole("heading", { name: "Lists", exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Open menu" })).toBeVisible();
 });
 
 test("the segment builder explains a bad range instead of guessing", async ({ page }) => {
