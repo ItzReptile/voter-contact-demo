@@ -40,7 +40,8 @@
   --support-2: #fbc48f;
   --support-3: #e3e6f1;
   --support-4: #a3aacd;
-  --support-5: #5d69a1;
+  /* Deeper than the indigo of buttons, so strong oppose never reads as an action. White on it is 8.4:1. */
+  --support-5: #3f4a80;
 
   /* Legacy names kept so every screen compiles while it is restyled. */
   --page: var(--stock);
