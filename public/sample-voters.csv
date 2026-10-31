@@ -1,0 +1,2401 @@
+voter_id,first_name,last_name,address,city,zip,precinct,age,party,phone,support_score
+RV000001,Nash,Morissette,1317 Highland Dr,Riverbend,48990,P-06,54,DEM,(555) 210-4566,53
+RV000002,Queenie,Metz,1778 Adams St,Oak Hollow,48991,P-10,94,DEM,(555) 897-3035,79
+RV000003,Wade,Haley,2333 Ridge Dr,Riverbend,48990,P-06,39,DEM,5553215883,63
+RV000004,Laurianne,Bosco,1924 Monroe Rd,Riverbend,48990,P-04,48,DEM,(555) 336-3683,89
+RV000005,Darian,Okuneva,2172 Willow Rd,Riverbend,48990,P-01,86,NPA,,74
+RV000006,Roderick,Armstrong,1161 Grant Rd,Oak Hollow,48991,P-08,53,DEM,5555101438,84
+RV000007,Emil,Prohaska-Stamm,698 Clark St,Oak Hollow,48991,P-08,81,DEM,5556375153,81
+RV000008,Lexi,Walsh,2857 Jefferson Ct,Oak Hollow,48991,P-12,64,NPA,(555) 404-4891,30
+RV000009,Lena,Ferry,1304 Lincoln St,Riverbend,48990,P-01,46,REP,555-998-8906,0
+RV000010,Athena,Gleichner,1339 Lake St,Oak Hollow,48991,P-10,41,REP,(555) 695-9589,34
+RV000011,Leif,Hayes,1836 Elm Rd,Riverbend,48990,P-02,44,DEM,,45
+RV000012,Ariel,Nienow,2158 Adams Rd,Oak Hollow,48991,P-09,44,NPA,555-945-2075,75
+RV000013,Lee,Lesch-Brekke,1892 Orchard St,Oak Hollow,48991,P-09,69,DEM,5554673796,54
+RV000014,Bianka,Hessel,765 Jefferson Ct,Oak Hollow,48991,P-12,52,REP,555-511-2434,45
+RV000015,Glenna,Walsh,2307 River St,Riverbend,48990,P-05,49,REP,(555) 618-8231,30
+RV000016,Karley,Lueilwitz,123 Church Rd,Riverbend,48990,P-03,43,REP,(555) 325-0435,22
+RV000017,Sammie,Renner,563 Franklin St,Oak Hollow,48991,P-10,53,DEM,(555) 485-3689,76
+RV000018,Titus,Hauck,553 Madison Ct,Oak Hollow,48991,P-09,47,OTH,(555) 533-2424,39
+RV000019,Savanah,Lemke,1220 Cherry Ln,Oak Hollow,48991,P-08,89,REP,(555) 931-1354,0
+RV000020,Myrtie,Langosh,1668 Willow Rd,Riverbend,48990,P-01,38,NPA,(555) 276-3889,60
+RV000021,Jedediah,VonRueden,294 Church St,Riverbend,48990,P-06,40,NPA,555-634-1534,51
+RV000022,Belle,Kohler,1001 Monroe Rd,Riverbend,48990,P-04,87,NPA,555-829-5576,59
+RV000023,Mozelle,Watsica,2032 Orchard St,Oak Hollow,48991,P-09,56,NPA,555-284-2399,79
+RV000024,Lula,Nitzsche,502 Spring Ct,Riverbend,48990,P-07,37,NPA,5559090449,56
+RV000025,Carey,Mohr,969 Ridge St,Riverbend,48990,P-06,62,DEM,(555) 251-5666,55
+RV000026,Lou,Langworth,849 Ridge Dr,Riverbend,48990,P-06,62,NPA,5554120381,80
+RV000027,Donato,Dickens,2865 Pine Ave,Riverbend,48990,P-05,42,REP,,17
+RV000028,Violet,Lebsack,1495 Elm Ln,Riverbend,48990,P-03,29,DEM,,80
+RV000029,Daniel,Reinger,2838 Cherry Dr,Oak Hollow,48991,P-09,63,DEM,5554889183,79
+RV000030,Lydia,Gottlieb,1212 Church Rd,Riverbend,48990,P-03,56,NPA,555-578-7414,56
+RV000031,Sydni,Terry,2780 Aspen Ave,Oak Hollow,48991,P-12,33,NPA,(555) 823-3333,43
+RV000032,Sunny,Marks,2812 Ridge Dr,Riverbend,48990,P-06,82,REP,555-722-5646,37
+RV000033,Felix,Rowe,2176 Oak Ave,Riverbend,48990,P-04,80,REP,(555) 998-5918,0
+RV000034,Everett,Hane,1783 Monroe Dr,Oak Hollow,48991,P-11,61,DEM,5556794727,84
+RV000035,Dallas,Nikolaus,1927 Aspen Ave,Oak Hollow,48991,P-12,58,DEM,,62
+RV000036,Lola,Mohr,1692 Elm St,Oak Hollow,48991,P-11,53,REP,,58
+RV000037,Gabriella,Wolff-Kassulke,957 Orchard Ave,Oak Hollow,48991,P-11,52,REP,555-486-2673,11
+RV000038,Arno,Jerde,102 Willow Rd,Riverbend,48990,P-01,21,DEM,,75
+RV000039,Mozell,Bahringer,1027 Jefferson Ln,Riverbend,48990,P-05,33,REP,(555) 987-2644,15
+RV000040,Maiya,Pollich-Glover,2773 Clark Rd,Riverbend,48990,P-07,38,NPA,5558686758,38
+RV000041,Maegan,King,2751 Cedar Ct,Riverbend,48990,P-04,17,REP,555-423-0479,32
+RV000042,Diamond,Fritsch,1525 Ridge St,Riverbend,48990,P-06,46,OTH,5555805374,40
+RV000043,Jazlyn,Miller,1448 Willow Rd,Riverbend,48990,P-01,31,REP,(555) 613-5722,33
+RV000044,Edyth,Labadie-Lebsack,1835 Monroe Ln,Oak Hollow,48991,P-12,48,REP,,39
+RV000045,Durward,Schuster,1470 Washington Ave,Riverbend,48990,P-06,22,NPA,5558754266,22
+RV000046,Keyshawn,Brown,1696 Washington Ave,Riverbend,48990,P-06,30,DEM,555-950-1607,91
+RV000047,Agustina,Fay,104 Cherry Dr,Oak Hollow,48991,P-09,33,REP,(555) 340-9479,0
+RV000048,Tessie,Bode,2826 Cedar St,Oak Hollow,48991,P-11,60,DEM,,93
+RV000049,Louvenia,Wintheiser,705 Pine Ave,Riverbend,48990,P-05,29,REP,,41
+RV000050,Garry,Heathcote,2925 Oak Rd,Riverbend,48990,P-04,43,NPA,(555) 823-9006,36
+RV000051,Foster,Bayer,2041 Willow Ave,Oak Hollow,48991,P-09,68,REP,,42
+RV000052,Lola,Dibbert,2001 Lake St,Oak Hollow,48991,P-10,63,REP,(555) 451-0260,32
+RV000053,Marisa,Powlowski,1899 Monroe Ln,Oak Hollow,48991,P-12,30,REP,,3
+RV000054,Dakota,Sporer,1576 Park Ct,Oak Hollow,48991,P-11,27,REP,(555) 868-1910,4
+RV000055,Kendra,Hegmann,1465 Cherry Ln,Oak Hollow,48991,P-08,84,NPA,5554942123,36
+RV000056,Quentin,Block,2631 Cedar Dr,Riverbend,48990,P-03,48,DEM,(555) 645-4835,100
+RV000057,Freeman,Langworth,1375 Spring Ln,Riverbend,48990,P-03,36,NPA,555-235-7371,22
+RV000058,Angelita,Nicolas,301 Franklin Ct,Oak Hollow,48991,P-08,77,NPA,,54
+RV000059,Nick,Hermiston,265 Birch St,Riverbend,48990,P-04,28,NPA,(555) 357-7687,25
+RV000060,Keaton,Kulas,211 Sunset Ct,Riverbend,48990,P-02,43,NPA,(555) 338-5543,80
+RV000061,Carson,Simonis,1704 Walnut Dr,Riverbend,48990,P-07,70,DEM,555-262-6441,71
+RV000062,Dock,Mosciski,1193 Church Ln,Riverbend,48990,P-07,86,NPA,5555187910,32
+RV000063,Angel,Powlowski,2370 Lake St,Oak Hollow,48991,P-10,68,NPA,,55
+RV000064,Marty,Auer,832 Willow St,Oak Hollow,48991,P-10,55,OTH,5555843968,34
+RV000065,Lionel,Bins,786 Adams St,Oak Hollow,48991,P-10,40,REP,555-824-2956,29
+RV000066,Grover,Kuvalis,1569 Madison Ct,Oak Hollow,48991,P-09,22,REP,(555) 846-5486,31
+RV000067,Agustin,Moen,778 Franklin Rd,Riverbend,48990,P-02,58,REP,,37
+RV000068,Ivory,Wehner,180 Lake St,Oak Hollow,48991,P-10,92,NPA,(555) 922-4798,37
+RV000069,Taylor,Morar,2475 Ridge Ln,Riverbend,48990,P-05,23,REP,,0
+RV000070,Jay,Wilderman,510 Franklin Ct,Oak Hollow,48991,P-08,73,REP,(555) 866-7288,17
+RV000071,Margarett,Stroman,1370 Spruce St,Riverbend,48990,P-03,47,NPA,(555) 670-6578,62
+RV000072,Weston,Senger-Grimes,1965 Orchard St,Oak Hollow,48991,P-09,38,NPA,,83
+RV000073,Wendy,Ruecker,194 Park Ln,Riverbend,48990,P-04,29,REP,,20
+RV000074,Lucious,Boehm,283 Pine Ave,Riverbend,48990,P-05,35,REP,555-693-8840,20
+RV000075,Jordan,Terry,428 Orchard Ave,Oak Hollow,48991,P-11,50,NPA,(555) 566-6690,43
+RV000076,Aimee,Armstrong,1542 Adams St,Oak Hollow,48991,P-10,81,DEM,555-590-4690,41
+RV000077,Kelton,Kemmer,632 Ridge Dr,Riverbend,48990,P-06,65,DEM,555-888-2299,60
+RV000078,Myrtle,Dicki,2355 Pine Ln,Riverbend,48990,P-07,18,DEM,(555) 909-9126,87
+RV000079,Kacie,Kilback,1058 Meadow Dr,Riverbend,48990,P-01,51,NPA,(555) 381-1832,46
+RV000080,Maggie,Schamberger,912 Meadow Ave,Riverbend,48990,P-01,66,DEM,(555) 936-2941,75
+RV000081,Shelley,Kessler,2549 River St,Riverbend,48990,P-05,51,REP,5557742550,14
+RV000082,Leticia,Bednar,1283 Highland St,Oak Hollow,48991,P-08,25,DEM,(555) 931-6084,39
+RV000083,Arlo,Becker,583 Pine Ct,Riverbend,48990,P-05,79,DEM,,68
+RV000084,Roy,Treutel,2765 Clark Rd,Riverbend,48990,P-07,56,NPA,,40
+RV000085,Tyrel,Heidenreich,1886 Orchard Ave,Oak Hollow,48991,P-11,84,DEM,(555) 928-2931,51
+RV000086,Tyrel,Lubowitz,1564 Cedar Rd,Oak Hollow,48991,P-11,92,REP,(555) 915-0075,0
+RV000087,Essie,Corkery,966 Ridge Dr,Riverbend,48990,P-06,46,REP,,19
+RV000088,Santa,Hermiston,331 Washington Ave,Riverbend,48990,P-06,18,NPA,555-483-7399,18
+RV000089,Deven,Fay,591 Walnut Dr,Riverbend,48990,P-07,71,DEM,(555) 475-3048,77
+RV000090,Bobby,Hamill,1222 Church St,Riverbend,48990,P-06,85,DEM,5556626257,100
+RV000091,Al,Fay,1250 Cherry Ln,Oak Hollow,48991,P-08,20,DEM,(555) 505-7107,87
+RV000092,Trent,Sauer,2442 Jefferson Ct,Oak Hollow,48991,P-12,50,NPA,(555) 647-3804,86
+RV000093,Desmond,Wunsch,2776 Birch St,Riverbend,48990,P-04,56,DEM,555-878-3258,65
+RV000094,Katrina,Dooley,2646 Ridge St,Riverbend,48990,P-06,62,NPA,,81
+RV000095,Sedrick,Wilderman,398 Pine Ct,Riverbend,48990,P-05,32,REP,,11
+RV000096,Eriberto,Roob,1635 Cherry Ln,Oak Hollow,48991,P-08,64,NPA,555-341-4660,69
+RV000097,Brando,Goldner,2594 Birch St,Riverbend,48990,P-04,76,NPA,(555) 613-7560,44
+RV000098,Mervin,Ziemann,1705 Park Ct,Oak Hollow,48991,P-11,21,REP,(555) 872-6399,28
+RV000099,Estrella,Harvey,202 Maple Ln,Oak Hollow,48991,P-10,41,DEM,555-677-8629,44
+RV000100,Jake,Morar,1883 Church Ln,Riverbend,48990,P-07,29,OTH,555-476-6565,52
+RV000101,Daisha,White,1296 Lake Ln,Oak Hollow,48991,P-12,88,NPA,5555615770,38
+RV000102,Dwight,Rice,346 Washington Ave,Riverbend,48990,P-06,46,NPA,(555) 388-6655,41
+RV000103,Layla,Kuvalis,1774 Oak Rd,Riverbend,48990,P-04,53,DEM,,78
+RV000104,Gilbert,Volkman,1987 Jackson Dr,Riverbend,48990,P-02,44,REP,5554911328,35
+RV000105,Missouri,Altenwerth,2114 Cherry Ct,Riverbend,48990,P-05,51,DEM,,86
+RV000106,Judd,Leannon,2798 Adams Rd,Oak Hollow,48991,P-09,41,NPA,(555) 877-4917,26
+RV000107,Lamont,Rutherford,1598 Pine St,Oak Hollow,48991,P-08,37,DEM,(555) 642-8910,83
+RV000108,Asa,Schinner,1545 Church Ln,Riverbend,48990,P-07,61,NPA,(555) 475-3299,47
+RV000109,Cheryl,Feeney,1200 Walnut Ln,Oak Hollow,48991,P-10,42,REP,(555) 597-2271,40
+RV000110,Claude,Senger,1336 Elm Rd,Riverbend,48990,P-02,51,OTH,555-630-9577,40
+RV000111,Brown,Breitenberg,1430 Franklin Ct,Oak Hollow,48991,P-08,78,REP,(555) 514-2195,31
+RV000112,Eleazar,Jacobs,1333 Willow Ave,Oak Hollow,48991,P-09,53,NPA,(555) 940-9312,80
+RV000113,Constantin,Kub,1692 Jefferson Dr,Oak Hollow,48991,P-12,28,REP,5557693629,26
+RV000114,Alexandria,Runte,2138 Franklin Ct,Oak Hollow,48991,P-08,25,REP,(555) 891-3377,34
+RV000115,Rusty,Sipes,1419 Pine St,Oak Hollow,48991,P-08,68,DEM,555-286-2834,98
+RV000116,Martha,Trantow,1885 Lincoln St,Riverbend,48990,P-01,42,REP,555-415-7832,20
+RV000117,Andreanne,Koch,1637 Highland Rd,Oak Hollow,48991,P-12,30,REP,(555) 339-5540,29
+RV000118,Lavern,Fadel,639 Lincoln St,Riverbend,48990,P-01,44,REP,555-465-8652,19
+RV000119,Benton,Kuphal,176 Clark St,Oak Hollow,48991,P-08,68,NPA,,41
+RV000120,Lillie,Fahey,2844 Cherry Dr,Oak Hollow,48991,P-09,90,DEM,555-679-8818,76
+RV000121,Renee,Turcotte,1475 Birch St,Riverbend,48990,P-04,92,REP,555-333-0792,9
+RV000122,Kyler,Rodriguez,1756 Grant Dr,Riverbend,48990,P-06,30,REP,5558558862,55
+RV000123,Paula,Bartoletti,582 Clark St,Oak Hollow,48991,P-08,21,NPA,,61
+RV000124,Amir,Thiel,802 Monroe Rd,Riverbend,48990,P-04,32,DEM,,62
+RV000125,Verner,Lesch,2978 Willow Rd,Riverbend,48990,P-01,18,OTH,,61
+RV000126,Stanford,Schaefer,2210 Grant Dr,Riverbend,48990,P-06,43,DEM,,73
+RV000127,Elsa,Batz,1847 Pine Ct,Riverbend,48990,P-05,59,REP,(555) 849-2853,32
+RV000128,Osbaldo,Batz,2776 Elm Rd,Riverbend,48990,P-02,20,REP,(555) 930-0361,37
+RV000129,Keyon,Pagac,596 Willow Ln,Riverbend,48990,P-02,82,REP,555-444-0675,54
+RV000130,Kariane,Kozey,1742 Monroe Rd,Riverbend,48990,P-04,90,NPA,,43
+RV000131,Eldora,Hauck,1561 Willow Ave,Oak Hollow,48991,P-09,93,NPA,,17
+RV000132,Pierce,Stark,942 Orchard St,Oak Hollow,48991,P-09,82,DEM,(555) 638-5101,77
+RV000133,Jacky,Hodkiewicz,2601 Highland Rd,Oak Hollow,48991,P-12,40,DEM,,100
+RV000134,Syble,Botsford,773 Walnut Ln,Oak Hollow,48991,P-10,86,REP,(555) 864-4616,29
+RV000135,Stanford,Kihn,2626 Grant Rd,Oak Hollow,48991,P-08,48,NPA,5555233937,55
+RV000136,Wyman,Upton,2695 Spruce St,Riverbend,48990,P-03,37,NPA,555-861-2367,33
+RV000137,Eve,Hane,834 Ridge Ln,Riverbend,48990,P-05,91,REP,555-424-4347,32
+RV000138,Davin,West,1818 Cherry Ct,Riverbend,48990,P-05,30,NPA,555-349-4669,65
+RV000139,Clementina,Blanda,1436 Church St,Riverbend,48990,P-06,92,DEM,,71
+RV000140,Jan,Bartoletti,2043 Jackson Dr,Riverbend,48990,P-02,44,NPA,555-683-8636,52
+RV000141,Frida,Hane,2915 Cherry Ct,Riverbend,48990,P-05,19,NPA,,38
+RV000142,Stone,Huel,464 Willow Rd,Riverbend,48990,P-01,30,NPA,(555) 392-1769,32
+RV000143,Lisette,Waters,539 Oak Ave,Riverbend,48990,P-04,52,NPA,(555) 838-8380,74
+RV000144,Verona,Gutmann,339 Pine Ln,Riverbend,48990,P-07,36,NPA,(555) 549-5736,30
+RV000145,Scottie,Steuber,2830 Church Ln,Riverbend,48990,P-07,19,DEM,555-401-1423,39
+RV000146,Viva,Sipes,2913 Oak Rd,Riverbend,48990,P-04,70,DEM,(555) 859-6186,76
+RV000147,Ryann,Boyer,2093 Adams Ave,Riverbend,48990,P-01,42,DEM,,91
+RV000148,Odessa,Ernser,1715 Jefferson Ct,Oak Hollow,48991,P-12,33,REP,,49
+RV000149,Lisette,Skiles,1760 Cedar Rd,Oak Hollow,48991,P-11,64,REP,,27
+RV000150,Enrico,Spencer,2349 River St,Riverbend,48990,P-05,46,REP,(555) 375-4804,28
+RV000151,Columbus,King,854 Birch St,Riverbend,48990,P-04,78,NPA,555-696-5206,54
+RV000152,Gabriella,Rodriguez,2428 Spruce St,Riverbend,48990,P-03,79,DEM,(555) 989-1102,41
+RV000153,Alessia,White,1687 Adams Rd,Oak Hollow,48991,P-09,60,NPA,(555) 254-0424,48
+RV000154,Fletcher,Prohaska,1434 Cherry Dr,Oak Hollow,48991,P-09,53,NPA,,77
+RV000155,Verla,Jacobi,2226 Jefferson Ln,Riverbend,48990,P-05,51,REP,555-955-6150,5
+RV000156,Emma,Kutch,2925 Adams Ave,Riverbend,48990,P-01,46,REP,555-293-3410,41
+RV000157,Miller,Jenkins,670 Willow Ln,Riverbend,48990,P-02,36,DEM,(555) 595-7685,63
+RV000158,Jacey,Hettinger,2383 Cherry Dr,Oak Hollow,48991,P-09,19,REP,(555) 842-2609,18
+RV000159,Laron,Heller,1024 Cherry Ct,Riverbend,48990,P-05,74,REP,5558903614,28
+RV000160,Keira,Hagenes,750 Oak Rd,Riverbend,48990,P-04,68,DEM,(555) 953-0994,70
+RV000161,Wilfrid,Schaefer,1578 Highland Rd,Oak Hollow,48991,P-12,18,DEM,(555) 870-1135,94
+RV000162,Fletcher,Murray,998 Cherry Ln,Oak Hollow,48991,P-08,73,DEM,(555) 784-0538,73
+RV000163,April,Kunze,1228 Jefferson Ln,Riverbend,48990,P-05,86,REP,555-210-9091,48
+RV000164,Minerva,Batz,1554 Elm St,Oak Hollow,48991,P-11,24,OTH,,64
+RV000165,Giles,Champlin,2044 Cedar Ct,Riverbend,48990,P-04,64,REP,555-989-8714,10
+RV000166,Icie,Stark,2923 Jefferson Ln,Riverbend,48990,P-05,18,REP,555-673-5813,6
+RV000167,Hassie,Crona,2158 Madison Ct,Oak Hollow,48991,P-09,32,DEM,5558854126,77
+RV000168,Cornelius,Dietrich,2097 Ridge Ln,Riverbend,48990,P-05,91,DEM,(555) 393-0771,82
+RV000169,Carolina,Watsica,2177 Elm Ln,Riverbend,48990,P-03,60,REP,5555274875,11
+RV000170,Aubrey,Aufderhar,1565 Franklin Ct,Oak Hollow,48991,P-08,32,NPA,,64
+RV000171,Zack,Yost,2780 Adams Ave,Riverbend,48990,P-01,43,NPA,(555) 224-7202,58
+RV000172,Brant,Jast,1999 Monroe Ln,Oak Hollow,48991,P-12,92,REP,(555) 873-8204,24
+RV000173,Trenton,Greenfelder,2509 Elm Rd,Riverbend,48990,P-02,47,NPA,(555) 907-2019,64
+RV000174,Lucille,Cruickshank,2933 Sunset Rd,Riverbend,48990,P-07,59,REP,5552336410,29
+RV000175,Reece,Bednar,1919 Grant Rd,Oak Hollow,48991,P-08,68,DEM,(555) 712-6329,91
+RV000176,Kenton,Adams,2163 Cherry Dr,Oak Hollow,48991,P-09,39,REP,5558409850,17
+RV000177,Terrill,Hintz,1178 Elm Ln,Riverbend,48990,P-03,44,REP,555-856-5783,0
+RV000178,Holden,Olson,181 Jefferson Ln,Riverbend,48990,P-05,41,DEM,(555) 670-6765,64
+RV000179,Jody,Raynor,469 Grant Rd,Oak Hollow,48991,P-08,29,DEM,(555) 298-9418,57
+RV000180,Clark,O'Kon,2573 Cedar St,Oak Hollow,48991,P-11,46,DEM,,57
+RV000181,Veronica,Romaguera,1851 Church Ln,Riverbend,48990,P-07,34,DEM,555-854-4781,100
+RV000182,Kelley,Greenfelder,700 Park Ct,Oak Hollow,48991,P-11,42,REP,,15
+RV000183,Laron,Mertz,2070 Walnut Ln,Oak Hollow,48991,P-10,27,REP,5556419325,34
+RV000184,Thelma,Walsh,1606 Lincoln Ln,Riverbend,48990,P-01,88,REP,,15
+RV000185,Arianna,Franey,2359 Cedar St,Oak Hollow,48991,P-11,54,NPA,(555) 662-4035,48
+RV000186,Mariam,Kovacek,1304 Grant Rd,Oak Hollow,48991,P-08,48,REP,(555) 339-5735,13
+RV000187,Karen,Hackett,973 Willow Ave,Oak Hollow,48991,P-09,54,REP,(555) 843-9812,22
+RV000188,Else,Kulas,833 Willow Ln,Riverbend,48990,P-02,88,REP,5557426713,35
+RV000189,Ressie,Hamill-Farrell,1448 Aspen Ave,Oak Hollow,48991,P-12,51,NPA,(555) 632-7443,67
+RV000190,Alfredo,Kiehn,1920 Cherry Dr,Oak Hollow,48991,P-09,49,DEM,555-808-6376,53
+RV000191,Emiliano,Purdy,2445 Cherry Dr,Oak Hollow,48991,P-09,36,DEM,,58
+RV000192,Imogene,Lubowitz,770 Lincoln Ave,Riverbend,48990,P-03,81,DEM,5552967017,71
+RV000193,Clotilde,Thiel,1052 Cedar Rd,Oak Hollow,48991,P-11,49,NPA,,41
+RV000194,Melanie,Hilll,2541 Cedar Ct,Riverbend,48990,P-04,62,REP,555-601-8961,2
+RV000195,Raphael,Reinger,1393 Monroe Dr,Oak Hollow,48991,P-11,83,REP,555-467-8233,17
+RV000196,Elian,Beahan,1092 Willow Ln,Riverbend,48990,P-02,44,REP,555-851-0082,43
+RV000197,Lyric,Lang,804 Willow St,Oak Hollow,48991,P-10,25,NPA,(555) 814-8151,86
+RV000198,Amalia,Koss,2119 Cedar Ct,Riverbend,48990,P-04,91,DEM,5556267772,48
+RV000199,Thaddeus,Turner,2851 Meadow Dr,Riverbend,48990,P-01,63,REP,,25
+RV000200,Lance,Hettinger,1694 Meadow Ave,Riverbend,48990,P-01,60,REP,,20
+RV000201,Aubrey,Stoltenberg,1429 Spring Ct,Riverbend,48990,P-07,33,REP,(555) 703-2113,29
+RV000202,Isabell,Beer,2280 Monroe Rd,Riverbend,48990,P-04,37,DEM,(555) 524-6962,65
+RV000203,Mafalda,Quitzon,2052 Cedar Ct,Riverbend,48990,P-04,61,NPA,,67
+RV000204,Dejuan,Kertzmann,1853 Willow St,Oak Hollow,48991,P-10,18,DEM,5552134319,75
+RV000205,Dejah,Hickle,143 Washington Ave,Riverbend,48990,P-06,48,DEM,,72
+RV000206,Ian,Spencer,2515 Franklin Rd,Riverbend,48990,P-02,21,REP,(555) 881-2926,19
+RV000207,Gunnar,Bernier,2824 Willow Ln,Riverbend,48990,P-02,55,REP,,7
+RV000208,Elmira,Macejkovic,2457 Highland St,Oak Hollow,48991,P-08,46,NPA,,65
+RV000209,Guido,Von,1770 Aspen Ave,Oak Hollow,48991,P-12,44,REP,555-724-7003,6
+RV000210,Maia,Collins,1905 Spruce St,Riverbend,48990,P-03,36,REP,,24
+RV000211,Kris,Monahan,1650 River St,Riverbend,48990,P-05,25,NPA,(555) 895-3885,33
+RV000212,Cleora,Labadie,2363 Lincoln Ln,Riverbend,48990,P-01,33,REP,(555) 938-4568,0
+RV000213,Kaelyn,Prohaska,1842 Clark Rd,Riverbend,48990,P-07,65,DEM,555-797-5351,58
+RV000214,Alvis,Raynor,1504 Pine St,Oak Hollow,48991,P-08,41,NPA,(555) 624-1380,81
+RV000215,Pamela,Kshlerin,2258 Lincoln Ln,Riverbend,48990,P-01,71,REP,555-550-6430,35
+RV000216,Reanna,Huels,704 Madison Ct,Oak Hollow,48991,P-09,55,REP,(555) 548-7283,27
+RV000217,Alycia,Spencer,2483 Franklin Rd,Riverbend,48990,P-02,44,NPA,(555) 688-5500,76
+RV000218,Simeon,Marks,2565 Monroe Dr,Oak Hollow,48991,P-11,60,NPA,,36
+RV000219,Hazel,Zieme,261 Lincoln St,Riverbend,48990,P-01,36,NPA,,36
+RV000220,Estella,Boehm,2597 Jefferson Ln,Riverbend,48990,P-05,45,REP,(555) 978-3776,42
+RV000221,Zetta,Buckridge,499 Cedar St,Oak Hollow,48991,P-11,20,REP,(555) 790-8556,26
+RV000222,Mckenzie,Luettgen,2704 Pine St,Oak Hollow,48991,P-08,76,DEM,(555) 215-5420,47
+RV000223,Kenton,Torp-Goldner,999 Adams St,Oak Hollow,48991,P-10,58,NPA,(555) 896-2823,50
+RV000224,Ambrose,Streich,2384 Cherry Ln,Oak Hollow,48991,P-08,25,OTH,(555) 278-9551,53
+RV000225,Braden,Jakubowski,685 Cherry Dr,Oak Hollow,48991,P-09,51,DEM,(555) 924-3814,75
+RV000226,Jannie,Greenfelder,1291 Clark St,Oak Hollow,48991,P-08,65,REP,(555) 217-5514,33
+RV000227,Hassan,Renner,2583 Ridge St,Riverbend,48990,P-06,31,NPA,5552471091,85
+RV000228,Sidney,Jast,2824 Spruce St,Riverbend,48990,P-03,90,DEM,555-506-0461,88
+RV000229,Angie,Muller,2056 Cedar Rd,Oak Hollow,48991,P-11,91,REP,555-398-8669,0
+RV000230,Josiah,Davis,231 Pine Ln,Riverbend,48990,P-07,36,REP,(555) 665-5940,40
+RV000231,Candido,Christiansen,1480 Spring Ct,Riverbend,48990,P-07,56,REP,5552326478,27
+RV000232,Miranda,Stamm,1749 Church Ln,Riverbend,48990,P-07,27,REP,,19
+RV000233,Uriah,Windler,2394 Franklin Ct,Oak Hollow,48991,P-08,48,DEM,,67
+RV000234,Clair,Padberg,1224 Cedar St,Oak Hollow,48991,P-11,46,DEM,555-761-5077,87
+RV000235,Sabrina,Weissnat,1987 Grant Dr,Riverbend,48990,P-06,58,DEM,,73
+RV000236,Devyn,Howe,642 Church St,Riverbend,48990,P-06,32,DEM,5554104010,76
+RV000237,Samir,Streich,2704 Adams St,Oak Hollow,48991,P-10,50,REP,(555) 286-0796,0
+RV000238,Annamarie,Crooks,2202 Willow Ln,Riverbend,48990,P-02,44,OTH,5553254931,53
+RV000239,Katelin,Lindgren,375 River St,Riverbend,48990,P-05,47,REP,5556552724,14
+RV000240,Levi,Wehner,2016 Aspen Ave,Oak Hollow,48991,P-12,88,DEM,5556022741,99
+RV000241,Violet,Stanton,2883 Jackson Dr,Riverbend,48990,P-02,26,DEM,555-212-3502,100
+RV000242,Taylor,Boehm,2505 Birch St,Riverbend,48990,P-04,51,DEM,(555) 841-5755,57
+RV000243,Korey,Collier,1856 Cherry Dr,Oak Hollow,48991,P-09,34,NPA,,56
+RV000244,Nella,Predovic,667 Grant Dr,Riverbend,48990,P-06,39,DEM,,85
+RV000245,Mossie,Hayes,2114 Meadow Dr,Riverbend,48990,P-01,38,REP,555-971-2593,19
+RV000246,Juana,O'Hara,336 Sunset Rd,Riverbend,48990,P-07,35,OTH,5558714916,44
+RV000247,Micaela,Lebsack,2150 Grant Dr,Riverbend,48990,P-06,50,OTH,555-639-4212,76
+RV000248,Tony,Kling,1775 Walnut Dr,Riverbend,48990,P-07,38,DEM,,80
+RV000249,Kieran,Macejkovic-Moen,1222 Park Ln,Riverbend,48990,P-04,31,DEM,555-561-0145,45
+RV000250,Fabian,Wisoky,640 Franklin St,Oak Hollow,48991,P-10,51,NPA,5558414183,38
+RV000251,Corbin,Boehm,2657 Park Ln,Riverbend,48990,P-04,32,REP,555-706-7468,0
+RV000252,Leann,Mante,2312 Meadow St,Riverbend,48990,P-02,27,NPA,555-931-5815,36
+RV000253,Myrtie,Williamson,863 Cherry Dr,Oak Hollow,48991,P-09,92,DEM,,59
+RV000254,Urban,Sanford,1661 Adams Ave,Riverbend,48990,P-01,42,NPA,,20
+RV000255,Rowan,Ullrich,1150 Highland Dr,Riverbend,48990,P-06,85,NPA,(555) 843-5282,43
+RV000256,Judith,Kassulke,675 Lake Ln,Oak Hollow,48991,P-12,89,REP,(555) 923-6495,8
+RV000257,Filiberto,Blick,2228 Elm Rd,Riverbend,48990,P-02,69,REP,,44
+RV000258,Cloyd,Huels,2661 Adams Ave,Riverbend,48990,P-01,25,DEM,(555) 919-3319,93
+RV000259,Benny,Rempel,1597 Park Ln,Riverbend,48990,P-04,81,NPA,5556059844,19
+RV000260,Raleigh,Stiedemann,1073 Lake Ln,Oak Hollow,48991,P-12,25,REP,,15
+RV000261,Hallie,Lowe,1577 Lincoln Ln,Riverbend,48990,P-01,22,REP,555-944-8445,15
+RV000262,Ubaldo,Predovic,542 Willow Ave,Oak Hollow,48991,P-09,20,DEM,,72
+RV000263,Corrine,Jacobi,2564 Adams St,Oak Hollow,48991,P-10,92,REP,5558462382,13
+RV000264,Camren,Stracke,1996 Cedar Dr,Riverbend,48990,P-03,91,NPA,(555) 821-5010,82
+RV000265,Meda,O'Connell-Effertz,1538 Meadow St,Riverbend,48990,P-02,92,REP,,27
+RV000266,Gino,Ryan,2932 Clark Rd,Riverbend,48990,P-07,68,REP,(555) 280-0133,47
+RV000267,Rosanna,McKenzie,684 Church St,Riverbend,48990,P-06,51,DEM,555-355-7728,70
+RV000268,Orie,Grimes,2084 Meadow St,Riverbend,48990,P-02,43,DEM,(555) 801-7445,79
+RV000269,Declan,Okuneva,304 Maple Ln,Oak Hollow,48991,P-10,37,NPA,,32
+RV000270,Kaylee,Schuster,897 Willow Ave,Oak Hollow,48991,P-09,63,DEM,(555) 301-6707,93
+RV000271,Jayson,Hand,1218 Pine Ln,Riverbend,48990,P-07,38,DEM,(555) 489-9685,70
+RV000272,Nina,Hand,2304 Birch St,Riverbend,48990,P-04,60,DEM,555-915-1096,81
+RV000273,Marilyne,Kovacek,2569 Jackson Dr,Riverbend,48990,P-02,40,REP,(555) 593-7741,22
+RV000274,Brooklyn,Marks,1669 Adams Ave,Riverbend,48990,P-01,29,NPA,5558877776,39
+RV000275,Rochelle,Senger,1872 Jackson Dr,Riverbend,48990,P-02,31,REP,555-503-9342,40
+RV000276,Lesly,Klein,1312 Meadow Ave,Riverbend,48990,P-01,21,DEM,(555) 262-5045,72
+RV000277,Trevor,Daniel,2558 Washington Ave,Riverbend,48990,P-06,80,DEM,555-333-3112,74
+RV000278,Edwina,Streich,1539 River St,Riverbend,48990,P-05,35,NPA,(555) 366-1799,49
+RV000279,Baylee,Smith,1085 Park Ln,Riverbend,48990,P-04,30,NPA,,72
+RV000280,Dangelo,Schaden,2045 Elm St,Oak Hollow,48991,P-11,39,DEM,(555) 440-2618,54
+RV000281,Johnny,Mayer,1172 Pine Ln,Riverbend,48990,P-07,50,DEM,(555) 693-1889,61
+RV000282,Damion,Osinski,216 Park Ln,Riverbend,48990,P-04,48,DEM,555-308-6064,57
+RV000283,Jenny,Prohaska-Berge,2484 Ridge St,Riverbend,48990,P-06,28,NPA,,49
+RV000284,Yolanda,Hickle,299 Church Rd,Riverbend,48990,P-03,81,REP,5558516280,26
+RV000285,Juliet,Lubowitz,694 Cedar Ct,Riverbend,48990,P-04,48,DEM,,78
+RV000286,Carleton,Weber,2867 Sunset Rd,Riverbend,48990,P-07,91,DEM,5557779906,72
+RV000287,Lavada,McKenzie,818 Sunset Ct,Riverbend,48990,P-02,34,REP,(555) 452-8164,41
+RV000288,Wava,Bashirian,1946 Adams Ave,Riverbend,48990,P-01,18,DEM,,73
+RV000289,Jerald,Casper,1790 Pine Ct,Riverbend,48990,P-05,83,REP,,47
+RV000290,Randall,Watsica,2185 Sunset Ct,Riverbend,48990,P-02,37,REP,555-247-4059,0
+RV000291,Jules,Hahn,1881 Meadow Ave,Riverbend,48990,P-01,83,REP,(555) 511-4714,14
+RV000292,Jessy,Kulas,537 Cedar Dr,Riverbend,48990,P-03,55,NPA,5552914541,87
+RV000293,Kamryn,Gusikowski,2680 Willow St,Oak Hollow,48991,P-10,60,REP,555-415-6304,9
+RV000294,Jackie,Greenholt,622 Ridge Dr,Riverbend,48990,P-06,40,NPA,(555) 580-2744,52
+RV000295,Haylie,Lowe,2176 Lincoln Ln,Riverbend,48990,P-01,37,REP,5555982511,20
+RV000296,Kimberly,Ortiz,979 Adams St,Oak Hollow,48991,P-10,32,DEM,(555) 989-9026,70
+RV000297,Ali,Hermann,845 Cedar Dr,Riverbend,48990,P-03,23,REP,555-483-3466,21
+RV000298,Jamey,Yost,1930 Pine Ct,Riverbend,48990,P-05,22,NPA,,64
+RV000299,Krystina,Kunde,1742 Lake Ln,Oak Hollow,48991,P-12,30,REP,555-956-3045,47
+RV000300,Enos,Bailey,1712 Pine St,Oak Hollow,48991,P-08,37,REP,5556829240,32
+RV000301,Sabrina,Frami,1985 Sunset Rd,Riverbend,48990,P-07,32,NPA,5558451387,71
+RV000302,Flora,Ryan,1050 Meadow Dr,Riverbend,48990,P-01,53,REP,5559932424,28
+RV000303,Velva,Powlowski,2984 Aspen Ave,Oak Hollow,48991,P-12,32,DEM,(555) 452-8415,61
+RV000304,Silvia,Dare,2392 Jefferson Ln,Riverbend,48990,P-05,20,REP,,59
+RV000305,Sadie,Thiel,2633 Grant Rd,Oak Hollow,48991,P-08,47,OTH,,23
+RV000306,Loyce,Buckridge,1740 Franklin St,Oak Hollow,48991,P-10,38,DEM,(555) 511-2756,100
+RV000307,Fletcher,Bahringer,1114 Meadow St,Riverbend,48990,P-02,43,NPA,,69
+RV000308,Rosalyn,Stoltenberg,1434 River St,Riverbend,48990,P-05,32,REP,5555738610,40
+RV000309,Nakia,Connelly,2628 Pine Ln,Riverbend,48990,P-07,41,DEM,555-860-9414,66
+RV000310,Dakota,Harris,1198 Franklin Rd,Riverbend,48990,P-02,93,REP,(555) 442-3020,2
+RV000311,Malcolm,Bartoletti,1193 Grant Rd,Oak Hollow,48991,P-08,35,REP,5555887684,57
+RV000312,Penelope,Runolfsdottir,1378 Monroe Ln,Oak Hollow,48991,P-12,44,REP,(555) 328-3551,30
+RV000313,Alyce,Carter,2599 Willow Rd,Riverbend,48990,P-01,59,REP,,50
+RV000314,Cortez,Heller,1286 Ridge Dr,Riverbend,48990,P-06,26,REP,5557467624,29
+RV000315,Ford,Mills,1865 Highland Rd,Oak Hollow,48991,P-12,75,REP,(555) 973-1495,2
+RV000316,Bobbie,Ritchie,1227 Orchard Ave,Oak Hollow,48991,P-11,22,REP,(555) 437-8278,42
+RV000317,Reggie,Keeling,817 Walnut Ln,Oak Hollow,48991,P-10,56,REP,(555) 884-6450,21
+RV000318,Whitney,McLaughlin,1763 Walnut Dr,Riverbend,48990,P-07,47,REP,5556129171,9
+RV000319,Maxwell,Cummerata,2038 Meadow Dr,Riverbend,48990,P-01,33,DEM,5552730405,43
+RV000320,Patti,Bernier,2382 Adams St,Oak Hollow,48991,P-10,39,OTH,5559222502,6
+RV000321,Lane,Veum,340 Willow Ave,Oak Hollow,48991,P-09,29,NPA,(555) 792-7482,45
+RV000322,Jessica,Herman,646 Pine St,Oak Hollow,48991,P-08,19,NPA,555-396-2578,60
+RV000323,Beryl,Ullrich,300 Ridge Ln,Riverbend,48990,P-05,48,REP,,0
+RV000324,Ressie,Monahan,2690 Clark St,Oak Hollow,48991,P-08,45,NPA,,31
+RV000325,Warren,Dietrich,2462 Franklin St,Oak Hollow,48991,P-10,51,REP,555-990-2287,51
+RV000326,Osvaldo,Jenkins,1431 Highland Dr,Riverbend,48990,P-06,60,NPA,(555) 798-5530,66
+RV000327,Maggie,Doyle,1888 Cedar St,Oak Hollow,48991,P-11,65,DEM,(555) 616-6657,100
+RV000328,Gilbert,Johns,273 Adams Ave,Riverbend,48990,P-01,46,NPA,,54
+RV000329,Lennie,Corwin,1202 Spring Ct,Riverbend,48990,P-07,72,REP,(555) 206-7561,18
+RV000330,Eleanore,Jerde,397 Ridge St,Riverbend,48990,P-06,51,DEM,555-595-4493,85
+RV000331,Stephan,Sawayn,2885 Meadow St,Riverbend,48990,P-02,61,NPA,555-474-6725,73
+RV000332,Jeromy,Kertzmann,2464 Clark Rd,Riverbend,48990,P-07,77,NPA,,15
+RV000333,Peggie,Hilpert,303 Walnut Ln,Oak Hollow,48991,P-10,43,NPA,(555) 568-0523,59
+RV000334,Hipolito,Schulist,2451 Willow Ave,Oak Hollow,48991,P-09,24,NPA,555-809-0597,63
+RV000335,Mariah,Hauck,556 Monroe Rd,Riverbend,48990,P-04,68,NPA,,41
+RV000336,Roxanne,Koch,420 Cherry Ct,Riverbend,48990,P-05,28,NPA,(555) 620-7603,39
+RV000337,Pat,Cummings,617 River St,Riverbend,48990,P-05,52,DEM,5553450676,63
+RV000338,Vernice,Lehner,885 Lincoln Ave,Riverbend,48990,P-03,56,DEM,,96
+RV000339,Americo,Kris,1512 Orchard St,Oak Hollow,48991,P-09,84,DEM,,80
+RV000340,Dwayne,Wyman,604 Adams St,Oak Hollow,48991,P-10,30,NPA,,41
+RV000341,Delta,Koepp,1014 Oak Ave,Riverbend,48990,P-04,69,REP,(555) 919-5735,22
+RV000342,Marian,Morar,2375 Walnut Dr,Riverbend,48990,P-07,63,DEM,(555) 317-6226,80
+RV000343,Lisandro,Hessel,2737 Franklin St,Oak Hollow,48991,P-10,47,REP,(555) 945-9212,18
+RV000344,Sedrick,Koch,1856 Monroe Rd,Riverbend,48990,P-04,90,DEM,(555) 276-1015,64
+RV000345,Adrianna,Reichert,1105 Cherry Ln,Oak Hollow,48991,P-08,62,DEM,(555) 597-2543,70
+RV000346,Isac,Schuster,769 Orchard Ave,Oak Hollow,48991,P-11,46,DEM,555-714-6884,71
+RV000347,Josefina,Funk,1288 Madison Ct,Oak Hollow,48991,P-09,58,REP,,20
+RV000348,Antonette,Koss,2254 Maple Ln,Oak Hollow,48991,P-10,23,NPA,,26
+RV000349,Haleigh,Will,660 Cherry Ln,Oak Hollow,48991,P-08,20,DEM,(555) 606-4684,89
+RV000350,Marley,Bednar,111 Spring Ct,Riverbend,48990,P-07,41,REP,(555) 869-0227,14
+RV000351,Aletha,Toy,1450 Maple Ln,Oak Hollow,48991,P-10,28,DEM,,72
+RV000352,Shaun,Bashirian,2047 Lincoln Ave,Riverbend,48990,P-03,29,NPA,(555) 319-4225,32
+RV000353,Davin,Lowe,1310 Walnut Ln,Oak Hollow,48991,P-10,55,REP,,12
+RV000354,Royal,Rolfson,588 Washington Ave,Riverbend,48990,P-06,57,DEM,555-335-3735,81
+RV000355,Anthony,Cummerata,2680 Franklin Rd,Riverbend,48990,P-02,62,DEM,,86
+RV000356,Merl,Russel,1368 Spring Ct,Riverbend,48990,P-07,82,NPA,5554044614,46
+RV000357,Carey,Mayert,650 Highland St,Oak Hollow,48991,P-08,19,NPA,5556710907,16
+RV000358,Virginia,Kshlerin,2418 Adams Ave,Riverbend,48990,P-01,42,NPA,(555) 685-7879,46
+RV000359,Hayley,Cormier,282 Oak Ave,Riverbend,48990,P-04,34,NPA,(555) 252-3226,55
+RV000360,Ruben,Quitzon,657 Park Ct,Oak Hollow,48991,P-11,58,REP,,58
+RV000361,Chadd,Ledner,2523 Willow St,Oak Hollow,48991,P-10,29,DEM,(555) 552-9177,75
+RV000362,Claire,Lehner,1583 Oak Ave,Riverbend,48990,P-04,66,OTH,555-928-2290,37
+RV000363,Lucas,Bechtelar,2773 Jefferson Ln,Riverbend,48990,P-05,28,REP,555-706-9048,22
+RV000364,Viola,Koss,1295 Meadow Ave,Riverbend,48990,P-01,70,REP,,27
+RV000365,Ocie,Blick,2359 Meadow Dr,Riverbend,48990,P-01,20,DEM,555-396-7227,60
+RV000366,Eleanore,Gusikowski,1742 Cherry Dr,Oak Hollow,48991,P-09,47,REP,555-455-6491,0
+RV000367,Giuseppe,Blanda,1662 Washington Ave,Riverbend,48990,P-06,41,DEM,555-420-9469,98
+RV000368,Kara,Barton-DuBuque,1842 Walnut Dr,Riverbend,48990,P-07,82,REP,(555) 637-8039,29
+RV000369,Madisyn,Beier,1081 Elm Rd,Riverbend,48990,P-02,36,NPA,,63
+RV000370,Arielle,Lueilwitz,1631 Park Ct,Oak Hollow,48991,P-11,90,DEM,,59
+RV000371,Orlando,Bahringer,1821 Lincoln Ln,Riverbend,48990,P-01,36,DEM,(555) 762-7209,77
+RV000372,Willis,Bosco,787 Franklin Ct,Oak Hollow,48991,P-08,42,NPA,5556805112,82
+RV000373,Leif,Hirthe,154 Orchard Ave,Oak Hollow,48991,P-11,22,OTH,,64
+RV000374,Lonie,Kulas,963 Lincoln St,Riverbend,48990,P-01,39,REP,(555) 960-8669,21
+RV000375,Bart,Senger,919 Jackson Dr,Riverbend,48990,P-02,31,REP,5558561806,47
+RV000376,Magdalena,Hauck,838 Washington Ave,Riverbend,48990,P-06,53,DEM,555-909-8003,75
+RV000377,Camilla,Batz,1133 Lincoln Ave,Riverbend,48990,P-03,35,DEM,,49
+RV000378,Lindsey,Kovacek,2882 Elm St,Oak Hollow,48991,P-11,23,DEM,5552562540,68
+RV000379,Rosamond,Wuckert,209 Adams St,Oak Hollow,48991,P-10,81,REP,(555) 543-4485,41
+RV000380,Else,Halvorson,1711 Madison Ct,Oak Hollow,48991,P-09,91,REP,,0
+RV000381,William,Considine,1898 Oak Rd,Riverbend,48990,P-04,40,DEM,5557381312,66
+RV000382,Jaycee,Rempel,2504 Church Rd,Riverbend,48990,P-03,76,NPA,(555) 583-9984,58
+RV000383,Cali,Dickinson,2125 Willow Ave,Oak Hollow,48991,P-09,61,NPA,5558411200,48
+RV000384,Cedrick,Bins,391 Adams Ave,Riverbend,48990,P-01,33,NPA,,40
+RV000385,Jonathan,Buckridge,2116 Pine Ln,Riverbend,48990,P-07,42,DEM,,95
+RV000386,Charity,Halvorson,1447 Highland St,Oak Hollow,48991,P-08,49,DEM,5553526293,51
+RV000387,Agustina,Cummerata,1778 Sunset Ct,Riverbend,48990,P-02,65,REP,(555) 550-1847,6
+RV000388,Cydney,Kihn,457 Maple Ln,Oak Hollow,48991,P-10,40,REP,(555) 601-8711,43
+RV000389,Maci,Kling,805 Meadow Dr,Riverbend,48990,P-01,57,REP,(555) 527-6949,3
+RV000390,Ashly,Stanton,2874 River St,Riverbend,48990,P-05,41,REP,5553032102,33
+RV000391,Rashad,Kozey,186 Cedar Dr,Riverbend,48990,P-03,46,DEM,555-280-7298,81
+RV000392,Mercedes,McCullough,1893 Jackson Dr,Riverbend,48990,P-02,30,DEM,(555) 740-7299,87
+RV000393,Freeman,Leffler,231 Pine Ave,Riverbend,48990,P-05,36,DEM,,83
+RV000394,Christophe,Mayert,2209 Highland St,Oak Hollow,48991,P-08,34,REP,(555) 394-3403,0
+RV000395,Bobbie,Lakin,229 Walnut Ln,Oak Hollow,48991,P-10,48,REP,,27
+RV000396,Junius,Funk,1169 Cedar Ct,Riverbend,48990,P-04,45,NPA,555-433-9607,60
+RV000397,Demetris,Tillman,2193 Park Ln,Riverbend,48990,P-04,30,NPA,555-811-7549,75
+RV000398,Ernest,Bergnaum,1089 Lake Ln,Oak Hollow,48991,P-12,45,REP,(555) 239-1266,3
+RV000399,Ernestine,Collier-Schultz,2412 Jefferson Ct,Oak Hollow,48991,P-12,88,REP,(555) 931-5423,44
+RV000400,Mariela,Murray,2585 Orchard Rd,Oak Hollow,48991,P-09,49,DEM,,70
+RV000401,Heaven,Schmidt,610 Pine St,Oak Hollow,4899,P-08,25,DEM,(555) 335-2683,59
+RV000402,Nancy,Howe,2718 Cedar Rd,Oak Hollow,48991,P-11,61,REP,,0
+RV000403,Magnus,Price,1039 Highland St,Oak Hollow,48991,P-08,57,REP,(555) 921-0829,27
+RV000404,Prince,Kuhlman,2687 Grant Rd,Oak Hollow,48991,P-08,43,REP,,7
+RV000405,Kayden,Hand,1232 Grant Dr,Riverbend,48990,P-06,48,DEM,5553544636,76
+RV000406,Timmothy,Simonis,443 Monroe Ln,Oak Hollow,48991,P-12,34,REP,5553394116,19
+RV000407,Coleman,Ryan,1201 Meadow St,Riverbend,48990,P-02,62,NPA,5552513556,28
+RV000408,Carey,Prohaska,126 Sunset Rd,Riverbend,48990,P-07,35,REP,(555) 961-8604,43
+RV000409,Kennith,Brown,1551 Cedar St,Oak Hollow,48991,P-11,47,REP,555-283-6643,26
+RV000410,Reynold,Powlowski,2207 Lake St,Oak Hollow,48991,P-10,50,REP,(555) 575-4520,20
+RV000411,Krystel,Steuber,1493 Church Rd,Riverbend,48990,P-03,52,REP,5553061650,10
+RV000412,Merritt,Haag,1938 Cedar Dr,Riverbend,48990,P-03,37,NPA,555-413-1418,46
+RV000413,Eldridge,Feest,2672 Orchard Rd,Oak Hollow,48991,P-09,19,REP,,23
+RV000414,Olaf,Bashirian,592 Ridge St,Riverbend,48990,P-06,18,NPA,(555) 381-1712,86
+RV000415,Stefan,Grant,1876 Ridge Ln,Riverbend,48990,P-05,51,DEM,,61
+RV000416,Spencer,Fisher,1587 Highland Dr,Riverbend,48990,P-06,61,NPA,5553240500,48
+RV000417,Lyric,Bashirian,2971 Willow St,Oak Hollow,48991,P-10,32,NPA,(555) 564-7257,37
+RV000418,Sebastian,Windler,2136 Willow Rd,Riverbend,48990,P-01,61,NPA,(555) 611-1626,51
+RV000419,Darius,Abernathy,767 Birch St,Riverbend,48990,P-04,62,REP,(555) 753-8736,42
+RV000420,Kavon,Howell,2120 Clark Rd,Riverbend,48990,P-07,69,REP,,36
+RV000421,Stephon,Ledner,2481 River St,Riverbend,48990,P-05,89,REP,5552871302,38
+RV000422,Alyssa,Howe,1193 Adams St,Oak Hollow,48991,P-10,37,DEM,(555) 645-0269,57
+RV000423,Jamel,Fritsch,1205 Adams Ave,Riverbend,48990,P-01,50,DEM,(555) 219-3450,57
+RV000424,Larue,Rau,256 Highland Dr,Riverbend,48990,P-06,41,DEM,(555) 257-7574,85
+RV000425,Colt,Kohler,2904 Willow St,Oak Hollow,48991,P-10,51,NPA,(555) 773-6611,50
+RV000426,Alta,Parker,2865 Walnut Ln,Oak Hollow,48991,P-10,38,DEM,,51
+RV000427,Maye,Gerlach,2687 Birch St,Riverbend,48990,P-04,54,REP,,15
+RV000428,Carla,Luettgen-Toy,863 Jefferson Ct,Oak Hollow,48991,P-12,59,NPA,,72
+RV000429,Darron,Batz,1072 Church Ln,Riverbend,48990,P-07,22,REP,,46
+RV000430,Cristina,Gerhold,1931 Lincoln St,Riverbend,48990,P-01,27,NPA,(555) 553-8272,58
+RV000431,Loyal,Collins,2756 Highland St,Oak Hollow,48991,P-08,70,DEM,(555) 565-8817,37
+RV000432,Brant,Schiller,343 Monroe Rd,Riverbend,48990,P-04,62,NPA,555-279-8198,46
+RV000433,Martina,Walker,2290 Pine Ave,Riverbend,48990,P-05,42,DEM,,93
+RV000434,Nakia,Pagac,2600 Grant Dr,Riverbend,48990,P-06,26,DEM,,91
+RV000435,Clemens,McGlynn,2815 Walnut Ln,Oak Hollow,48991,P-10,85,NPA,(555) 204-5895,45
+RV000436,Sonny,Reichel,1424 Jefferson Ct,Oak Hollow,48991,P-12,50,DEM,(555) 551-8076,64
+RV000437,Bridget,Auer,1385 Oak Ave,Riverbend,48990,P-04,49,DEM,(555) 818-8676,93
+RV000438,Jayne,Thompson,2525 Monroe Rd,Riverbend,48990,P-04,60,DEM,555-276-9122,77
+RV000439,Reggie,Bartell-Waelchi,445 Cedar Dr,Riverbend,48990,P-03,80,NPA,555-899-2360,42
+RV000440,Devyn,Turcotte,1280 Meadow Ave,Riverbend,48990,P-01,55,DEM,(555) 362-9483,71
+RV000441,Baylee,Gottlieb,147 Church Rd,Riverbend,48990,P-03,39,REP,,40
+RV000442,Dewitt,Bartell,1930 Franklin Ct,Oak Hollow,48991,P-08,53,NPA,(555) 457-1798,56
+RV000443,Regina,Williamson,1407 Elm Ln,Riverbend,48990,P-03,26,NPA,,16
+RV000444,Sheila,Brekke,2040 Monroe Ln,Oak Hollow,48991,P-12,37,REP,555-760-6369,9
+RV000445,Julien,Stracke,1774 Jackson Dr,Riverbend,48990,P-02,88,REP,555-433-2792,0
+RV000446,Keagan,Shields,1538 Clark St,Oak Hollow,48991,P-08,19,NPA,,79
+RV000447,Damion,Goldner,2197 Meadow Dr,Riverbend,48990,P-01,50,REP,555-950-6635,45
+RV000448,Lyle,Medhurst,1351 Walnut Ln,Oak Hollow,48991,P-10,64,NPA,(555) 727-9786,32
+RV000449,Nicola,Champlin,1975 Monroe Ln,Oak Hollow,48991,P-12,89,REP,5554969147,11
+RV000450,Laisha,Hermiston,2418 Park Ct,Oak Hollow,48991,P-11,50,REP,5557345130,31
+RV000451,Kristen,Glover,2936 Highland Dr,Riverbend,48990,P-06,65,DEM,5553450937,42
+RV000452,Karla,Hermann,2077 Cedar Rd,Oak Hollow,48991,P-11,28,DEM,(555) 619-9996,79
+RV000453,Carissa,Kutch,1382 Oak Rd,Riverbend,48990,P-04,58,DEM,5556266261,78
+RV000454,Berenice,Murphy,160 Cedar St,Oak Hollow,48991,P-11,66,REP,(555) 543-0586,22
+RV000455,Keeley,Champlin-Bailey,2636 Cedar St,Oak Hollow,48991,P-11,35,REP,5556080033,30
+RV000456,Allison,Nitzsche,1858 Lake Ln,Oak Hollow,48991,P-12,42,REP,,27
+RV000457,Anahi,Bednar,1207 Church Ln,Riverbend,48990,P-07,43,NPA,555-913-6233,65
+RV000458,Carole,Block,826 Church St,Riverbend,48990,P-06,57,DEM,(555) 259-2873,83
+RV000459,Alphonso,Farrell,661 River St,Riverbend,48990,P-05,21,DEM,,62
+RV000460,Tristin,Becker,2951 Park Ct,Oak Hollow,48991,P-11,40,REP,,10
+RV000461,Rudolph,Bartell,1206 Adams Ave,Riverbend,48990,P-01,31,REP,5554902468,27
+RV000462,Reyes,Brown,1691 Church Ln,Riverbend,48990,P-07,63,DEM,,67
+RV000463,Reina,Oberbrunner,2009 Cherry Ct,Riverbend,48990,P-05,59,REP,555-675-3543,15
+RV000464,Agustin,Leffler,2212 Franklin Ct,Oak Hollow,48991,P-08,70,DEM,555-283-6427,89
+RV000465,Kaylie,Sporer,2371 Cherry Dr,Oak Hollow,48991,P-09,24,DEM,(555) 469-9268,79
+RV000466,Olaf,Anderson,210 Sunset Rd,Riverbend,48990,P-07,22,DEM,555-445-5466,69
+RV000467,Jarvis,Jerde,2170 Franklin Rd,Riverbend,48990,P-02,24,REP,(555) 743-6745,10
+RV000468,Wilburn,Fritsch,2982 Sunset Ct,Riverbend,48990,P-02,28,REP,,41
+RV000469,Candida,Frami,903 Highland Dr,Riverbend,48990,P-06,55,OTH,,68
+RV000470,Cierra,Reinger,2809 Ridge Dr,Riverbend,48990,P-06,54,DEM,(555) 243-5875,91
+RV000471,Jo,Hauck,1482 Sunset Rd,Riverbend,48990,P-07,59,DEM,(555) 951-2747,51
+RV000472,Reyna,Jacobi,300 Adams Ave,Riverbend,48990,P-01,65,REP,,3
+RV000473,Bernard,Thiel,1688 Madison Ct,Oak Hollow,48991,P-09,56,DEM,5556402165,100
+RV000474,Mabel,Lehner,2777 Jefferson Ct,Oak Hollow,48991,P-12,77,NPA,(555) 417-8327,45
+RV000475,Jada,O'Reilly,931 Cedar Rd,Oak Hollow,48991,P-11,20,OTH,5552234440,49
+RV000476,Leif,Carter,1181 Willow Ln,Riverbend,48990,P-02,63,NPA,,24
+RV000477,Sammy,Morissette-Treutel,2565 Ridge Dr,Riverbend,48990,P-06,39,DEM,555-287-7900,79
+RV000478,Ted,Macejkovic,2907 Clark St,Oak Hollow,48991,P-08,39,DEM,(555) 373-1112,100
+RV000479,Reagan,Glover-Stanton,908 Cherry Dr,Oak Hollow,48991,P-09,26,NPA,(555) 684-8815,46
+RV000480,Regan,Treutel,2751 Park Ct,Oak Hollow,48991,P-11,45,NPA,555-323-7005,47
+RV000481,Margarete,Oberbrunner,556 Church St,Riverbend,48990,P-06,47,DEM,(555) 797-9015,70
+RV000482,Flossie,Harber,2696 Birch St,Riverbend,48990,P-04,53,NPA,,55
+RV000483,Lon,Doyle,2097 Birch St,Riverbend,48990,P-04,54,DEM,,88
+RV000484,Clare,Pagac,2089 Pine Ct,Riverbend,48990,P-05,56,NPA,,47
+RV000485,Melyna,Kuphal-Thompson,2356 Adams Rd,Oak Hollow,48991,P-09,36,NPA,(555) 882-0073,36
+RV000486,Savanah,Welch-Beahan,1094 Willow Rd,Riverbend,48990,P-01,92,DEM,,69
+RV000487,Willa,Kertzmann,163 Spring Ct,Riverbend,48990,P-07,31,NPA,(555) 686-1365,65
+RV000488,Neal,Botsford,147 Aspen Ave,Oak Hollow,48991,P-12,78,REP,5559894809,59
+RV000489,Leatha,Vandervort,1415 Willow Ln,Riverbend,48990,P-02,93,REP,,32
+RV000490,Destiney,Considine,469 Cherry Dr,Oak Hollow,48991,P-09,20,NPA,(555) 205-9408,14
+RV000491,Vesta,Raynor,2159 Walnut Dr,Riverbend,48990,P-07,20,NPA,555-940-7695,43
+RV000492,Lorena,Hickle,310 Washington Ave,Riverbend,48990,P-06,48,DEM,,61
+RV000493,Newell,Swift,2349 Highland Rd,Oak Hollow,48991,P-12,58,DEM,5558011147,83
+RV000494,River,Abernathy,1206 Lincoln St,Riverbend,48990,P-01,29,REP,(555) 291-8188,14
+RV000495,Marc,Schiller,2496 Clark St,Oak Hollow,48991,P-08,70,REP,(555) 378-0218,34
+RV000496,Nicklaus,Mayer,1113 Park Ln,Riverbend,48990,P-04,49,DEM,(555) 625-8345,59
+RV000497,Stephon,Russel,2382 Maple Ln,Oak Hollow,48991,P-10,62,DEM,5554675772,67
+RV000498,Dixie,Rowe,957 Adams Ave,Riverbend,48990,P-01,43,NPA,5559119673,67
+RV000499,Shirley,Kling,760 Ridge St,Riverbend,48990,P-06,19,DEM,555-698-1279,54
+RV000500,Amos,Little,975 River St,Riverbend,48990,P-05,39,DEM,,86
+RV000501,Jorge,Collier,118 Washington Ave,Riverbend,48990,P-06,43,REP,,37
+RV000502,Stan,Kuhic,2146 Willow Ln,Riverbend,48990,P-02,42,REP,5552564658,17
+RV000503,Durward,Schmeler,2839 Clark St,Oak Hollow,48991,P-08,58,REP,,38
+RV000504,Delilah,Carroll,1112 Jefferson Dr,Oak Hollow,48991,P-12,44,NPA,(555) 909-7793,41
+RV000505,Darren,Green,1658 Franklin Ct,Oak Hollow,48991,P-08,40,NPA,,38
+RV000506,Clovis,Brekke,2526 Cherry Ct,Riverbend,48990,P-05,33,NPA,(555) 728-3946,84
+RV000507,Asa,Kozey,2153 Adams Ave,Riverbend,48990,P-01,48,DEM,,57
+RV000508,Reymundo,Yost-Mohr,2312 Willow Rd,Riverbend,48990,P-01,41,DEM,555-842-9353,50
+RV000509,Bill,Ondricka,2145 Washington Ave,Riverbend,48990,P-06,47,DEM,(555) 666-0528,48
+RV000510,Carmine,Maggio,1481 Church Rd,Riverbend,48990,P-03,65,DEM,,78
+RV000511,Ciara,Conn,591 Spruce St,Riverbend,48990,P-03,57,NPA,(555) 930-8375,46
+RV000512,Deon,Marvin,2842 Spruce St,Riverbend,48990,P-03,49,DEM,5556209480,59
+RV000513,Jose,Bartell,671 Walnut Ln,Oak Hollow,48991,P-10,68,REP,,35
+RV000514,Elnora,Johnston,2552 Monroe Ln,Oak Hollow,48991,P-12,57,REP,5554419192,41
+RV000515,Daniella,Emmerich,2712 Adams St,Oak Hollow,48991,P-10,89,REP,5554073599,15
+RV000516,Hollie,O'Reilly,2804 Pine Ave,Riverbend,48990,P-05,24,REP,,47
+RV000517,Kerry,Daugherty,1176 Sunset Ct,Riverbend,48990,P-02,35,NPA,(555) 253-3170,32
+RV000518,Damon,Kshlerin,604 Cherry Ln,Oak Hollow,48991,P-08,38,DEM,5557341859,94
+RV000519,Kenny,Leannon,529 Franklin St,Oak Hollow,48991,P-10,77,DEM,555-440-3220,75
+RV000520,Marjorie,Kohler,473 Orchard Ave,Oak Hollow,48991,P-11,25,REP,,35
+RV000521,Telly,Considine,479 Madison Ct,Oak Hollow,48991,P-09,84,DEM,,69
+RV000522,Bette,Harvey,858 Orchard Rd,Oak Hollow,48991,P-09,27,DEM,(555) 279-4176,93
+RV000523,Scot,Kuhlman,867 Spruce St,Riverbend,48990,P-03,55,DEM,(555) 730-5514,79
+RV000524,Abby,Upton,1094 Pine Ct,Riverbend,48990,P-05,34,DEM,555-817-8218,100
+RV000525,Jaquan,Heaney,315 Meadow St,Riverbend,48990,P-02,62,DEM,,97
+RV000526,Paulette,Parker,289 Birch St,Riverbend,48990,P-04,50,NPA,(555) 494-3240,44
+RV000527,Abdiel,Johnston,2336 Walnut Ln,Oak Hollow,48991,P-10,72,NPA,555-280-6604,50
+RV000528,Julianne,Mueller,2792 Walnut Ln,Oak Hollow,48991,P-10,68,NPA,555-227-8389,84
+RV000529,Scot,Torphy,458 Lincoln St,Riverbend,48990,P-01,34,REP,,0
+RV000530,Retha,Huels,252 River St,Riverbend,48990,P-05,78,REP,,4
+RV000531,Russell,Koepp,1210 Jefferson Dr,Oak Hollow,48991,P-12,41,NPA,(555) 479-4155,46
+RV000532,Avery,Walter,2181 Clark St,Oak Hollow,48991,P-08,44,DEM,,45
+RV000533,Susana,Satterfield,1211 Cedar Rd,Oak Hollow,48991,P-11,49,REP,(555) 256-6804,19
+RV000534,Connor,Breitenberg,699 Meadow St,Riverbend,48990,P-02,48,NPA,555-928-7356,53
+RV000535,Edna,Bartell,2734 Pine St,Oak Hollow,48991,P-08,26,DEM,555-223-7008,99
+RV000536,Jacinto,Kerluke,1517 Jefferson Ct,Oak Hollow,48991,P-12,38,NPA,,37
+RV000537,Era,Reichel,2270 Spruce St,Riverbend,48990,P-03,27,NPA,5559427002,40
+RV000538,Tony,Hyatt,144 Church Ln,Riverbend,48990,P-07,47,NPA,,79
+RV000539,Jewell,Schmitt,916 Lake Ln,Oak Hollow,48991,P-12,43,REP,(555) 961-2924,21
+RV000540,Aubrey,Skiles,1128 Ridge Dr,Riverbend,48990,P-06,88,DEM,5557509993,75
+RV000541,Julian,Haley,2197 Meadow St,Riverbend,48990,P-02,54,DEM,,86
+RV000542,Marcelina,Dare,1395 Church Ln,Riverbend,48990,P-07,38,NPA,555-229-7294,60
+RV000543,Nathanael,Harvey,384 Ridge Ln,Riverbend,48990,P-05,39,REP,5558635721,45
+RV000544,Berniece,Hackett,2811 Adams Ave,Riverbend,48990,P-01,18,OTH,(555) 958-0386,24
+RV000545,Dustin,Cartwright,1590 Lincoln Ave,Riverbend,48990,P-03,31,NPA,(555) 760-6021,62
+RV000546,Gail,Wisozk,1797 Cherry Ct,Riverbend,48990,P-05,44,NPA,,7
+RV000547,Rosemary,Boyer,2714 Highland St,Oak Hollow,48991,P-08,80,NPA,555-447-3348,46
+RV000548,Rhea,Cronin,1281 Monroe Rd,Riverbend,48990,P-04,55,DEM,5556987319,100
+RV000549,Samuel,Emard,329 Jefferson Ct,Oak Hollow,48991,P-12,30,REP,(555) 820-9717,42
+RV000550,Floyd,Nitzsche,2069 Jackson Dr,Riverbend,48990,P-02,59,REP,(555) 689-5801,49
+RV000551,Vladimir,Gerlach,1902 Park Ln,Riverbend,48990,P-04,21,NPA,555-778-0878,25
+RV000552,Cierra,Larson-Kuphal,2757 Franklin Rd,Riverbend,48990,P-02,60,NPA,,15
+RV000553,Heather,Hirthe,2619 Cherry Dr,Oak Hollow,48991,P-09,63,DEM,,83
+RV000554,Michele,Dibbert,2711 Cedar St,Oak Hollow,48991,P-11,18,REP,(555) 850-3094,24
+RV000555,Cathryn,Price,2220 Meadow Ave,Riverbend,48990,P-01,40,REP,(555) 655-4424,5
+RV000556,Gwen,Grant,300 Oak Rd,Riverbend,48990,P-04,24,DEM,5556342888,73
+RV000557,Everardo,Senger,221 Monroe Ln,Oak Hollow,48991,P-12,46,REP,555-628-1953,45
+RV000558,Elva,Langworth,858 Birch St,Riverbend,48990,P-04,94,REP,,49
+RV000559,Roberta,Kunze,845 Church Ln,Riverbend,48990,P-07,41,OTH,5553787738,26
+RV000560,Santos,Gerhold,358 Highland Rd,Oak Hollow,48991,P-12,60,DEM,555-256-7107,73
+RV000561,Afton,Hudson,332 Willow Ave,Oak Hollow,48991,P-09,22,NPA,,51
+RV000562,Susan,Brown,2489 Church Ln,Riverbend,48990,P-07,60,NPA,,53
+RV000563,Vicky,Russel,1660 Park Ct,Oak Hollow,48991,P-11,24,REP,,43
+RV000564,Sonia,VonRueden,1367 Franklin St,Oak Hollow,48991,P-10,56,DEM,(555) 491-7466,57
+RV000565,Ann,Gleason,2636 Spring Ct,Riverbend,48990,P-07,82,NPA,555-310-8186,69
+RV000566,Ilene,Boehm,2658 Walnut Dr,Riverbend,48990,P-07,40,NPA,(555) 873-4339,39
+RV000567,Frederick,Bradtke,2207 Spruce St,Riverbend,48990,P-03,50,OTH,,42
+RV000568,Yolanda,Predovic,1363 Spring Ln,Riverbend,48990,P-03,51,DEM,,46
+RV000569,Gaetano,Schiller,2957 Madison Ct,Oak Hollow,48991,P-09,59,NPA,5558415406,32
+RV000570,Anthony,Heathcote,1847 Franklin Rd,Riverbend,48990,P-02,93,NPA,,63
+RV000571,Marlene,Murray,1031 Oak Ave,Riverbend,48990,P-04,19,REP,,12
+RV000572,Jeromy,Ebert,373 Willow Ave,Oak Hollow,48991,P-09,44,DEM,(555) 679-0941,65
+RV000573,Loyal,Hilll,2572 Spruce St,Riverbend,48990,P-03,55,DEM,5559048970,65
+RV000574,Ken,Schmidt,1812 Church Rd,Riverbend,48990,P-03,90,REP,,45
+RV000575,Violette,Hackett,1561 Cedar Ct,Riverbend,48990,P-04,48,DEM,555-294-7711,78
+RV000576,Leanne,Fadel,948 Cedar Dr,Riverbend,48990,P-03,54,NPA,5559293004,48
+RV000577,Ginger,Jaskolski,1992 Orchard Ave,Oak Hollow,48991,P-11,43,DEM,,59
+RV000578,Herminio,Kub-Blick,159 Aspen Ave,Oak Hollow,48991,P-12,57,REP,(555) 655-6797,0
+RV000579,Katlynn,Simonis,1011 Pine Ave,Riverbend,48990,P-05,31,NPA,(555) 953-9852,70
+RV000580,Rhoda,Lubowitz,1159 Grant Rd,Oak Hollow,48991,P-08,78,REP,(555) 719-0452,12
+RV000581,Junius,Nolan,902 Cedar Ct,Riverbend,48990,P-04,62,NPA,555-665-5184,35
+RV000582,Ladarius,Altenwerth-Stamm,838 Maple Ln,Oak Hollow,48991,P-10,45,REP,,19
+RV000583,Kimberly,Becker,1384 Spring Ct,Riverbend,48990,P-07,21,DEM,(555) 779-6389,90
+RV000584,Mozell,Bergnaum,2712 Monroe Ln,Oak Hollow,48991,P-12,19,REP,555-804-5252,16
+RV000585,Paige,Lueilwitz,2216 Aspen Ave,Oak Hollow,48991,P-12,27,REP,(555) 292-2771,26
+RV000586,Mercedes,Murray,1938 Highland St,Oak Hollow,48991,P-08,61,REP,,32
+RV000587,Bill,Ziemann,1091 Lake Ln,Oak Hollow,48991,P-12,43,REP,,13
+RV000588,Brisa,Fahey,2913 Meadow Dr,Riverbend,48990,P-01,61,NPA,555-398-9841,74
+RV000589,Porter,Corkery,640 Willow Ln,Riverbend,48990,P-02,37,REP,555-794-7612,6
+RV000590,Mya,Bartell,2991 Highland St,Oak Hollow,48991,P-08,75,NPA,(555) 406-3815,25
+RV000591,Berneice,Parisian,1823 Monroe Rd,Riverbend,48990,P-04,61,REP,(555) 645-2999,43
+RV000592,Norman,Jacobs,225 Elm Ln,Riverbend,48990,P-03,43,REP,555-975-3903,26
+RV000593,Shania,Bergstrom,2682 Orchard Rd,Oak Hollow,48991,P-09,87,NPA,(555) 843-3163,49
+RV000594,Aileen,Cartwright,1788 Willow St,Oak Hollow,48991,P-10,57,DEM,555-383-7481,46
+RV000595,Jon,Gerlach,1050 Adams Rd,Oak Hollow,48991,P-09,79,DEM,,99
+RV000596,Dahlia,Zieme,2963 Grant Rd,Oak Hollow,48991,P-08,76,NPA,555-889-2546,70
+RV000597,Remington,Kiehn,2034 Maple Ln,Oak Hollow,48991,P-10,71,DEM,(555) 221-3921,73
+RV000598,Jose,Huels,2180 Lincoln St,Riverbend,48990,P-01,46,DEM,,53
+RV000599,Karli,Daugherty,2468 Grant Dr,Riverbend,48990,P-06,62,NPA,(555) 798-6357,49
+RV000600,Doyle,Armstrong,653 Oak Ave,Riverbend,48990,P-04,42,DEM,(555) 376-2276,40
+RV000601,Jennings,Altenwerth,1772 Meadow Ave,Riverbend,48990,P-01,59,DEM,555-828-7497,36
+RV000602,Aisha,O'Connell,1154 Oak Rd,Riverbend,48990,P-04,56,NPA,(555) 872-9916,72
+RV000603,Gino,Gerhold-Thiel,1686 Sunset Ct,Riverbend,48990,P-02,46,NPA,555-858-9491,66
+RV000604,Ludwig,Lebsack,1316 Elm St,Oak Hollow,48991,P-11,47,REP,(555) 782-7379,21
+RV000605,Myles,Simonis,431 Meadow Ave,Riverbend,48990,P-01,23,REP,,22
+RV000606,Braeden,Bogan,1103 Birch St,Riverbend,48990,P-04,40,NPA,(555) 544-0762,60
+RV000607,Verna,Bauch,136 Church Rd,Riverbend,48990,P-03,28,NPA,,42
+RV000608,Cordia,Weissnat,1832 Lake Ln,Oak Hollow,48991,P-12,55,NPA,(555) 725-8523,61
+RV000609,Liana,Schulist,2870 Park Ct,Oak Hollow,48991,P-11,81,NPA,555-401-3643,40
+RV000610,Jerod,Metz,2146 Monroe Ln,Oak Hollow,48991,P-12,80,REP,(555) 225-4460,22
+RV000611,Korey,Hayes,1945 Lincoln St,Riverbend,48990,P-01,22,REP,5554475278,37
+RV000612,Coty,O'Keefe,1875 Jackson Dr,Riverbend,48990,P-02,21,REP,(555) 919-6314,13
+RV000613,Esperanza,Pfannerstill,1235 Franklin Ct,Oak Hollow,48991,P-08,66,DEM,,69
+RV000614,Jacquelyn,Harber,1385 Franklin Rd,Riverbend,48990,P-02,36,NPA,5552440360,15
+RV000615,Ebba,Metz,1716 Church Rd,Riverbend,48990,P-03,49,REP,555-786-7607,26
+RV000616,Moises,Rohan,2720 Madison Ct,Oak Hollow,48991,P-09,71,REP,,27
+RV000617,Marcelino,Kshlerin,738 Highland St,Oak Hollow,48991,P-08,28,DEM,555-333-6674,80
+RV000618,Cicero,Friesen,1707 Ridge St,Riverbend,48990,P-06,38,DEM,555-341-0903,65
+RV000619,Alvin,Dickens-Mante,1835 Sunset Rd,Riverbend,48990,P-07,59,NPA,(555) 935-9817,30
+RV000620,Isaiah,Schmeler,2477 Willow St,Oak Hollow,48991,P-10,76,REP,5553102124,4
+RV000621,Sarina,Rohan,510 Highland St,Oak Hollow,48991,P-08,56,REP,5558373558,9
+RV000622,Nellie,Schuppe,2741 Franklin Ct,Oak Hollow,48991,P-08,65,DEM,5555943055,87
+RV000623,Easton,Farrell,957 Jefferson Ln,Riverbend,48990,P-05,37,REP,,26
+RV000624,Maye,Grimes,1687 Cedar Ct,Riverbend,48990,P-04,63,DEM,(555) 378-5899,78
+RV000625,Adolfo,Terry-Friesen,1941 Lincoln St,Riverbend,48990,P-01,34,DEM,,88
+RV000626,Neal,Brakus-Heathcote,1937 Franklin Rd,Riverbend,48990,P-02,52,DEM,(555) 703-0067,81
+RV000627,Titus,Tremblay,709 Spring Ct,Riverbend,48990,P-07,42,DEM,(555) 522-0961,67
+RV000628,Kristen,Mante,882 Meadow St,Riverbend,48990,P-02,22,NPA,555-343-0178,45
+RV000629,Caleb,Cassin,2245 Adams Rd,Oak Hollow,48991,P-09,43,NPA,(555) 833-1015,55
+RV000630,Orlando,Ratke,1359 Oak Ave,Riverbend,48990,P-04,42,NPA,555-429-0848,43
+RV000631,Addison,Zboncak,2536 Grant Rd,Oak Hollow,48991,P-08,55,REP,(555) 604-4941,11
+RV000632,Joannie,Borer,590 Elm St,Oak Hollow,48991,P-11,92,REP,(555) 722-7892,20
+RV000633,Margot,Gusikowski-Mills,1919 Ridge Dr,Riverbend,48990,P-06,20,DEM,555-891-2455,49
+RV000634,Scottie,Aufderhar-Rogahn,1877 Ridge St,Riverbend,48990,P-06,25,NPA,,57
+RV000635,Tanner,Hoppe,1994 Grant Rd,Oak Hollow,48991,P-08,40,NPA,,55
+RV000636,Adrienne,Abshire,1094 Orchard Ave,Oak Hollow,48991,P-11,32,NPA,555-831-5668,70
+RV000637,Stefan,Hirthe,2258 Church St,Riverbend,48990,P-06,45,REP,,12
+RV000638,Flo,Botsford,638 Monroe Rd,Riverbend,48990,P-04,94,DEM,555-949-6595,72
+RV000639,Alison,Mohr,1663 Ridge Ln,Riverbend,48990,P-05,63,NPA,5552818319,43
+RV000640,Ilene,Grady,947 Elm Rd,Riverbend,48990,P-02,55,REP,(555) 762-8957,22
+RV000641,Aliya,Satterfield,516 Willow St,Oak Hollow,48991,P-10,25,REP,5558250778,38
+RV000642,Ona,Schuster,1136 Ridge Ln,Riverbend,48990,P-05,19,REP,5554569657,22
+RV000643,Pat,Davis,514 Elm St,Oak Hollow,48991,P-11,87,DEM,(555) 663-0278,100
+RV000644,Tamara,Stanton,593 Maple Ln,Oak Hollow,48991,P-10,92,REP,5555788607,27
+RV000645,Julie,Moore,2207 Jefferson Dr,Oak Hollow,48991,P-12,91,REP,555-610-1610,20
+RV000646,Vladimir,Pfannerstill,2295 Orchard Rd,Oak Hollow,48991,P-09,89,REP,(555) 549-6686,19
+RV000647,Maximus,Howe-Hahn,2973 Jefferson Ln,Riverbend,48990,P-05,70,REP,,30
+RV000648,Michael,MacGyver,1744 Adams St,Oak Hollow,48991,P-10,81,OTH,(555) 434-5628,68
+RV000649,Candice,Kovacek,1202 Jefferson Ct,Oak Hollow,48991,P-12,49,OTH,555-535-4718,62
+RV000650,Tavares,Schinner,1361 Meadow St,Riverbend,48990,P-02,53,REP,,31
+RV000651,Boris,Deckow,2169 Willow Ln,Riverbend,48990,P-02,65,DEM,(555) 591-3559,85
+RV000652,Jason,Thiel,2332 Willow Ave,Oak Hollow,48991,P-09,62,DEM,,85
+RV000653,Dejah,Hoppe,1801 Pine Ave,Riverbend,48990,P-05,46,REP,(555) 272-0677,26
+RV000654,Laila,Swaniawski,1575 Cedar St,Oak Hollow,48991,P-11,54,NPA,5558262046,26
+RV000655,Bertrand,O'Hara,798 Grant Rd,Oak Hollow,48991,P-08,61,OTH,(555) 271-1118,62
+RV000656,Rachael,Langosh,2372 Cherry Ln,Oak Hollow,48991,P-08,28,DEM,(555) 828-7531,74
+RV000657,Muriel,Kihn,218 Oak Rd,Riverbend,48990,P-04,85,DEM,,100
+RV000658,Peyton,Frami,1632 Willow Rd,Riverbend,48990,P-01,55,DEM,5553175750,64
+RV000659,Leonie,Casper,2850 Church Rd,Riverbend,48990,P-03,33,DEM,,82
+RV000660,Hanna,Koepp,2604 Birch St,Riverbend,48990,P-04,49,DEM,,52
+RV000661,Hassie,Sporer,2272 Willow St,Oak Hollow,48991,P-10,40,NPA,(555) 684-2575,41
+RV000662,Akeem,Casper-Lemke,1581 Monroe Rd,Riverbend,48990,P-04,18,REP,(555) 788-5951,14
+RV000663,Kenny,Gutkowski,174 Ridge Ln,Riverbend,48990,P-05,91,REP,555-687-1945,31
+RV000664,Reilly,Grant,938 Sunset Ct,Riverbend,48990,P-02,56,DEM,(555) 249-9004,82
+RV000665,Lia,Hammes,2884 Park Ct,Oak Hollow,48991,P-11,28,NPA,,63
+RV000666,Alta,Hilpert,1290 Pine Ave,Riverbend,48990,P-05,18,REP,555-517-0367,16
+RV000667,Summer,Wyman,139 Jefferson Ln,Riverbend,48990,P-05,59,OTH,555-259-8702,36
+RV000668,Sara,Johns,1856 Pine St,Oak Hollow,48991,P-08,21,DEM,5554838391,47
+RV000669,Cecil,Schmeler,2610 Cedar Dr,Riverbend,48990,P-03,30,DEM,(555) 551-8541,77
+RV000670,Lowell,Fritsch,1984 Maple Ln,Oak Hollow,48991,P-10,46,DEM,555-316-0049,82
+RV000671,Lane,Becker,1055 Adams Rd,Oak Hollow,48991,P-09,43,REP,5553190764,33
+RV000672,Emmitt,Marquardt,387 Meadow Dr,Riverbend,48990,P-01,27,NPA,,63
+RV000673,Haylie,Gerhold,1461 Franklin Rd,Riverbend,48990,P-02,92,OTH,5559368022,47
+RV000674,Ophelia,Skiles-Lind,801 Cedar Rd,Oak Hollow,48991,P-11,36,REP,,18
+RV000675,Wilma,Nitzsche,1739 Church Ln,Riverbend,48990,P-07,26,NPA,555-363-9162,40
+RV000676,Ian,Schiller,2776 Meadow Dr,Riverbend,48990,P-01,51,REP,555-870-2377,50
+RV000677,Dax,Johns,2461 Cherry Dr,Oak Hollow,48991,P-09,19,DEM,(555) 235-0233,55
+RV000678,Braulio,Metz-O'Keefe,1459 Cedar St,Oak Hollow,48991,P-11,34,REP,(555) 532-6842,40
+RV000679,Demarcus,Pollich,1422 Willow Rd,Riverbend,48990,P-01,76,OTH,,28
+RV000680,Larue,Haley,1798 Elm Rd,Riverbend,48990,P-02,74,NPA,555-236-1062,85
+RV000681,Tristin,Bergnaum,283 Walnut Dr,Riverbend,48990,P-07,37,REP,,57
+RV000682,Jamey,Marvin,1819 Lincoln Ln,Riverbend,48990,P-01,29,REP,555-479-6994,22
+RV000683,Archie,Barton,265 Elm Ln,Riverbend,48990,P-03,41,DEM,,74
+RV000684,Delmer,Volkman,1831 Spruce St,Riverbend,48990,P-03,76,REP,(555) 405-4516,38
+RV000685,Carleton,Schimmel,764 Clark St,Oak Hollow,48991,P-08,59,DEM,(555) 658-1915,48
+RV000686,Andreanne,Goyette,1528 Pine Ct,Riverbend,48990,P-05,56,REP,,63
+RV000687,Alayna,Von,433 Ridge Ln,Riverbend,48990,P-05,32,DEM,555-415-1562,78
+RV000688,Eusebio,Blick,1689 Cherry Ct,Riverbend,48990,P-05,60,NPA,5555313300,87
+RV000689,Elinor,Leuschke,2352 Lake Ln,Oak Hollow,48991,P-12,27,REP,5555061891,23
+RV000690,Kris,Emmerich,2700 Madison Ct,Oak Hollow,48991,P-09,33,DEM,5557267598,79
+RV000691,Andreane,Larson,1245 Maple Ln,Oak Hollow,48991,P-10,28,NPA,5553074167,53
+RV000692,Akeem,Ward,1436 Birch St,Riverbend,48990,P-04,50,REP,5559658965,28
+RV000693,Cesar,Koelpin,793 Oak Ave,Riverbend,48990,P-04,30,DEM,,88
+RV000694,Helmer,Auer,2628 Lake Ln,Oak Hollow,48991,P-12,62,OTH,,12
+RV000695,Neil,Bailey,1066 Cedar Rd,Oak Hollow,48991,P-11,54,OTH,,84
+RV000696,Guido,Crona,891 Adams Ave,Riverbend,48990,P-01,20,REP,,40
+RV000697,Heidi,Altenwerth,1766 Adams Ave,Riverbend,48990,P-01,42,NPA,(555) 722-6901,44
+RV000698,Magdalen,Balistreri,2921 Willow Ln,Riverbend,48990,P-02,57,DEM,,99
+RV000699,Maud,Pfeffer,2965 Cherry Dr,Oak Hollow,48991,P-09,61,REP,555-735-8117,12
+RV000700,Cordell,Schimmel,2531 Orchard St,Oak Hollow,48991,P-09,44,NPA,,42
+RV000701,Abigayle,Rosenbaum,603 Oak Ave,Riverbend,48990,P-04,84,REP,,50
+RV000702,Christian,Herman,2016 Pine Ave,Riverbend,48990,P-05,29,REP,5555381184,30
+RV000703,Hollie,Swift,2336 Pine St,Oak Hollow,48991,P-08,68,NPA,5555580001,80
+RV000704,Margaret,Macejkovic,1301 Elm Rd,Riverbend,48990,P-02,37,REP,5559352828,26
+RV000705,Rosamond,Koepp,131 Park Ln,Riverbend,48990,P-04,74,DEM,(555) 657-0730,80
+RV000706,Asa,Barton,1339 Ridge Dr,Riverbend,48990,P-06,67,DEM,(555) 578-7767,95
+RV000707,Jerry,Rice,1794 Monroe Dr,Oak Hollow,48991,P-11,45,REP,(555) 560-3916,19
+RV000708,Mindy,Bogan,278 Washington Ave,Riverbend,48990,P-06,64,REP,,46
+RV000709,Zane,Hermann,1194 Madison Ct,Oak Hollow,48991,P-09,36,OTH,(555) 974-4396,6
+RV000710,Pansy,Wisozk,2412 Aspen Ave,Oak Hollow,48991,P-12,72,DEM,(555) 706-6702,72
+RV000711,Alek,D'Amore,741 Jefferson Ln,Riverbend,48990,P-05,65,DEM,(555) 421-3378,39
+RV000712,Karson,Kuhn,463 Madison Ct,Oak Hollow,48991,P-09,26,NPA,(555) 626-1688,80
+RV000713,Joy,Beahan,1395 Lake Ln,Oak Hollow,48991,P-12,81,REP,(555) 220-0397,7
+RV000714,Calvin,Howe-Robel,969 Jefferson Ln,Riverbend,48990,P-05,38,REP,,36
+RV000715,Lucie,Padberg-Fahey,438 Pine Ln,Riverbend,48990,P-07,24,DEM,(555) 804-9163,47
+RV000716,Eloisa,O'Conner,2070 Franklin St,Oak Hollow,48991,P-10,70,REP,(555) 885-8390,40
+RV000717,Janie,Hickle,2669 Church Ln,Riverbend,48990,P-07,50,NPA,,30
+RV000718,Scott,Klocko,908 Monroe Rd,Riverbend,48990,P-04,41,NPA,5559710442,14
+RV000719,Carmelo,Rosenbaum,2885 Spring Ct,Riverbend,48990,P-07,40,REP,(555) 661-4904,44
+RV000720,Stan,Gibson,1483 Orchard Ave,Oak Hollow,48991,P-11,21,REP,,6
+RV000721,Rosie,Hartmann,1281 Lake St,Oak Hollow,48991,P-10,27,DEM,555-206-1414,57
+RV000722,Jenny,Heaney,2216 Lake Ln,Oak Hollow,48991,P-12,51,NPA,(555) 550-6718,16
+RV000723,Ora,Yundt,1768 Franklin St,Oak Hollow,48991,P-10,28,REP,,2
+RV000724,Demond,Romaguera,2582 Park Ct,Oak Hollow,48991,P-11,61,DEM,,50
+RV000725,Emely,Kreiger,1499 Elm Ln,Riverbend,48990,P-03,77,DEM,,74
+RV000726,Amani,Beahan,476 Cedar St,Oak Hollow,48991,P-11,27,REP,(555) 642-4252,24
+RV000727,Mariane,Lemke-Rolfson,2641 Lincoln Ln,Riverbend,48990,P-01,63,REP,555-254-1815,12
+RV000728,Carolyne,Balistreri,2484 Lincoln Ave,Riverbend,48990,P-03,69,DEM,5553196955,92
+RV000729,Candido,Swift,236 Oak Ave,Riverbend,48990,P-04,81,DEM,,56
+RV000730,Alanna,Krajcik,266 Grant Dr,Riverbend,48990,P-06,51,DEM,555-660-5810,46
+RV000731,Agustina,Labadie,118 Cedar Rd,Oak Hollow,48991,P-11,19,OTH,,39
+RV000732,Braden,Crona,1877 Jackson Dr,Riverbend,48990,P-02,90,NPA,,12
+RV000733,Barton,Purdy,2113 Franklin Ct,Oak Hollow,48991,P-08,30,REP,(555) 746-8064,46
+RV000734,Brannon,Krajcik,1870 Pine Ct,Riverbend,48990,P-05,85,REP,(555) 270-2559,19
+RV000735,Margie,Klocko,561 Lake St,Oak Hollow,48991,P-10,61,DEM,555-720-0645,97
+RV000736,Marion,Rosenbaum,2555 Walnut Dr,Riverbend,48990,P-07,43,NPA,5553808609,54
+RV000737,Amir,Bauch,2526 Jefferson Ct,Oak Hollow,48991,P-12,22,DEM,(555) 262-4320,65
+RV000738,Fredrick,Yost,2652 Clark St,Oak Hollow,48991,P-08,56,NPA,(555) 516-7289,54
+RV000739,Harley,Donnelly,2621 Adams Ave,Riverbend,48990,P-01,31,REP,555-827-6667,34
+RV000740,Santino,Schultz,580 Willow Rd,Riverbend,48990,P-01,47,DEM,,76
+RV000741,Maggie,Walter,2210 Orchard Rd,Oak Hollow,48991,P-09,72,NPA,(555) 836-9568,44
+RV000742,Vallie,Rau,2335 Jefferson Ln,Riverbend,48990,P-05,25,NPA,5557383135,34
+RV000743,Gennaro,Ebert,563 Ridge Dr,Riverbend,48990,P-06,32,DEM,555-773-0410,79
+RV000744,Rosie,Williamson,1916 Lake St,Oak Hollow,48991,P-10,36,DEM,(555) 907-3906,74
+RV000745,Kendall,Bergnaum,842 Pine Ct,Riverbend,48990,P-05,76,REP,,8
+RV000746,Richard,Maggio,1508 Cedar Ct,Riverbend,48990,P-04,91,NPA,5555910378,43
+RV000747,Torrey,Wiza-Nader,2853 Cherry Ln,Oak Hollow,48991,P-08,46,REP,,21
+RV000748,Belle,Koss,2516 Highland Dr,Riverbend,48990,P-06,41,DEM,,90
+RV000749,Marguerite,Stanton,2658 Monroe Dr,Oak Hollow,48991,P-11,59,NPA,(555) 449-9956,66
+RV000750,Oswald,Wolf,106 Grant Dr,Riverbend,48990,P-06,31,REP,555-450-2907,27
+RV000751,Jaeden,Homenick,2095 Meadow Dr,Riverbend,48990,P-01,69,REP,5558953331,13
+RV000752,Harley,Kunze,1979 Park Ln,Riverbend,48990,P-04,54,REP,(555) 950-4838,15
+RV000753,Abel,Satterfield,2276 Franklin St,Oak Hollow,48991,P-10,59,NPA,(555) 958-8216,29
+RV000754,Timmy,Crooks,339 Clark St,Oak Hollow,48991,P-08,31,REP,555-609-3916,32
+RV000755,Laura,Padberg,1846 Lincoln St,Riverbend,48990,P-01,39,REP,(555) 950-3013,5
+RV000756,Daniela,Ritchie,1285 Orchard Rd,Oak Hollow,48991,P-09,45,REP,(555) 365-0248,46
+RV000757,Jordy,Ziemann,1600 Monroe Dr,Oak Hollow,48991,P-11,73,NPA,555-831-8458,63
+RV000758,Jayden,Lesch,2206 Cedar Ct,Riverbend,48990,P-04,45,REP,,24
+RV000759,Maxine,Muller,2570 Pine St,Oak Hollow,48991,P-08,28,DEM,,100
+RV000760,Hobart,Littel,1103 River St,Riverbend,48990,P-05,57,REP,(555) 522-5149,13
+RV000761,Alexanne,Senger,1966 Lake Ln,Oak Hollow,48991,P-12,41,REP,555-409-3347,33
+RV000762,Sydney,Oberbrunner,787 Orchard St,Oak Hollow,48991,P-09,59,DEM,555-725-9815,66
+RV000763,Eusebio,Jerde,1387 Clark Rd,Riverbend,48990,P-07,23,OTH,5557559870,38
+RV000764,Walker,Kassulke,2301 Lake St,Oak Hollow,48991,P-10,33,NPA,(555) 832-7863,59
+RV000765,Vicki,Rowe,2234 Clark St,Oak Hollow,48991,P-08,39,NPA,,45
+RV000766,Glenna,Blanda,1856 Meadow Dr,Riverbend,48990,P-01,58,DEM,,92
+RV000767,Dawn,Veum,686 Walnut Ln,Oak Hollow,48991,P-10,34,DEM,555-289-0544,64
+RV000768,Zechariah,Reinger,595 Willow Ave,Oak Hollow,48991,P-09,51,NPA,,54
+RV000769,Cindy,Rutherford,2222 Grant Dr,Riverbend,48990,P-06,50,DEM,555-531-9015,60
+RV000770,Sarina,Klein,908 Orchard Ave,Oak Hollow,48991,P-11,49,DEM,555-286-3910,50
+RV000771,Maynard,Hodkiewicz-Ritchie,2286 Cherry Ln,Oak Hollow,48991,P-08,93,DEM,,88
+RV000772,Ike,Parisian,2150 Church Ln,Riverbend,48990,P-07,22,DEM,(555) 517-3257,62
+RV000773,Keshawn,Cormier,1549 Meadow Ave,Riverbend,48990,P-01,36,DEM,5559138427,53
+RV000774,Luz,Schuppe,1742 Oak Ave,Riverbend,48990,P-04,41,DEM,(555) 711-0193,56
+RV000775,Amparo,Roob,260 Franklin Ct,Oak Hollow,48991,P-08,35,NPA,(555) 521-0797,33
+RV000776,Marcelo,Harber,1367 Oak Rd,Riverbend,48990,P-04,25,NPA,,50
+RV000777,Athena,Wilderman,1628 Madison Ct,Oak Hollow,48991,P-09,49,REP,,42
+RV000778,Tiara,Parker,2632 Oak Rd,Riverbend,48990,P-04,42,DEM,555-408-6976,90
+RV000779,Newton,Willms,1780 Willow St,Oak Hollow,48991,P-10,18,NPA,,54
+RV000780,Peter,Kub,1583 Grant Dr,Riverbend,48990,P-06,71,DEM,555-757-7378,63
+RV000781,Annabel,Nader,773 Cedar Rd,Oak Hollow,48991,P-11,78,REP,,31
+RV000782,Devan,Collins,2604 Willow Ln,Riverbend,48990,P-02,91,NPA,(555) 939-2811,69
+RV000783,Gillian,Rohan,2799 Adams St,Oak Hollow,48991,P-10,30,DEM,555-697-2422,93
+RV000784,Hulda,Herman,1223 Walnut Ln,Oak Hollow,48991,P-10,69,DEM,5556501862,59
+RV000785,Kayla,Koepp,1295 Madison Ct,Oak Hollow,48991,P-09,35,NPA,555-707-5743,38
+RV000786,Scott,Walter,2533 Lincoln Ave,Riverbend,48990,P-03,55,DEM,,63
+RV000787,Lillian,Ratke,2639 Aspen Ave,Oak Hollow,48991,P-12,48,NPA,5553491740,53
+RV000788,Susan,Batz,1536 Spring Ct,Riverbend,48990,P-07,25,DEM,(555) 704-5711,65
+RV000789,Bertrand,Jaskolski,1435 River St,Riverbend,48990,P-05,76,NPA,(555) 299-9242,43
+RV000790,Kenya,Windler,816 Lincoln Ave,Riverbend,48990,P-03,40,NPA,,65
+RV000791,Sonia,Dickinson,2791 Monroe Rd,Riverbend,48990,P-04,31,DEM,(555) 955-3977,66
+RV000792,Frederique,Weimann,1173 Washington Ave,Riverbend,48990,P-06,63,DEM,5553601586,83
+RV000793,Mikel,Medhurst,2548 Monroe Ln,Oak Hollow,48991,P-12,62,OTH,5552545988,80
+RV000794,Destiny,Bogisich,238 Maple Ln,Oak Hollow,48991,P-10,68,DEM,5555965791,61
+RV000795,Oral,Goldner,2468 Ridge St,Riverbend,48990,P-06,41,DEM,,50
+RV000796,Gilberto,Kreiger,734 Highland St,Oak Hollow,48991,P-08,40,NPA,,74
+RV000797,Felipa,Turner,442 Jackson Dr,Riverbend,48990,P-02,59,REP,,0
+RV000798,Marlon,Raynor,2144 Meadow St,Riverbend,48990,P-02,90,REP,(555) 697-7245,15
+RV000799,Alessia,Abbott,2120 Park Ln,Riverbend,48990,P-04,37,DEM,(555) 688-5407,99
+RV000800,Deshawn,Renner,790 Elm St,Oak Hollow,48991,P-11,25,REP,5558055138,33
+RV000801,Marguerite,Barrows,1559 Walnut Ln,Oak Hollow,48991,P-10,37,DEM,(555) 553-8644,95
+RV000802,Emilie,Gulgowski,2023 Lincoln Ln,Riverbend,48990,P-01,76,NPA,5559723727,49
+RV000803,Roy,Mills,882 Elm Rd,Riverbend,48990,P-02,44,OTH,555-908-4397,28
+RV000804,Imogene,MacGyver-Hickle,2688 Birch St,Riverbend,48990,P-04,55,REP,5559399932,55
+RV000805,Amie,Weber,2215 Washington Ave,Riverbend,48990,P-06,29,NPA,,55
+RV000806,Kane,Mueller,2884 Orchard Rd,Oak Hollow,48991,P-09,22,DEM,555-806-4635,81
+RV000807,Julie,Waters,2760 Elm Ln,Riverbend,48990,P-03,79,NPA,,56
+RV000808,Clara,Anderson,313 Highland Dr,Riverbend,48990,P-06,34,DEM,,59
+RV000809,Furman,Botsford,1744 Ridge St,Riverbend,48990,P-06,32,DEM,,60
+RV000810,Ramon,Torphy,949 Jefferson Dr,Oak Hollow,48991,P-12,35,OTH,(555) 851-7988,80
+RV000811,Ola,Gleichner-Feil,2122 Madison Ct,Oak Hollow,48991,P-09,70,DEM,5553132845,46
+RV000812,Irwin,Crona-Kautzer,1609 Birch St,Riverbend,48990,P-04,77,REP,555-727-2836,2
+RV000813,Israel,Bruen,1571 Birch St,Riverbend,48990,P-04,38,REP,555-835-1422,18
+RV000814,Alexander,Davis,1969 Willow Ln,Riverbend,48990,P-02,45,NPA,555-620-5261,9
+RV000815,Sylvan,Wyman,1524 Cedar Ct,Riverbend,48990,P-04,38,DEM,,53
+RV000816,Julia,Rogahn,1062 Ridge Dr,Riverbend,48990,P-06,71,REP,(555) 819-2465,29
+RV000817,Arne,Abbott,2100 River St,Riverbend,48990,P-05,31,REP,(555) 752-9138,53
+RV000818,Desiree,Koss,2970 Church Rd,Riverbend,48990,P-03,40,DEM,,100
+RV000819,Chaz,Treutel,885 Elm St,Oak Hollow,48991,P-11,25,REP,555-750-4348,20
+RV000820,Oliver,Dooley,2284 Monroe Dr,Oak Hollow,48991,P-11,38,DEM,,86
+RV000821,Nicholaus,Crooks,2097 Willow St,Oak Hollow,48991,P-10,61,NPA,,49
+RV000822,Roxanne,Russel,147 Orchard St,Oak Hollow,48991,P-09,35,DEM,(555) 357-5821,83
+RV000823,Devante,Jast,2707 Clark Rd,Riverbend,48990,P-07,32,DEM,,77
+RV000824,Gardner,Upton,2364 Birch St,Riverbend,48990,P-04,49,REP,,38
+RV000825,Duane,Watsica,621 Church St,Riverbend,48990,P-06,78,NPA,(555) 338-6665,36
+RV000826,Jarrell,Boyer,2061 Oak Rd,Riverbend,48990,P-04,91,DEM,,74
+RV000827,Austyn,Homenick,1295 Aspen Ave,Oak Hollow,48991,P-12,60,REP,,5
+RV000828,Kiara,Hartmann,1985 Highland St,Oak Hollow,48991,P-08,51,NPA,,59
+RV000829,Claude,Schoen,570 Church St,Riverbend,48990,P-06,36,DEM,555-522-8907,89
+RV000830,Asha,Nader,2380 Clark St,Oak Hollow,48991,P-08,22,NPA,555-378-3580,69
+RV000831,Reymundo,Kunze,1929 Highland Dr,Riverbend,48990,P-06,67,NPA,,51
+RV000832,Marcella,Hoeger,2241 Clark Rd,Riverbend,48990,P-07,28,DEM,555-575-7134,82
+RV000833,Ralph,Walter,908 Highland St,Oak Hollow,48991,P-08,94,DEM,,100
+RV000834,Adolf,Stiedemann,1414 Monroe Rd,Riverbend,48990,P-04,38,DEM,555-614-5330,61
+RV000835,Kale,Harris-Weimann,2786 Pine Ave,Riverbend,48990,P-05,24,DEM,(555) 981-6707,39
+RV000836,Hettie,Ryan,1977 Oak Ave,Riverbend,48990,P-04,47,DEM,,81
+RV000837,Nina,Lakin,527 Jefferson Ct,Oak Hollow,48991,P-12,75,REP,,22
+RV000838,Emmie,Thompson,1724 Monroe Ln,Oak Hollow,48991,P-12,39,REP,5557756897,40
+RV000839,Patrick,Marks,2839 Cedar Dr,Riverbend,48990,P-03,59,NPA,,42
+RV000840,Carolina,Price,2427 Adams Rd,Oak Hollow,48991,P-09,59,REP,555-935-6834,34
+RV000841,Rick,Schuppe,2398 Aspen Ave,Oak Hollow,48991,P-12,19,REP,5558282533,46
+RV000842,Lupe,Mante,621 Oak Rd,Riverbend,48990,P-04,36,NPA,,51
+RV000843,Jalen,Lang,1818 Elm Rd,Riverbend,48990,P-02,20,DEM,(555) 939-9728,47
+RV000844,Jaden,Wyman,310 Elm Ln,Riverbend,48990,P-03,35,NPA,(555) 514-6438,72
+RV000845,Alyson,Hintz,2165 Meadow Dr,Riverbend,48990,P-01,74,DEM,5552597751,61
+RV000846,Brenden,Rohan,1136 Ridge Dr,Riverbend,48990,P-06,63,DEM,(555) 532-3156,56
+RV000847,Issac,Jast,1197 Spring Ct,Riverbend,48990,P-07,22,DEM,(555) 376-3492,81
+RV000848,Forrest,Littel,104 Church Rd,Riverbend,48990,P-03,25,REP,(555) 862-2478,12
+RV000849,Sheryl,Harber,491 Ridge Dr,Riverbend,48990,P-06,73,REP,(555) 800-5024,46
+RV000850,Marlee,Anderson,336 Spruce St,Riverbend,48990,P-03,25,NPA,(555) 298-6867,56
+RV000851,Jerel,Collier,2158 Lincoln Ln,Riverbend,48990,P-01,87,NPA,555-416-5758,31
+RV000852,Jeff,Raynor,1059 Washington Ave,Riverbend,48990,P-06,56,NPA,5552486672,77
+RV000853,Lexus,Gleason,1248 Jefferson Dr,Oak Hollow,48991,P-12,24,NPA,(555) 799-6439,55
+RV000854,Kali,Franey,915 Highland St,Oak Hollow,48991,P-08,51,NPA,(555) 421-6797,65
+RV000855,Cody,Nikolaus,432 Ridge Dr,Riverbend,48990,P-06,34,NPA,,47
+RV000856,Zechariah,Braun,585 River St,Riverbend,48990,P-05,51,NPA,,62
+RV000857,Gladys,Hegmann,1029 Highland St,Oak Hollow,48991,P-08,55,REP,(555) 387-0704,0
+RV000858,Dorothea,Conroy,1713 Walnut Dr,Riverbend,48990,P-07,18,DEM,555-904-1287,76
+RV000859,Evans,Ortiz,1185 Monroe Dr,Oak Hollow,48991,P-11,27,REP,(555) 458-7994,30
+RV000860,Gary,Yost,1112 Church Ln,Riverbend,48990,P-07,94,REP,555-887-9266,61
+RV000861,Reuben,Waelchi,1395 Willow Ave,Oak Hollow,48991,P-09,20,REP,(555) 488-3034,10
+RV000862,Lillian,Reilly,1930 Cedar Ct,Riverbend,48990,P-04,41,DEM,555-772-7240,85
+RV000863,Frances,Mills,2010 Grant Rd,Oak Hollow,48991,P-08,41,DEM,(555) 208-4912,57
+RV000864,Belinda,Casper,1046 Church Ln,Riverbend,48990,P-07,89,DEM,,81
+RV000865,Abigail,Schmeler,2313 Lincoln St,Riverbend,48990,P-01,46,REP,555-296-3110,15
+RV000866,Mario,Thiel,915 Jefferson Ln,Riverbend,48990,P-05,20,DEM,555-793-1379,46
+RV000867,Julien,Ziemann,1242 Monroe Dr,Oak Hollow,48991,P-11,39,DEM,(555) 666-2771,83
+RV000868,Baron,D'Amore,1179 Lincoln Ave,Riverbend,48990,P-03,56,DEM,(555) 320-6678,84
+RV000869,Monserrate,Renner,1072 Cherry Ln,Oak Hollow,48991,P-08,22,DEM,,62
+RV000870,Jaclyn,Hickle,2506 Church St,Riverbend,48990,P-06,56,REP,(555) 569-4898,10
+RV000871,Kathy,Feil,2243 Clark Rd,Riverbend,48990,P-07,69,DEM,(555) 665-0712,71
+RV000872,Moses,Gleichner,2519 Adams Ave,Riverbend,48990,P-01,41,REP,(555) 448-8701,38
+RV000873,Aubree,Haag,494 Pine Ln,Riverbend,48990,P-07,44,REP,,0
+RV000874,May,Mraz,1089 Willow St,Oak Hollow,48991,P-10,33,REP,(555) 230-3478,7
+RV000875,Colten,Macejkovic,2715 Monroe Rd,Riverbend,48990,P-04,29,REP,,0
+RV000876,Casimir,Medhurst,483 Meadow St,Riverbend,48990,P-02,20,NPA,,72
+RV000877,Penny,Collins,2769 Birch St,Riverbend,48990,P-04,45,REP,(555) 282-1892,47
+RV000878,Patience,Feeney,153 Jefferson Ln,Riverbend,48990,P-05,22,NPA,,44
+RV000879,Angela,Trantow-Wiza,944 Spring Ln,Riverbend,48990,P-03,29,DEM,,77
+RV000880,Solon,Cruickshank,265 Monroe Ln,Oak Hollow,48991,P-12,48,REP,(555) 398-3075,27
+RV000881,Randi,Wisozk,2778 Monroe Dr,Oak Hollow,48991,P-11,89,REP,(555) 875-0819,21
+RV000882,Jim,Nicolas,945 Highland St,Oak Hollow,48991,P-08,29,NPA,,74
+RV000883,Carl,Schiller,2000 Orchard Rd,Oak Hollow,48991,P-09,63,DEM,(555) 448-3392,93
+RV000884,Triston,Schamberger,486 Maple Ln,Oak Hollow,48991,P-10,80,NPA,,68
+RV000885,Kenna,Russel,2007 Lake St,Oak Hollow,48991,P-10,19,DEM,(555) 721-2722,45
+RV000886,Kayli,Kulas,1459 Church St,Riverbend,48990,P-06,30,REP,,12
+RV000887,Oscar,Hessel,1041 Adams St,Oak Hollow,48991,P-10,45,REP,,15
+RV000888,Chasity,Lueilwitz,2682 Willow Ave,Oak Hollow,48991,P-09,26,REP,555-254-9061,33
+RV000889,Jovan,Krajcik-Goldner,2935 Birch St,Riverbend,48990,P-04,35,NPA,(555) 736-3290,70
+RV000890,Cornell,Reichel,539 Highland Rd,Oak Hollow,48991,P-12,52,REP,(555) 760-8172,0
+RV000891,Reed,Hamill,1950 Spruce St,Riverbend,48990,P-03,30,DEM,(555) 559-1933,77
+RV000892,Michel,Macejkovic,250 Ridge Ln,Riverbend,48990,P-05,33,NPA,,47
+RV000893,Orie,Maggio,1136 Willow Ave,Oak Hollow,48991,P-09,54,OTH,555-264-1225,14
+RV000894,Laura,Sauer,2034 Franklin Ct,Oak Hollow,48991,P-08,47,REP,,3
+RV000895,Elenora,Langworth,751 Jefferson Ct,Oak Hollow,48991,P-12,37,NPA,5557246499,60
+RV000896,Bette,Nienow,1799 Franklin St,Oak Hollow,48991,P-10,53,REP,555-275-4971,0
+RV000897,Taya,Sawayn,1861 Franklin St,Oak Hollow,48991,P-10,50,REP,(555) 905-4060,28
+RV000898,Asha,McCullough,2236 Clark St,Oak Hollow,48991,P-08,48,NPA,555-576-8527,41
+RV000899,Justice,Bahringer,2820 Birch St,Riverbend,48990,P-04,28,DEM,(555) 429-7410,57
+RV000900,Brook,Grady,2749 Birch St,Riverbend,48990,P-04,74,OTH,555-334-5678,36
+RV000901,Destini,Emard-Considine,1870 Maple Ln,Oak Hollow,48991,P-10,39,NPA,555-874-6585,48
+RV000902,Darin,Homenick,2112 Maple Ln,Oak Hollow,48991,P-10,41,REP,,17
+RV000903,Orie,Larson,926 Cherry Ln,Oak Hollow,48991,P-08,20,REP,5554148591,28
+RV000904,Titus,Cruickshank,2499 Pine Ln,Riverbend,48990,P-07,29,NPA,,28
+RV000905,Madge,Bauch,2842 Cherry Dr,Oak Hollow,48991,P-09,19,REP,5556848691,6
+RV000906,Bryant,Kilback,1484 Cherry Ct,Riverbend,48990,P-05,82,NPA,5554428578,49
+RV000907,Carolyn,Towne,2299 Park Ct,Oak Hollow,48991,P-11,83,NPA,,74
+RV000908,Pearlie,Murphy,727 Walnut Dr,Riverbend,48990,P-07,36,DEM,,93
+RV000909,Jose,Olson,2647 Orchard Ave,Oak Hollow,48991,P-11,33,NPA,(555) 228-2435,58
+RV000910,Arden,Schneider,1079 Walnut Dr,Riverbend,48990,P-07,21,NPA,,84
+RV000911,Johnson,Sipes,2791 Church Rd,Riverbend,48990,P-03,84,DEM,(555) 762-5666,81
+RV000912,Ryann,Wiza,2046 Elm Rd,Riverbend,48990,P-02,22,REP,,13
+RV000913,Ole,Moen,2197 Willow St,Oak Hollow,48991,P-10,93,REP,(555) 765-3437,26
+RV000914,John,Pagac,701 Clark St,Oak Hollow,48991,P-08,59,REP,(555) 824-9827,51
+RV000915,Keshaun,Jacobson,343 Ridge Dr,Riverbend,48990,P-06,86,DEM,555-510-5212,67
+RV000916,Immanuel,Bergstrom,776 Park Ct,Oak Hollow,48991,P-11,31,NPA,,65
+RV000917,Judith,Zemlak,1841 Park Ct,Oak Hollow,48991,P-11,32,NPA,,61
+RV000918,Mauricio,Kiehn,1333 Cherry Dr,Oak Hollow,48991,P-09,46,REP,,9
+RV000919,Fleta,Bernhard,1527 Adams Rd,Oak Hollow,48991,P-09,30,REP,555-529-6160,10
+RV000920,Leann,D'Amore,2159 Meadow Dr,Riverbend,48990,P-01,52,NPA,(555) 339-1543,54
+RV000921,Al,Sporer,1574 Pine Ln,Riverbend,48990,P-07,19,OTH,,33
+RV000922,Edgar,Champlin,907 Cherry Ln,Oak Hollow,48991,P-08,30,NPA,,29
+RV000923,Juanita,Schaden,394 Lincoln Ln,Riverbend,48990,P-01,71,NPA,5556889541,40
+RV000924,Maryjane,Konopelski,2339 Sunset Rd,Riverbend,48990,P-07,22,DEM,(555) 593-5394,100
+RV000925,Nick,Lehner,2612 Birch St,Riverbend,48990,P-04,53,NPA,,53
+RV000926,Bennett,Kshlerin,2497 Pine St,Oak Hollow,48991,P-08,44,DEM,,85
+RV000927,Brendon,Brekke,2529 River St,Riverbend,48990,P-05,63,OTH,555-830-0646,22
+RV000928,Daniela,Nicolas,1919 Lincoln Ave,Riverbend,48990,P-03,56,REP,(555) 706-4322,22
+RV000929,Rubie,Shields,225 Willow Rd,Riverbend,48990,P-01,37,NPA,,70
+RV000930,Daija,McCullough,1991 Elm Ln,Riverbend,48990,P-03,22,DEM,,94
+RV000931,Jovany,Barrows,454 Aspen Ave,Oak Hollow,48991,P-12,43,REP,,25
+RV000932,Jensen,Jacobi,1221 Elm Ln,Riverbend,48990,P-03,51,DEM,(555) 697-9025,61
+RV000933,Columbus,Deckow,275 Meadow Dr,Riverbend,48990,P-01,42,REP,(555) 372-7942,45
+RV000934,Ignatius,Graham,1719 Willow Rd,Riverbend,48990,P-01,45,DEM,(555) 903-4636,55
+RV000935,Ryley,Williamson,2814 Pine Ave,Riverbend,48990,P-05,55,DEM,555-948-2297,67
+RV000936,Elton,Beatty,2159 Jackson Dr,Riverbend,48990,P-02,59,REP,555-375-2114,43
+RV000937,Bell,Cremin,2634 Willow Rd,Riverbend,48990,P-01,85,DEM,(555) 498-7296,43
+RV000938,Oda,Bayer,2943 Highland Rd,Oak Hollow,48991,P-12,71,NPA,555-980-4172,45
+RV000939,Laron,Bogan,911 Ridge Ln,Riverbend,48990,P-05,24,NPA,(555) 233-1606,61
+RV000940,Hunter,Gutmann,627 Cherry Ln,Oak Hollow,48991,P-08,28,DEM,(555) 847-7552,73
+RV000941,Amaya,Boyle,1476 Grant Dr,Riverbend,48990,P-06,49,DEM,(555) 998-1822,100
+RV000942,Charley,Howe,1058 Birch St,Riverbend,48990,P-04,58,NPA,5554843027,67
+RV000943,Franklin,Smith,1986 Lincoln Ave,Riverbend,48990,P-03,60,REP,,0
+RV000944,Emmy,McGlynn,2638 Spring Ct,Riverbend,48990,P-07,45,REP,,31
+RV000945,Madie,Romaguera,1531 Highland St,Oak Hollow,48991,P-08,23,OTH,(555) 864-4903,16
+RV000946,Ursula,Breitenberg,412 Spring Ct,Riverbend,48990,P-07,34,REP,5558466553,0
+RV000947,Gia,Purdy,330 Adams St,Oak Hollow,48991,P-10,47,REP,,33
+RV000948,Teagan,Heathcote,941 Meadow Ave,Riverbend,48990,P-01,53,NPA,(555) 957-7182,41
+RV000949,Jaquelin,Hagenes,742 Adams Rd,Oak Hollow,48991,P-09,25,DEM,555-885-5176,91
+RV000950,Herman,Daniel-Spinka,1059 Highland Rd,Oak Hollow,48991,P-12,22,NPA,(555) 948-0763,49
+RV000951,Chaya,Green,441 Jefferson Dr,Oak Hollow,48991,P-12,87,REP,555-238-6542,20
+RV000952,Ruthie,Ledner,1995 Grant Rd,Oak Hollow,48991,P-08,92,DEM,,64
+RV000953,Uriel,Stoltenberg,123 Willow Rd,Riverbend,48990,P-01,53,REP,,8
+RV000954,Aida,Lind,1368 Orchard St,Oak Hollow,48991,P-09,44,NPA,555-856-4577,52
+RV000955,Alejandrin,Feeney,140 Oak Ave,Riverbend,48990,P-04,26,DEM,555-208-7421,78
+RV000956,Theresa,Krajcik,148 Highland Rd,Oak Hollow,48991,P-12,64,OTH,(555) 601-0760,17
+RV000957,Tomasa,Cruickshank,467 Adams St,Oak Hollow,48991,P-10,93,REP,5556546426,54
+RV000958,Micheal,Mosciski,277 Cherry Ln,Oak Hollow,48991,P-08,58,REP,(555) 610-8235,39
+RV000959,Sydnee,Emard,2528 Spruce St,Riverbend,48990,P-03,64,DEM,5554642247,52
+RV000960,Marielle,Bosco,1755 Highland Dr,Riverbend,48990,P-06,63,NPA,(555) 422-3540,42
+RV000961,Wilbert,Howell,406 Lincoln Ave,Riverbend,48990,P-03,61,NPA,(555) 996-8357,8
+RV000962,Bennett,Lakin,513 Cedar St,Oak Hollow,48991,P-11,49,NPA,5559527418,52
+RV000963,Hettie,Fay,2008 Oak Rd,Riverbend,48990,P-04,54,DEM,(555) 781-0587,58
+RV000964,Beau,Kuphal,1962 Walnut Dr,Riverbend,48990,P-07,23,NPA,(555) 252-1247,52
+RV000965,Wayne,Macejkovic,2071 Walnut Dr,Riverbend,48990,P-07,20,DEM,(555) 749-7797,92
+RV000966,Marco,Jacobson,165 Walnut Dr,Riverbend,48990,P-07,51,NPA,(555) 915-6129,59
+RV000967,Zane,Kub,759 Spruce St,Riverbend,48990,P-03,73,DEM,,74
+RV000968,Myron,Adams,2333 Monroe Dr,Oak Hollow,48991,P-11,41,REP,,9
+RV000969,Lynda,Hettinger,2115 Park Ln,Riverbend,48990,P-04,52,NPA,5559209567,23
+RV000970,Merlin,Harber,2083 Lincoln Ln,Riverbend,48990,P-01,59,DEM,555-879-9316,49
+RV000971,Una,Klein,1227 Birch St,Riverbend,48990,P-04,76,REP,555-235-0604,16
+RV000972,Emory,Baumbach,828 Highland Rd,Oak Hollow,48991,P-12,93,DEM,(555) 623-2413,63
+RV000973,Ryan,Hessel,1076 Lake St,Oak Hollow,48991,P-10,41,REP,,3
+RV000974,Josh,Mayer,2280 Walnut Dr,Riverbend,48990,P-07,91,DEM,555-572-2026,87
+RV000975,Buck,Connelly,2605 River St,Riverbend,48990,P-05,35,NPA,555-415-3367,44
+RV000976,Martina,Abshire,797 Church St,Riverbend,48990,P-06,25,NPA,,48
+RV000977,Justus,West,339 Walnut Dr,Riverbend,48990,P-07,78,REP,,3
+RV000978,Jaydon,Klein-Hauck,880 Oak Ave,Riverbend,48990,P-04,34,DEM,,80
+RV000979,Olivia,Reichel,2705 Meadow Ave,Riverbend,48990,P-01,83,REP,,34
+RV000980,Marge,Kling,2113 Walnut Dr,Riverbend,48990,P-07,21,NPA,,35
+RV000981,Gracie,Moore,1870 Madison Ct,Oak Hollow,48991,P-09,52,REP,,7
+RV000982,Melany,Howell,2079 Park Ct,Oak Hollow,48991,P-11,42,DEM,(555) 678-3327,51
+RV000983,Burnice,Dickens,1904 Meadow Ave,Riverbend,48990,P-01,44,REP,(555) 941-9567,23
+RV000984,Agustina,Bradtke,1600 Lake St,Oak Hollow,48991,P-10,27,REP,(555) 887-2283,21
+RV000985,Furman,Raynor,741 Willow Rd,Riverbend,48990,P-01,24,REP,,14
+RV000986,Alba,Halvorson,2090 Oak Rd,Riverbend,48990,P-04,69,DEM,555-500-6584,57
+RV000987,Jan,Veum,2836 Park Ct,Oak Hollow,48991,P-11,90,REP,,37
+RV000988,Lenna,Konopelski,1609 Orchard St,Oak Hollow,48991,P-09,45,DEM,5555459738,83
+RV000989,Lilliana,Mayer,332 Park Ct,Oak Hollow,48991,P-11,26,DEM,,92
+RV000990,Darnell,Bogan,2153 Spring Ln,Riverbend,48990,P-03,28,DEM,,93
+RV000991,Eldon,Dare,2899 Walnut Ln,Oak Hollow,48991,P-10,33,DEM,,57
+RV000992,Enrique,Lubowitz,1055 Church Rd,Riverbend,48990,P-03,62,REP,(555) 424-5976,48
+RV000993,Jamel,Dibbert,1507 Spring Ct,Riverbend,48990,P-07,30,NPA,,58
+RV000994,Jacqueline,Lueilwitz,804 River St,Riverbend,48990,P-05,90,DEM,(555) 644-4436,72
+RV000995,Israel,Kohler,794 Monroe Ln,Oak Hollow,48991,P-12,43,REP,(555) 339-6827,0
+RV000996,Raoul,Johns,1171 Spring Ct,Riverbend,48990,P-07,41,DEM,,66
+RV000997,Charity,Heathcote,1032 Cherry Dr,Oak Hollow,48991,P-09,67,REP,,23
+RV000998,Hanna,Conroy,2599 Cherry Ct,Riverbend,48990,P-05,59,REP,555-309-5825,25
+RV000999,Kole,Schmeler,262 Adams Rd,Oak Hollow,48991,P-09,86,DEM,5557774255,76
+RV001000,Cooper,Gorczany,1288 Ridge Dr,Riverbend,48990,P-06,60,REP,(555) 589-6443,43
+RV001001,Marsha,Hamill,2214 Park Ct,Oak Hollow,48991,P-11,36,NPA,5556784683,57
+RV001002,Dock,Fay,1167 Oak Rd,Riverbend,48990,P-04,43,REP,,52
+RV001003,Mildred,Breitenberg,2641 Meadow St,Riverbend,48990,P-02,32,REP,5557524400,17
+RV001004,Rollin,Oberbrunner,2488 Monroe Rd,Riverbend,48990,P-04,69,DEM,,83
+RV001005,Melyssa,Gusikowski,818 Orchard Ave,Oak Hollow,48991,P-11,25,NPA,(555) 631-2048,56
+RV001006,Annabel,Marvin,1283 Franklin Rd,Riverbend,48990,P-02,58,REP,5557179746,31
+RV001007,Phil,Leannon,1132 Monroe Dr,Oak Hollow,48991,P-11,59,REP,(555) 811-3686,27
+RV001008,Brant,Conroy,941 Jefferson Ln,Riverbend,48990,P-05,19,NPA,555-535-4585,57
+RV001009,Amani,Medhurst,984 Church Ln,Riverbend,48990,P-07,50,DEM,(555) 723-7097,62
+RV001010,Christy,Rippin,1462 Cherry Dr,Oak Hollow,48991,P-09,37,DEM,555-589-2887,66
+RV001011,Marilyn,Champlin,1961 Cedar Rd,Oak Hollow,48991,P-11,18,DEM,(555) 999-9143,53
+RV001012,Paxton,Hermann,2673 Grant Dr,Riverbend,48990,P-06,29,REP,(555) 396-4227,5
+RV001013,Soledad,Hegmann,2155 Grant Dr,Riverbend,48990,P-06,19,NPA,,50
+RV001014,Ryleigh,Huels,1294 Meadow Dr,Riverbend,48990,P-01,42,NPA,,58
+RV001015,Annamarie,Hickle,413 Sunset Rd,Riverbend,48990,P-07,31,NPA,,63
+RV001016,Grover,Torp-Mohr,432 Grant Dr,Riverbend,48990,P-06,61,DEM,5557478579,56
+RV001017,Shelly,Greenfelder-Sporer,2797 Meadow Ave,Riverbend,48990,P-01,77,NPA,(555) 789-8840,31
+RV001018,Micaela,Kautzer,224 Cherry Ct,Riverbend,48990,P-05,19,NPA,,84
+RV001019,Frances,Ullrich,1302 Pine Ln,Riverbend,48990,P-07,41,DEM,555-349-6068,83
+RV001020,Desiree,Sanford-Haley,2051 Willow Ave,Oak Hollow,48991,P-09,39,DEM,,79
+RV001021,Shaina,West,2912 Birch St,Riverbend,48990,P-04,58,OTH,(555) 416-1183,24
+RV001022,Ellis,Quitzon,2254 Spruce St,Riverbend,48990,P-03,18,DEM,,71
+RV001023,Jackie,Hirthe,1308 Cedar St,Oak Hollow,48991,P-11,32,REP,(555) 237-2080,46
+RV001024,Vicky,Schmidt,2830 Orchard Rd,Oak Hollow,48991,P-09,59,REP,555-724-8909,51
+RV001025,Rebecca,Mayert,1041 Pine St,Oak Hollow,48991,P-08,59,REP,555-719-4944,45
+RV001026,Kallie,Huels,620 Pine St,Oak Hollow,48991,P-08,24,NPA,,72
+RV001027,Letitia,Cummerata,2873 Elm Rd,Riverbend,48990,P-02,49,DEM,(555) 300-6039,76
+RV001028,Lonnie,Donnelly,2268 Highland Dr,Riverbend,48990,P-06,37,REP,5559480784,14
+RV001029,Ulices,Jaskolski,2254 Lincoln Ln,Riverbend,48990,P-01,36,REP,,35
+RV001030,Yolanda,Hayes,1307 Adams St,Oak Hollow,48991,P-10,50,OTH,(555) 748-3114,30
+RV001031,Brycen,O'Conner-Vandervort,114 Cedar Ct,Riverbend,48990,P-04,43,DEM,,61
+RV001032,Charlotte,Abbott,2305 Jefferson Ln,Riverbend,48990,P-05,34,DEM,(555) 735-6580,54
+RV001033,Grayce,McKenzie,1802 Cedar St,Oak Hollow,48991,P-11,29,NPA,555-830-2276,39
+RV001034,Dedric,Jaskolski-Jakubowski,2163 Monroe Rd,Riverbend,48990,P-04,69,REP,,34
+RV001035,Leanne,Feeney,2099 Elm St,Oak Hollow,48991,P-11,29,REP,555-535-0533,54
+RV001036,Jill,Cormier,1112 Pine Ln,Riverbend,48990,P-07,18,DEM,5552623213,66
+RV001037,Ian,Gleichner,1213 Cedar St,Oak Hollow,48991,P-11,48,REP,555-880-5955,20
+RV001038,Gretchen,Weber,1730 Ridge Ln,Riverbend,48990,P-05,63,OTH,,52
+RV001039,Sheldon,Gottlieb,2955 Meadow St,Riverbend,48990,P-02,50,NPA,555-568-2094,41
+RV001040,Maribel,Shanahan,194 Willow Ln,Riverbend,48990,P-02,27,NPA,555-799-8294,49
+RV001041,Bert,Gottlieb,2087 Jefferson Dr,Oak Hollow,48991,P-12,36,DEM,(555) 499-4205,49
+RV001042,Tommy,Lang,1027 Sunset Ct,Riverbend,48990,P-02,62,REP,,35
+RV001043,Brenna,McKenzie,739 Ridge Ln,Riverbend,48990,P-05,79,REP,(555) 720-3785,56
+RV001044,Elna,Collins,1345 Maple Ln,Oak Hollow,48991,P-10,30,NPA,(555) 333-4855,55
+RV001045,Alessandro,Watsica-Crona,609 Adams Rd,Oak Hollow,48991,P-09,40,DEM,(555) 399-4180,87
+RV001046,Catharine,Goldner,2683 Jefferson Ln,Riverbend,48990,P-05,80,DEM,555-772-7981,68
+RV001047,Estefania,Braun,2836 Pine St,Oak Hollow,48991,P-08,33,NPA,,46
+RV001048,Garret,Dooley-Torp,317 Highland Rd,Oak Hollow,48991,P-12,71,NPA,5558834885,69
+RV001049,Malvina,Lockman,1812 Pine Ave,Riverbend,48990,P-05,79,NPA,5558171240,62
+RV001050,Ramon,Rice,200 Highland Dr,Riverbend,48990,P-06,68,DEM,(555) 774-1487,75
+RV001051,Kendrick,Greenholt,395 Lincoln Ave,Riverbend,48990,P-03,73,REP,(555) 740-3935,31
+RV001052,Candelario,Cole,1892 Ridge Dr,Riverbend,48990,P-06,24,REP,(555) 569-5632,48
+RV001053,Miracle,Zemlak,1657 Sunset Rd,Riverbend,48990,P-07,93,REP,5558108744,28
+RV001054,Bryant,Stokes,2718 Monroe Ln,Oak Hollow,48991,P-12,40,NPA,(555) 626-0769,51
+RV001055,Annamarie,Brekke,293 Willow Rd,Riverbend,48990,P-01,80,REP,5552559316,35
+RV001056,Guy,Halvorson,447 Highland St,Oak Hollow,48991,P-08,57,REP,,18
+RV001057,Kelvin,Runte,648 Willow Ln,Riverbend,48990,P-02,49,REP,5552032958,25
+RV001058,Aiden,Feeney,1699 Cherry Dr,Oak Hollow,48991,P-09,79,DEM,,78
+RV001059,Morton,Bayer,2311 Cedar Dr,Riverbend,48990,P-03,56,DEM,(555) 957-5289,71
+RV001060,Danny,Mayer,407 River St,Riverbend,48990,P-05,35,NPA,(555) 206-8667,53
+RV001061,Adolph,Schoen,2911 Lake St,Oak Hollow,48991,P-10,29,NPA,,73
+RV001062,Leo,Frami,2936 Walnut Dr,Riverbend,48990,P-07,60,DEM,(555) 860-7008,37
+RV001063,Johnathan,Hahn,117 Willow St,Oak Hollow,48991,P-10,23,REP,(555) 767-3151,22
+RV001064,Kiley,Pagac,910 Franklin St,Oak Hollow,48991,P-10,23,DEM,(555) 577-1678,81
+RV001065,Josue,Williamson,626 Highland St,Oak Hollow,48991,P-08,83,DEM,555-779-5251,94
+RV001066,Dixie,Greenfelder,2015 Willow St,Oak Hollow,48991,P-10,71,NPA,(555) 637-4708,25
+RV001067,Lucious,Maggio,397 Willow Ave,Oak Hollow,48991,P-09,74,NPA,(555) 628-7404,46
+RV001068,Ronald,Hudson,1439 Pine Ave,Riverbend,48990,P-05,23,NPA,(555) 312-9189,38
+RV001069,Sid,Hickle,1866 Jefferson Ln,Riverbend,48990,P-05,59,NPA,5559232961,32
+RV001070,Madalyn,Douglas,1288 River St,Riverbend,48990,P-05,49,REP,5559490656,26
+RV001071,Lupe,Terry,1147 Cedar Ct,Riverbend,48990,P-04,42,DEM,,68
+RV001072,Casandra,Lynch,2898 Spring Ln,Riverbend,48990,P-03,28,REP,,19
+RV001073,Abdiel,Koch,1013 Jefferson Dr,Oak Hollow,48991,P-12,87,REP,,34
+RV001074,Arden,Dooley,268 Franklin St,Oak Hollow,48991,P-10,33,NPA,(555) 275-5109,28
+RV001075,Enrico,Bernhard,1683 Walnut Ln,Oak Hollow,48991,P-10,51,DEM,(555) 200-5227,80
+RV001076,Jaime,Sporer,280 Spruce St,Riverbend,48990,P-03,87,DEM,,58
+RV001077,Melvina,Yost,960 Cedar Ct,Riverbend,48990,P-04,60,DEM,555-357-7157,52
+RV001078,Emmanuel,Kuphal,2604 Clark St,Oak Hollow,48991,P-08,60,NPA,555-343-7257,61
+RV001079,Euna,Berge,2333 Willow Ave,Oak Hollow,48991,P-09,19,REP,555-310-9628,43
+RV001080,Manuel,Kunze,1274 Washington Ave,Riverbend,48990,P-06,81,DEM,555-944-5952,73
+RV001081,Harmon,Lubowitz,2287 Pine St,Oak Hollow,48991,P-08,36,NPA,555-399-9634,44
+RV001082,Aditya,Wiegand,2954 Ridge St,Riverbend,48990,P-06,61,DEM,555-982-0578,57
+RV001083,Sanford,McLaughlin,454 Cherry Dr,Oak Hollow,48991,P-09,29,REP,,7
+RV001084,Waylon,Wisoky,606 Cedar St,Oak Hollow,48991,P-11,35,NPA,(555) 726-8849,40
+RV001085,Zachariah,Heller,1493 Church St,Riverbend,48990,P-06,41,DEM,,70
+RV001086,Eino,Rolfson,1974 Orchard Rd,Oak Hollow,48991,P-09,46,OTH,555-589-3013,38
+RV001087,Robb,Bartoletti,2423 Elm St,Oak Hollow,48991,P-11,66,REP,5557909370,25
+RV001088,Sean,Harber,702 Pine Ct,Riverbend,48990,P-05,26,REP,(555) 221-9009,0
+RV001089,Ethan,Hettinger-Kuhn,1759 Ridge Dr,Riverbend,48990,P-06,78,DEM,,81
+RV001090,Kristoffer,Johnson,2380 Church Ln,Riverbend,48990,P-07,58,DEM,(555) 684-0090,61
+RV001091,Vickie,Zemlak,2493 Orchard St,Oak Hollow,48991,P-09,84,DEM,555-661-3649,47
+RV001092,Mozell,Maggio,1326 Willow Rd,Riverbend,48990,P-01,84,NPA,(555) 536-2023,59
+RV001093,Braeden,King,2636 Orchard Ave,Oak Hollow,48991,P-11,87,NPA,(555) 832-5656,15
+RV001094,Brendon,Lockman,1272 Pine Ct,Riverbend,48990,P-05,18,REP,(555) 265-5140,40
+RV001095,Brittany,Harris,406 Cedar Rd,Oak Hollow,48991,P-11,49,REP,(555) 608-6846,30
+RV001096,Estel,Zboncak,2611 Lake St,Oak Hollow,48991,P-10,45,REP,,12
+RV001097,Filiberto,Nicolas,472 Ridge St,Riverbend,48990,P-06,70,REP,,14
+RV001098,Ricky,Murphy,707 Franklin Rd,Riverbend,48990,P-02,53,DEM,555-358-6806,77
+RV001099,Margarita,Schultz,2836 Clark St,Oak Hollow,48991,P-08,52,NPA,555-555-2593,41
+RV001100,Irwin,Metz,2320 Ridge Ln,Riverbend,48990,P-05,25,NPA,,54
+RV001101,Clara,Miller,618 Monroe Dr,Oak Hollow,48991,P-11,57,REP,,0
+RV001102,Makenzie,Murazik,1685 Grant Rd,Oak Hollow,48991,P-08,78,REP,(555) 612-3735,44
+RV001103,Bobbie,Kuhic,2020 Ridge St,Riverbend,48990,P-06,57,DEM,,60
+RV001104,Alyce,Trantow,1834 Pine St,Oak Hollow,48991,P-08,51,REP,(555) 303-6554,11
+RV001105,Cary,Satterfield,2365 Cherry Ln,Oak Hollow,48991,P-08,43,DEM,555-963-1863,63
+RV001106,Isom,Harvey,1521 Pine St,Oak Hollow,48991,P-08,27,REP,5553425005,30
+RV001107,Pablo,Schamberger,345 Spring Ln,Riverbend,48990,P-03,55,NPA,555-971-6015,31
+RV001108,Karson,Kuhlman,1696 Monroe Rd,Riverbend,48990,P-04,78,REP,(555) 834-0770,0
+RV001109,Maverick,Casper,2757 Adams Rd,Oak Hollow,48991,P-09,84,DEM,(555) 902-1472,97
+RV001110,Rupert,Hyatt,1725 Pine Ave,Riverbend,48990,P-05,21,REP,,39
+RV001111,Monica,Hartmann,1048 Lake Ln,Oak Hollow,48991,P-12,54,REP,5559648326,34
+RV001112,Oscar,Muller,2931 Pine Ave,Riverbend,48990,P-05,29,REP,555-905-6174,20
+RV001113,Fermin,Tromp,873 Lincoln Ln,Riverbend,48990,P-01,86,DEM,555-741-2363,70
+RV001114,Camilla,Koepp,243 Franklin Ct,Oak Hollow,48991,P-08,63,NPA,555-312-8587,40
+RV001115,Marcella,Greenholt-Kling,2811 River St,Riverbend,48990,P-05,18,DEM,,77
+RV001116,Aurelio,Doyle,2682 Meadow Ave,Riverbend,48990,P-01,85,REP,(555) 487-0220,11
+RV001117,Tianna,Brakus,1813 Church Ln,Riverbend,48990,P-07,70,REP,5553172573,11
+RV001118,Jordy,Botsford,560 Church St,Riverbend,48990,P-06,55,DEM,,70
+RV001119,Unique,Pollich,1170 Lincoln Ln,Riverbend,48990,P-01,24,NPA,5558146804,47
+RV001120,Crystal,Predovic,826 Oak Rd,Riverbend,48990,P-04,84,REP,(555) 970-4113,14
+RV001121,Lucie,Koelpin,1456 Ridge Dr,Riverbend,48990,P-06,48,REP,5556374306,11
+RV001122,Daniela,Klein,2020 Pine St,Oak Hollow,48991,P-08,56,DEM,555-209-4102,78
+RV001123,Olivia,Goldner,1387 Orchard St,Oak Hollow,48991,P-09,23,NPA,,51
+RV001124,Hilbert,Batz,2527 Meadow Ave,Riverbend,48990,P-01,21,DEM,,82
+RV001125,Kaylah,Runte,1859 Grant Rd,Oak Hollow,48991,P-08,80,REP,(555) 268-7464,26
+RV001126,Christ,Kulas,598 Maple Ln,Oak Hollow,48991,P-10,73,NPA,,88
+RV001127,Anna,Williamson,2549 Elm St,Oak Hollow,48991,P-11,90,DEM,555-824-8137,80
+RV001128,Kayley,Sawayn,1424 Franklin St,Oak Hollow,48991,P-10,27,NPA,,29
+RV001129,Genevieve,Satterfield,2553 Cedar St,Oak Hollow,48991,P-11,58,REP,,31
+RV001130,Gilbert,Reynolds,2054 Spring Ct,Riverbend,48990,P-07,60,NPA,(555) 865-0331,43
+RV001131,Lorenz,Runte,1189 Park Ct,Oak Hollow,48991,P-11,32,REP,555-481-5644,25
+RV001132,Kip,Reichert,624 Lincoln Ave,Riverbend,48990,P-03,65,DEM,,63
+RV001133,Geovanni,Stoltenberg,2709 Elm Rd,Riverbend,48990,P-02,67,OTH,(555) 842-0998,30
+RV001134,Homer,Wunsch,1024 Adams Rd,Oak Hollow,48991,P-09,26,DEM,5556496922,74
+RV001135,Catharine,Kessler,2360 Willow Rd,Riverbend,48990,P-01,44,REP,555-514-8914,8
+RV001136,Kennedy,Bins,689 Willow Ln,Riverbend,48990,P-02,45,OTH,,63
+RV001137,Desiree,Bode,605 Lake Ln,Oak Hollow,48991,P-12,77,REP,5559985576,8
+RV001138,Curt,Kling,2126 Spruce St,Riverbend,48990,P-03,76,REP,555-834-5798,2
+RV001139,Delphine,Metz,1158 Franklin Ct,Oak Hollow,48991,P-08,52,NPA,,42
+RV001140,Diana,Reynolds,1128 Cedar Dr,Riverbend,48990,P-03,88,DEM,,81
+RV001141,Iva,Kemmer,159 Lincoln St,Riverbend,48990,P-01,40,NPA,555-346-6487,44
+RV001142,Leland,Parker,1386 Spring Ct,Riverbend,48990,P-07,43,NPA,555-830-0466,22
+RV001143,Rubie,Boyle,795 Cherry Dr,Oak Hollow,48991,P-09,19,NPA,,52
+RV001144,Miles,Graham,221 Ridge Dr,Riverbend,48990,P-06,46,OTH,(555) 845-0560,34
+RV001145,Alysa,Schuster,2494 Washington Ave,Riverbend,48990,P-06,28,DEM,555-505-9564,100
+RV001146,Rosie,Dooley,1819 Jefferson Ln,Riverbend,48990,P-05,42,NPA,(555) 756-7739,74
+RV001147,Dejuan,Ryan,2930 River St,Riverbend,48990,P-05,54,NPA,,53
+RV001148,Felicity,Dare,2077 Willow Ln,Riverbend,48990,P-02,45,REP,,24
+RV001149,Kasey,Mayert,883 Willow St,Oak Hollow,48991,P-10,61,REP,(555) 622-2481,26
+RV001150,Edna,Funk,1996 Jefferson Ct,Oak Hollow,48991,P-12,27,REP,(555) 456-9853,21
+RV001151,Colten,Treutel,2875 Lincoln Ln,Riverbend,48990,P-01,47,REP,,52
+RV001152,Jaden,Schumm,2154 Lincoln Ln,Riverbend,48990,P-01,80,REP,,5
+RV001153,Sophie,Auer,562 Walnut Ln,Oak Hollow,48991,P-10,57,REP,,2
+RV001154,Olen,Doyle,1601 Orchard Rd,Oak Hollow,48991,P-09,48,DEM,(555) 987-2236,57
+RV001155,Jaida,Fahey,1177 Jackson Dr,Riverbend,48990,P-02,27,REP,(555) 790-1250,24
+RV001156,Nancy,Moore,1542 Elm St,Oak Hollow,48991,P-11,76,REP,,0
+RV001157,Miles,Marks,861 Lake St,Oak Hollow,48991,P-10,58,NPA,5553581023,33
+RV001158,Tommie,Williamson,2362 Grant Rd,Oak Hollow,48991,P-08,79,NPA,(555) 883-9595,33
+RV001159,Delfina,Gerlach,1662 Pine Ave,Riverbend,48990,P-05,66,NPA,(555) 442-9559,70
+RV001160,Onie,McLaughlin,2537 Orchard St,Oak Hollow,48991,P-09,67,DEM,5553944769,77
+RV001161,Maude,Jaskolski,1226 Church Rd,Riverbend,48990,P-03,46,NPA,(555) 512-3082,44
+RV001162,Elmira,Pfeffer,1867 Highland St,Oak Hollow,48991,P-08,82,NPA,(555) 773-0099,41
+RV001163,Garett,Trantow,618 Church Ln,Riverbend,48990,P-07,52,DEM,555-524-1654,100
+RV001164,Pearline,Franey,1674 Franklin Rd,Riverbend,48990,P-02,44,REP,555-216-9974,18
+RV001165,Virginie,Strosin,2020 Oak Ave,Riverbend,48990,P-04,61,REP,,40
+RV001166,Randy,Bode,574 Orchard Rd,Oak Hollow,48991,P-09,61,DEM,,47
+RV001167,Joannie,Wisoky,1336 Monroe Dr,Oak Hollow,48991,P-11,36,NPA,(555) 254-9869,63
+RV001168,Kerry,Bernier,2320 Lincoln St,Riverbend,48990,P-01,36,NPA,,48
+RV001169,Faye,Breitenberg,154 Willow St,Oak Hollow,48991,P-10,40,REP,(555) 292-5927,32
+RV001170,Wilson,Okuneva,2746 Spring Ct,Riverbend,48990,P-07,85,NPA,555-886-6698,50
+RV001171,Rex,Lockman,2924 Adams Ave,Riverbend,48990,P-01,43,DEM,,73
+RV001172,Malcolm,Romaguera,972 Highland Rd,Oak Hollow,48991,P-12,58,REP,5554701461,46
+RV001173,Ova,Mueller,1949 Franklin St,Oak Hollow,48991,P-10,25,REP,(555) 829-7208,43
+RV001174,Jadon,Rutherford,1189 Orchard Ave,Oak Hollow,48991,P-11,51,DEM,(555) 634-3622,74
+RV001175,Abel,Raynor,1232 Cherry Ln,Oak Hollow,48991,P-08,67,DEM,,64
+RV001176,Therese,Koepp,1518 Spruce St,Riverbend,48990,P-03,73,DEM,555-315-4241,100
+RV001177,Ford,Conn,1755 Pine Ln,Riverbend,48990,P-07,22,REP,(555) 593-4924,44
+RV001178,Viva,Frami,2326 Willow St,Oak Hollow,48991,P-10,33,DEM,,58
+RV001179,Don,Wiza,2352 Lake St,Oak Hollow,48991,P-10,62,DEM,5558084097,43
+RV001180,Shakira,Sawayn,2642 Ridge Ln,Riverbend,48990,P-05,81,REP,,2
+RV001181,Wilmer,Cronin,498 Lincoln Ln,Riverbend,48990,P-01,31,NPA,5555121103,44
+RV001182,Pauline,Goyette,451 Spring Ct,Riverbend,48990,P-07,37,DEM,555-659-1510,87
+RV001183,Macey,Harvey,174 Highland Rd,Oak Hollow,48991,P-12,29,DEM,(555) 446-7082,39
+RV001184,Lee,MacGyver,2014 Pine Ln,Riverbend,48990,P-07,60,DEM,,69
+RV001185,Xzavier,Oberbrunner,1003 Spring Ln,Riverbend,48990,P-03,37,NPA,(555) 913-5367,68
+RV001186,Earnestine,Harvey,2220 Cherry Dr,Oak Hollow,48991,P-09,59,NPA,555-855-0937,63
+RV001187,Rochelle,Nikolaus,1474 Franklin St,Oak Hollow,48991,P-10,32,REP,5556902368,31
+RV001188,Isaac,Hagenes,2554 Washington Ave,Riverbend,48990,P-06,23,DEM,(555) 275-8699,88
+RV001189,Paxton,Hamill,2827 Lake Ln,Oak Hollow,48991,P-12,27,OTH,5554694273,18
+RV001190,Urban,Prosacco,2767 Monroe Dr,Oak Hollow,48991,P-11,82,REP,555-255-8402,4
+RV001191,Mauricio,Buckridge,2548 Willow Ln,Riverbend,48990,P-02,25,DEM,555-681-9171,87
+RV001192,Aaliyah,Gislason,349 Elm St,Oak Hollow,48991,P-11,60,REP,555-210-2644,33
+RV001193,Franklin,Littel-Ratke,538 Sunset Rd,Riverbend,48990,P-07,83,DEM,555-638-7937,91
+RV001194,Luigi,Schuppe,1801 Highland St,Oak Hollow,48991,P-08,37,NPA,(555) 627-8456,54
+RV001195,Ramiro,Cummerata,715 Lincoln St,Riverbend,48990,P-01,42,NPA,(555) 312-4506,72
+RV001196,Allie,Bednar,2301 Ridge St,Riverbend,48990,P-06,41,NPA,,46
+RV001197,Cortez,Brekke,1587 Jefferson Dr,Oak Hollow,48991,P-12,26,DEM,,76
+RV001198,Shanon,Cronin,2753 Cherry Ct,Riverbend,48990,P-05,50,DEM,,79
+RV001199,Coralie,Jones,1300 Spring Ln,Riverbend,48990,P-03,40,DEM,(555) 752-7700,85
+RV001200,Eunice,Smitham,2690 Park Ln,Riverbend,48990,P-04,43,NPA,555-825-7307,39
+RV001201,Niko,Pouros,2096 Elm St,Oak Hollow,48991,P-11,83,Green,(555) 861-1737,22
+RV001202,Adam,Dare,247 Ridge Dr,Riverbend,48990,P-06,43,DEM,(555) 939-8523,84
+RV001203,Kamryn,Wisoky,739 Jefferson Ln,Riverbend,48990,P-05,56,OTH,555-498-5741,34
+RV001204,Geneva,Hermiston,403 Orchard Rd,Oak Hollow,48991,P-09,74,DEM,,69
+RV001205,Maymie,Konopelski,1054 Lake St,Oak Hollow,48991,P-10,73,NPA,,36
+RV001206,Natalie,Dibbert,2210 Adams St,Oak Hollow,48991,P-10,26,NPA,,38
+RV001207,Jessy,McDermott,424 Cedar St,Oak Hollow,48991,P-11,43,NPA,5557560556,52
+RV001208,Lea,Jacobs,2916 Cedar Rd,Oak Hollow,48991,P-11,71,NPA,5558363600,48
+RV001209,Danny,Turcotte,1022 Walnut Dr,Riverbend,48990,P-07,43,DEM,5559769961,79
+RV001210,Paolo,Greenholt,2172 Lake St,Oak Hollow,48991,P-10,55,NPA,(555) 884-2879,62
+RV001211,Alberto,Mills,2280 Lake Ln,Oak Hollow,48991,P-12,64,REP,(555) 970-2007,0
+RV001212,Jalen,Volkman,2364 Willow St,Oak Hollow,48991,P-10,70,DEM,555-594-3878,64
+RV001213,Diane,Stoltenberg,2594 Cedar St,Oak Hollow,48991,P-11,31,NPA,,49
+RV001214,Wilber,Ledner,991 Park Ct,Oak Hollow,48991,P-11,37,NPA,555-406-5523,28
+RV001215,Lindsey,Witting,990 Cedar St,Oak Hollow,48991,P-11,40,NPA,(555) 570-5458,50
+RV001216,Anita,Abernathy,1064 Franklin St,Oak Hollow,48991,P-10,47,NPA,(555) 837-1820,63
+RV001217,Veda,Goodwin,730 Willow Rd,Riverbend,48990,P-01,21,REP,555-832-4496,0
+RV001218,Leilani,Harris,355 Sunset Rd,Riverbend,48990,P-07,48,DEM,(555) 294-7036,67
+RV001219,Keith,West,2857 Church St,Riverbend,48990,P-06,34,DEM,(555) 233-3688,80
+RV001220,Odie,VonRueden,480 Highland St,Oak Hollow,48991,P-08,31,DEM,(555) 618-9387,86
+RV001221,Precious,McClure,1881 Aspen Ave,Oak Hollow,48991,P-12,54,REP,555-666-6224,21
+RV001222,Bethel,Robel,464 Jefferson Ln,Riverbend,48990,P-05,54,REP,(555) 785-2134,20
+RV001223,Rupert,Wuckert,388 Meadow Ave,Riverbend,48990,P-01,39,REP,,42
+RV001224,Emmanuelle,Crona,531 Adams Ave,Riverbend,48990,P-01,54,DEM,5556450281,78
+RV001225,Darrell,Metz,1329 Oak Ave,Riverbend,48990,P-04,74,REP,5553061130,41
+RV001226,Augustus,Beer,2480 Ridge Dr,Riverbend,48990,P-06,69,NPA,5552222878,19
+RV001227,Dena,VonRueden,2987 Highland St,Oak Hollow,48991,P-08,31,DEM,,84
+RV001228,Ari,Ortiz,2973 Elm Ln,Riverbend,48990,P-03,71,DEM,(555) 284-0815,67
+RV001229,Winifred,Jenkins,2886 Jefferson Ln,Riverbend,48990,P-05,25,REP,5557126398,26
+RV001230,Johnnie,Klein,538 Spring Ct,Riverbend,48990,P-07,46,DEM,,100
+RV001231,Cristal,Stiedemann,2715 Elm Rd,Riverbend,48990,P-02,71,DEM,,49
+RV001232,Manuela,Towne,2547 Pine Ave,Riverbend,48990,P-05,46,DEM,555-791-3291,70
+RV001233,Loy,Jacobs,849 Maple Ln,Oak Hollow,48991,P-10,37,NPA,(555) 759-5023,51
+RV001234,Hilario,Haag,2254 Adams Rd,Oak Hollow,48991,P-09,31,NPA,(555) 264-3535,75
+RV001235,Hassan,Bailey-Hackett,766 Washington Ave,Riverbend,48990,P-06,57,DEM,555-618-0504,68
+RV001236,Orville,Parisian-Wisoky,1231 Adams Ave,Riverbend,48990,P-01,65,DEM,,57
+RV001237,Hildegard,Schaden,424 Aspen Ave,Oak Hollow,48991,P-12,78,REP,,4
+RV001238,Belle,Orn,159 Franklin Rd,Riverbend,48990,P-02,74,REP,5559374664,35
+RV001239,Jettie,Gulgowski,1644 Ridge St,Riverbend,48990,P-06,54,NPA,5557056803,39
+RV001240,Vinnie,Funk,1392 Lake St,Oak Hollow,48991,P-10,57,NPA,,57
+RV001241,Armani,Marvin,840 Pine Ln,Riverbend,48990,P-07,56,DEM,555-289-9146,73
+RV001242,Christine,Donnelly,2522 Washington Ave,Riverbend,48990,P-06,48,DEM,,77
+RV001243,Chelsea,Lebsack,1554 Willow Rd,Riverbend,48990,P-01,91,NPA,555-796-8137,83
+RV001244,Marco,Flatley,447 Monroe Dr,Oak Hollow,48991,P-11,64,DEM,(555) 286-2946,56
+RV001245,Elna,Beer-DuBuque,1224 Spruce St,Riverbend,48990,P-03,36,DEM,,83
+RV001246,Lilla,Koepp,1067 Park Ln,Riverbend,48990,P-04,32,DEM,5558710025,84
+RV001247,Geneva,McClure,2580 Adams Ave,Riverbend,48990,P-01,24,OTH,,36
+RV001248,Janice,Quigley,1231 Church St,Riverbend,48990,P-06,94,DEM,(555) 584-7658,84
+RV001249,Gwendolyn,Jones,1281 Cherry Dr,Oak Hollow,48991,P-09,49,REP,(555) 838-8112,11
+RV001250,Geovany,Kilback-Beatty,2953 Oak Rd,Riverbend,48990,P-04,47,DEM,,87
+RV001251,Lilyan,Cormier,1906 Adams Ave,Riverbend,48990,P-01,34,NPA,(555) 548-8572,70
+RV001252,Linda,Nitzsche,2163 Madison Ct,Oak Hollow,48991,P-09,90,DEM,5555720307,89
+RV001253,Neoma,Roberts,1561 Orchard St,Oak Hollow,48991,P-09,22,DEM,,52
+RV001254,Darion,Smitham,2430 Lincoln Ave,Riverbend,48990,P-03,28,DEM,,65
+RV001255,Tamia,Considine,748 Madison Ct,Oak Hollow,48991,P-09,24,DEM,555-531-2590,70
+RV001256,Alvina,Mante,1497 Jackson Dr,Riverbend,48990,P-02,33,NPA,5556791188,46
+RV001257,Dalton,Gislason,997 Walnut Ln,Oak Hollow,48991,P-10,41,DEM,555-240-8848,62
+RV001258,Seamus,Metz,1454 Oak Rd,Riverbend,48990,P-04,64,DEM,,77
+RV001259,Glenn,Abernathy,403 Church Ln,Riverbend,48990,P-07,21,DEM,(555) 444-3541,63
+RV001260,Malachi,Yost,2765 Oak Rd,Riverbend,48990,P-04,62,NPA,,44
+RV001261,Miles,Murphy,1486 Clark St,Oak Hollow,48991,P-08,78,REP,,32
+RV001262,Lane,Homenick,2564 Oak Rd,Riverbend,48990,P-04,43,NPA,5552942390,56
+RV001263,Carlos,Graham,1995 Elm Rd,Riverbend,48990,P-02,45,NPA,5556501468,49
+RV001264,Harvey,Ernser,265 Church St,Riverbend,48990,P-06,29,OTH,(555) 881-0075,27
+RV001265,Audra,Lubowitz,1352 Washington Ave,Riverbend,48990,P-06,44,DEM,(555) 800-9279,58
+RV001266,Leon,Hand-Jacobson,1090 Birch St,Riverbend,48990,P-04,86,DEM,5557163763,100
+RV001267,Maximo,Turner,1640 Adams St,Oak Hollow,48991,P-10,66,REP,555-328-9911,0
+RV001268,Jazlyn,Green,1984 Elm Rd,Riverbend,48990,P-02,40,REP,(555) 294-6771,28
+RV001269,Clifford,Dibbert,1048 Cherry Ct,Riverbend,48990,P-05,26,DEM,555-701-7845,45
+RV001270,Brook,Howe,137 Spruce St,Riverbend,48990,P-03,20,DEM,(555) 858-8421,52
+RV001271,Ruben,Will,2353 Pine Ct,Riverbend,48990,P-05,25,REP,(555) 621-1591,9
+RV001272,Alyce,Grant,2230 Cedar Dr,Riverbend,48990,P-03,41,NPA,555-634-0184,23
+RV001273,Benjamin,Bartell-Wisozk,1138 Grant Rd,Oak Hollow,48991,P-08,29,DEM,5559368018,81
+RV001274,Bruce,Hauck,2470 Meadow Ave,Riverbend,48990,P-01,22,NPA,5559911373,68
+RV001275,Ezekiel,Ritchie,369 Cedar St,Oak Hollow,48991,P-11,57,DEM,555-568-0410,82
+RV001276,Kirstin,Von,975 Church Ln,Riverbend,48990,P-07,37,NPA,,60
+RV001277,Alysa,Lehner,1954 Sunset Ct,Riverbend,48990,P-02,27,REP,555-637-8324,25
+RV001278,Nannie,Crooks,2494 Willow Ave,Oak Hollow,48991,P-09,54,DEM,,70
+RV001279,Damian,Gutkowski,353 Elm Ln,Riverbend,48990,P-03,93,REP,555-769-7867,3
+RV001280,Reinhold,Nicolas,614 Lincoln Ave,Riverbend,48990,P-03,53,NPA,(555) 769-2331,29
+RV001281,Amelie,O'Connell,1093 Lincoln St,Riverbend,48990,P-01,45,DEM,5556749154,78
+RV001282,London,Lang,1005 Washington Ave,Riverbend,48990,P-06,43,NPA,555-816-1431,45
+RV001283,Dorothy,Kiehn,2894 Franklin St,Oak Hollow,48991,P-10,93,REP,(555) 438-7931,3
+RV001284,Justen,Treutel,2765 Orchard Ave,Oak Hollow,48991,P-11,83,REP,(555) 648-6899,33
+RV001285,Charlene,Hamill,571 Meadow Dr,Riverbend,48990,P-01,33,NPA,555-461-9871,63
+RV001286,Santiago,Strosin,667 Adams Rd,Oak Hollow,48991,P-09,20,NPA,555-708-6095,43
+RV001287,Austen,Steuber,2903 Jefferson Ct,Oak Hollow,48991,P-12,36,REP,555-554-0628,37
+RV001288,Casimir,Fay,2248 Cherry Ct,Riverbend,48990,P-05,89,REP,,28
+RV001289,Derek,Bashirian,261 Lincoln Ave,Riverbend,48990,P-03,40,NPA,555-682-2574,62
+RV001290,Brayan,Hahn,820 Sunset Ct,Riverbend,48990,P-02,29,REP,,43
+RV001291,Veronica,Kemmer,2388 Monroe Ln,Oak Hollow,48991,P-12,28,REP,(555) 349-9582,26
+RV001292,Matt,Williamson,1671 Orchard Ave,Oak Hollow,48991,P-11,41,NPA,555-233-9529,56
+RV001293,Demetrius,Stokes-Olson,2086 Orchard Ave,Oak Hollow,48991,P-11,85,DEM,,70
+RV001294,Riley,Smitham,1674 Cedar St,Oak Hollow,48991,P-11,45,NPA,(555) 408-7116,59
+RV001295,Arielle,Kertzmann,2596 Monroe Dr,Oak Hollow,48991,P-11,31,NPA,(555) 662-7174,42
+RV001296,Hal,Wiza,2788 Cedar St,Oak Hollow,48991,P-11,22,NPA,(555) 265-8738,51
+RV001297,Jake,Halvorson,2889 Lincoln St,Riverbend,48990,P-01,33,REP,555-743-1729,1
+RV001298,Camryn,Fay,1369 Aspen Ave,Oak Hollow,48991,P-12,64,REP,,25
+RV001299,Alonzo,Stiedemann,312 Monroe Dr,Oak Hollow,48991,P-11,91,OTH,,38
+RV001300,Abigale,Hyatt,1668 Adams Rd,Oak Hollow,48991,P-09,40,REP,555-664-6078,21
+RV001301,Nils,Harvey,1214 Pine St,Oak Hollow,48991,P-08,22,NPA,555-289-0239,77
+RV001302,Jaime,Zieme,2957 Pine Ln,Riverbend,48990,P-07,61,DEM,,92
+RV001303,Elian,Hyatt,2777 Meadow Dr,Riverbend,48990,P-01,50,NPA,5555467320,51
+RV001304,Elroy,Boyer,915 Monroe Ln,Oak Hollow,48991,P-12,78,DEM,,48
+RV001305,Lilly,Anderson,2753 Church St,Riverbend,48990,P-06,37,REP,555-604-6290,58
+RV001306,Jody,Hirthe,667 Ridge St,Riverbend,48990,P-06,51,DEM,(555) 863-4613,100
+RV001307,Bernardo,Ortiz,1716 Pine St,Oak Hollow,48991,P-08,43,DEM,(555) 521-3216,100
+RV001308,Vivien,Champlin,184 Oak Rd,Riverbend,48990,P-04,37,DEM,555-371-8894,100
+RV001309,Oscar,Kihn,885 Grant Dr,Riverbend,48990,P-06,60,DEM,555-640-5888,93
+RV001310,Cooper,Fahey,265 River St,Riverbend,48990,P-05,61,REP,(555) 848-9242,7
+RV001311,Nellie,Blick,1752 Willow Ln,Riverbend,48990,P-02,18,REP,555-633-1774,5
+RV001312,Georgia,Morar,2524 Willow St,Oak Hollow,48991,P-10,86,DEM,555-366-8436,67
+RV001313,Isabella,Douglas,1616 Lake St,Oak Hollow,48991,P-10,62,REP,555-727-7674,37
+RV001314,Wilhelm,Beatty,1926 Church Ln,Riverbend,48990,P-07,40,DEM,(555) 827-5295,51
+RV001315,Margarette,Kohler,1987 Washington Ave,Riverbend,48990,P-06,60,NPA,5558199630,43
+RV001316,Nicholas,Conn,2467 Grant Dr,Riverbend,48990,P-06,92,DEM,555-344-2133,76
+RV001317,Brando,Hagenes,1047 Pine St,Oak Hollow,48991,P-08,23,NPA,555-281-6521,49
+RV001318,Aaliyah,Klein,2723 Willow Ln,Riverbend,48990,P-02,27,NPA,555-245-0574,35
+RV001319,Mozell,Bradtke,2380 Highland Dr,Riverbend,48990,P-06,19,DEM,,85
+RV001320,Werner,Murphy,475 Jefferson Ln,Riverbend,48990,P-05,53,NPA,(555) 795-0947,64
+RV001321,Elaina,Fadel,2402 Monroe Ln,Oak Hollow,48991,P-12,49,REP,555-386-7048,0
+RV001322,Marjolaine,Schowalter,1275 River St,Riverbend,48990,P-05,66,REP,555-727-6352,15
+RV001323,Eunice,Roberts,1233 Meadow St,Riverbend,48990,P-02,37,NPA,555-729-1601,45
+RV001324,Kara,Hills,453 Lincoln Ave,Riverbend,48990,P-03,74,DEM,555-565-2745,75
+RV001325,Elliot,Feil,2017 Clark Rd,Riverbend,48990,P-07,74,DEM,5553923953,70
+RV001326,Arielle,Crooks,2066 Lincoln St,Riverbend,48990,P-01,67,NPA,(555) 308-6281,22
+RV001327,Percy,Howe,2346 Spruce St,Riverbend,48990,P-03,77,DEM,,65
+RV001328,Erin,Kohler,451 Monroe Rd,Riverbend,48990,P-04,39,REP,(555) 598-8904,46
+RV001329,Alanis,Torphy,2273 Willow St,Oak Hollow,48991,P-10,27,DEM,(555) 649-0900,100
+RV001330,Margarita,McLaughlin,1048 Monroe Dr,Oak Hollow,48991,P-11,52,DEM,555-521-5518,50
+RV001331,Collin,Veum,905 River St,Riverbend,48990,P-05,45,REP,(555) 442-6246,51
+RV001332,Elmer,Heathcote,1332 Cedar St,Oak Hollow,48991,P-11,34,NPA,(555) 485-6570,60
+RV001333,Deontae,Hartmann,678 Adams Rd,Oak Hollow,48991,P-09,51,DEM,,94
+RV001334,Aurelie,O'Conner,2795 Orchard Ave,Oak Hollow,48991,P-11,94,NPA,(555) 281-0624,86
+RV001335,Claire,Reinger,819 Willow St,Oak Hollow,48991,P-10,39,NPA,,46
+RV001336,Imani,Monahan,623 Franklin Ct,Oak Hollow,48991,P-08,22,REP,555-809-4441,33
+RV001337,Salvatore,Torp,1529 Cherry Ct,Riverbend,48990,P-05,50,NPA,(555) 426-6872,53
+RV001338,Margarete,Strosin,2841 Church Rd,Riverbend,48990,P-03,27,NPA,(555) 920-7311,17
+RV001339,Cecile,Jerde,551 Clark St,Oak Hollow,48991,P-08,40,DEM,5553023488,61
+RV001340,Wilburn,Hickle,2300 Washington Ave,Riverbend,48990,P-06,73,DEM,(555) 625-5971,54
+RV001341,Murphy,Bernier,2979 Spring Ln,Riverbend,48990,P-03,28,NPA,,79
+RV001342,Helga,Zboncak,1972 Oak Ave,Riverbend,48990,P-04,55,OTH,(555) 928-4482,23
+RV001343,Melanie,Feeney,447 Ridge Dr,Riverbend,48990,P-06,82,DEM,5559224831,71
+RV001344,Maxine,Wisoky,1838 Jefferson Ln,Riverbend,48990,P-05,22,NPA,555-726-9091,49
+RV001345,Garret,Gerlach,2427 Cherry Dr,Oak Hollow,48991,P-09,64,NPA,(555) 850-9342,37
+RV001346,Abner,Haley,261 Clark Rd,Riverbend,48990,P-07,31,DEM,5555572740,100
+RV001347,Gussie,Yundt,1061 Maple Ln,Oak Hollow,48991,P-10,68,DEM,555-974-2954,74
+RV001348,Paris,Hermann,1348 Aspen Ave,Oak Hollow,48991,P-12,55,REP,5556642939,35
+RV001349,Kyleigh,Heathcote,529 River St,Riverbend,48990,P-05,82,REP,555-703-6747,20
+RV001350,Sim,Quigley,1299 Grant Rd,Oak Hollow,48991,P-08,20,REP,555-508-1517,29
+RV001351,Amina,Gorczany,1752 Ridge Dr,Riverbend,48990,P-06,88,DEM,555-848-3842,91
+RV001352,Carlos,Purdy,2451 Adams St,Oak Hollow,48991,P-10,79,REP,555-926-5705,28
+RV001353,Esteban,Rohan,1042 Lake St,Oak Hollow,48991,P-10,22,REP,5553036795,39
+RV001354,Duncan,Ernser,1943 Grant Dr,Riverbend,48990,P-06,50,DEM,555-841-9278,92
+RV001355,Clayton,Zulauf,2737 Cedar Rd,Oak Hollow,48991,P-11,44,DEM,,87
+RV001356,Omari,Kuhlman,2935 Monroe Ln,Oak Hollow,48991,P-12,57,DEM,(555) 571-7071,87
+RV001357,Desmond,Rippin,439 Oak Rd,Riverbend,48990,P-04,24,REP,(555) 509-2749,14
+RV001358,Holly,McLaughlin,2980 Cedar Ct,Riverbend,48990,P-04,53,REP,,16
+RV001359,Pat,Kling,479 Highland St,Oak Hollow,48991,P-08,58,DEM,555-429-1640,82
+RV001360,Jonas,Hirthe,2954 Maple Ln,Oak Hollow,48991,P-10,86,NPA,(555) 960-0415,20
+RV001361,Kellen,Klocko,2333 Lake Ln,Oak Hollow,48991,P-12,51,REP,,28
+RV001362,Stewart,Waters,297 Willow St,Oak Hollow,48991,P-10,27,NPA,555-315-5640,44
+RV001363,Pink,Abbott,2063 Cedar Rd,Oak Hollow,48991,P-11,25,DEM,(555) 260-5633,100
+RV001364,Elmo,Witting,360 Monroe Dr,Oak Hollow,48991,P-11,36,NPA,5552061444,63
+RV001365,Isabella,Little,1748 Sunset Ct,Riverbend,48990,P-02,63,REP,(555) 804-0195,32
+RV001366,Dante,Baumbach,1439 Jefferson Ln,Riverbend,48990,P-05,34,REP,5554900228,36
+RV001367,Ivan,Feeney,2464 Elm Rd,Riverbend,48990,P-02,75,REP,(555) 498-2804,13
+RV001368,Domenick,Dickinson-Hilll,1004 Jefferson Dr,Oak Hollow,48991,P-12,61,REP,555-916-4036,18
+RV001369,Francisca,Goldner,751 Meadow St,Riverbend,48990,P-02,73,DEM,555-423-9932,82
+RV001370,Jacklyn,Moore,2929 Monroe Dr,Oak Hollow,48991,P-11,53,DEM,,55
+RV001371,Lambert,Kuvalis,330 Willow Rd,Riverbend,48990,P-01,61,REP,(555) 887-1266,30
+RV001372,Eli,Ullrich,2376 Church Rd,Riverbend,48990,P-03,28,DEM,(555) 564-9673,73
+RV001373,Michaela,Pagac,2740 Meadow Ave,Riverbend,48990,P-01,62,NPA,555-512-5883,52
+RV001374,Simone,Dickens,2014 Park Ct,Oak Hollow,48991,P-11,19,REP,,33
+RV001375,Emelia,Monahan,2623 Cherry Dr,Oak Hollow,48991,P-09,44,DEM,(555) 715-5213,67
+RV001376,Robert,Frami,1427 Lake St,Oak Hollow,48991,P-10,49,DEM,5554209772,85
+RV001377,Claudine,Gutmann,730 Adams St,Oak Hollow,48991,P-10,30,DEM,555-709-3938,79
+RV001378,Odessa,Schoen,433 Cherry Dr,Oak Hollow,48991,P-09,67,NPA,(555) 632-5344,50
+RV001379,Chester,Carter,1700 Spring Ln,Riverbend,48990,P-03,50,DEM,(555) 657-2365,100
+RV001380,Freddy,Aufderhar,1939 Pine Ct,Riverbend,48990,P-05,24,NPA,,47
+RV001381,Maxwell,Mann,1641 Clark St,Oak Hollow,48991,P-08,38,NPA,5556026044,40
+RV001382,Lucie,Dietrich,2904 Lake Ln,Oak Hollow,48991,P-12,27,NPA,(555) 903-0740,74
+RV001383,Matilde,Kilback,1017 Jefferson Dr,Oak Hollow,48991,P-12,49,REP,(555) 439-6054,19
+RV001384,Eliseo,Harber,1717 Highland Dr,Riverbend,48990,P-06,41,DEM,555-839-0225,65
+RV001385,Jedediah,Bode,2053 Sunset Rd,Riverbend,48990,P-07,20,OTH,,39
+RV001386,Jackie,Blick,2252 Monroe Rd,Riverbend,48990,P-04,53,REP,555-281-5699,0
+RV001387,Mallory,Klocko,544 Highland Rd,Oak Hollow,48991,P-12,56,REP,,0
+RV001388,Francesco,Mante,2391 Franklin St,Oak Hollow,48991,P-10,46,DEM,(555) 919-6357,92
+RV001389,Tonya,Rau,1258 Spruce St,Riverbend,48990,P-03,23,REP,(555) 511-5201,49
+RV001390,Nathen,Runolfsson,1508 Adams Rd,Oak Hollow,48991,P-09,18,DEM,,53
+RV001391,German,Jacobson,2522 Lake Ln,Oak Hollow,48991,P-12,92,REP,(555) 954-6482,35
+RV001392,Jules,Kulas,2937 Meadow Dr,Riverbend,48990,P-01,56,NPA,555-348-6257,29
+RV001393,Marcia,Block,2144 Highland Dr,Riverbend,48990,P-06,25,DEM,5554540317,69
+RV001394,Melisa,Runte,2260 Jackson Dr,Riverbend,48990,P-02,34,REP,(555) 654-9827,9
+RV001395,Friedrich,Heaney,1786 Oak Rd,Riverbend,48990,P-04,75,REP,(555) 744-3789,21
+RV001396,Tyrel,Romaguera,2351 Adams Ave,Riverbend,48990,P-01,54,NPA,,17
+RV001397,Misty,Schuster,2356 Cherry Dr,Oak Hollow,48991,P-09,57,DEM,555-448-1800,85
+RV001398,Gayle,Larson,2719 Oak Rd,Riverbend,48990,P-04,47,REP,(555) 723-3175,14
+RV001399,Myra,Hills,640 Sunset Ct,Riverbend,48990,P-02,61,REP,(555) 767-0268,31
+RV001400,Modesto,Grimes,2180 River St,Riverbend,48990,P-05,92,DEM,(555) 344-8041,89
+RV001401,Calvin,Mante,1779 Spring Ct,Riverbend,48990,P-07,29,REP,,2
+RV001402,Hershel,Bogan,1485 Elm Ln,Riverbend,48990,P-03,46,DEM,,76
+RV001403,Elroy,Zieme,1682 Spring Ct,Riverbend,48990,P-07,55,DEM,5556376097,78
+RV001404,Raven,Witting,908 Franklin Rd,Riverbend,48990,P-02,21,NPA,5558836573,42
+RV001405,Damien,Auer,2943 Church Ln,Riverbend,48990,P-07,80,NPA,555-609-3763,40
+RV001406,Sam,Koss,1351 Walnut Dr,Riverbend,48990,P-07,38,NPA,(555) 599-2402,67
+RV001407,Wade,Mraz,1741 Clark St,Oak Hollow,48991,P-08,59,REP,(555) 737-7443,30
+RV001408,Cary,Kunde,2963 Pine St,Oak Hollow,48991,P-08,50,DEM,555-352-0817,50
+RV001409,Melany,Trantow,2634 Elm Ln,Riverbend,48990,P-03,55,DEM,(555) 711-2090,55
+RV001410,Sonia,Miller,2431 River St,Riverbend,48990,P-05,28,DEM,555-286-6747,80
+RV001411,Dedric,Huels,393 Lake Ln,Oak Hollow,48991,P-12,52,OTH,(555) 590-7780,59
+RV001412,Camryn,Langworth,1046 Pine Ave,Riverbend,48990,P-05,39,NPA,(555) 277-7874,49
+RV001413,Sylvan,Johnston,319 Lincoln Ln,Riverbend,48990,P-01,78,REP,,19
+RV001414,Karli,Daniel,1548 River St,Riverbend,48990,P-05,37,REP,(555) 335-4148,51
+RV001415,Jenny,Rippin,1793 Walnut Dr,Riverbend,48990,P-07,68,DEM,,79
+RV001416,Murphy,Walter,1373 Willow Ln,Riverbend,48990,P-02,37,REP,(555) 823-2032,17
+RV001417,Chris,Johnson-Wintheiser,2783 Park Ln,Riverbend,48990,P-04,58,NPA,(555) 822-9876,56
+RV001418,Salma,Casper,648 Church St,Riverbend,48990,P-06,25,OTH,,70
+RV001419,Vincenzo,Gusikowski,121 Walnut Ln,Oak Hollow,48991,P-10,60,NPA,5554039894,69
+RV001420,Hiram,Towne,1221 Orchard Rd,Oak Hollow,48991,P-09,62,REP,555-291-0045,57
+RV001421,Ashlee,Bergstrom,2687 Elm Ln,Riverbend,48990,P-03,85,NPA,,57
+RV001422,Amara,Nikolaus,1526 Elm St,Oak Hollow,48991,P-11,64,REP,,18
+RV001423,Reese,O'Hara,2798 Elm Ln,Riverbend,48990,P-03,94,DEM,555-266-7124,72
+RV001424,Kenyatta,Hintz,1862 Lincoln Ave,Riverbend,48990,P-03,44,DEM,,67
+RV001425,Devante,Beatty,1189 Pine Ct,Riverbend,48990,P-05,37,REP,555-287-9811,9
+RV001426,Stevie,Renner,2067 Lincoln Ln,Riverbend,48990,P-01,19,DEM,5554218285,76
+RV001427,Janessa,Glover,1081 Willow Ln,Riverbend,48990,P-02,67,NPA,(555) 489-3753,41
+RV001428,Daron,Yost,820 Willow Ave,Oak Hollow,48991,P-09,73,REP,555-828-0498,9
+RV001429,Adolph,Kuhlman,1154 River St,Riverbend,48990,P-05,35,NPA,,48
+RV001430,Pierce,Rice,374 Grant Rd,Oak Hollow,48991,P-08,44,REP,555-479-2845,45
+RV001431,Eldon,Stokes,1845 Clark Rd,Riverbend,48990,P-07,41,REP,555-300-7940,32
+RV001432,Juliet,Wyman,1206 Orchard St,Oak Hollow,48991,P-09,41,DEM,,60
+RV001433,Rowan,Conroy,2955 Pine Ave,Riverbend,48990,P-05,40,REP,,39
+RV001434,Kennith,Hammes,2386 Oak Rd,Riverbend,48990,P-04,23,DEM,,86
+RV001435,Domenico,Harris,1748 Cherry Dr,Oak Hollow,48991,P-09,38,REP,,32
+RV001436,Reina,Sipes,418 Orchard St,Oak Hollow,48991,P-09,38,NPA,(555) 798-4861,27
+RV001437,Cory,Crona,126 Highland St,Oak Hollow,48991,P-08,53,NPA,(555) 575-1293,31
+RV001438,Lolita,Wiegand,2102 Jefferson Dr,Oak Hollow,48991,P-12,86,DEM,555-614-8887,60
+RV001439,Angelina,Erdman,266 Willow Ave,Oak Hollow,48991,P-09,24,DEM,(555) 719-7739,39
+RV001440,Hazle,Kessler,2550 Sunset Ct,Riverbend,48990,P-02,60,REP,(555) 244-3270,7
+RV001441,Traci,Torp,2214 Washington Ave,Riverbend,48990,P-06,35,NPA,,28
+RV001442,Orval,Blick,156 Spring Ln,Riverbend,48990,P-03,31,DEM,(555) 216-0287,65
+RV001443,Itzel,Bernhard,1862 Church Rd,Riverbend,48990,P-03,32,DEM,,66
+RV001444,Cecile,Gusikowski,1087 Lake St,Oak Hollow,48991,P-10,64,NPA,(555) 272-4066,27
+RV001445,Isabell,Kunde,2875 Willow St,Oak Hollow,48991,P-10,25,NPA,,35
+RV001446,Deron,Cummerata,2811 Church Ln,Riverbend,48990,P-07,62,DEM,(555) 952-3847,70
+RV001447,Bertram,Rodriguez,2996 Willow Ave,Oak Hollow,48991,P-09,42,NPA,(555) 400-1729,60
+RV001448,Reginald,Heathcote,1725 Elm Rd,Riverbend,48990,P-02,44,REP,(555) 718-9824,0
+RV001449,Laila,Ankunding,147 Pine Ave,Riverbend,48990,P-05,74,REP,,19
+RV001450,Dejuan,Turcotte,2542 Orchard Rd,Oak Hollow,48991,P-09,44,DEM,555-396-6358,70
+RV001451,Jayden,Ruecker,1776 Jefferson Ln,Riverbend,48990,P-05,56,REP,(555) 858-7611,31
+RV001452,Lorraine,Satterfield,941 Elm St,Oak Hollow,48991,P-11,24,REP,(555) 320-0383,13
+RV001453,Sim,Fahey,1524 Park Ln,Riverbend,48990,P-04,55,NPA,555-323-3327,18
+RV001454,Webster,Effertz,2528 Cedar Dr,Riverbend,48990,P-03,33,DEM,555-429-0753,81
+RV001455,Kameron,Abbott,2585 Lincoln Ln,Riverbend,48990,P-01,40,REP,555-300-9261,45
+RV001456,Katrine,Kohler,2533 Sunset Rd,Riverbend,48990,P-07,53,DEM,555-886-5704,40
+RV001457,Lurline,Conroy,612 Orchard St,Oak Hollow,48991,P-09,56,DEM,(555) 745-5754,42
+RV001458,Monroe,Tillman,2129 Pine Ln,Riverbend,48990,P-07,62,DEM,,82
+RV001459,Judson,Altenwerth,1476 Monroe Rd,Riverbend,48990,P-04,56,DEM,555-683-8009,58
+RV001460,Gianni,Becker,1594 Walnut Dr,Riverbend,48990,P-07,21,DEM,(555) 907-5467,82
+RV001461,Odie,Hilll,2101 Elm Ln,Riverbend,48990,P-03,33,OTH,(555) 850-8971,77
+RV001462,Brisa,Braun-McKenzie,262 Washington Ave,Riverbend,48990,P-06,19,DEM,(555) 949-1604,62
+RV001463,Elta,Kling,1985 Cherry Ct,Riverbend,48990,P-05,32,NPA,(555) 823-3085,54
+RV001464,Jaeden,Balistreri,2684 Cherry Ct,Riverbend,48990,P-05,54,DEM,(555) 431-8322,58
+RV001465,Theron,Stoltenberg,1677 Meadow Ave,Riverbend,48990,P-01,66,REP,,19
+RV001466,Hazel,McDermott,1384 Church Ln,Riverbend,48990,P-07,64,NPA,(555) 887-7111,45
+RV001467,Maximillia,Feest,2422 Park Ln,Riverbend,48990,P-04,61,DEM,555-965-2894,99
+RV001468,Zechariah,Ortiz,2890 Lincoln St,Riverbend,48990,P-01,52,REP,(555) 440-3638,53
+RV001469,Athena,Hilll,2169 Pine Ave,Riverbend,48990,P-05,43,NPA,,45
+RV001470,Cecile,Hand,1177 Willow Rd,Riverbend,48990,P-01,38,NPA,(555) 624-8470,52
+RV001471,Sydnie,Walsh,1700 Highland Rd,Oak Hollow,48991,P-12,26,REP,555-288-1568,24
+RV001472,Sandra,Gutmann,1332 Cherry Ln,Oak Hollow,48991,P-08,39,NPA,5559180636,69
+RV001473,Anissa,King-Rutherford,545 Lincoln St,Riverbend,48990,P-01,66,NPA,5557345139,33
+RV001474,Fatima,Maggio,1438 Elm Ln,Riverbend,48990,P-03,85,REP,555-981-6156,51
+RV001475,Edd,Runolfsson,133 Washington Ave,Riverbend,48990,P-06,21,DEM,,68
+RV001476,Fernando,Wehner,2336 Adams Ave,Riverbend,48990,P-01,28,DEM,(555) 777-2815,100
+RV001477,Adrianna,Hirthe,590 Pine Ln,Riverbend,48990,P-07,78,NPA,,56
+RV001478,Seth,Orn,2744 Lincoln St,Riverbend,48990,P-01,66,REP,,14
+RV001479,Laisha,Tremblay,428 Church Ln,Riverbend,48990,P-07,88,NPA,(555) 997-6943,64
+RV001480,Reagan,Metz,1992 Highland St,Oak Hollow,48991,P-08,65,DEM,(555) 230-0706,64
+RV001481,Dane,Lockman,2929 Franklin Ct,Oak Hollow,48991,P-08,75,DEM,(555) 925-4746,83
+RV001482,Rubye,Dach,1666 Highland Dr,Riverbend,48990,P-06,62,REP,,9
+RV001483,Orval,Rempel,999 Clark Rd,Riverbend,48990,P-07,59,DEM,,51
+RV001484,Dorris,Dibbert,2754 Cedar Rd,Oak Hollow,48991,P-11,33,NPA,5552009472,14
+RV001485,Reid,Von,2584 Walnut Ln,Oak Hollow,48991,P-10,47,DEM,(555) 654-6111,84
+RV001486,Godfrey,Witting,1196 Jefferson Ln,Riverbend,48990,P-05,64,NPA,5552478908,33
+RV001487,Jonatan,Toy,233 Sunset Rd,Riverbend,48990,P-07,69,NPA,(555) 407-7726,84
+RV001488,Harriet,Turner,2035 Lake Ln,Oak Hollow,48991,P-12,18,REP,5554339330,37
+RV001489,Janelle,Williamson,1317 Aspen Ave,Oak Hollow,48991,P-12,33,REP,,39
+RV001490,Amira,Borer,1460 Adams Ave,Riverbend,48990,P-01,44,REP,5559940250,2
+RV001491,Pat,Herzog-Schulist,2681 River St,Riverbend,48990,P-05,32,NPA,5556127213,65
+RV001492,Malvina,Rath,1211 Grant Dr,Riverbend,48990,P-06,94,DEM,(555) 250-8927,74
+RV001493,Edd,Dooley,1485 Washington Ave,Riverbend,48990,P-06,34,OTH,555-436-9882,59
+RV001494,Caroline,Gleason,165 Cherry Ct,Riverbend,48990,P-05,53,NPA,(555) 843-3113,59
+RV001495,Carlie,Bradtke,895 Lake St,Oak Hollow,48991,P-10,72,DEM,,92
+RV001496,Sierra,Braun,2573 Ridge Dr,Riverbend,48990,P-06,19,DEM,555-653-7168,66
+RV001497,Lavada,Wilkinson,888 Oak Rd,Riverbend,48990,P-04,37,NPA,555-326-6160,43
+RV001498,Lauryn,O'Kon-Weissnat,1409 Washington Ave,Riverbend,48990,P-06,33,DEM,(555) 603-5480,47
+RV001499,Rachael,Okuneva,2563 Lincoln Ln,Riverbend,48990,P-01,54,REP,(555) 439-6235,16
+RV001500,Janiya,Runolfsson,1112 Cherry Dr,Oak Hollow,48991,P-09,67,REP,555-852-8781,45
+RV001501,Hal,Murphy,590 Adams Ave,Riverbend,48990,P-01,42,NPA,(555) 359-4503,65
+RV001502,Jerrold,McLaughlin,996 Church St,Riverbend,48990,P-06,81,DEM,(555) 707-9546,82
+RV001503,Haleigh,Emard,302 Ridge Dr,Riverbend,48990,P-06,49,NPA,5557398188,73
+RV001504,Malachi,Farrell,1934 Cedar Rd,Oak Hollow,48991,P-11,30,OTH,(555) 923-8355,25
+RV001505,Liana,Bailey,456 Ridge St,Riverbend,48990,P-06,57,NPA,,39
+RV001506,Penelope,Schmidt-Osinski,1556 Cherry Ln,Oak Hollow,48991,P-08,60,NPA,(555) 833-3275,56
+RV001507,Haleigh,Daugherty,855 Spring Ln,Riverbend,48990,P-03,41,DEM,(555) 592-2679,70
+RV001508,Ova,Nienow,2941 Church Rd,Riverbend,48990,P-03,24,DEM,555-921-9088,92
+RV001509,Alison,Schowalter,2283 Pine Ln,Riverbend,48990,P-07,59,REP,(555) 690-6648,52
+RV001510,Frank,Waelchi,736 Adams St,Oak Hollow,48991,P-10,39,NPA,(555) 383-3235,41
+RV001511,Chet,Murphy,1444 Jackson Dr,Riverbend,48990,P-02,79,REP,(555) 564-5741,23
+RV001512,Ivah,Adams,2546 Cedar Dr,Riverbend,48990,P-03,63,DEM,(555) 243-4123,65
+RV001513,Judge,Stoltenberg,897 Pine Ct,Riverbend,48990,P-05,48,REP,,19
+RV001514,Hugo,Strosin,734 Ridge Ln,Riverbend,48990,P-05,65,NPA,,64
+RV001515,Laverne,Langworth,2329 Willow St,Oak Hollow,48991,P-10,53,DEM,(555) 494-6805,79
+RV001516,Gennaro,Blanda,1670 Park Ln,Riverbend,48990,P-04,72,DEM,,88
+RV001517,Gaston,Cormier,1134 Monroe Dr,Oak Hollow,48991,P-11,34,DEM,(555) 303-0834,69
+RV001518,Brain,Schoen,927 Aspen Ave,Oak Hollow,48991,P-12,72,OTH,,49
+RV001519,Sydney,Kshlerin,2584 Lake St,Oak Hollow,48991,P-10,79,DEM,555-745-7910,91
+RV001520,Haskell,Quitzon,1228 Adams Rd,Oak Hollow,48991,P-09,60,NPA,5554605726,77
+RV001521,Josue,Sporer,2468 Pine Ln,Riverbend,48990,P-07,62,REP,,32
+RV001522,Daija,Waelchi,421 Cherry Ct,Riverbend,48990,P-05,21,REP,,6
+RV001523,Godfrey,Quitzon-Skiles,584 Cherry Ct,Riverbend,48990,P-05,20,NPA,,29
+RV001524,Minnie,Breitenberg,1379 Elm St,Oak Hollow,48991,P-11,44,REP,555-214-8155,23
+RV001525,Laurine,Bode,2961 Franklin Ct,Oak Hollow,48991,P-08,30,DEM,(555) 575-2131,77
+RV001526,Quinn,Rutherford,2279 Willow Ave,Oak Hollow,48991,P-09,18,NPA,,34
+RV001527,Cleveland,Huel,267 Lincoln St,Riverbend,48990,P-01,29,NPA,(555) 898-1144,56
+RV001528,Nichole,Kunde,2792 Maple Ln,Oak Hollow,48991,P-10,78,REP,(555) 267-8875,13
+RV001529,Elena,Stehr,2547 Pine Ct,Riverbend,48990,P-05,52,REP,(555) 882-3255,36
+RV001530,Eli,Sanford,2973 Cedar Rd,Oak Hollow,48991,P-11,31,REP,(555) 874-2372,20
+RV001531,Dandre,Langosh,1245 Aspen Ave,Oak Hollow,48991,P-12,93,NPA,,32
+RV001532,Sydni,Simonis,2827 Willow St,Oak Hollow,48991,P-10,31,DEM,,83
+RV001533,Kyle,Herzog,1812 Monroe Dr,Oak Hollow,48991,P-11,53,NPA,(555) 846-5615,18
+RV001534,Myrl,Hermiston,568 Walnut Dr,Riverbend,48990,P-07,82,REP,5553702085,28
+RV001535,Camden,Tillman,663 Sunset Rd,Riverbend,48990,P-07,38,NPA,(555) 938-2002,60
+RV001536,Thaddeus,Mayer,1847 Meadow Dr,Riverbend,48990,P-01,23,REP,,25
+RV001537,Blake,Durgan,797 Elm Rd,Riverbend,48990,P-02,80,DEM,5559617461,75
+RV001538,Marian,Olson,715 Clark Rd,Riverbend,48990,P-07,58,DEM,,91
+RV001539,Georgiana,Bogisich,234 Maple Ln,Oak Hollow,48991,P-10,73,DEM,(555) 268-7546,62
+RV001540,Tyrell,Thompson,970 Birch St,Riverbend,48990,P-04,29,DEM,5552255125,60
+RV001541,Damaris,Terry,422 Jefferson Ln,Riverbend,48990,P-05,55,NPA,(555) 303-1445,62
+RV001542,Trystan,Smith,1224 Church Rd,Riverbend,48990,P-03,53,DEM,555-755-2728,71
+RV001543,Delphine,Toy,1009 Monroe Ln,Oak Hollow,48991,P-12,51,REP,,22
+RV001544,Willis,Kunze,1594 Park Ln,Riverbend,48990,P-04,61,DEM,,72
+RV001545,Philip,Feil-Halvorson,2398 Lake Ln,Oak Hollow,48991,P-12,20,DEM,,81
+RV001546,Erick,Hermiston,548 Clark St,Oak Hollow,48991,P-08,48,NPA,(555) 803-6390,48
+RV001547,Dakota,Bergnaum,1991 Washington Ave,Riverbend,48990,P-06,83,DEM,,94
+RV001548,Gregg,Shanahan,1924 Jefferson Ln,Riverbend,48990,P-05,65,NPA,(555) 463-7362,67
+RV001549,Filomena,Barton,2402 Cherry Ln,Oak Hollow,48991,P-08,49,DEM,555-818-9197,72
+RV001550,Issac,Sporer,1695 Meadow St,Riverbend,48990,P-02,82,NPA,(555) 541-4632,23
+RV001551,Andre,Okuneva,1510 Willow Rd,Riverbend,48990,P-01,56,DEM,,85
+RV001552,Lewis,Wilderman,1787 Meadow Dr,Riverbend,48990,P-01,83,NPA,,29
+RV001553,Jayson,Yost,2613 Franklin Rd,Riverbend,48990,P-02,23,REP,,2
+RV001554,Reyna,Weber,113 Highland St,Oak Hollow,48991,P-08,46,REP,,25
+RV001555,Andrea,Runte,2004 Orchard Rd,Oak Hollow,48991,P-09,54,DEM,555-327-3759,70
+RV001556,Ruthie,Ryan,2271 Cedar Rd,Oak Hollow,48991,P-11,39,REP,,3
+RV001557,Mohamed,Nader,1437 Willow Ave,Oak Hollow,48991,P-09,18,REP,555-246-6182,9
+RV001558,Grayson,Mante,2927 Park Ct,Oak Hollow,48991,P-11,36,NPA,5556551802,77
+RV001559,Hipolito,Haag,749 Orchard Ave,Oak Hollow,48991,P-11,53,REP,5553994629,55
+RV001560,Karlie,Barton,1182 Franklin Rd,Riverbend,48990,P-02,57,REP,(555) 356-8529,40
+RV001561,Lucious,Goldner,1895 Cedar Ct,Riverbend,48990,P-04,22,DEM,,65
+RV001562,Micaela,Abernathy,2602 Adams Ave,Riverbend,48990,P-01,23,NPA,555-299-0048,67
+RV001563,Leopold,Kling,2613 Pine Ct,Riverbend,48990,P-05,65,NPA,5557242254,48
+RV001564,Anastacio,Frami,1957 Grant Rd,Oak Hollow,48991,P-08,29,REP,,0
+RV001565,Clara,Hauck,1531 Church St,Riverbend,48990,P-06,86,DEM,(555) 586-2542,100
+RV001566,Dave,Kohler,1377 Meadow St,Riverbend,48990,P-02,53,REP,5558618158,50
+RV001567,Alverta,Haley,1414 Willow Rd,Riverbend,48990,P-01,33,REP,,44
+RV001568,Neha,Murazik,2377 Pine Ave,Riverbend,48990,P-05,46,NPA,(555) 266-0520,39
+RV001569,Grayson,Kertzmann,213 Sunset Rd,Riverbend,48990,P-07,26,DEM,5559394093,72
+RV001570,Dante,Beier,600 Jackson Dr,Riverbend,48990,P-02,24,DEM,,96
+RV001571,Karolann,Schmitt,311 Cedar Dr,Riverbend,48990,P-03,35,DEM,(555) 693-7553,73
+RV001572,Wyatt,Waelchi,1717 Adams Rd,Oak Hollow,48991,P-09,35,DEM,(555) 986-5144,88
+RV001573,Eliseo,MacGyver,2181 Lincoln Ln,Riverbend,48990,P-01,47,DEM,,80
+RV001574,Armani,Hoeger,840 Oak Rd,Riverbend,48990,P-04,18,REP,,34
+RV001575,Tiara,D'Amore,2852 Ridge Dr,Riverbend,48990,P-06,40,DEM,(555) 877-2118,58
+RV001576,Alexane,Haag,1574 Highland Dr,Riverbend,48990,P-06,31,DEM,(555) 803-8074,52
+RV001577,Oda,Ortiz,1510 Elm Ln,Riverbend,48990,P-03,66,REP,5554675543,19
+RV001578,Tracey,Abbott,1900 Madison Ct,Oak Hollow,48991,P-09,24,REP,(555) 304-5937,15
+RV001579,Gaetano,Sauer,1074 Pine St,Oak Hollow,48991,P-08,60,REP,(555) 416-8409,54
+RV001580,Gussie,Boyer,1479 Jefferson Ln,Riverbend,48990,P-05,26,DEM,(555) 217-1190,85
+RV001581,Reagan,Hilpert,2094 Orchard Ave,Oak Hollow,48991,P-11,83,DEM,,84
+RV001582,Blaise,Tromp,1550 Meadow Dr,Riverbend,48990,P-01,40,REP,(555) 614-3772,9
+RV001583,Lera,Beahan,565 Grant Rd,Oak Hollow,48991,P-08,28,DEM,,70
+RV001584,Jacinthe,Ebert,1782 Lincoln Ln,Riverbend,48990,P-01,61,REP,(555) 784-4343,11
+RV001585,Amani,Langosh,2115 Monroe Rd,Riverbend,48990,P-04,82,DEM,(555) 365-9086,59
+RV001586,Nat,Emmerich,2344 Ridge Ln,Riverbend,48990,P-05,25,NPA,,26
+RV001587,Marcos,Aufderhar,2082 Clark St,Oak Hollow,48991,P-08,41,DEM,555-452-8077,72
+RV001588,Wilhelm,Kunde,302 Franklin St,Oak Hollow,48991,P-10,43,DEM,555-907-0243,37
+RV001589,Dallas,Littel,1320 Park Ct,Oak Hollow,48991,P-11,53,REP,(555) 759-1502,0
+RV001590,Lloyd,Lockman,2672 Park Ct,Oak Hollow,48991,P-11,57,REP,(555) 758-5446,0
+RV001591,Aniyah,Tremblay,2875 Ridge Dr,Riverbend,48990,P-06,87,DEM,(555) 449-0576,49
+RV001592,Giovanna,Rogahn,2470 Lincoln Ave,Riverbend,48990,P-03,87,DEM,(555) 540-8979,100
+RV001593,Rose,Greenholt,1089 Ridge St,Riverbend,48990,P-06,61,DEM,555-925-4485,61
+RV001594,Kara,Stanton,309 Monroe Ln,Oak Hollow,48991,P-12,36,NPA,5559484101,60
+RV001595,Leanne,Erdman,2181 Cedar Rd,Oak Hollow,48991,P-11,50,DEM,,88
+RV001596,Alessandro,Nolan,1203 Pine Ct,Riverbend,48990,P-05,56,REP,555-883-7799,18
+RV001597,Robb,Toy,1340 Monroe Ln,Oak Hollow,48991,P-12,83,REP,(555) 967-2661,34
+RV001598,Alexandro,Grant,2525 Lincoln Ln,Riverbend,48990,P-01,32,REP,,0
+RV001599,Paolo,O'Conner,2520 Walnut Dr,Riverbend,48990,P-07,44,DEM,555-546-6127,58
+RV001600,Salvador,Kuhlman,1331 Grant Rd,Oak Hollow,48991,P-08,51,DEM,(555) 265-2502,72
+RV001601,Rodger,Kling,1317 Adams Ave,Riverbend,48990,P-01,19,NPA,555-330-0937,63
+RV001602,Rahul,Leuschke,2324 Willow Ln,Riverbend,48990,P-02,48,NPA,(555) 480-6780,78
+RV001603,Audra,Kihn,1494 Walnut Ln,Oak Hollow,48991,P-10,88,DEM,,84
+RV001604,Danial,Wolf,625 Park Ct,Oak Hollow,48991,P-11,30,REP,,1
+RV001605,Logan,Deckow,1974 Cedar Rd,Oak Hollow,48991,P-11,57,DEM,(555) 632-6598,50
+RV001606,Lorna,Hintz,141 Cherry Ln,Oak Hollow,48991,P-08,52,DEM,5555671085,74
+RV001607,Dennis,Borer,2353 Franklin St,Oak Hollow,48991,P-10,32,NPA,5557596208,71
+RV001608,Furman,Wisozk,2067 Cedar St,Oak Hollow,48991,P-11,35,REP,,12
+RV001609,Paul,Hegmann,1148 Willow St,Oak Hollow,48991,P-10,62,REP,,13
+RV001610,Jordon,Wuckert,2641 Jackson Dr,Riverbend,48990,P-02,32,REP,(555) 912-6506,2
+RV001611,Gayle,Thompson,2248 Jefferson Ct,Oak Hollow,48991,P-12,42,REP,555-769-3247,48
+RV001612,Buddy,Hauck-Koss,1677 Washington Ave,Riverbend,48990,P-06,42,DEM,,92
+RV001613,Parker,Bahringer,1992 Aspen Ave,Oak Hollow,48991,P-12,31,REP,(555) 776-4378,41
+RV001614,Geraldine,Hintz,2209 Clark Rd,Riverbend,48990,P-07,78,REP,,4
+RV001615,Orin,Kulas,1929 Franklin St,Oak Hollow,48991,P-10,34,DEM,,72
+RV001616,Don,Weissnat,528 Elm Rd,Riverbend,48990,P-02,50,NPA,,41
+RV001617,Uriel,Hamill,2211 Sunset Ct,Riverbend,48990,P-02,62,NPA,555-564-5881,32
+RV001618,Tessie,Barrows,2105 Jackson Dr,Riverbend,48990,P-02,61,REP,555-787-0864,11
+RV001619,Gerry,Rice,2732 Adams St,Oak Hollow,48991,P-10,53,REP,,56
+RV001620,Jazmin,Jerde,1386 Cedar Ct,Riverbend,48990,P-04,21,DEM,555-418-9215,70
+RV001621,Jayde,Hegmann,1690 Cherry Dr,Oak Hollow,48991,P-09,64,REP,5558767467,37
+RV001622,Parker,Boyle,536 Cherry Dr,Oak Hollow,48991,P-09,91,DEM,,77
+RV001623,Brooks,Wisozk,2054 Lake Ln,Oak Hollow,48991,P-12,61,DEM,(555) 835-1371,77
+RV001624,Carmine,Mayert,667 Maple Ln,Oak Hollow,48991,P-10,45,NPA,555-748-9842,64
+RV001625,Adolph,Williamson,1573 Highland Dr,Riverbend,48990,P-06,51,DEM,,44
+RV001626,Matthew,Hand,2976 Walnut Dr,Riverbend,48990,P-07,28,DEM,5559077431,58
+RV001627,Seth,Hartmann,1772 Lincoln St,Riverbend,48990,P-01,79,NPA,5554959915,12
+RV001628,Sofia,Effertz,2935 Willow St,Oak Hollow,48991,P-10,50,DEM,(555) 705-6832,64
+RV001629,Brooke,Lowe,1740 Ridge Dr,Riverbend,48990,P-06,58,DEM,(555) 345-0732,79
+RV001630,Brandt,O'Conner,2737 River St,Riverbend,48990,P-05,32,OTH,555-403-5032,33
+RV001631,Marco,Hudson,246 Pine Ln,Riverbend,48990,P-07,37,REP,,39
+RV001632,Garry,Streich,1910 Church Ln,Riverbend,48990,P-07,24,REP,(555) 970-6997,26
+RV001633,Ivan,Lueilwitz,1709 Highland St,Oak Hollow,48991,P-08,57,NPA,555-947-0936,36
+RV001634,Madisyn,Balistreri,310 Monroe Ln,Oak Hollow,48991,P-12,62,REP,5555866583,50
+RV001635,Cody,Lindgren,1876 Highland St,Oak Hollow,48991,P-08,36,NPA,555-796-5037,23
+RV001636,Jamal,Greenholt,1153 Meadow Dr,Riverbend,48990,P-01,19,REP,,32
+RV001637,Mattie,Hayes,2887 Orchard Ave,Oak Hollow,48991,P-11,36,REP,(555) 372-9753,0
+RV001638,Kaylin,Thompson,306 Park Ln,Riverbend,48990,P-04,56,DEM,(555) 787-8355,70
+RV001639,Marcelina,Lowe,1280 River St,Riverbend,48990,P-05,49,REP,(555) 412-7721,40
+RV001640,Wilhelm,Romaguera,536 Cherry Ln,Oak Hollow,48991,P-08,18,NPA,,75
+RV001641,Cary,Weimann,2762 Pine Ave,Riverbend,48990,P-05,59,NPA,(555) 710-0587,11
+RV001642,Monserrate,Predovic,2780 Franklin Rd,Riverbend,48990,P-02,47,REP,(555) 794-1080,29
+RV001643,Domenico,Doyle,451 Franklin Ct,Oak Hollow,48991,P-08,36,DEM,(555) 754-5608,100
+RV001644,Liana,Cassin,1074 Spring Ct,Riverbend,48990,P-07,83,DEM,5559635898,65
+RV001645,Cathy,Shanahan,2671 Meadow Dr,Riverbend,48990,P-01,54,DEM,(555) 350-9573,73
+RV001646,Roxanne,Bogisich,2601 Sunset Ct,Riverbend,48990,P-02,77,REP,5556648174,0
+RV001647,Justin,Littel,2175 Highland Dr,Riverbend,48990,P-06,44,DEM,5559867572,76
+RV001648,Candido,Gutkowski,1323 Orchard St,Oak Hollow,48991,P-09,18,NPA,555-602-4769,31
+RV001649,Rubie,Konopelski,2860 Orchard St,Oak Hollow,48991,P-09,29,REP,555-685-5794,0
+RV001650,Callie,Hagenes,2740 Adams Rd,Oak Hollow,48991,P-09,66,NPA,(555) 400-0792,45
+RV001651,Lavern,Hahn,840 Lincoln Ln,Riverbend,48990,P-01,23,NPA,555-444-4788,52
+RV001652,Hunter,Mayert,1142 Meadow Ave,Riverbend,48990,P-01,80,REP,,32
+RV001653,Jennie,Zulauf,1878 Lincoln Ln,Riverbend,48990,P-01,89,REP,(555) 862-8356,0
+RV001654,Lucienne,Cummings,1107 Orchard Rd,Oak Hollow,48991,P-09,67,DEM,,56
+RV001655,Burdette,Witting,1019 Pine Ct,Riverbend,48990,P-05,43,REP,555-889-7072,52
+RV001656,Darrin,Rohan,1128 Adams Ave,Riverbend,48990,P-01,40,NPA,5559297536,55
+RV001657,Hailey,Feeney,1899 Birch St,Riverbend,48990,P-04,65,REP,(555) 692-2825,63
+RV001658,Unique,Reilly,2785 Spring Ln,Riverbend,48990,P-03,27,DEM,(555) 574-0842,73
+RV001659,Presley,Greenfelder,2349 Spring Ln,Riverbend,48990,P-03,53,DEM,555-828-9686,79
+RV001660,Tyrone,Leffler,1533 Meadow Dr,Riverbend,48990,P-01,61,DEM,(555) 203-9414,77
+RV001661,Rasheed,Simonis,1110 Oak Ave,Riverbend,48990,P-04,84,DEM,(555) 449-6528,71
+RV001662,Maxie,Tremblay,1748 Franklin St,Oak Hollow,48991,P-10,56,OTH,,51
+RV001663,Leopoldo,Graham,1974 Willow Ave,Oak Hollow,48991,P-09,28,REP,555-709-9510,19
+RV001664,Rodrigo,Satterfield,1999 Adams St,Oak Hollow,48991,P-10,42,OTH,(555) 333-5107,22
+RV001665,Cleveland,Turner,1764 Orchard Ave,Oak Hollow,48991,P-11,55,REP,,27
+RV001666,Rachelle,Bogan,1859 Lincoln Ave,Riverbend,48990,P-03,61,NPA,5559823926,63
+RV001667,Frederik,Stoltenberg,199 Jefferson Ln,Riverbend,48990,P-05,54,REP,(555) 732-2478,49
+RV001668,Geovanny,Casper,948 Grant Dr,Riverbend,48990,P-06,59,REP,,0
+RV001669,Llewellyn,Mohr-Dickinson,377 Meadow Ave,Riverbend,48990,P-01,38,OTH,555-602-2683,67
+RV001670,Percy,Halvorson,2022 Lake Ln,Oak Hollow,48991,P-12,61,REP,5553431724,5
+RV001671,Vance,Murray-Mraz,2238 Monroe Dr,Oak Hollow,48991,P-11,39,OTH,555-489-9071,56
+RV001672,Jackson,Witting,1722 Birch St,Riverbend,48990,P-04,44,NPA,5552280677,27
+RV001673,Agustin,Stamm,1254 Franklin Ct,Oak Hollow,48991,P-08,38,NPA,,29
+RV001674,Myrtle,Fisher,1303 Maple Ln,Oak Hollow,48991,P-10,23,REP,(555) 282-7079,22
+RV001675,Ezequiel,Maggio,1819 Elm Rd,Riverbend,48990,P-02,81,REP,(555) 958-0296,4
+RV001676,James,Beier,1633 Lake Ln,Oak Hollow,48991,P-12,19,REP,(555) 612-1203,38
+RV001677,Tommie,Doyle,2767 Elm Rd,Riverbend,48990,P-02,47,REP,555-837-2592,6
+RV001678,Pamela,MacGyver,114 Pine Ave,Riverbend,48990,P-05,53,DEM,5555439118,38
+RV001679,David,Collins,2417 Spring Ln,Riverbend,48990,P-03,44,DEM,(555) 304-9078,65
+RV001680,Queen,Mueller,985 Meadow St,Riverbend,48990,P-02,43,REP,(555) 689-9247,13
+RV001681,Amira,Welch,1706 Orchard Rd,Oak Hollow,48991,P-09,82,DEM,,97
+RV001682,Barrett,Hegmann,765 Orchard St,Oak Hollow,48991,P-09,38,NPA,555-350-5564,61
+RV001683,Jayson,Stracke,2762 Highland Rd,Oak Hollow,48991,P-12,40,NPA,,38
+RV001684,Emmett,Hamill,2758 Cedar Dr,Riverbend,48990,P-03,46,DEM,5556574387,60
+RV001685,Kraig,Schowalter,271 River St,Riverbend,48990,P-05,21,DEM,,74
+RV001686,Leopold,Steuber,1284 Elm Rd,Riverbend,48990,P-02,59,REP,,5
+RV001687,Madeline,Haley,2644 Lincoln Ave,Riverbend,48990,P-03,49,NPA,(555) 731-1188,46
+RV001688,Giovanna,Koss,1316 Cherry Ct,Riverbend,48990,P-05,53,REP,,32
+RV001689,General,Renner,2230 Elm St,Oak Hollow,48991,P-11,74,REP,555-306-7767,19
+RV001690,Colby,Goyette,2892 Cedar Rd,Oak Hollow,48991,P-11,75,NPA,,44
+RV001691,Liza,Bechtelar,1034 Cherry Ct,Riverbend,48990,P-05,36,DEM,,64
+RV001692,Jace,Bergstrom,757 Orchard Ave,Oak Hollow,48991,P-11,19,NPA,555-729-1351,67
+RV001693,Yasmine,O'Kon,2070 Meadow St,Riverbend,48990,P-02,94,NPA,555-931-2249,36
+RV001694,Rosetta,Mayer,1119 Adams Ave,Riverbend,48990,P-01,21,REP,(555) 275-6542,51
+RV001695,Isadore,Renner,740 Grant Rd,Oak Hollow,48991,P-08,84,DEM,,50
+RV001696,Clifton,Little,749 Willow Ave,Oak Hollow,48991,P-09,83,REP,,25
+RV001697,Josue,Schowalter,1067 Oak Rd,Riverbend,48990,P-04,36,DEM,(555) 393-3574,96
+RV001698,Lilliana,Blick,1858 Monroe Dr,Oak Hollow,48991,P-11,45,DEM,5557664612,100
+RV001699,Eve,Crona-Upton,760 Lincoln St,Riverbend,48990,P-01,58,REP,,48
+RV001700,Newell,Kirlin,2525 Oak Rd,Riverbend,48990,P-04,69,OTH,,60
+RV001701,Irvin,Marvin,1436 Church Ln,Riverbend,48990,P-07,40,REP,(555) 574-2883,36
+RV001702,April,Rippin,2108 Jefferson Dr,Oak Hollow,48991,P-12,22,REP,555-850-9460,8
+RV001703,Cody,Klocko,740 Walnut Ln,Oak Hollow,48991,P-10,33,OTH,,15
+RV001704,Ryann,Hagenes,2704 Monroe Rd,Riverbend,48990,P-04,89,NPA,,59
+RV001705,Otis,Hoeger,2935 Orchard Ave,Oak Hollow,48991,P-11,32,REP,,16
+RV001706,Cora,Doyle,757 Cherry Ln,Oak Hollow,48991,P-08,41,DEM,5554399976,84
+RV001707,Herminia,Rau,1475 River St,Riverbend,48990,P-05,38,OTH,555-415-3330,53
+RV001708,Winston,Franecki,1144 Ridge St,Riverbend,48990,P-06,52,NPA,(555) 205-1803,81
+RV001709,Sheridan,Corwin,237 Pine Ln,Riverbend,48990,P-07,34,REP,(555) 533-9548,33
+RV001710,Eloisa,Klocko,191 Jefferson Ln,Riverbend,48990,P-05,20,DEM,(555) 228-6906,66
+RV001711,Francesca,Feest,2393 Adams Ave,Riverbend,48990,P-01,53,REP,555-486-4080,17
+RV001712,Bettie,Daugherty,2989 Cedar Rd,Oak Hollow,48991,P-11,48,REP,555-560-4892,30
+RV001713,Lyda,Parisian,872 Church Rd,Riverbend,48990,P-03,47,REP,555-871-3563,19
+RV001714,Pedro,Abbott,2758 Lake Ln,Oak Hollow,48991,P-12,35,NPA,,40
+RV001715,Sandy,Casper,2817 Aspen Ave,Oak Hollow,48991,P-12,39,DEM,555-553-6248,60
+RV001716,Theresa,Heaney,2390 Lake Ln,Oak Hollow,48991,P-12,63,REP,5559021099,0
+RV001717,Norval,West,1893 Highland Dr,Riverbend,48990,P-06,31,DEM,,91
+RV001718,Kailyn,Spencer,2027 Church Rd,Riverbend,48990,P-03,34,NPA,5552811228,23
+RV001719,Javier,Hettinger-MacGyver,889 Clark Rd,Riverbend,48990,P-07,51,NPA,,12
+RV001720,Alejandrin,Vandervort,559 Orchard Rd,Oak Hollow,48991,P-09,44,DEM,,74
+RV001721,Donnie,Wisoky,379 Park Ln,Riverbend,48990,P-04,91,NPA,5552134414,34
+RV001722,Maybelle,McLaughlin,397 Highland Dr,Riverbend,48990,P-06,31,DEM,(555) 897-2867,89
+RV001723,Cleora,Berge,2121 Sunset Ct,Riverbend,48990,P-02,57,REP,555-520-7890,23
+RV001724,Emory,Sporer-Schowalter,1289 Jefferson Ct,Oak Hollow,48991,P-12,60,REP,,38
+RV001725,Jalen,Hammes,1295 Highland St,Oak Hollow,48991,P-08,40,REP,555-441-5984,51
+RV001726,Rosalia,Kozey,854 Meadow Ave,Riverbend,48990,P-01,30,REP,(555) 674-4808,25
+RV001727,Stanley,Hills-Hintz,1892 Adams St,Oak Hollow,48991,P-10,73,NPA,555-848-9361,19
+RV001728,Lennie,Bashirian,1313 Lincoln St,Riverbend,48990,P-01,18,REP,(555) 659-2528,27
+RV001729,Abel,Champlin,1024 Highland Rd,Oak Hollow,48991,P-12,57,DEM,(555) 777-6278,77
+RV001730,Novella,Lowe,1034 Meadow Dr,Riverbend,48990,P-01,81,REP,,35
+RV001731,Erling,Abernathy,300 Cherry Dr,Oak Hollow,48991,P-09,83,DEM,5554449269,75
+RV001732,Jeanette,Botsford,2689 Cherry Ct,Riverbend,48990,P-05,75,NPA,(555) 212-5126,43
+RV001733,Justyn,Schumm,1920 Elm Ln,Riverbend,48990,P-03,41,REP,(555) 959-4565,38
+RV001734,Melissa,Predovic,1333 Cherry Ct,Riverbend,48990,P-05,66,REP,(555) 912-0479,14
+RV001735,Taylor,Muller,280 Jefferson Ln,Riverbend,48990,P-05,29,REP,5559472654,36
+RV001736,Aiden,Nicolas-Dietrich,462 Elm Rd,Riverbend,48990,P-02,26,REP,555-811-1134,12
+RV001737,Coleman,Stiedemann,492 Cherry Ln,Oak Hollow,48991,P-08,61,REP,(555) 998-8906,16
+RV001738,Taya,Barton,2525 Lake Ln,Oak Hollow,48991,P-12,24,DEM,(555) 501-0885,50
+RV001739,Abel,Wuckert,2951 Pine Ln,Riverbend,48990,P-07,36,REP,555-602-8825,9
+RV001740,Rhea,Oberbrunner,451 Monroe Dr,Oak Hollow,48991,P-11,36,REP,(555) 382-3031,42
+RV001741,Kamren,Corwin,1476 Ridge St,Riverbend,48990,P-06,69,DEM,(555) 590-5202,58
+RV001742,Amos,Rodriguez,1262 Sunset Ct,Riverbend,48990,P-02,90,NPA,5557038398,44
+RV001743,Gaston,Stehr,1363 Cherry Dr,Oak Hollow,48991,P-09,45,DEM,(555) 549-2813,89
+RV001744,Maximillia,Crona,2873 Park Ct,Oak Hollow,48991,P-11,42,REP,,37
+RV001745,Telly,Rutherford,698 Park Ln,Riverbend,48990,P-04,35,DEM,555-862-3463,90
+RV001746,Gino,Corwin,2589 Elm Rd,Riverbend,48990,P-02,20,DEM,5559506722,74
+RV001747,Kaleb,Prosacco,2085 Park Ct,Oak Hollow,48991,P-11,45,NPA,(555) 607-3082,26
+RV001748,Cary,Renner,128 Lake Ln,Oak Hollow,48991,P-12,27,DEM,555-434-4695,79
+RV001749,Charlotte,Considine,624 Pine Ave,Riverbend,48990,P-05,59,REP,555-538-5335,18
+RV001750,Eloy,Heller,2189 Spring Ct,Riverbend,48990,P-07,61,REP,(555) 271-5945,34
+RV001751,Collin,Champlin,495 Spring Ct,Riverbend,48990,P-07,22,DEM,5553711731,83
+RV001752,Sydnie,Huels,1412 Pine St,Oak Hollow,48991,P-08,35,REP,(555) 966-3863,33
+RV001753,Cydney,O'Kon,2411 Birch St,Riverbend,48990,P-04,26,DEM,555-516-7664,57
+RV001754,Kiarra,D'Amore,1825 Willow St,Oak Hollow,48991,P-10,92,NPA,555-272-0270,43
+RV001755,Tristin,Green,1893 Franklin Rd,Riverbend,48990,P-02,52,REP,5558783539,0
+RV001756,Mckenzie,Gulgowski,763 Lincoln St,Riverbend,48990,P-01,46,DEM,(555) 702-0607,71
+RV001757,Lillie,Robel,1684 Highland St,Oak Hollow,48991,P-08,45,NPA,5559786256,65
+RV001758,Oran,Jerde,515 Cedar St,Oak Hollow,48991,P-11,55,DEM,,79
+RV001759,Mollie,Homenick,2894 Spring Ln,Riverbend,48990,P-03,67,DEM,,50
+RV001760,Cleve,Mertz,518 Cherry Ln,Oak Hollow,48991,P-08,72,NPA,,89
+RV001761,Kaylee,Osinski,1597 Cedar Dr,Riverbend,48990,P-03,59,DEM,(555) 837-8691,80
+RV001762,Era,Bradtke,2350 Jefferson Dr,Oak Hollow,48991,P-12,43,NPA,(555) 744-3231,34
+RV001763,Providenci,Littel,2855 Walnut Dr,Riverbend,48990,P-07,24,DEM,(555) 827-5863,62
+RV001764,Amara,Murray,2586 Meadow St,Riverbend,48990,P-02,44,OTH,(555) 475-8306,40
+RV001765,Alaina,Prosacco,184 Highland Rd,Oak Hollow,48991,P-12,52,REP,5556033483,22
+RV001766,Judy,Wilderman,2921 Elm St,Oak Hollow,48991,P-11,81,REP,5555826256,40
+RV001767,Maegan,Glover,317 Church Ln,Riverbend,48990,P-07,36,NPA,(555) 343-4458,16
+RV001768,Gerard,Kilback,1233 Church Rd,Riverbend,48990,P-03,90,NPA,555-930-7246,48
+RV001769,Adrianna,Gibson,1258 Orchard Ave,Oak Hollow,48991,P-11,47,REP,(555) 726-6658,49
+RV001770,Otilia,Stehr,1955 Adams Ave,Riverbend,48990,P-01,47,DEM,(555) 983-1186,45
+RV001771,Emmanuelle,Wyman,1627 Park Ln,Riverbend,48990,P-04,39,REP,555-470-4783,0
+RV001772,Demetrius,Kuphal,2968 Lincoln Ln,Riverbend,48990,P-01,29,DEM,5552871081,61
+RV001773,Roman,O'Connell,882 Birch St,Riverbend,48990,P-04,58,DEM,555-538-1177,82
+RV001774,Brooke,Cummerata,1135 Ridge St,Riverbend,48990,P-06,50,NPA,(555) 642-4868,39
+RV001775,Ruthe,Hermiston,2795 Spruce St,Riverbend,48990,P-03,41,NPA,,34
+RV001776,June,Emmerich,266 Oak Ave,Riverbend,48990,P-04,38,DEM,555-566-1637,82
+RV001777,Diamond,Schimmel,1097 Franklin Ct,Oak Hollow,48991,P-08,54,DEM,5559219116,74
+RV001778,Mariane,Gusikowski,251 Franklin Rd,Riverbend,48990,P-02,25,REP,555-681-5916,29
+RV001779,Leo,Tremblay,605 Cherry Ln,Oak Hollow,48991,P-08,18,NPA,,62
+RV001780,Jonatan,Senger,985 Maple Ln,Oak Hollow,48991,P-10,43,NPA,555-574-3661,86
+RV001781,Tiara,Olson,273 Jefferson Dr,Oak Hollow,48991,P-12,44,DEM,555-744-6650,55
+RV001782,Athena,Crona,775 Lincoln St,Riverbend,48990,P-01,63,REP,(555) 899-1734,28
+RV001783,Devyn,Smitham-Kulas,525 Franklin St,Oak Hollow,48991,P-10,27,REP,,37
+RV001784,Harmon,McClure,2963 Maple Ln,Oak Hollow,48991,P-10,33,DEM,555-469-1145,44
+RV001785,Jude,Hintz,975 Madison Ct,Oak Hollow,48991,P-09,89,REP,555-477-5752,10
+RV001786,Lynette,O'Reilly,1895 Adams Rd,Oak Hollow,48991,P-09,40,REP,5555278595,7
+RV001787,Joshuah,Moen,2821 Franklin Ct,Oak Hollow,48991,P-08,66,REP,555-698-0317,18
+RV001788,Kimberly,Schuster,923 River St,Riverbend,48990,P-05,24,REP,(555) 610-5830,15
+RV001789,Kenyatta,Beahan,2033 Ridge St,Riverbend,48990,P-06,42,NPA,,41
+RV001790,Emmett,Tremblay,2580 Oak Ave,Riverbend,48990,P-04,25,REP,5554305807,27
+RV001791,Isobel,Green,262 Franklin Ct,Oak Hollow,48991,P-08,49,DEM,555-292-5545,66
+RV001792,Jakob,Murazik,1777 Franklin Ct,Oak Hollow,48991,P-08,20,REP,(555) 561-6127,0
+RV001793,Curt,Ruecker,1736 Ridge St,Riverbend,48990,P-06,20,NPA,5557867047,67
+RV001794,Earlene,Streich,1740 Clark St,Oak Hollow,48991,P-08,24,DEM,555-245-6391,59
+RV001795,Jon,Wilkinson,1850 Orchard St,Oak Hollow,48991,P-09,21,REP,,10
+RV001796,Declan,Murphy,913 Park Ct,Oak Hollow,48991,P-11,56,NPA,(555) 465-8180,36
+RV001797,Stan,Skiles,2333 Highland St,Oak Hollow,48991,P-08,80,DEM,,69
+RV001798,Emanuel,Hilpert,579 Church Ln,Riverbend,48990,P-07,49,NPA,5552100332,51
+RV001799,Michael,Klocko,865 Clark St,Oak Hollow,48991,P-08,28,NPA,555-530-0844,47
+RV001800,Emilio,O'Keefe,1533 Orchard Ave,Oak Hollow,48991,P-11,20,REP,,4
+RV001801,Jace,Schowalter,1995 Cedar Ct,Riverbend,48990,P-04,72,NPA,,57
+RV001802,Dewey,Kunde,2781 Meadow St,Riverbend,48990,P-02,72,REP,(555) 204-5416,18
+RV001803,Pat,Wilderman-Funk,1023 Jefferson Ln,Riverbend,48990,P-05,25,DEM,(555) 488-6966,95
+RV001804,Ellsworth,Howe,1079 Highland St,Oak Hollow,48991,P-08,55,DEM,,71
+RV001805,Jaquan,Corkery,2027 Meadow St,Riverbend,48990,P-02,53,REP,555-220-4638,16
+RV001806,Linnea,Carroll,598 Elm Rd,Riverbend,48990,P-02,55,DEM,(555) 663-3832,70
+RV001807,Desmond,Kling,2500 Church Ln,Riverbend,48990,P-07,60,DEM,(555) 305-9412,82
+RV001808,Fidel,Ebert,1826 Elm St,Oak Hollow,48991,P-11,57,REP,,20
+RV001809,Ora,Schoen,418 Lincoln Ave,Riverbend,48990,P-03,51,NPA,(555) 328-3255,55
+RV001810,Ewell,Larkin,1172 Franklin Ct,Oak Hollow,48991,P-08,62,REP,(555) 250-7176,29
+RV001811,Irene,Jacobs,2090 Cedar St,Oak Hollow,48991,P-11,62,REP,(555) 524-8729,56
+RV001812,Dasia,Runte,1383 Clark Rd,Riverbend,48990,P-07,48,DEM,5552370401,77
+RV001813,Abbey,Willms,1647 Madison Ct,Oak Hollow,48991,P-09,82,REP,(555) 754-3093,5
+RV001814,Terri,Beer,1569 Lake St,Oak Hollow,48991,P-10,44,REP,555-473-1716,4
+RV001815,Nils,Volkman,1476 Clark St,Oak Hollow,48991,P-08,49,DEM,(555) 430-5962,86
+RV001816,Dejon,Predovic,203 Maple Ln,Oak Hollow,48991,P-10,94,DEM,(555) 645-2896,77
+RV001817,Warren,Senger-Waters,2512 Maple Ln,Oak Hollow,48991,P-10,20,DEM,,66
+RV001818,Oswald,Yundt,1341 Adams Rd,Oak Hollow,48991,P-09,84,DEM,(555) 725-0681,80
+RV001819,Mortimer,Lang,2125 Monroe Ln,Oak Hollow,48991,P-12,44,NPA,,32
+RV001820,Bonnie,Blick,2748 Pine Ave,Riverbend,48990,P-05,20,DEM,(555) 349-9719,74
+RV001821,Efrain,Wiegand,930 Ridge St,Riverbend,48990,P-06,54,DEM,555-346-1681,47
+RV001822,Landen,Langosh,1748 Monroe Dr,Oak Hollow,48991,P-11,86,NPA,(555) 520-2841,36
+RV001823,Madisen,Ankunding,669 Elm St,Oak Hollow,48991,P-11,53,NPA,(555) 243-9378,46
+RV001824,Felicita,Toy,2274 Pine Ave,Riverbend,48990,P-05,35,NPA,,20
+RV001825,Katlyn,Spencer,119 Cedar Rd,Oak Hollow,48991,P-11,26,REP,,27
+RV001826,Jordon,Abshire,699 Cherry Ct,Riverbend,48990,P-05,50,NPA,5559470903,13
+RV001827,Annamarie,Reichert,918 Maple Ln,Oak Hollow,48991,P-10,57,REP,(555) 268-7646,0
+RV001828,Carey,Reilly,2052 Lincoln Ln,Riverbend,48990,P-01,26,REP,(555) 593-7862,15
+RV001829,Dee,Barrows,2465 Meadow Ave,Riverbend,48990,P-01,70,REP,(555) 926-3124,15
+RV001830,Jaiden,D'Amore,992 Lincoln Ln,Riverbend,48990,P-01,18,DEM,(555) 509-4459,66
+RV001831,Leann,Zieme,800 Jefferson Dr,Oak Hollow,48991,P-12,37,REP,5557633731,28
+RV001832,Florida,Powlowski,674 Willow St,Oak Hollow,48991,P-10,26,NPA,(555) 958-9441,68
+RV001833,Amira,MacGyver,2611 Ridge Ln,Riverbend,48990,P-05,94,NPA,555-555-3534,37
+RV001834,Kieran,Langosh,2423 Church Rd,Riverbend,48990,P-03,63,DEM,(555) 740-6292,100
+RV001835,Gregg,McCullough,1744 Madison Ct,Oak Hollow,48991,P-09,82,REP,(555) 877-2943,36
+RV001836,Abigayle,Marvin,111 Franklin St,Oak Hollow,48991,P-10,27,NPA,(555) 412-1046,22
+RV001837,Murl,Gleichner,578 Grant Dr,Riverbend,48990,P-06,19,REP,5558128686,26
+RV001838,Alton,Schulist,1681 Birch St,Riverbend,48990,P-04,74,DEM,(555) 399-5477,66
+RV001839,Emory,Satterfield,2791 Grant Dr,Riverbend,48990,P-06,70,DEM,,43
+RV001840,Fern,Hegmann,366 Highland St,Oak Hollow,48991,P-08,49,NPA,555-891-5613,56
+RV001841,Vena,Becker-Botsford,1494 Lincoln Ave,Riverbend,48990,P-03,18,NPA,(555) 719-2630,35
+RV001842,Gino,Waelchi,824 Grant Dr,Riverbend,48990,P-06,25,DEM,(555) 380-2367,81
+RV001843,Greta,Bergstrom,1920 Willow Ln,Riverbend,48990,P-02,46,NPA,5556114584,31
+RV001844,Winifred,Herman,2882 Elm Rd,Riverbend,48990,P-02,59,DEM,(555) 835-9014,77
+RV001845,Bryce,Grant,584 Church St,Riverbend,48990,P-06,45,OTH,555-351-0595,18
+RV001846,Jeromy,Blick,1294 Adams Rd,Oak Hollow,48991,P-09,58,NPA,,30
+RV001847,Eleanora,Turner,2955 Cedar St,Oak Hollow,48991,P-11,18,NPA,(555) 336-6019,29
+RV001848,Einar,Ankunding,2305 Monroe Rd,Riverbend,48990,P-04,23,NPA,5557479674,43
+RV001849,Mohamed,Volkman,1368 Spruce St,Riverbend,48990,P-03,58,DEM,,99
+RV001850,Erik,Feil,2908 Jackson Dr,Riverbend,48990,P-02,81,REP,(555) 662-9825,41
+RV001851,Harmon,Grant,480 Meadow Dr,Riverbend,48990,P-01,27,DEM,,81
+RV001852,Allen,Donnelly,1817 Cedar St,Oak Hollow,48991,P-11,61,NPA,,50
+RV001853,Zackary,Little,770 Franklin Ct,Oak Hollow,48991,P-08,89,REP,5552409187,2
+RV001854,Saul,Kilback,1819 Walnut Dr,Riverbend,48990,P-07,29,NPA,555-738-9464,82
+RV001855,Barrett,Cruickshank,1819 Ridge St,Riverbend,48990,P-06,91,NPA,555-523-5673,54
+RV001856,Jodie,Rodriguez-White,1966 Grant Rd,Oak Hollow,48991,P-08,37,DEM,5556863397,86
+RV001857,Jose,Wolff,253 Cherry Dr,Oak Hollow,48991,P-09,50,DEM,,65
+RV001858,Darby,Schiller,2950 Highland St,Oak Hollow,48991,P-08,36,REP,555-529-1306,6
+RV001859,Norwood,Konopelski,1169 Cherry Ln,Oak Hollow,48991,P-08,50,REP,(555) 689-1602,12
+RV001860,Aiden,Hodkiewicz,1165 Meadow Ave,Riverbend,48990,P-01,89,NPA,555-433-5673,25
+RV001861,Coby,Torphy,595 Lincoln Ave,Riverbend,48990,P-03,56,DEM,(555) 774-7538,100
+RV001862,Carolyne,Wunsch,1228 Meadow Dr,Riverbend,48990,P-01,80,REP,(555) 324-4399,15
+RV001863,Peyton,Stanton-Kuhic,944 Orchard St,Oak Hollow,48991,P-09,31,NPA,,56
+RV001864,Linwood,Larson,483 Pine St,Oak Hollow,48991,P-08,80,REP,555-908-4567,42
+RV001865,Brooklyn,McLaughlin,913 Clark Rd,Riverbend,48990,P-07,21,DEM,555-671-3363,50
+RV001866,Baby,Stehr,2410 Meadow Dr,Riverbend,48990,P-01,82,NPA,5555702707,60
+RV001867,Stevie,Kilback,634 Lincoln St,Riverbend,48990,P-01,80,REP,,47
+RV001868,Jany,Halvorson,243 Clark St,Oak Hollow,48991,P-08,27,DEM,5554038040,92
+RV001869,Tremaine,Hills,243 Church Ln,Riverbend,48990,P-07,57,NPA,,48
+RV001870,Jaylin,Bartell,2990 Jefferson Dr,Oak Hollow,48991,P-12,21,NPA,555-605-4623,36
+RV001871,Jeremiah,Reilly,2102 Spring Ln,Riverbend,48990,P-03,85,DEM,555-581-8150,100
+RV001872,Alta,Hoppe,2061 Walnut Ln,Oak Hollow,48991,P-10,57,OTH,,35
+RV001873,Celestino,Quitzon,1211 Jefferson Ln,Riverbend,48990,P-05,24,REP,555-333-8741,52
+RV001874,Nelson,Harber,2739 River St,Riverbend,48990,P-05,23,NPA,555-688-2236,20
+RV001875,Mallie,Sauer,2663 Willow Ln,Riverbend,48990,P-02,54,DEM,,80
+RV001876,Hermina,Hane,1984 Cherry Ln,Oak Hollow,48991,P-08,91,OTH,(555) 563-9189,54
+RV001877,Murray,Keebler,2708 Jefferson Ct,Oak Hollow,48991,P-12,47,NPA,555-450-3468,80
+RV001878,Lafayette,Shields,2233 Walnut Ln,Oak Hollow,48991,P-10,30,REP,555-701-5328,10
+RV001879,Wyman,Roberts,926 Meadow Dr,Riverbend,48990,P-01,57,DEM,5557212883,46
+RV001880,Elisha,Ruecker,1777 Spring Ct,Riverbend,48990,P-07,72,NPA,(555) 962-7763,56
+RV001881,Chauncey,Mohr,1343 Jefferson Dr,Oak Hollow,48991,P-12,66,REP,,0
+RV001882,Emie,Roob,301 Willow St,Oak Hollow,48991,P-10,92,OTH,,33
+RV001883,Hans,O'Reilly,2644 Pine Ave,Riverbend,48990,P-05,49,DEM,(555) 367-9237,68
+RV001884,Piper,Moen,619 Highland St,Oak Hollow,48991,P-08,23,REP,,18
+RV001885,Yesenia,Douglas,1398 Highland Rd,Oak Hollow,48991,P-12,44,REP,,26
+RV001886,Lazaro,McDermott,2570 Sunset Ct,Riverbend,48990,P-02,91,DEM,(555) 825-8569,81
+RV001887,Gerald,Cremin,1274 Meadow Ave,Riverbend,48990,P-01,91,NPA,,49
+RV001888,Wesley,Murphy-Kling,714 Clark Rd,Riverbend,48990,P-07,31,NPA,5559482980,17
+RV001889,Myron,Wolff,2000 Park Ln,Riverbend,48990,P-04,53,REP,555-683-1676,20
+RV001890,Devin,Walker,2058 Maple Ln,Oak Hollow,48991,P-10,42,NPA,(555) 859-4902,73
+RV001891,Stephany,Ullrich,1508 Jefferson Ct,Oak Hollow,48991,P-12,22,REP,(555) 245-3368,40
+RV001892,Lemuel,Glover,1176 Lake St,Oak Hollow,48991,P-10,35,NPA,555-879-3790,50
+RV001893,Reese,Pfeffer,624 Jefferson Ct,Oak Hollow,48991,P-12,92,REP,,24
+RV001894,Lawson,Heller,196 Cedar Dr,Riverbend,48990,P-03,56,DEM,,45
+RV001895,Danyka,Hagenes,1988 Lincoln St,Riverbend,48990,P-01,31,REP,5556731574,45
+RV001896,Adrianna,Fahey,2628 Pine St,Oak Hollow,48991,P-08,73,DEM,(555) 312-3405,49
+RV001897,Jack,Gottlieb,2082 Franklin Rd,Riverbend,48990,P-02,19,REP,,49
+RV001898,Karson,Treutel,1044 Oak Ave,Riverbend,48990,P-04,26,REP,,32
+RV001899,Crystal,Sanford,2944 Lincoln St,Riverbend,48990,P-01,18,REP,(555) 578-7404,31
+RV001900,Elisa,Bode,1911 Oak Rd,Riverbend,48990,P-04,51,DEM,5556633126,49
+RV001901,Lue,Wilderman,2496 Lake St,Oak Hollow,48991,P-10,86,REP,555-542-1723,17
+RV001902,Florence,Bernhard,432 Meadow St,Riverbend,48990,P-02,27,REP,555-606-0095,37
+RV001903,Alexandre,Russel,896 Jefferson Dr,Oak Hollow,48991,P-12,75,DEM,,59
+RV001904,Doris,Swift,972 Meadow St,Riverbend,48990,P-02,38,REP,5559400502,27
+RV001905,Hoyt,Bogisich,1744 Cherry Ln,Oak Hollow,48991,P-08,54,DEM,,81
+RV001906,Gail,Krajcik,248 Madison Ct,Oak Hollow,48991,P-09,78,REP,(555) 309-7120,26
+RV001907,Nils,Rutherford,981 Washington Ave,Riverbend,48990,P-06,71,DEM,555-241-1469,75
+RV001908,Prudence,Schneider,342 Pine Ln,Riverbend,48990,P-07,56,NPA,555-818-6904,66
+RV001909,Randi,Reynolds,2983 Cherry Ct,Riverbend,48990,P-05,93,DEM,,73
+RV001910,Delphine,Streich,2237 Ridge St,Riverbend,48990,P-06,64,DEM,(555) 791-0024,76
+RV001911,Rosina,Gerlach,1506 Monroe Rd,Riverbend,48990,P-04,32,DEM,555-292-5108,82
+RV001912,Manuel,Bergstrom,2344 Sunset Rd,Riverbend,48990,P-07,45,REP,,30
+RV001913,Jalen,Ondricka,1312 Adams Ave,Riverbend,48990,P-01,33,NPA,555-690-8803,39
+RV001914,Peyton,Little,390 Park Ct,Oak Hollow,48991,P-11,76,DEM,555-307-2064,55
+RV001915,Ara,Lueilwitz,143 Madison Ct,Oak Hollow,48991,P-09,54,DEM,,66
+RV001916,Reilly,Corkery,2109 Franklin Rd,Riverbend,48990,P-02,91,NPA,555-476-6712,61
+RV001917,Carson,Miller,1970 Clark Rd,Riverbend,48990,P-07,83,DEM,,58
+RV001918,Hellen,Blick,2944 Madison Ct,Oak Hollow,48991,P-09,64,REP,,25
+RV001919,Alexandrea,Streich,1814 Lincoln Ave,Riverbend,48990,P-03,40,DEM,555-530-3547,70
+RV001920,Flo,Klocko,1954 Adams St,Oak Hollow,48991,P-10,24,REP,,14
+RV001921,Aurelio,Greenfelder,2838 Franklin Rd,Riverbend,48990,P-02,18,REP,,34
+RV001922,Travis,Russel,1097 Park Ct,Oak Hollow,48991,P-11,60,NPA,5557521036,33
+RV001923,Kayley,Kuphal,2140 Elm St,Oak Hollow,48991,P-11,66,REP,,28
+RV001924,Mireya,Ondricka,1831 Grant Dr,Riverbend,48990,P-06,53,NPA,(555) 573-5316,31
+RV001925,Karine,Becker,2550 Cedar St,Oak Hollow,48991,P-11,32,DEM,5556375344,71
+RV001926,Avery,Kerluke,777 Birch St,Riverbend,48990,P-04,60,DEM,,88
+RV001927,Jakob,Franecki,1599 Franklin Ct,Oak Hollow,48991,P-08,60,NPA,,17
+RV001928,Lucious,Klocko,321 Clark Rd,Riverbend,48990,P-07,38,DEM,,76
+RV001929,Carlotta,Upton,604 Lake Ln,Oak Hollow,48991,P-12,87,REP,(555) 383-4971,42
+RV001930,Eulalia,Lind,995 Aspen Ave,Oak Hollow,48991,P-12,45,REP,555-758-9821,27
+RV001931,Twila,Walsh,835 Grant Dr,Riverbend,48990,P-06,36,NPA,,19
+RV001932,Kyler,Bayer,194 Church Rd,Riverbend,48990,P-03,48,DEM,,65
+RV001933,Glennie,Stroman,407 Highland Rd,Oak Hollow,48991,P-12,59,DEM,(555) 862-8534,55
+RV001934,Isac,Littel,1677 Ridge Dr,Riverbend,48990,P-06,51,NPA,(555) 518-5337,68
+RV001935,Alejandra,Rowe,313 Walnut Dr,Riverbend,48990,P-07,63,NPA,,69
+RV001936,Iris,Hauck,1220 Cedar Rd,Oak Hollow,48991,P-11,40,DEM,,82
+RV001937,Gaston,Beer,2956 Adams Ave,Riverbend,48990,P-01,43,REP,(555) 687-4966,29
+RV001938,Ally,Mayer-Reynolds,469 Willow Rd,Riverbend,48990,P-01,73,REP,,9
+RV001939,Maximus,Gorczany,2470 Lake St,Oak Hollow,48991,P-10,52,NPA,5552376895,26
+RV001940,Queen,Gibson,424 Orchard Rd,Oak Hollow,48991,P-09,30,REP,555-341-3690,7
+RV001941,Jeramy,Lebsack,1313 Pine Ct,Riverbend,48990,P-05,18,OTH,555-368-4186,63
+RV001942,Milton,Heaney,2124 Madison Ct,Oak Hollow,48991,P-09,33,REP,(555) 871-4236,50
+RV001943,Blanca,Mitchell,585 Oak Rd,Riverbend,48990,P-04,47,DEM,(555) 857-1438,72
+RV001944,Karine,Fisher,2988 Willow Ave,Oak Hollow,48991,P-09,25,REP,(555) 597-1655,14
+RV001945,Sandy,Swaniawski,2684 Franklin St,Oak Hollow,48991,P-10,69,REP,(555) 455-3899,40
+RV001946,Gerhard,Pfeffer,1380 River St,Riverbend,48990,P-05,53,NPA,,26
+RV001947,Ellsworth,Lueilwitz,2561 Walnut Dr,Riverbend,48990,P-07,59,DEM,555-953-5445,74
+RV001948,Todd,Crona,374 Oak Rd,Riverbend,48990,P-04,47,REP,(555) 305-0120,39
+RV001949,Janis,Orn,438 Adams Ave,Riverbend,48990,P-01,52,DEM,555-978-8517,90
+RV001950,Ivy,Wehner,2204 Church Ln,Riverbend,48990,P-07,76,DEM,(555) 486-7207,71
+RV001951,Bailey,Sauer,1975 Cedar St,Oak Hollow,48991,P-11,87,NPA,555-732-7817,68
+RV001952,Avery,Roob,1018 Meadow St,Riverbend,48990,P-02,29,OTH,(555) 930-1996,24
+RV001953,Alia,Bernhard,2693 Grant Rd,Oak Hollow,48991,P-08,44,REP,555-363-5226,20
+RV001954,Jackeline,Klein,1369 Cedar Rd,Oak Hollow,48991,P-11,22,REP,,39
+RV001955,Torey,Sauer,1335 Lake St,Oak Hollow,48991,P-10,53,DEM,5555991135,92
+RV001956,Julian,Robel-Willms,2351 Lincoln Ln,Riverbend,48990,P-01,35,REP,(555) 259-6729,37
+RV001957,Parker,Wiza,1340 Cedar Dr,Riverbend,48990,P-03,23,DEM,,84
+RV001958,Abdullah,Halvorson,1108 Birch St,Riverbend,48990,P-04,85,REP,(555) 895-8442,44
+RV001959,Wiley,Marvin,2871 Willow St,Oak Hollow,48991,P-10,24,REP,5554007563,52
+RV001960,Velda,Christiansen,1414 Aspen Ave,Oak Hollow,48991,P-12,48,OTH,,29
+RV001961,Lenna,Stark,1716 Adams Rd,Oak Hollow,48991,P-09,42,REP,555-841-1615,5
+RV001962,Ardith,Wisoky-Weissnat,177 Spruce St,Riverbend,48990,P-03,43,OTH,(555) 499-4687,73
+RV001963,Narciso,Blick,2771 Cherry Ln,Oak Hollow,48991,P-08,37,NPA,5553504270,64
+RV001964,Roberta,Balistreri-Kirlin,375 Adams St,Oak Hollow,48991,P-10,20,REP,,6
+RV001965,Tre,Altenwerth,1325 Grant Dr,Riverbend,48990,P-06,70,DEM,555-592-9882,67
+RV001966,Denis,Dickinson,409 Ridge St,Riverbend,48990,P-06,53,DEM,(555) 605-8344,99
+RV001967,Kay,Larkin,177 Clark St,Oak Hollow,48991,P-08,51,DEM,555-665-2576,100
+RV001968,Parker,Gleichner-Nitzsche,2737 Madison Ct,Oak Hollow,48991,P-09,28,DEM,5552410592,79
+RV001969,Forrest,Terry,299 Elm Ln,Riverbend,48990,P-03,92,DEM,555-523-2973,60
+RV001970,Guido,Kohler,1437 Meadow Ave,Riverbend,48990,P-01,19,DEM,,57
+RV001971,Micah,Balistreri,2725 Monroe Ln,Oak Hollow,48991,P-12,56,DEM,,91
+RV001972,Betsy,Dickens,381 Lake St,Oak Hollow,48991,P-10,64,DEM,(555) 538-1090,70
+RV001973,Kayley,Smith,1440 Church St,Riverbend,48990,P-06,30,DEM,(555) 369-3873,75
+RV001974,Angela,Heathcote,1953 Franklin Ct,Oak Hollow,48991,P-08,65,REP,(555) 776-3225,11
+RV001975,Caleb,Smitham,180 Spruce St,Riverbend,48990,P-03,35,OTH,(555) 645-3684,42
+RV001976,Erik,Johns,2528 Walnut Ln,Oak Hollow,48991,P-10,24,REP,,37
+RV001977,Bridgette,Labadie-Padberg,950 Jefferson Ct,Oak Hollow,48991,P-12,81,NPA,,53
+RV001978,Marcellus,Ziemann,1971 Ridge Dr,Riverbend,48990,P-06,83,DEM,(555) 907-4686,83
+RV001979,Tyrell,Strosin,441 Madison Ct,Oak Hollow,48991,P-09,19,DEM,,39
+RV001980,Wilfred,Jacobi,2411 Oak Ave,Riverbend,48990,P-04,46,DEM,,64
+RV001981,Price,Leffler,2518 Elm Ln,Riverbend,48990,P-03,30,DEM,5557536997,76
+RV001982,Jovani,Tillman,2870 Maple Ln,Oak Hollow,48991,P-10,85,NPA,555-845-9389,61
+RV001983,Jerome,Satterfield,1012 Sunset Ct,Riverbend,48990,P-02,59,REP,,45
+RV001984,Haylie,Mueller,2203 Cedar Rd,Oak Hollow,48991,P-11,47,REP,(555) 461-8505,38
+RV001985,Leonel,Tromp,2460 Jackson Dr,Riverbend,48990,P-02,80,DEM,555-424-5477,38
+RV001986,Alyssa,Bosco,1092 Orchard St,Oak Hollow,48991,P-09,63,REP,(555) 905-0104,15
+RV001987,Khalil,Treutel,1620 Pine St,Oak Hollow,48991,P-08,41,DEM,(555) 613-7423,54
+RV001988,Angus,Brekke,1423 Franklin Rd,Riverbend,48990,P-02,21,DEM,,69
+RV001989,Destiny,Klein,574 Ridge Dr,Riverbend,48990,P-06,45,DEM,,57
+RV001990,Hershel,Lubowitz,1206 Meadow Dr,Riverbend,48990,P-01,61,DEM,555-206-5675,94
+RV001991,Kyla,Brekke,1051 Madison Ct,Oak Hollow,48991,P-09,46,REP,,0
+RV001992,Taylor,Wiegand,2820 Meadow St,Riverbend,48990,P-02,55,REP,555-420-5711,49
+RV001993,Freddie,Kozey,1736 Ridge Ln,Riverbend,48990,P-05,22,NPA,(555) 859-8030,55
+RV001994,Jasmine,Abbott,2176 Cherry Ct,Riverbend,48990,P-05,85,REP,(555) 824-2100,35
+RV001995,Julianne,Romaguera,2897 Oak Ave,Riverbend,48990,P-04,59,DEM,(555) 614-5822,55
+RV001996,Orland,Hartmann,694 Willow St,Oak Hollow,48991,P-10,26,REP,(555) 419-1633,41
+RV001997,Esther,Gutmann,2050 Lake St,Oak Hollow,48991,P-10,90,NPA,(555) 320-6224,47
+RV001998,Rafael,Homenick,1061 Madison Ct,Oak Hollow,48991,P-09,63,NPA,,64
+RV001999,Isidro,Hackett,1784 Ridge Ln,Riverbend,48990,P-05,31,NPA,,62
+RV002000,Dave,Bernhard,1595 Park Ct,Oak Hollow,48991,P-11,27,REP,,39
+RV002001,Barry,Dietrich,2634 Lincoln Ln,Riverbend,48990,P-01,30,DEM,5556522010,91
+RV002002,Lenny,Kshlerin,218 Adams St,Oak Hollow,48991,P-10,60,REP,(555) 400-3669,8
+RV002003,Nola,Fahey,2959 Cedar St,Oak Hollow,48991,P-11,36,REP,(555) 529-7768,21
+RV002004,Wilmer,Franecki,1123 Church Rd,Riverbend,48990,P-03,57,DEM,555-385-4393,100
+RV002005,Jerry,Hills,1845 Church Ln,Riverbend,48990,P-07,30,NPA,(555) 976-1169,23
+RV002006,Rasheed,Turcotte,2645 Lincoln Ln,Riverbend,48990,P-01,23,NPA,(555) 987-1288,63
+RV002007,Olin,Lind,2039 Lincoln St,Riverbend,48990,P-01,50,REP,,19
+RV002008,Naomie,Wisoky,1911 Meadow St,Riverbend,48990,P-02,36,OTH,(555) 999-1275,49
+RV002009,Zakary,Hermiston,1546 Adams Ave,Riverbend,48990,P-01,80,REP,555-588-6912,48
+RV002010,Leland,Haag,973 Cherry Dr,Oak Hollow,48991,P-09,46,REP,(555) 666-7482,24
+RV002011,Braxton,Kilback-Harber,541 Orchard St,Oak Hollow,48991,P-09,64,REP,(555) 296-6880,13
+RV002012,Christine,Treutel,1685 Cedar St,Oak Hollow,48991,P-11,53,DEM,555-254-2350,72
+RV002013,Kamille,Bartell,2238 Meadow St,Riverbend,48990,P-02,94,NPA,555-465-5078,24
+RV002014,Terry,Kihn,2589 Monroe Rd,Riverbend,48990,P-04,62,NPA,555-667-0988,77
+RV002015,Justice,Morar-Mills,2831 Pine Ave,Riverbend,48990,P-05,23,REP,,36
+RV002016,Alexys,Kerluke,2987 Elm Rd,Riverbend,48990,P-02,24,REP,5552173176,15
+RV002017,Mia,Hintz,2791 Elm Rd,Riverbend,48990,P-02,45,NPA,(555) 200-2023,34
+RV002018,Tyrese,King,2995 Cedar Rd,Oak Hollow,48991,P-11,30,DEM,555-627-5272,53
+RV002019,Abbey,Jones,1719 Monroe Ln,Oak Hollow,48991,P-12,83,DEM,,64
+RV002020,Freida,Bode,875 Elm St,Oak Hollow,48991,P-11,46,NPA,(555) 569-7374,38
+RV002021,Filiberto,Glover,1648 Lake Ln,Oak Hollow,48991,P-12,27,DEM,,60
+RV002022,Jacynthe,Reynolds,640 Franklin Rd,Riverbend,48990,P-02,23,REP,555-284-1052,41
+RV002023,Eliza,Botsford,483 Franklin St,Oak Hollow,48991,P-10,71,DEM,,58
+RV002024,Mayra,Walker-Reichel,388 Highland Rd,Oak Hollow,48991,P-12,39,NPA,(555) 557-0355,70
+RV002025,Joe,Purdy,2842 Cedar St,Oak Hollow,48991,P-11,53,REP,5555362251,51
+RV002026,Ari,Bauch,896 Orchard Rd,Oak Hollow,48991,P-09,93,DEM,,100
+RV002027,Tracey,Bashirian,2171 Jackson Dr,Riverbend,48990,P-02,58,REP,(555) 881-5753,10
+RV002028,Elaine,Farrell,1828 Cherry Dr,Oak Hollow,48991,P-09,43,DEM,,86
+RV002029,Amelia,Leffler,1098 Pine St,Oak Hollow,48991,P-08,42,NPA,555-938-5011,40
+RV002030,Braxton,Carroll,2388 Cedar St,Oak Hollow,48991,P-11,25,DEM,(555) 744-4505,70
+RV002031,Kara,Carroll,1373 Franklin St,Oak Hollow,48991,P-10,33,NPA,5557515004,36
+RV002032,Tyson,Douglas,2915 Franklin St,Oak Hollow,48991,P-10,77,REP,(555) 850-6644,32
+RV002033,Marlen,Greenfelder,311 Sunset Ct,Riverbend,48990,P-02,40,REP,,56
+RV002034,Pat,Cronin,751 Elm Rd,Riverbend,48990,P-02,57,NPA,555-416-7643,74
+RV002035,Kyler,Blanda,1567 Franklin Ct,Oak Hollow,48991,P-08,35,NPA,(555) 329-6207,16
+RV002036,Chelsey,Wolff,2320 River St,Riverbend,48990,P-05,40,REP,(555) 892-9980,29
+RV002037,Luciano,Thompson,1380 Franklin Ct,Oak Hollow,48991,P-08,42,DEM,,100
+RV002038,Esta,Turner,2273 Cedar St,Oak Hollow,48991,P-11,27,DEM,,56
+RV002039,Tressa,Homenick,221 Jackson Dr,Riverbend,48990,P-02,37,REP,555-644-7036,34
+RV002040,Wilfrid,Shields,1704 Lincoln Ln,Riverbend,48990,P-01,36,NPA,(555) 626-5348,46
+RV002041,Golden,Kuhn,360 Cedar Rd,Oak Hollow,48991,P-11,60,DEM,555-965-3155,81
+RV002042,Jayson,Rutherford,2634 Clark Rd,Riverbend,48990,P-07,66,DEM,(555) 259-4839,55
+RV002043,Annamarie,Keeling,1360 Church Rd,Riverbend,48990,P-03,62,DEM,,93
+RV002044,Adolph,Sawayn,853 Church St,Riverbend,48990,P-06,77,DEM,,95
+RV002045,Eduardo,Wiegand,620 Highland St,Oak Hollow,48991,P-08,19,REP,555-442-8716,22
+RV002046,Gia,Sauer,1905 Monroe Rd,Riverbend,48990,P-04,30,REP,5555250627,0
+RV002047,Mamie,Konopelski,1197 Clark St,Oak Hollow,48991,P-08,34,DEM,(555) 249-5280,55
+RV002048,Lorraine,Hansen-Kilback,2151 Walnut Ln,Oak Hollow,48991,P-10,32,DEM,5556551383,71
+RV002049,Dixie,Bergstrom,910 Elm Rd,Riverbend,48990,P-02,69,DEM,5556703888,71
+RV002050,Makenzie,Kris,434 Oak Ave,Riverbend,48990,P-04,38,NPA,(555) 944-0422,69
+RV002051,Raven,Romaguera,2332 Orchard Rd,Oak Hollow,48991,P-09,56,REP,555-530-9878,43
+RV002052,William,Hickle,2178 Pine Ct,Riverbend,48990,P-05,30,NPA,(555) 514-7220,28
+RV002053,Rupert,Quigley,2489 Cedar Ct,Riverbend,48990,P-04,21,NPA,(555) 515-8063,75
+RV002054,Haley,Tremblay,1246 Meadow Ave,Riverbend,48990,P-01,59,REP,555-622-9225,30
+RV002055,Murl,Howell,548 Orchard St,Oak Hollow,48991,P-09,43,NPA,,50
+RV002056,Broderick,Bashirian,2729 Adams Rd,Oak Hollow,48991,P-09,55,REP,(555) 509-1553,42
+RV002057,Stephen,Sporer,468 Washington Ave,Riverbend,48990,P-06,44,DEM,,69
+RV002058,Efrain,Block,2202 Park Ct,Oak Hollow,48991,P-11,45,NPA,,45
+RV002059,Lennie,Runte,2212 Cedar Ct,Riverbend,48990,P-04,21,OTH,(555) 675-0390,17
+RV002060,Marietta,Hermann,725 Spring Ct,Riverbend,48990,P-07,74,DEM,,99
+RV002061,Lenny,Schaefer,2432 Clark St,Oak Hollow,48991,P-08,26,NPA,,70
+RV002062,Lavonne,Mueller,2217 Church Ln,Riverbend,48990,P-07,38,DEM,5555677382,94
+RV002063,Molly,Gottlieb,539 Willow Rd,Riverbend,48990,P-01,23,REP,(555) 945-0522,21
+RV002064,Dustin,McKenzie,532 Cherry Dr,Oak Hollow,48991,P-09,49,OTH,,53
+RV002065,Willard,Schaefer,1351 Willow Ave,Oak Hollow,48991,P-09,56,DEM,,71
+RV002066,Chet,Simonis,2918 Monroe Rd,Riverbend,48990,P-04,21,DEM,5557378524,87
+RV002067,Bernardo,Gislason-Collier,2897 Jefferson Ct,Oak Hollow,48991,P-12,59,REP,5554338036,38
+RV002068,Selina,Yost,2629 Pine Ln,Riverbend,48990,P-07,76,DEM,5552948956,60
+RV002069,Elvie,Luettgen,1363 Cherry Ct,Riverbend,48990,P-05,84,OTH,5556506492,25
+RV002070,Tad,Feest,1728 River St,Riverbend,48990,P-05,46,REP,,33
+RV002071,Haleigh,Abernathy,1173 Franklin St,Oak Hollow,48991,P-10,86,REP,,12
+RV002072,Ari,Feeney,1786 Lake St,Oak Hollow,48991,P-10,56,NPA,(555) 257-1690,84
+RV002073,Allan,Friesen,1431 Cherry Dr,Oak Hollow,48991,P-09,80,REP,(555) 753-6026,34
+RV002074,Ivory,Predovic,1316 Oak Rd,Riverbend,48990,P-04,81,REP,,10
+RV002075,Golda,Heller,856 Meadow Dr,Riverbend,48990,P-01,59,REP,(555) 372-5474,29
+RV002076,David,Schmidt,1307 Oak Rd,Riverbend,48990,P-04,29,DEM,(555) 201-0096,55
+RV002077,Kylie,Murray,1213 Washington Ave,Riverbend,48990,P-06,34,DEM,5557254507,41
+RV002078,Allie,Kihn,2505 Monroe Ln,Oak Hollow,48991,P-12,59,REP,555-741-8055,30
+RV002079,Catalina,Will,2626 Lincoln St,Riverbend,48990,P-01,56,REP,(555) 780-6190,28
+RV002080,Miles,Morar,161 Highland Rd,Oak Hollow,48991,P-12,64,NPA,(555) 943-2032,62
+RV002081,Ryann,Cartwright,2204 Church Rd,Riverbend,48990,P-03,69,OTH,(555) 735-7242,59
+RV002082,Neil,Lang,2204 Highland St,Oak Hollow,48991,P-08,48,DEM,,82
+RV002083,Jamarcus,Flatley,1029 Oak Rd,Riverbend,48990,P-04,68,REP,555-536-5346,18
+RV002084,Evie,Torp,1949 Oak Rd,Riverbend,48990,P-04,53,DEM,,51
+RV002085,Edison,Hirthe,662 Monroe Dr,Oak Hollow,48991,P-11,38,DEM,(555) 371-9939,100
+RV002086,Donny,Mayert,899 Walnut Ln,Oak Hollow,48991,P-10,89,DEM,(555) 321-1836,71
+RV002087,Keanu,Pfannerstill,1672 Orchard Ave,Oak Hollow,48991,P-11,36,REP,(555) 338-2082,3
+RV002088,Jessica,Connelly,1989 Adams Ave,Riverbend,48990,P-01,80,DEM,(555) 602-2379,65
+RV002089,Judah,Hane,833 Pine Ct,Riverbend,48990,P-05,93,NPA,,52
+RV002090,Trace,Klocko,1105 Willow Rd,Riverbend,48990,P-01,26,REP,555-929-3390,52
+RV002091,Shaina,Nienow,850 Elm Rd,Riverbend,48990,P-02,46,REP,(555) 841-2638,26
+RV002092,Marjory,Lesch,2182 Walnut Dr,Riverbend,48990,P-07,25,REP,(555) 869-9891,51
+RV002093,Destany,Jones-Bergstrom,1794 Adams Ave,Riverbend,48990,P-01,21,REP,(555) 390-4467,43
+RV002094,Angel,Johnston,2048 Park Ln,Riverbend,48990,P-04,35,NPA,,52
+RV002095,Earnestine,Lynch,918 Pine Ln,Riverbend,48990,P-07,51,DEM,,93
+RV002096,Hallie,Lubowitz,1537 Lake St,Oak Hollow,48991,P-10,63,REP,555-791-5183,9
+RV002097,Deion,Kuhic,2731 Franklin Rd,Riverbend,48990,P-02,19,DEM,(555) 520-4121,43
+RV002098,Lambert,Wiegand,272 Birch St,Riverbend,48990,P-04,45,DEM,(555) 851-6766,40
+RV002099,Alan,Wuckert,1235 Highland St,Oak Hollow,48991,P-08,49,NPA,,31
+RV002100,Ivy,Kerluke-Batz,2153 Lincoln Ln,Riverbend,48990,P-01,23,NPA,,28
+RV002101,Cletus,Heller,2783 Oak Rd,Riverbend,48990,P-04,40,DEM,(555) 441-9258,93
+RV002102,Furman,Hettinger,752 Meadow St,Riverbend,48990,P-02,60,NPA,555-394-3889,59
+RV002103,Tierra,Mueller,2432 Willow Rd,Riverbend,48990,P-01,80,REP,(555) 663-1657,23
+RV002104,Emily,Mohr,996 Sunset Rd,Riverbend,48990,P-07,89,NPA,555-695-6512,65
+RV002105,Gerald,Batz,2125 Church Rd,Riverbend,48990,P-03,34,NPA,,51
+RV002106,Elliott,Thiel,2767 Lake Ln,Oak Hollow,48991,P-12,56,DEM,(555) 800-7828,81
+RV002107,Kamron,Altenwerth,2935 Spring Ln,Riverbend,48990,P-03,20,DEM,(555) 656-0044,88
+RV002108,Ciara,Kutch,783 Ridge St,Riverbend,48990,P-06,72,REP,555-310-2682,13
+RV002109,Hank,Bechtelar,1982 Monroe Dr,Oak Hollow,48991,P-11,59,NPA,,40
+RV002110,Bertram,Schmidt,369 Jefferson Ln,Riverbend,48990,P-05,48,NPA,(555) 815-1742,86
+RV002111,Dortha,Casper,1552 Meadow St,Riverbend,48990,P-02,65,REP,,39
+RV002112,Karley,Olson,331 Jefferson Dr,Oak Hollow,48991,P-12,60,REP,(555) 836-7015,30
+RV002113,Adalberto,McGlynn,2597 Sunset Ct,Riverbend,48990,P-02,51,REP,5556771136,22
+RV002114,Rosetta,Muller,2891 Spring Ln,Riverbend,48990,P-03,25,REP,(555) 252-5316,27
+RV002115,Otho,Goyette,815 Church St,Riverbend,48990,P-06,79,DEM,(555) 869-8560,73
+RV002116,Kyleigh,Zboncak,488 Franklin Ct,Oak Hollow,48991,P-08,37,DEM,555-749-6374,70
+RV002117,Nadine,Langworth,1583 Cedar St,Oak Hollow,48991,P-11,28,REP,5555469368,0
+RV002118,Roberta,Kris,1697 Church Ln,Riverbend,48990,P-07,31,NPA,,41
+RV002119,Gabriel,Lang,2587 Sunset Ct,Riverbend,48990,P-02,49,OTH,,39
+RV002120,Presley,Zulauf,458 Willow Ln,Riverbend,48990,P-02,57,DEM,555-423-1645,64
+RV002121,Antonetta,Crona,281 Meadow St,Riverbend,48990,P-02,42,REP,,0
+RV002122,Javonte,Schmeler-Rowe,1654 Lake Ln,Oak Hollow,48991,P-12,32,REP,(555) 275-4925,24
+RV002123,Dejuan,McKenzie,748 Meadow St,Riverbend,48990,P-02,65,DEM,(555) 614-2781,63
+RV002124,Rose,Rodriguez,2830 Lake St,Oak Hollow,48991,P-10,86,DEM,,95
+RV002125,Olen,Osinski,2681 Walnut Dr,Riverbend,48990,P-07,20,DEM,555-815-5861,90
+RV002126,Stephany,Herzog,468 Spring Ct,Riverbend,48990,P-07,34,NPA,555-413-7569,26
+RV002127,Mertie,Frami,2958 Orchard Rd,Oak Hollow,48991,P-09,61,REP,(555) 753-7952,8
+RV002128,George,Runolfsdottir,1723 Pine Ct,Riverbend,48990,P-05,37,DEM,,60
+RV002129,Jaden,Lesch,631 Cherry Ln,Oak Hollow,48991,P-08,37,NPA,,48
+RV002130,Jan,Ankunding,848 Monroe Rd,Riverbend,48990,P-04,36,DEM,,100
+RV002131,Macie,Oberbrunner,166 Pine Ct,Riverbend,48990,P-05,87,DEM,,82
+RV002132,Hershel,Anderson,2368 Orchard Rd,Oak Hollow,48991,P-09,37,REP,,14
+RV002133,Hazle,Rosenbaum,2477 Lake Ln,Oak Hollow,48991,P-12,31,NPA,,28
+RV002134,Emelia,Durgan,1131 Church St,Riverbend,48990,P-06,34,NPA,(555) 983-1566,20
+RV002135,Alycia,Treutel,1466 Cedar Dr,Riverbend,48990,P-03,52,DEM,555-613-4697,89
+RV002136,Shanelle,Huel,2071 Monroe Dr,Oak Hollow,48991,P-11,19,REP,(555) 810-4501,32
+RV002137,Kip,Donnelly,1385 Walnut Ln,Oak Hollow,48991,P-10,34,REP,5559118958,35
+RV002138,Franco,Farrell,2478 Cherry Dr,Oak Hollow,48991,P-09,48,DEM,,77
+RV002139,Ole,Borer,2660 Clark Rd,Riverbend,48990,P-07,25,DEM,555-660-9117,95
+RV002140,Rafaela,Ratke,2736 Cherry Dr,Oak Hollow,48991,P-09,53,DEM,,96
+RV002141,Bette,Champlin,1762 Adams Rd,Oak Hollow,48991,P-09,48,DEM,555-964-1696,73
+RV002142,Mina,Jones,2282 River St,Riverbend,48990,P-05,26,REP,555-712-2921,34
+RV002143,Matt,Hyatt,1645 Franklin St,Oak Hollow,48991,P-10,81,REP,,4
+RV002144,Mariano,Tillman,2551 Clark St,Oak Hollow,48991,P-08,84,NPA,5559683959,39
+RV002145,Octavia,Heaney-Goodwin,541 Clark Rd,Riverbend,48990,P-07,72,DEM,(555) 721-0241,75
+RV002146,Arch,Rath,1415 Grant Rd,Oak Hollow,48991,P-08,63,DEM,(555) 207-5782,86
+RV002147,Vernie,Zieme,2099 Lincoln Ave,Riverbend,48990,P-03,76,NPA,555-464-4743,54
+RV002148,Gust,Buckridge,1421 Madison Ct,Oak Hollow,48991,P-09,91,DEM,(555) 948-5396,85
+RV002149,Dolores,Purdy,2703 Maple Ln,Oak Hollow,48991,P-10,62,NPA,(555) 680-1515,49
+RV002150,Kane,Hermann,689 Grant Rd,Oak Hollow,48991,P-08,60,DEM,555-965-2574,88
+RV002151,Fabian,Adams,1460 Monroe Ln,Oak Hollow,48991,P-12,91,DEM,(555) 364-8773,65
+RV002152,Leilani,Kling,2603 Elm Rd,Riverbend,48990,P-02,79,REP,,38
+RV002153,Ayana,Brakus,2544 Clark Rd,Riverbend,48990,P-07,36,DEM,(555) 530-5990,65
+RV002154,Jewell,Runte-Carroll,2523 Church Ln,Riverbend,48990,P-07,82,DEM,555-440-3780,62
+RV002155,Jordy,Goodwin,1448 Jefferson Ct,Oak Hollow,48991,P-12,69,REP,(555) 896-6919,21
+RV002156,Imani,Botsford,2136 Willow Ln,Riverbend,48990,P-02,91,NPA,555-645-6607,59
+RV002157,Claud,Becker,2404 Madison Ct,Oak Hollow,48991,P-09,91,REP,(555) 353-3650,53
+RV002158,Stanton,Raynor,771 Spruce St,Riverbend,48990,P-03,28,OTH,,56
+RV002159,Brendon,Sawayn,1896 Monroe Dr,Oak Hollow,48991,P-11,53,REP,(555) 338-3170,50
+RV002160,Maxie,Rempel,1004 Orchard Ave,Oak Hollow,48991,P-11,28,NPA,5559153644,32
+RV002161,Ethyl,Hills,1664 Elm Ln,Riverbend,48990,P-03,59,REP,,0
+RV002162,Marsha,Hyatt,1557 Adams Ave,Riverbend,48990,P-01,33,NPA,5556925060,54
+RV002163,Walton,Larson,2919 Church Ln,Riverbend,48990,P-07,88,NPA,555-616-9357,49
+RV002164,Gloria,Raynor,2477 Meadow Ave,Riverbend,48990,P-01,55,DEM,555-797-3533,70
+RV002165,Inez,Labadie,2062 Sunset Ct,Riverbend,48990,P-02,41,NPA,(555) 699-0601,21
+RV002166,Archibald,Kub,1403 Lake Ln,Oak Hollow,48991,P-12,53,DEM,(555) 486-8470,69
+RV002167,Weldon,Hilll-Graham,2259 Adams Rd,Oak Hollow,48991,P-09,70,DEM,(555) 332-5705,94
+RV002168,Corbin,Hermiston,2153 Monroe Dr,Oak Hollow,48991,P-11,21,REP,(555) 598-2634,24
+RV002169,Josianne,Schaden,2866 Cherry Ct,Riverbend,48990,P-05,47,OTH,5559012149,43
+RV002170,Raleigh,Crist,2609 Maple Ln,Oak Hollow,48991,P-10,40,DEM,,54
+RV002171,Lester,West-Upton,914 Orchard Rd,Oak Hollow,48991,P-09,58,NPA,(555) 238-8119,36
+RV002172,Jules,Ferry,1333 Lincoln Ave,Riverbend,48990,P-03,57,DEM,555-432-3169,97
+RV002173,Antwan,McCullough,1966 Walnut Ln,Oak Hollow,48991,P-10,30,DEM,(555) 493-6961,79
+RV002174,Berry,Considine,300 Sunset Ct,Riverbend,48990,P-02,60,NPA,(555) 337-5900,38
+RV002175,Sven,Heidenreich,1039 Spring Ct,Riverbend,48990,P-07,47,REP,5559684486,28
+RV002176,Dangelo,Waelchi,1075 Lake Ln,Oak Hollow,48991,P-12,42,NPA,(555) 234-4451,47
+RV002177,Orlo,Waelchi,2894 Washington Ave,Riverbend,48990,P-06,37,NPA,555-933-0937,83
+RV002178,Tavares,Flatley,2142 Lincoln Ln,Riverbend,48990,P-01,65,NPA,555-961-1360,35
+RV002179,Dewey,Price,627 Madison Ct,Oak Hollow,48991,P-09,34,NPA,555-447-8413,22
+RV002180,Kareem,Schaefer,2599 Birch St,Riverbend,48990,P-04,39,DEM,(555) 914-9388,95
+RV002181,Alexys,Wisoky,748 Meadow Ave,Riverbend,48990,P-01,60,REP,,19
+RV002182,Hillary,Barton,2054 Pine Ave,Riverbend,48990,P-05,71,DEM,555-354-0317,74
+RV002183,Brandyn,Lemke,395 Lincoln Ln,Riverbend,48990,P-01,59,DEM,5553766569,88
+RV002184,Dave,Fadel,427 Sunset Ct,Riverbend,48990,P-02,81,DEM,(555) 720-6038,61
+RV002185,Taryn,Morar,1597 Park Ct,Oak Hollow,48991,P-11,84,DEM,555-667-2324,63
+RV002186,Hillary,Aufderhar,656 Elm Rd,Riverbend,48990,P-02,18,NPA,(555) 241-6284,68
+RV002187,Megane,Bosco,976 Park Ln,Riverbend,48990,P-04,29,NPA,,59
+RV002188,Ruben,Stark,1994 Franklin Rd,Riverbend,48990,P-02,20,REP,(555) 515-6950,33
+RV002189,Carolina,Hermiston,636 Clark Rd,Riverbend,48990,P-07,83,NPA,,57
+RV002190,Stephany,Paucek,1452 Elm St,Oak Hollow,48991,P-11,67,REP,555-789-5270,24
+RV002191,Nicolette,Will,2259 Monroe Dr,Oak Hollow,48991,P-11,54,NPA,(555) 428-7891,21
+RV002192,Duncan,Nader,2996 Highland Dr,Riverbend,48990,P-06,59,DEM,5554974408,63
+RV002193,Lowell,Hilpert,1788 Ridge Dr,Riverbend,48990,P-06,53,DEM,555-805-7938,59
+RV002194,Lisa,Leffler,1452 Elm Ln,Riverbend,48990,P-03,39,NPA,555-640-8875,7
+RV002195,Kailey,Franey,2751 Lake St,Oak Hollow,48991,P-10,83,DEM,,79
+RV002196,Jack,Schneider,1557 Cedar Dr,Riverbend,48990,P-03,24,DEM,,93
+RV002197,Derick,Block,2632 Willow Ln,Riverbend,48990,P-02,68,NPA,555-380-5212,59
+RV002198,Kiarra,Kunde,2075 Cedar Dr,Riverbend,48990,P-03,55,DEM,5556293193,64
+RV002199,Emerald,Pollich,1752 Orchard Rd,Oak Hollow,48991,P-09,73,DEM,555-509-1375,68
+RV002200,Sonya,Schowalter,2428 Highland St,Oak Hollow,48991,P-08,57,REP,555-819-3171,46
+RV002201,Robb,O'Reilly,788 Lake St,Oak Hollow,48991,P-10,59,DEM,555-385-7835,42
+RV002202,Noe,Schulist,2554 Franklin St,Oak Hollow,48991,P-10,21,NPA,(555) 691-6958,24
+RV002203,Corbin,Lindgren,1338 Pine St,Oak Hollow,48991,P-08,19,DEM,(555) 996-4529,39
+RV002204,Dariana,Breitenberg,265 Madison Ct,Oak Hollow,48991,P-09,29,NPA,5555238310,77
+RV002205,Mya,Tremblay,1177 Cedar Ct,Riverbend,48990,P-04,53,DEM,555-376-5027,92
+RV002206,Vicki,Rolfson,370 Jefferson Ln,Riverbend,48990,P-05,89,DEM,(555) 482-5647,77
+RV002207,Garth,Medhurst,1164 Jefferson Dr,Oak Hollow,48991,P-12,52,DEM,,35
+RV002208,Orville,Johnson,1023 Franklin Ct,Oak Hollow,48991,P-08,33,DEM,,43
+RV002209,Effie,Ernser,1405 Park Ct,Oak Hollow,48991,P-11,80,DEM,5556172769,100
+RV002210,Sam,Cummerata,1139 Cedar Ct,Riverbend,48990,P-04,80,REP,(555) 425-0147,0
+RV002211,Immanuel,Crist,596 Spring Ln,Riverbend,48990,P-03,63,REP,555-310-0928,26
+RV002212,Shanon,Kling,1989 Pine St,Oak Hollow,48991,P-08,79,REP,,0
+RV002213,Margarett,Lubowitz,1497 Cherry Ct,Riverbend,48990,P-05,48,NPA,(555) 263-4059,61
+RV002214,Justice,Gleason,2791 Cedar St,Oak Hollow,48991,P-11,49,DEM,,79
+RV002215,Providenci,Graham,2325 Lincoln Ave,Riverbend,48990,P-03,32,DEM,5559280486,59
+RV002216,Jennie,Rath,2886 Pine Ave,Riverbend,48990,P-05,94,REP,,0
+RV002217,Ernest,Schamberger,1003 Meadow Ave,Riverbend,48990,P-01,78,REP,555-376-1819,31
+RV002218,Nicholaus,Schaden,1977 Cherry Ln,Oak Hollow,48991,P-08,52,REP,,20
+RV002219,Sherman,Raynor,748 Willow Rd,Riverbend,48990,P-01,33,NPA,(555) 542-7118,21
+RV002220,Everette,Kertzmann,1876 Ridge Dr,Riverbend,48990,P-06,20,REP,,1
+RV002221,Mikel,Runolfsson,463 Park Ct,Oak Hollow,48991,P-11,19,NPA,,48
+RV002222,Antonia,Mitchell,115 Monroe Ln,Oak Hollow,48991,P-12,27,REP,555-682-4597,54
+RV002223,Lenore,Koch,2758 Church Ln,Riverbend,48990,P-07,36,DEM,5556423718,77
+RV002224,Louisa,Gutmann,2206 Jefferson Dr,Oak Hollow,48991,P-12,21,REP,5554468744,51
+RV002225,Orion,Bailey,169 Pine Ave,Riverbend,48990,P-05,79,NPA,,43
+RV002226,Yesenia,Hagenes,2523 Cherry Ct,Riverbend,48990,P-05,53,REP,(555) 875-0065,40
+RV002227,Allen,Boyer,2105 Walnut Dr,Riverbend,48990,P-07,19,NPA,(555) 672-1899,74
+RV002228,Sara,Schumm,489 Meadow Ave,Riverbend,48990,P-01,31,DEM,,70
+RV002229,Grant,Heller,1318 Cherry Ct,Riverbend,48990,P-05,73,NPA,555-610-4199,72
+RV002230,Roman,Oberbrunner,1731 Monroe Dr,Oak Hollow,48991,P-11,88,REP,(555) 631-3068,6
+RV002231,Annette,Pfeffer,2091 Willow St,Oak Hollow,48991,P-10,87,OTH,(555) 643-4607,21
+RV002232,Keara,Brown,2443 Cherry Ln,Oak Hollow,48991,P-08,30,DEM,(555) 611-4446,49
+RV002233,Bethel,Boyer,569 Church St,Riverbend,48990,P-06,60,OTH,,14
+RV002234,Faustino,Hodkiewicz,2936 Willow Ln,Riverbend,48990,P-02,32,REP,555-364-5040,16
+RV002235,Kattie,Marquardt,1685 Elm Ln,Riverbend,48990,P-03,47,NPA,555-537-6083,70
+RV002236,Imogene,Bruen,1949 Willow Ln,Riverbend,48990,P-02,79,REP,555-556-3955,29
+RV002237,Aida,Carroll,2759 Clark St,Oak Hollow,48991,P-08,59,REP,,11
+RV002238,Jena,Ruecker,2108 Monroe Dr,Oak Hollow,48991,P-11,41,REP,(555) 340-3613,2
+RV002239,Gabriella,Upton,2522 Cedar St,Oak Hollow,48991,P-11,72,NPA,,32
+RV002240,Shanny,Donnelly,2822 Walnut Dr,Riverbend,48990,P-07,22,DEM,555-364-2813,72
+RV002241,Blanche,Koelpin,2815 Ridge St,Riverbend,48990,P-06,60,REP,,45
+RV002242,Naomi,Emard,2082 Park Ct,Oak Hollow,48991,P-11,70,REP,555-745-9490,3
+RV002243,Ova,Bartell,1822 Jefferson Ln,Riverbend,48990,P-05,39,NPA,,23
+RV002244,Demetris,Gutmann,1614 Cedar Rd,Oak Hollow,48991,P-11,77,REP,555-434-3789,20
+RV002245,Gilberto,Moen,667 Willow Rd,Riverbend,48990,P-01,43,DEM,(555) 685-6014,79
+RV002246,Brennon,Johns,713 Lincoln St,Riverbend,48990,P-01,81,REP,,12
+RV002247,Jamarcus,Berge,533 Washington Ave,Riverbend,48990,P-06,52,NPA,555-654-2256,34
+RV002248,Lucille,Oberbrunner,2540 Birch St,Riverbend,48990,P-04,67,DEM,555-359-5787,77
+RV002249,Dax,Hoppe,1484 Elm Rd,Riverbend,48990,P-02,38,REP,5554400540,8
+RV002250,Valentine,Casper-Schowalter,1521 Monroe Rd,Riverbend,48990,P-04,50,DEM,555-986-2254,45
+RV002251,Kailee,Frami,1898 Park Ln,Riverbend,48990,P-04,41,DEM,(555) 299-7441,58
+RV002252,Eldred,Deckow,359 Grant Dr,Riverbend,48990,P-06,36,NPA,(555) 507-4375,17
+RV002253,Ewell,Schaefer,428 Franklin Ct,Oak Hollow,48991,P-08,60,NPA,(555) 459-5614,81
+RV002254,Linwood,Barrows,1196 Jefferson Dr,Oak Hollow,48991,P-12,89,DEM,(555) 373-4461,74
+RV002255,Ashton,Rath,379 Park Ct,Oak Hollow,48991,P-11,46,REP,555-620-2408,43
+RV002256,Velda,Beer,2829 Elm St,Oak Hollow,48991,P-11,51,DEM,(555) 517-5703,91
+RV002257,Colin,Schiller,2511 Lake Ln,Oak Hollow,48991,P-12,52,REP,555-591-0309,9
+RV002258,Rex,Swift,2954 Adams St,Oak Hollow,48991,P-10,52,DEM,555-821-5606,65
+RV002259,Marcella,Bailey,2918 Jefferson Ct,Oak Hollow,48991,P-12,26,NPA,,50
+RV002260,Tillman,Jenkins,1029 Cedar Rd,Oak Hollow,48991,P-11,22,OTH,(555) 337-9710,44
+RV002261,Mazie,Schuster,1684 Adams Ave,Riverbend,48990,P-01,55,REP,5557608231,20
+RV002262,Porter,Hintz,647 Monroe Rd,Riverbend,48990,P-04,72,DEM,555-559-4450,89
+RV002263,Harold,Anderson,1936 Adams Ave,Riverbend,48990,P-01,87,REP,5556214119,39
+RV002264,Marcelo,Torphy,1139 Sunset Ct,Riverbend,48990,P-02,60,REP,5552838274,35
+RV002265,Coleman,Homenick,1918 Ridge Ln,Riverbend,48990,P-05,49,REP,,34
+RV002266,Anissa,Shanahan,343 Spring Ct,Riverbend,48990,P-07,33,NPA,(555) 683-2298,21
+RV002267,Reynold,Rogahn,1816 Jackson Dr,Riverbend,48990,P-02,64,NPA,555-869-7167,48
+RV002268,Burley,Kirlin,1362 River St,Riverbend,48990,P-05,58,NPA,,29
+RV002269,Travis,Konopelski,2855 Meadow St,Riverbend,48990,P-02,55,REP,(555) 743-3248,25
+RV002270,Donna,Mueller,1350 Orchard Ave,Oak Hollow,48991,P-11,65,OTH,555-948-8763,47
+RV002271,Marcel,Schamberger,884 Highland Dr,Riverbend,48990,P-06,40,DEM,5552367380,62
+RV002272,Raleigh,Morar,991 Willow Ln,Riverbend,48990,P-02,87,REP,5552269682,33
+RV002273,Aliza,Walker,2153 Willow Ln,Riverbend,48990,P-02,54,REP,(555) 918-7973,26
+RV002274,Geo,Hammes,2647 Lake Ln,Oak Hollow,48991,P-12,68,NPA,(555) 808-3630,60
+RV002275,Salvador,Turcotte,2899 Jefferson Dr,Oak Hollow,48991,P-12,64,REP,555-605-2143,27
+RV002276,Kattie,Gleason,1646 Lincoln Ln,Riverbend,48990,P-01,87,NPA,,47
+RV002277,Rashawn,O'Conner,784 Jefferson Dr,Oak Hollow,48991,P-12,82,REP,(555) 381-0647,17
+RV002278,Zula,Rutherford-Gerhold,1138 Pine Ct,Riverbend,48990,P-05,48,NPA,5554878038,33
+RV002279,Elaine,Krajcik-Koch,2415 Jefferson Dr,Oak Hollow,48991,P-12,23,DEM,,35
+RV002280,Elmo,Boyle,2287 Elm St,Oak Hollow,48991,P-11,60,REP,555-694-9155,20
+RV002281,Prudence,Crona,2221 Madison Ct,Oak Hollow,48991,P-09,39,REP,555-827-7072,38
+RV002282,Daryl,Ritchie,1462 Park Ln,Riverbend,48990,P-04,23,DEM,(555) 332-0190,100
+RV002283,Dion,Bashirian,874 Lincoln Ln,Riverbend,48990,P-01,62,REP,,22
+RV002284,Jamel,Kiehn,2555 Meadow St,Riverbend,48990,P-02,62,NPA,(555) 326-5097,49
+RV002285,Izabella,Hand,1585 Cedar Dr,Riverbend,48990,P-03,29,DEM,,70
+RV002286,Rosalie,Keebler,2490 Highland St,Oak Hollow,48991,P-08,39,DEM,,66
+RV002287,Loraine,Kohler,862 Clark Rd,Riverbend,48990,P-07,42,DEM,(555) 443-0398,66
+RV002288,Jordi,Howe,1483 Cedar Rd,Oak Hollow,48991,P-11,49,REP,555-389-5672,17
+RV002289,Tyra,Bauch,2432 Cedar St,Oak Hollow,48991,P-11,49,REP,,0
+RV002290,Leora,Feest,1463 Franklin St,Oak Hollow,48991,P-10,76,DEM,,78
+RV002291,Brennan,Sauer,719 Monroe Dr,Oak Hollow,48991,P-11,89,DEM,(555) 867-5669,40
+RV002292,Rosalie,Donnelly,1665 River St,Riverbend,48990,P-05,85,REP,555-767-0495,7
+RV002293,Rodolfo,Hahn,1065 Lake St,Oak Hollow,48991,P-10,30,OTH,,80
+RV002294,Jeramie,Wuckert,1675 Cedar Ct,Riverbend,48990,P-04,29,DEM,,87
+RV002295,Fabiola,Dickens,1603 Cedar Dr,Riverbend,48990,P-03,37,REP,(555) 472-9312,20
+RV002296,Avery,Gerlach-Dibbert,810 Clark Rd,Riverbend,48990,P-07,81,DEM,555-259-6633,55
+RV002297,Adolfo,Stiedemann,978 Sunset Rd,Riverbend,48990,P-07,43,DEM,(555) 753-5432,100
+RV002298,Josefa,Zemlak-Hartmann,1416 Willow Rd,Riverbend,48990,P-01,37,REP,5553609210,25
+RV002299,Jamaal,Kiehn-Wisozk,641 Clark St,Oak Hollow,48991,P-08,48,REP,(555) 901-0923,23
+RV002300,Jackson,Hayes,2979 Clark Rd,Riverbend,48990,P-07,94,REP,,22
+RV002301,Gilda,West,559 River St,Riverbend,48990,P-05,25,REP,555-296-3715,48
+RV002302,Granville,Bernier,2962 Washington Ave,Riverbend,48990,P-06,46,DEM,(555) 653-9134,80
+RV002303,Kaylah,Kreiger,2583 Willow Ave,Oak Hollow,48991,P-09,18,OTH,,33
+RV002304,Coy,Mante,2071 Lake Ln,Oak Hollow,48991,P-12,69,DEM,,78
+RV002305,Jarrett,Walter,1966 Church Rd,Riverbend,48990,P-03,27,NPA,,61
+RV002306,Parker,Pacocha,485 Franklin St,Oak Hollow,48991,P-10,41,DEM,(555) 905-0383,79
+RV002307,Gregorio,Buckridge,1659 Franklin Ct,Oak Hollow,48991,P-08,41,REP,5554556000,34
+RV002308,Lora,Morissette,2060 Monroe Rd,Riverbend,48990,P-04,53,DEM,5552837748,60
+RV002309,Roderick,Hegmann,2416 Church Ln,Riverbend,48990,P-07,35,NPA,5555198543,54
+RV002310,Nash,Emard,2704 Willow Ln,Riverbend,48990,P-02,45,REP,555-474-8205,39
+RV002311,Lyle,Kshlerin,2057 Spring Ct,Riverbend,48990,P-07,27,DEM,,71
+RV002312,Madelyn,Williamson,2020 Willow Rd,Riverbend,48990,P-01,41,DEM,555-737-1869,73
+RV002313,Devyn,Williamson,1040 Cedar St,Oak Hollow,48991,P-11,45,REP,555-982-5992,18
+RV002314,Golda,Predovic,696 Monroe Dr,Oak Hollow,48991,P-11,51,REP,,25
+RV002315,Don,Hamill,1873 Jefferson Ln,Riverbend,48990,P-05,35,REP,5554703053,48
+RV002316,Dorcas,Hills,2913 Spring Ct,Riverbend,48990,P-07,54,DEM,,79
+RV002317,Florida,Ruecker,524 Highland St,Oak Hollow,48991,P-08,50,NPA,,31
+RV002318,Liliana,Jenkins,2361 Cedar Ct,Riverbend,48990,P-04,35,DEM,555-282-3331,68
+RV002319,Sven,Pfannerstill,627 Orchard St,Oak Hollow,48991,P-09,37,OTH,555-251-0904,47
+RV002320,Jacynthe,Doyle,1301 Willow St,Oak Hollow,48991,P-10,35,REP,555-476-3994,14
+RV002321,Dennis,Hansen,1169 Cherry Ct,Riverbend,48990,P-05,45,REP,5557708270,26
+RV002322,Eugenia,Steuber,2289 Clark St,Oak Hollow,48991,P-08,57,DEM,555-349-2755,57
+RV002323,Foster,Zulauf,1150 Walnut Ln,Oak Hollow,48991,P-10,65,REP,,42
+RV002324,Juwan,Reichel,2191 Jefferson Ln,Riverbend,48990,P-05,63,REP,,30
+RV002325,Adelbert,Hane,601 Walnut Dr,Riverbend,48990,P-07,55,REP,(555) 869-5134,40
+RV002326,Karine,Pouros,2632 Walnut Ln,Oak Hollow,48991,P-10,61,NPA,,56
+RV002327,Jasper,Legros,1741 Pine Ct,Riverbend,48990,P-05,68,REP,(555) 268-9389,35
+RV002328,Jared,Yundt,226 Elm Ln,Riverbend,48990,P-03,37,REP,(555) 864-5756,0
+RV002329,Sharon,Kreiger,221 Monroe Rd,Riverbend,48990,P-04,49,REP,,18
+RV002330,Cleta,Crona,1824 Willow St,Oak Hollow,48991,P-10,51,REP,,16
+RV002331,Erica,Stoltenberg,1769 Spruce St,Riverbend,48990,P-03,34,NPA,(555) 307-9125,50
+RV002332,Orion,Rogahn,2720 Aspen Ave,Oak Hollow,48991,P-12,74,REP,,18
+RV002333,Christophe,Kutch,443 Oak Rd,Riverbend,48990,P-04,51,DEM,(555) 901-6420,68
+RV002334,Einar,Boyer,1681 Cedar Dr,Riverbend,48990,P-03,27,DEM,555-936-8708,92
+RV002335,Carmella,Donnelly,629 Pine Ave,Riverbend,48990,P-05,19,DEM,5558694604,97
+RV002336,Darrel,Russel,290 Willow Ave,Oak Hollow,48991,P-09,20,DEM,(555) 408-1962,39
+RV002337,Jennifer,Kris-Haley,436 Clark St,Oak Hollow,48991,P-08,60,DEM,5556217143,39
+RV002338,Skylar,Sporer,2056 Washington Ave,Riverbend,48990,P-06,87,REP,5553807739,17
+RV002339,Callie,Dibbert,2162 Orchard Rd,Oak Hollow,48991,P-09,26,NPA,555-744-8114,48
+RV002340,Jayda,Bahringer,1836 Ridge St,Riverbend,48990,P-06,36,DEM,(555) 359-2169,60
+RV002341,Brennan,Simonis,2113 Church St,Riverbend,48990,P-06,61,DEM,(555) 932-3506,88
+RV002342,Cristal,Lockman,2672 Meadow Ave,Riverbend,48990,P-01,33,NPA,(555) 843-4561,54
+RV002343,Marley,Erdman,824 Monroe Ln,Oak Hollow,48991,P-12,21,REP,,0
+RV002344,Geraldine,Hilpert,515 Elm Rd,Riverbend,48990,P-02,20,NPA,5553825332,20
+RV002345,Woodrow,Abshire,405 Cherry Dr,Oak Hollow,48991,P-09,44,DEM,555-362-3204,72
+RV002346,Bethel,Hammes,2702 Grant Rd,Oak Hollow,48991,P-08,46,NPA,5556957328,80
+RV002347,Ivory,Cassin,1334 Pine Ct,Riverbend,48990,P-05,68,DEM,(555) 454-9304,85
+RV002348,Asa,Metz,1814 Spruce St,Riverbend,48990,P-03,44,DEM,(555) 765-5448,67
+RV002349,Ryder,Torphy,310 Lincoln Ave,Riverbend,48990,P-03,40,NPA,5552548773,62
+RV002350,Fredrick,Schulist,1505 Jefferson Ln,Riverbend,48990,P-05,26,NPA,,59
+RV002351,Daphney,Dare,2797 Willow Rd,Riverbend,48990,P-01,21,REP,,5
+RV002352,Issac,Lynch,1071 Cedar Rd,Oak Hollow,48991,P-11,93,OTH,,43
+RV002353,Keenan,Steuber,1111 Willow Ave,Oak Hollow,48991,P-09,50,REP,(555) 466-2092,4
+RV002354,Oral,Hickle,2126 Cedar Rd,Oak Hollow,48991,P-11,82,NPA,,44
+RV002355,Adam,Collins,729 Madison Ct,Oak Hollow,48991,P-09,82,OTH,5556512030,49
+RV002356,Derrick,Weber,2317 Cedar St,Oak Hollow,48991,P-11,65,DEM,5554522653,86
+RV002357,Jane,Miller,1376 Orchard St,Oak Hollow,48991,P-09,92,REP,5559245524,36
+RV002358,Shea,Cummings,2192 Franklin St,Oak Hollow,48991,P-10,60,REP,(555) 859-3048,33
+RV002359,Greyson,Yundt,2866 Cedar Ct,Riverbend,48990,P-04,25,NPA,555-858-7030,63
+RV002360,Rollin,Mosciski,1477 Pine Ln,Riverbend,48990,P-07,50,DEM,(555) 708-3974,49
+RV002361,River,Schultz,1941 Pine Ln,Riverbend,48990,P-07,45,OTH,555-471-1798,74
+RV002362,River,Towne-Rogahn,1808 River St,Riverbend,48990,P-05,37,DEM,(555) 885-6689,81
+RV002363,Cassie,Crooks,468 Adams Rd,Oak Hollow,48991,P-09,94,DEM,,52
+RV002364,Abdullah,Terry,766 Aspen Ave,Oak Hollow,48991,P-12,60,REP,(555) 315-1762,2
+RV002365,Ari,Gusikowski-Larkin,1269 Spring Ln,Riverbend,48990,P-03,49,NPA,,25
+RV002366,Joannie,Hansen,2827 Monroe Rd,Riverbend,48990,P-04,18,DEM,(555) 338-9046,72
+RV002367,Adelbert,Emard,2349 Adams Rd,Oak Hollow,48991,P-09,61,REP,555-547-3726,17
+RV002368,Luke,Veum,611 Lake Ln,Oak Hollow,48991,P-12,18,REP,,0
+RV002369,Mackenzie,Funk,1126 Spring Ln,Riverbend,48990,P-03,62,REP,(555) 662-3282,0
+RV002370,Tyrique,Price,2760 Birch St,Riverbend,48990,P-04,61,REP,555-318-0052,44
+RV002371,Joannie,Spinka,2115 Willow Rd,Riverbend,48990,P-01,45,DEM,5559882883,76
+RV002372,Cristobal,O'Hara,660 Oak Ave,Riverbend,48990,P-04,64,DEM,(555) 798-3790,63
+RV002373,Xzavier,Schultz,1105 Pine Ave,Riverbend,48990,P-05,32,DEM,,80
+RV002374,Olga,Sauer,1063 Cedar Ct,Riverbend,48990,P-04,49,DEM,,72
+RV002375,Julian,Gutkowski,2384 Spring Ct,Riverbend,48990,P-07,23,NPA,555-635-0526,59
+RV002376,Elisa,Schiller,1788 Jefferson Dr,Oak Hollow,48991,P-12,30,REP,5553907730,0
+RV002377,Verna,Gislason,1336 Pine St,Oak Hollow,48991,P-08,52,DEM,555-502-1280,82
+RV002378,Eldred,Gorczany,1497 Pine St,Oak Hollow,48991,P-08,23,REP,5555327193,18
+RV002379,Tristin,Berge,1084 Oak Ave,Riverbend,48990,P-04,32,DEM,(555) 517-0807,100
+RV002380,Tiffany,Green,257 Grant Rd,Oak Hollow,48991,P-08,26,REP,5556374666,7
+RV002381,Geraldine,VonRueden,1569 Lincoln Ave,Riverbend,48990,P-03,55,NPA,(555) 921-0608,19
+RV002382,Anne,Moore,2103 Highland Dr,Riverbend,48990,P-06,85,DEM,(555) 680-1949,71
+RV002383,Vance,Hintz,2802 Ridge Ln,Riverbend,48990,P-05,22,REP,(555) 593-0391,37
+RV002384,Jodi,Wunsch,1437 Sunset Ct,Riverbend,48990,P-02,32,NPA,,59
+RV002385,Donavon,Goyette,1007 Grant Rd,Oak Hollow,48991,P-08,38,DEM,,55
+RV002386,Dwayne,Zulauf,2051 Washington Ave,Riverbend,48990,P-06,35,DEM,555-983-8565,79
+RV002387,Adele,Waters,392 Park Ln,Riverbend,48990,P-04,54,REP,(555) 926-7837,48
+RV002388,Elenor,Tillman,349 Adams Ave,Riverbend,48990,P-01,42,NPA,,41
+RV002389,Kody,Hermiston,162 Pine St,Oak Hollow,48991,P-08,44,REP,(555) 823-4525,19
+RV002390,Margie,Ankunding,1369 Park Ct,Oak Hollow,48991,P-11,41,REP,555-661-5510,19
+RV002391,Mittie,Stark,1036 Pine Ave,Riverbend,48990,P-05,55,REP,555-399-8120,27
+RV002392,Jayme,Senger,2182 Willow Ave,Oak Hollow,48991,P-09,58,REP,,32
+RV002393,Jalyn,Pfannerstill,1349 Jefferson Ln,Riverbend,48990,P-05,28,DEM,,62
+RV002394,Hellen,Rodriguez,2530 Highland Dr,Riverbend,48990,P-06,18,NPA,(555) 512-7339,74
+RV002395,Joannie,Reynolds,2384 Highland Dr,Riverbend,48990,P-06,57,DEM,(555) 881-2967,91
+RV002396,Morgan,MacGyver,350 Franklin St,Oak Hollow,48991,P-10,45,REP,5554365147,28
+RV002397,Misael,Brekke,2239 Sunset Ct,Riverbend,48990,P-02,51,NPA,555-730-5468,47
+RV002398,Santa,Mante,220 Pine Ln,Riverbend,48990,P-07,29,DEM,555-318-6655,79
+RV002399,Marie,Ferry,2607 Monroe Ln,Oak Hollow,48991,P-12,44,NPA,(555) 368-3349,19
+RV002400,Taryn,Davis,463 Orchard Ave,Oak Hollow,48991,P-11,81,DEM,555-983-9620,52
