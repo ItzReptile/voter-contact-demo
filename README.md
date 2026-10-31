@@ -6,6 +6,8 @@ It is a demo, not campaign software I've shipped. **Every voter in it is generat
 
 TypeScript, Next.js 16, React 19, Postgres, Tailwind. Built with Claude Code; [how that worked](#how-i-built-it-with-claude-code) is below.
 
+**Live demo: [voter-contact-demo.vercel.app](https://voter-contact-demo.vercel.app)**. No sign in. The data resets every night, so click around freely.
+
 ## What it does
 
 One loop of a field program:
