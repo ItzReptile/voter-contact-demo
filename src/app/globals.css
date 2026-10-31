@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Colors are tokens so light and dark mode swap in one place.
+   Chart colors follow a CVD-checked categorical order (blue, orange, aqua)
+   and a blue <-> red diverging scale with a gray midpoint for support IDs. */
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --line: #e1e0d9;
+  --button: #256abf;
+  --link: #1c5cab;
+  --danger: #b42318;
+  --success: #006300;
+
+  --meter-fill: #2a78d6;
+  --meter-track: #cde2fb;
+
+  --outcome-reached: #2a78d6;
+  --outcome-not-home: #eb6834;
+  --outcome-wrong-number: #1baf7a;
+
+  --support-1: #256abf;
+  --support-2: #86b6ef;
+  --support-3: #d6d5cf;
+  --support-4: #f1a3a2;
+  --support-5: #e34948;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --line: #2c2c2a;
+    --link: #86b6ef;
+    --danger: #f97066;
+    --success: #0ca30c;
+
+    --meter-fill: #3987e5;
+    --meter-track: #104281;
+
+    --outcome-reached: #3987e5;
+    --outcome-not-home: #d95926;
+    --outcome-wrong-number: #199e70;
+
+    --support-1: #5598e7;
+    --support-2: #1c5cab;
+    --support-3: #4a4a46;
+    --support-4: #8f3b3b;
+    --support-5: #e66767;
+  }
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-line: var(--line);
+  --color-button: var(--button);
+  --color-link: var(--link);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+}
