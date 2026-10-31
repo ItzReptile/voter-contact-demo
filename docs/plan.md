@@ -100,13 +100,18 @@ The segment builder is a plain GET form: the filters live in the URL, the server
 | `/privacy` | What the demo stores (only generated data, plus whatever visitors type until the nightly reset) |
 | `/api/reset-demo` | Nightly reset for the hosted demo, called by Vercel Cron with `CRON_SECRET` |
 
-## Design system
+## Visual direction: door hanger
 
-All UI follows `.claude/skills/landing-page-design`: one typeface (Geist), named text styles defined once in `globals.css`, a fixed spacing scale, flat backgrounds, Phosphor icons, one motion curve, skeleton loaders shaped like each page, composed empty states, inline errors, no hyphens in UI copy.
+Three directions were prototyped side by side on the real data (door hanger, turf map, yard sign); the door hanger was chosen. It comes from the thing a volunteer leaves on the knob when nobody answers: printed in two spot inks on bright card stock, with a die cut hole for the knob.
 
-The product is called Doorstep. It uses a light theme: neutral grays (#111111 text to #F1F1F1 page), a muted indigo accent (#5D69A1, 5.2:1 on white), and teal, orange and plum for outcomes and chart series. Those three passed a colorblind separation check as a set; orange is under 3:1 on white, so every chart labels its values and status text sits on a tint in a darker step. Support IDs use an indigo to gray to plum diverging scale.
+- Two inks, used for meaning. Indigo (#5D69A1) is the product and its actions. Orange (#F8922F) is the outcome that matters: a conversation, a supporter. In charts, conversations sit on the baseline in orange and every other attempt stacks above in indigo. Support IDs run orange (strong support) through pale indigo to indigo (strong oppose).
+- Card stock (#F7F8FC) for the page, white paper for cards, ink (#23263A) for text. Text on orange is ink (6.7:1), never white.
+- Archivo is the one family: condensed and heavy for headings and big numbers, normal width for everything else.
+- One signature moment per screen: the landing hanger swings once on its knob; the canvass card is a door hanger. Daily screens get almost no motion.
 
-The app is a sidebar shell (a top bar with a full height menu on phones) around a white inset panel. Filters on the voter table and the list builder update the URL inside a React transition, so the server renders new results while the old ones stay on screen, dimmed.
+The mechanics still come from `.claude/skills/landing-page-design`: named text styles defined once in `globals.css`, a fixed spacing scale, Phosphor icons, skeleton loaders shaped like each page, composed empty states, inline errors, no hyphens in UI copy, checks at 390px wide.
+
+The app is a header on the card stock with the page below it (a full height menu on phones). Filters on the voter table and the list builder update the URL inside a React transition, so the server renders new results while the old ones stay on screen, dimmed.
 
 The intro page follows Part A of the skill with Layout A (classic hero plus sections), because the product is understandable from a dashboard screenshot. Sections: hero with one primary action, problem to solution, four benefits, the tagline reveal, how it works in three steps, "under the hood" (verifiable facts about the code instead of testimonials, which a demo doesn't have), FAQ, final call to action. Every claim on it is true of the demo; nothing about users or results is invented.
 

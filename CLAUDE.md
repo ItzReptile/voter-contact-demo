@@ -4,7 +4,7 @@
 
 Context for coding agents and for people. Read it before changing anything. The plan and the reasons behind each decision are in [docs/plan.md](docs/plan.md).
 
-**All UI follows [.claude/skills/landing-page-design](.claude/skills/landing-page-design/SKILL.md).** Part B (the visual system) applies to every page, dashboards included. Part A (strategy and structure) applies to the intro page at `/`. When a rule there conflicts with an earlier choice in this repo, the skill wins.
+**The look is the "door hanger" direction** (see "Visual direction" in [docs/plan.md](docs/plan.md)): two spot inks, indigo and orange, on bright card stock, Archivo condensed for display. **The mechanics follow [.claude/skills/landing-page-design](.claude/skills/landing-page-design/SKILL.md)**: spacing scale, named text styles, states, copy rules, 390px checks. Where the two disagree on fonts, weights or colors, the door hanger direction wins.
 
 ## What this is
 
@@ -17,6 +17,7 @@ Doorstep, a small voter contact tool for a field program: import a voter file, c
 | `docker compose up -d` | Postgres 17 on port 5433 with `votercontact` and `votercontact_test` |
 | `npm run dev` | App on http://localhost:3000 (reads `DATABASE_URL` from `.env`) |
 | `npm run seed` | **Wipes** `DATABASE_URL` and loads the sample file, volunteers, lists and contact history. Refuses a non-local database unless you pass `--yes`. |
+| `npm run seed -- --worst` | Same, plus worst-case values for checking the UI: the longest names, notes and list names the app accepts, accents, a one-voter list, a list of every voter (`src/dev/worst-case.ts`). `--empty` leaves every table empty, for the empty states. |
 | `npm run seed:production` | Same, against the hosted database in `.env.production.local` (from `vercel env pull`) |
 | `npm run generate` | Rewrites `public/sample-voters.csv` (same seed, same file) |
 | `npm run screenshots` | Recaptures the dashboard images on the intro page and `public/og.png` (needs the app running and seeded) |
@@ -39,14 +40,14 @@ src/lib/              all domain logic and data access, one file per area
   voter-filters.ts    voter table search, filters, whitelisted sorts, URLs (pure)
   chart.ts display.ts axis scaling and sparklines; tag tones and chart colors per outcome (pure)
 src/app/              routes; each route's Server Actions live in its actions.ts
-  (site)/             intro page and privacy: floating pill nav, footer (static, no database)
+  (site)/             intro page and privacy: plain header, footer (static, no database)
   (app)/              the product: sidebar shell (layout.tsx), dashboard, voters (+ import),
                       lists (+ new, [id], [id]/canvass), volunteers (+ [id] "my lists")
   api/reset-demo/     nightly reset, called by Vercel Cron (vercel.json)
   globals.css         design tokens and the named text styles
 src/components/       ui.tsx (buttons, cards, tables, tags, empty and error states), skeletons,
                       charts, nav-links (app shell), url-filters (URL-driven filters with a
-                      pending state), reveal + turf-card (intro page motion), logo
+                      pending state), reveal (tagline), landing/ (the door hanger), logo
 src/dev/              reset, seed, fake data, test fixtures (the app imports only seed, from api/reset-demo)
 scripts/              CLI entry points for src/dev
 e2e/                  Playwright tests and fixtures
@@ -75,13 +76,15 @@ e2e/                  Playwright tests and fixtures
 **UI** (details in the landing-page-design skill)
 - Text uses the named styles from `globals.css` only: `heading-1`…`heading-6`, `title-1`…`title-5`, `body-1`…`body-6`, `button-lg/md/sm/xsm`, `caption-1`…`caption-5`. No loose `text-sm font-medium`.
 - Spacing only from 0, 2, 4, 8, 12, 16, 24, 32, 40, 48, 64, 80, 96px (Tailwind `0.5 1 2 3 4 6 8 10 12 16 20 24`). Buttons are `px-3 py-2`; use `buttonClass` / `smallButtonClass` / `secondaryButtonClass` from `ui.tsx`.
-- Light theme only. Colors come from the tokens in `globals.css`: neutrals #111111 to #F1F1F1, accent #5D69A1, and teal / orange / plum for outcomes (reached / not home / wrong number) and chart series. Status text goes on the tint in its darker `-ink` step (orange and teal are under 4.5:1 as text on white). No background gradients; the hero heading is the one gradient (`hero-gradient`).
+- Two inks, used for meaning: **indigo** (#5D69A1) is the product and its actions (buttons, links, focus, selection, progress); **orange** (#F8922F) is the outcome that matters (a conversation, a supporter). Everything else is card stock (#F7F8FC), white paper and ink (#23263A). Text on an orange fill is ink, never white. Tokens and the outcome mapping live in `globals.css` and `src/lib/display.ts`; use them, never raw hex in pages.
+- Archivo is the only family. Display styles (`heading-*`) and big numbers (`figure`) are condensed and heavy; everything else is normal width. No background gradients, no drop shadows.
+- One signature moment per screen at most (the landing hanger swing, the canvass card). Daily screens get almost no motion: transitions are 150-200ms ease-out on hover and press only.
 - Don't use another organization's name or logo in the UI. The product is called Doorstep.
 - Wide tables sit in a flex column or a `minmax(0,1fr)` track, never a plain grid track, or they push the page sideways.
 - Icons: Phosphor only. Server Components import from `@phosphor-icons/react/dist/ssr`, Client Components from `@phosphor-icons/react`.
-- Motion: the default curve is `cubic-bezier(0.22,1,0.36,1)` (set in the theme). Animate transform and opacity only, put movement behind `motion-safe:`, and use `Reveal` (IntersectionObserver) for scroll reveals.
+- Motion: the default curve is `cubic-bezier(0.22,1,0.36,1)` (set in the theme). Animate transform and opacity only, and put movement behind `motion-safe:`. No scroll reveals on sections; the only page-load motion is the hanger's swing on the landing page and the 404.
 - Every data page has a skeleton fallback shaped like its layout (`skeletons.tsx`) and a composed `EmptyState`. Errors are inline (`role="alert"`), never `alert()`.
-- Copy: sentence case, no hyphens in UI text (write "score 40 to 60", not "40-60"), no exclamation marks, calm and specific system messages. Check new pages at 390px wide: no horizontal overflow.
+- Copy: sentence case, no hyphens in UI text (write "score 40 to 60", not "40-60"), no exclamation marks, calm and specific system messages. Check new pages at 390px and 320px wide and with the text at 200%: no horizontal overflow, nothing clipped. Shared buttons and fields are 44px tall on phones; keep custom controls at least that size where a volunteer taps them.
 
 **Next.js 16** (see `AGENTS.md`; the docs for this exact version are in `node_modules/next/dist/docs/`)
 - `cacheComponents` is on. Every data page has one shape: the default export renders what needs no data (title, forms) and wraps one async component in `<Suspense fallback={<…Skeleton />}>`; that component calls `await connection()` before its first query. Copy an existing page. The dev server logs an error if a query runs outside `<Suspense>`.
