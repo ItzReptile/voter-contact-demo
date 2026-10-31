@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Privacy" };
 
 export default function PrivacyPage() {
   return (
-    <article className="mx-auto max-w-2xl">
+    <article className="mx-auto max-w-2xl px-4 pt-24 pb-16">
       <Link href="/" className={`${linkClass} mb-4 inline-block body-6`}>
         About this demo
       </Link>
