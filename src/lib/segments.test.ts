@@ -105,9 +105,9 @@ describe("describeSegment and suggestListName", () => {
       contact: "not_reached",
     };
 
-    expect(describeSegment(segment)).toBe("P-03, P-04 · Democratic · age 65+ · score 40-60 · not yet reached");
+    expect(describeSegment(segment)).toBe("P-03, P-04 · Democratic · age 65+ · score 40 to 60 · not yet reached");
     expect(suggestListName(segment, "phone")).toBe(
-      "Calls · P-03, P-04 · Democratic · age 65+ · score 40-60 · not yet reached",
+      "Calls · P-03, P-04 · Democratic · age 65+ · score 40 to 60 · not yet reached",
     );
   });
 });

@@ -1,23 +1,32 @@
-// Small shared building blocks. Server-safe (no hooks), so any component can use them.
+// Shared building blocks. Server-safe (no hooks), so any component can use them.
+// Visual rules: .claude/skills/landing-page-design. Text uses the named styles from globals.css.
+import Link from "next/link";
 import type { ReactNode } from "react";
 
-export const buttonClass =
-  "rounded bg-button px-3 py-1.5 text-sm font-medium text-white hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50";
+// Pressable things get hover, active (scale 0.98, motion-safe only) and disabled states.
+// Focus rings come from :focus-visible in globals.css.
+const pressable =
+  "inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 transition motion-safe:active:scale-98 disabled:cursor-not-allowed disabled:opacity-50 motion-safe:disabled:active:scale-100";
 
-export const secondaryButtonClass =
-  "rounded border border-line bg-surface px-3 py-1.5 text-sm font-medium hover:bg-line disabled:opacity-50";
+/** Main action on a page. */
+export const buttonClass = `${pressable} button-md bg-button text-button-ink hover:opacity-90`;
+
+/** Main action inside a row or a dense form. */
+export const smallButtonClass = `${pressable} button-sm bg-button text-button-ink hover:opacity-90`;
+
+export const secondaryButtonClass = `${pressable} button-sm border border-line bg-surface text-ink hover:bg-raised`;
 
 export const inputClass =
-  "rounded border border-line bg-surface px-2 py-1.5 text-sm focus:outline-2 focus:outline-button";
+  "rounded-lg border border-line bg-surface px-3 py-2 body-6 text-ink transition hover:border-ink-2 disabled:cursor-not-allowed disabled:opacity-50";
 
-export const linkClass = "text-link underline-offset-2 hover:underline";
+export const linkClass = "text-link underline-offset-4 transition hover:underline";
 
 export function PageHeader({ title, description, action }: { title: string; description?: ReactNode; action?: ReactNode }) {
   return (
-    <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+    <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
       <div>
-        <h1 className="text-2xl font-semibold">{title}</h1>
-        {description && <p className="mt-1 max-w-2xl text-sm text-ink-2">{description}</p>}
+        <h1 className="heading-4">{title}</h1>
+        {description && <p className="mt-2 max-w-2xl body-6 text-ink-2">{description}</p>}
       </div>
       {action}
     </div>
@@ -26,8 +35,8 @@ export function PageHeader({ title, description, action }: { title: string; desc
 
 export function Card({ title, children, className = "" }: { title?: string; children: ReactNode; className?: string }) {
   return (
-    <section className={`rounded-lg border border-line bg-surface p-4 ${className}`}>
-      {title && <h2 className="mb-3 text-sm font-semibold">{title}</h2>}
+    <section className={`rounded-2xl border border-line bg-surface p-4 sm:p-6 ${className}`}>
+      {title && <h2 className="mb-4 heading-6">{title}</h2>}
       {children}
     </section>
   );
@@ -36,8 +45,11 @@ export function Card({ title, children, className = "" }: { title?: string; chil
 /** A table that scrolls sideways on narrow screens instead of breaking the layout. */
 export function Table({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <div className="overflow-x-auto">
-      <table aria-label={label} className="w-full text-left text-sm [&_td]:border-t [&_td]:border-line [&_td]:px-2 [&_td]:py-2 [&_th]:px-2 [&_th]:pb-2 [&_th]:text-xs [&_th]:font-medium [&_th]:text-ink-2">
+    <div className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
+      <table
+        aria-label={label}
+        className="w-full text-left body-6 [&_td]:border-t [&_td]:border-line [&_td]:px-2 [&_td]:py-3 [&_th]:px-2 [&_th]:pb-2 [&_th]:caption-4 [&_th]:whitespace-nowrap [&_th]:text-ink-2"
+      >
         {children}
       </table>
     </div>
@@ -60,7 +72,7 @@ export function Meter({ value, max, label }: { value: number; max: number; label
       aria-valuemax={max}
       aria-valuenow={value}
       title={`${value} of ${max}`}
-      className="h-2 w-24 overflow-hidden rounded-full"
+      className="h-2 w-24 shrink-0 overflow-hidden rounded-full"
       style={{ background: "var(--meter-track)" }}
     >
       <div className="h-full rounded-full" style={{ width: `${percent}%`, background: "var(--meter-fill)" }} />
@@ -68,11 +80,28 @@ export function Meter({ value, max, label }: { value: number; max: number; label
   );
 }
 
-/** Suspense fallback while a page's data loads. */
-export function Loading() {
-  return <p className="text-sm text-ink-2">Loading…</p>;
-}
-
-export function EmptyState({ children }: { children: ReactNode }) {
-  return <p className="rounded-lg border border-dashed border-line p-6 text-center text-sm text-ink-2">{children}</p>;
+/** A composed "nothing here yet" view: what this is, and the next step. */
+export function EmptyState({
+  icon,
+  title,
+  children,
+  action,
+}: {
+  icon: ReactNode;
+  title: string;
+  children: ReactNode;
+  action?: { href: string; label: string };
+}) {
+  return (
+    <div className="flex flex-col items-center rounded-2xl border border-line bg-surface px-4 py-12 text-center">
+      <div className="mb-4 flex size-12 items-center justify-center rounded-xl bg-raised text-ink-2">{icon}</div>
+      <h2 className="title-2">{title}</h2>
+      <p className="mt-2 max-w-sm body-6 text-ink-2">{children}</p>
+      {action && (
+        <Link href={action.href} className={`${smallButtonClass} mt-6`}>
+          {action.label}
+        </Link>
+      )}
+    </div>
+  );
 }

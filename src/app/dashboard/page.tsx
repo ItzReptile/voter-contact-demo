@@ -1,12 +1,17 @@
+import { ChartBar } from "@phosphor-icons/react/dist/ssr";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense, type ReactNode } from "react";
+import { DashboardSkeleton } from "@/components/skeletons";
 import { StackedBar } from "@/components/stacked-bar";
-import { Card, EmptyState, linkClass, Loading, Meter, Num, PageHeader, Table } from "@/components/ui";
+import { Card, EmptyState, linkClass, Meter, Num, PageHeader, Table } from "@/components/ui";
 import { LIST_KIND_LABELS, OUTCOME_LABELS, OUTCOMES, SUPPORT_LABELS, SUPPORT_LEVELS } from "@/lib/constants";
 import { getOutcomeCounts, getPrecinctStats, getSupportCounts, getTotals } from "@/lib/dashboard";
 import { formatNumber, formatPercent, rate } from "@/lib/format";
 import { getListSummaries } from "@/lib/lists";
+
+export const metadata: Metadata = { title: "Dashboard" };
 
 const OUTCOME_COLORS = {
   reached: "var(--outcome-reached)",
@@ -21,7 +26,7 @@ export default function DashboardPage() {
         title="Dashboard"
         description="Contact rate is conversations divided by attempts. Supporters are voters who gave a 1 or 2."
       />
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<DashboardSkeleton />}>
         <Dashboard />
       </Suspense>
     </>
@@ -40,12 +45,12 @@ async function Dashboard() {
 
   if (totals.voters === 0) {
     return (
-      <EmptyState>
-        No voters yet.{" "}
-        <Link href="/voters" className={linkClass}>
-          Import a voter file
-        </Link>{" "}
-        or run <code>npm run seed</code>.
+      <EmptyState
+        icon={<ChartBar size={24} aria-hidden />}
+        title="No voters yet"
+        action={{ href: "/voters", label: "Import a voter file" }}
+      >
+        Import a CSV to fill the dashboard, or run npm run seed to load the demo data.
       </EmptyState>
     );
   }
@@ -53,9 +58,9 @@ async function Dashboard() {
   return (
     <>
       <section aria-label="Totals" className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
-        <div className="rounded-lg border border-line bg-surface p-4">
-          <p className="text-sm text-ink-2">Contact rate</p>
-          <p className="mt-1 text-5xl font-semibold">{formatPercent(rate(totals.conversations, totals.attempts))}</p>
+        <div className="rounded-2xl border border-line bg-surface p-4">
+          <p className="caption-1 text-ink-2">Contact rate</p>
+          <p className="mt-2 heading-2">{formatPercent(rate(totals.conversations, totals.attempts))}</p>
         </div>
         <Tile label="Attempts" value={formatNumber(totals.attempts)} />
         <Tile label="Conversations" value={formatNumber(totals.conversations)} />
@@ -128,7 +133,13 @@ async function Dashboard() {
 
       <Card title="By list">
         {lists.length === 0 ? (
-          <EmptyState>No lists yet.</EmptyState>
+          <p className="body-6 text-ink-2">
+            No lists yet.{" "}
+            <Link href="/lists/new" className={linkClass}>
+              Build a segment
+            </Link>{" "}
+            to cut the first one.
+          </p>
         ) : (
           <Table label="By list">
             <thead>
@@ -175,10 +186,10 @@ async function Dashboard() {
 
 function Tile({ label, value, note }: { label: string; value: string; note?: ReactNode }) {
   return (
-    <div className="rounded-lg border border-line bg-surface p-4">
-      <p className="text-sm text-ink-2">{label}</p>
-      <p className="mt-1 text-2xl font-semibold">{value}</p>
-      {note && <p className="text-xs text-ink-2">{note}</p>}
+    <div className="rounded-2xl border border-line bg-surface p-4">
+      <p className="caption-1 text-ink-2">{label}</p>
+      <p className="mt-2 heading-5">{value}</p>
+      {note && <p className="caption-5 text-ink-2">{note}</p>}
     </div>
   );
 }

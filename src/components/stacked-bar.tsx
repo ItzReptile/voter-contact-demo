@@ -13,9 +13,9 @@ export function StackedBar({ label, segments }: { label: string; segments: BarSe
   return (
     <figure>
       {total === 0 ? (
-        <div className="h-3 rounded bg-line" aria-hidden />
+        <div className="h-3 rounded-full bg-raised" aria-hidden />
       ) : (
-        <div className="flex h-3 gap-[2px] overflow-hidden rounded" aria-hidden>
+        <div className="flex h-3 gap-0.5 overflow-hidden rounded-full" aria-hidden>
           {segments
             .filter((segment) => segment.value > 0)
             .map((segment) => (
@@ -28,16 +28,16 @@ export function StackedBar({ label, segments }: { label: string; segments: BarSe
         </div>
       )}
       <figcaption className="sr-only">{label}</figcaption>
-      <table aria-label={label} className="mt-3 w-full text-sm">
+      <table aria-label={label} className="mt-4 w-full body-6">
         <tbody>
           {segments.map((segment) => (
             <tr key={segment.key}>
               <td className="py-0.5">
-                <span className="mr-2 inline-block size-2.5 rounded-sm align-middle" style={{ background: segment.color }} />
+                <span className="mr-2 inline-block size-3 rounded-sm align-middle" style={{ background: segment.color }} />
                 {segment.label}
               </td>
               <td className="py-0.5 text-right tabular-nums">{formatNumber(segment.value)}</td>
-              <td className="w-14 py-0.5 text-right tabular-nums text-ink-2">{formatPercent(rate(segment.value, total))}</td>
+              <td className="w-16 py-0.5 text-right tabular-nums text-ink-2">{formatPercent(rate(segment.value, total))}</td>
             </tr>
           ))}
         </tbody>

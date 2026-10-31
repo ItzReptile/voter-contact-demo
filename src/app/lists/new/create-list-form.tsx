@@ -1,5 +1,6 @@
 "use client";
 
+import { Warning } from "@phosphor-icons/react";
 import { useActionState } from "react";
 import { buttonClass, inputClass } from "@/components/ui";
 import type { ListKind } from "@/lib/constants";
@@ -22,16 +23,17 @@ export function CreateListForm({
     <form action={formAction} className="flex flex-wrap items-end gap-3">
       <input type="hidden" name="kind" value={kind} />
       <input type="hidden" name="segment" value={segmentJson} />
-      <label className="flex min-w-72 flex-1 flex-col gap-1 text-sm">
+      <label className="flex min-w-0 flex-1 basis-72 flex-col gap-2 title-4">
         List name
         {/* key: a new segment resets the suggested name */}
-        <input key={suggestedName} name="name" defaultValue={suggestedName} required className={inputClass} />
+        <input key={suggestedName} name="name" defaultValue={suggestedName} required maxLength={120} className={inputClass} />
       </label>
       <button type="submit" disabled={disabled || pending} className={buttonClass}>
-        {pending ? "Creating…" : "Create list"}
+        {pending ? "Creating" : "Create list"}
       </button>
       {state.error && (
-        <p role="alert" className="w-full text-sm text-danger">
+        <p role="alert" className="flex w-full items-center gap-2 body-5 text-danger">
+          <Warning size={20} aria-hidden />
           {state.error}
         </p>
       )}

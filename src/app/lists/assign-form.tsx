@@ -1,4 +1,4 @@
-import { secondaryButtonClass, inputClass } from "@/components/ui";
+import { inputClass, secondaryButtonClass } from "@/components/ui";
 import { assignListAction } from "./actions";
 
 // A plain form posting to a Server Action: works without any client-side JavaScript.
@@ -23,7 +23,7 @@ export function AssignForm({
         name="volunteerId"
         defaultValue={volunteerId ?? ""}
         aria-label={`Volunteer for ${listName}`}
-        className={inputClass}
+        className={`${inputClass} min-w-40`}
       >
         <option value="">Unassigned</option>
         {volunteers.map((volunteer) => (

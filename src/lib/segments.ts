@@ -104,13 +104,13 @@ export function listOrderBy(kind: ListKind): string {
 }
 
 function range(label: string, min: number | undefined, max: number | undefined): string | null {
-  if (min !== undefined && max !== undefined) return `${label} ${min}-${max}`;
+  if (min !== undefined && max !== undefined) return `${label} ${min} to ${max}`;
   if (min !== undefined) return `${label} ${min}+`;
   if (max !== undefined) return `${label} up to ${max}`;
   return null;
 }
 
-/** A short human description, e.g. "P-03 · score 40-60 · not yet reached". */
+/** A short human description, e.g. "P-03 · score 40 to 60 · not yet reached". No hyphens in UI copy. */
 export function describeSegment(segment: Segment): string {
   const parts = [
     segment.precincts.length > 0 ? segment.precincts.join(", ") : "All precincts",
